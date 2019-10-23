@@ -25,7 +25,8 @@ Apparently, two seconds are not enough wait for travis, sometimes. Unfortunnatel
 The only solution I have found so far is a [monkey-patch](http://en.wikipedia.org/wiki/Monkey_patch), which I implemented in [django-autocomplete-light](https://github.com/yourlabs/django-autocomplete-light/commit/5ff24564946feb65fb6c4c42b7d3793b6ebcae3b):
 
 
-<pre class="sh_python">
+```
+{{< highlight python>}}
     # Patch for travis
     from django.test.testcases import StoppableWSGIServer
 
@@ -44,13 +45,15 @@ The only solution I have found so far is a [monkey-patch](http://en.wikipedia.or
                 "Failed to shutdown the live test server in 2 seconds. The "
                 "server might be stuck or generating a slow response.")
     StoppableWSGIServer.shutdown = patient_shutdown
-</pre>
+{{< / highlight >}}
+```
 
 This will give travis 30 seconds to shut down the server, and [fix everything](https://travis-ci.org/yourlabs/django-autocomplete-light/builds/15180200).
 
 Note that this is not necessary starting Django 1.7. However, `LiveServerTestCase` won't serve static files anymore in Django 1.7. So this is how you get a `LiveServerTestCase` that works on travis and all versions of Django:
 
-<pre class="sh_python">
+```
+{{< highlight python>}}
     if VERSION[0] == 1 and VERSION[1] &lt; 7:
         # Patch for travis
         from django.test.testcases import StoppableWSGIServer
@@ -66,4 +69,5 @@ Note that this is not necessary starting Django 1.7. However, `LiveServerTestCas
     else:
         # LiveServerTestCase doesn't serve static files in 1.7 anymore
         from django.contrib.staticfiles.testing import StaticLiveServerCase as LiveServerTestCase
-</pre>
+{{< / highlight>}}
+```

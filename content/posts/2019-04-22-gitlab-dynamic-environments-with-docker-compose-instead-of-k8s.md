@@ -12,6 +12,8 @@ This article however, demonstrates how to acheive dynamic environments for integ
 
 Our dynamic enviroment deployment, in this case for PHP, looks as such in .gitlab-ci.yml:
 
+```
+{{< highlight docker>}}
     test:
       # The dynamic enviromnent definition, used by GitLab to provision the
       # user interface
@@ -66,10 +68,14 @@ Our dynamic enviroment deployment, in this case for PHP, looks as such in .gitla
 
       # This will execute our tests on $VIRTUAL_HOST
       - ~/.local/bin/py.test --showlocals --full-trace -s -vv tests
+{{< / highlight >}}
+```
 
 For the record as this is a closed source project I can't just link to, we have a README that says, for localhost to have this
 docker-compose.override.yml, which has the sole purpose to port forward:
 
+```
+{{< highlight docker>}}
     version: '3.5'
     services:
       php:
@@ -77,10 +83,14 @@ docker-compose.override.yml, which has the sole purpose to port forward:
         - target: 80
           published: 80
           mode: host
+{{< / highlight >}}
+```
 
 And of course for dynamic enviromnents we have a
 [nginx-proxy](https://github.com/jwilder/nginx-proxy) docker-compose deployment on a shared docker network called "nginx". It watches docker.sock for new containers that have VIRTUAL_HOST env var, so the docker-compose.nginx.yml refered above has the sole purpose of connecting containers with the "nginx" docker network, it contains the following::
 
+```
+{{< highlight docker>}}
     version: '3.5'
 
     services:
@@ -98,6 +108,8 @@ And of course for dynamic enviromnents we have a
         external:
           name: nginx
       site:
+{{< / highlight>}}
+```
 
 As you can see, we got dynamic environments with integration tests for pretty cheap, compare the cost of a hosted K8S infra that you would use just for testing, and the cost of a simple baremetal box running a gitlab-ci executor. 
 

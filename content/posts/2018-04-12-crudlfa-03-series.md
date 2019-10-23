@@ -13,27 +13,32 @@ title = "CRUDLFA+ 0.3 Series"
 Let's compare it side by side. Consider this simple model:
 
 ```
+{{< highlight python>}}
 class Email(models.Model):
     email = models.EmailField()
     caisse = models.ForeignKey('Caisse', on_delete=models.CASCADE)
 
     def __str__(self):
         return self.email
+{{< / highlight >}}
 ```
 
 This admin.py:
 
 ```
+{{< highlight python>}}
 class EmailAdmin(admin.ModelAdmin):
     list_display = ('email', 'caisse')
 
 
 admin.site.register(Email, EmailAdmin)
+{{< / highlight >}}
 ```
 
 Ported to CRUDLFA+, in the case where we only want a list view, becomes (crudlfap.py):
 
 ```
+{{< highlight python>}}
 crudlfap.Router(
     Email,
     material_icon='contact_mail',
@@ -43,11 +48,13 @@ crudlfap.Router(
         ),
     ]
 ).register()
+{{< / highlight >}}
 ```
 
 Now, consider a bit more complete model as such:
 
 ```
+{{< highlight python>}}
 class Caisse(models.Model):
     code = models.CharField(max_length=9)
     name = models.CharField(
@@ -75,12 +82,13 @@ class Caisse(models.Model):
 
     def __str__(self):
         return self.name
+{{< / highlight >}}
 ```
 
 We have admin.py like:
 
 ```
-
+{{< highlight python>}}
 class CaisseAdmin(admin.ModelAdmin):
     readonly_fields = ('score',)
     list_display = ('code', 'name', 'number', 'active', 'score')
@@ -89,11 +97,13 @@ class CaisseAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Caisse, CaisseAdmin)
+{{< / highlight >}}
 ```
 
 Then crudlfap.py would have:
 
 ```
+{{< highlight python>}}
 crudlfap.Router(
     Caisse,
     material_icon='domain',
@@ -121,11 +131,13 @@ crudlfap.Router(
         ),
     ]
 ).register()
+{{< / highlight >}}
 ```
 
 Another example from admin.py:
 
 ```
+{{< highlight python>}}
 class EmailTemplateAdmin(admin.ModelAdmin):
     list_display = [
         'name',
@@ -148,12 +160,14 @@ class EmailTemplateAdmin(admin.ModelAdmin):
         return False
 
 admin.site.register(EmailTemplate, EmailTemplateAdmin)
+{{< / highlight >}}
 ```
 
 To crudlfap.py:
 
 
 ```
+{{< highlight python>}}
 class EmailTemplateListView(crudlfap.FilterTables2ListView):
     table_sequence = (
         'name',
@@ -183,11 +197,13 @@ crudlfap.Router(
         crudlfap.UpdateView,
     ]
 ).register()
+{{< / highlight >}}
 ```
 
 For our last example, we have a bigger admin to port:
 
 ```
+{{< highlight python>}}
 class MRSRequestAdmin(admin.ModelAdmin):
     form = MRSRequestAdminForm
     list_display = (
@@ -244,11 +260,13 @@ class MRSRequestAdmin(admin.ModelAdmin):
     def has_add_permission(self, request):
         return False
 admin.site.register(MRSRequest, MRSRequestAdmin)
+{{< / highlight >}}
 ```
 
 Becomes, in CRUDLFA+:
 
 ```
+{{< highlight python>}}
 from .views import MRSRequestRejectView, MRSRequestValidateView
 from .models import MRSRequest
 
@@ -318,6 +336,7 @@ crudlfap.Router(
         MRSRequestListView,
     ]
 ).register()
+{{< / highlight >}}
 ```
 
 That's all for today !

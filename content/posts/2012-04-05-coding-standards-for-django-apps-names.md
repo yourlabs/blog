@@ -50,19 +50,35 @@ Prefixing url names with the application name was a very nice way of avoiding co
 
 Since Django 1.1, this is not necessary anymore because of [namespaced urls inclusion](https://docs.djangoproject.com/en/dev/topics/http/urls/#topics-http-defining-url-namespaces). Instead of including your blog app urls as such:
 
+```
+{{< highlight  python>}}
     url(r'blog/', include('blog.urls')),
+{{< / highlight >}}
+```
 
 And reversing as such:
 
+```
+{{< highlight  python>}}
     {% url 'blog_post_detail' post.pk %}
+{{< / highlight>}}
+```
 
 You could include your blog app urls with the blog app namespace:
 
+```
+{{< highlight  python>}}
     url(r'blog/', include('blog.urls', app_name='blog'))
+{{< / highlight>}}
+```
 
 Thus, if you named the post_detail view url just post_detail, there should be no conflict reversing as such:
 
+```
+{{< highlight  python>}}
     {% url 'blog:post_detail' post.pk %}
+{{< / highlight>}}
+```
 
 Both are good as long at it is consistent per app.
 

@@ -70,25 +70,26 @@ is the name of the attribute which should be used as inner HTML of the option
 
 Example HTML using Uni-form:
 
-<pre class="sh_html">
-&lt;div class="ctrlHolder "&gt;
-    &lt;label for="profile"&gt;&lt;em&gt;*&lt;/em&gt; Profile&lt;/label&gt;
+```
+{{< highlight  html>}}
+<div class="ctrlHolder">;
+    <label for="profile"><em>*</em> Profile</label>
 
-    &lt;select class="required " name="recipe.recipe[profile]" id="id_recipe__dot__recipe__braceleft__profile__braceright__"&gt;
-        &lt;option value="29362F95-A80E-102D-9263-003048D8A48A"&gt;Marc Veyrat&lt;/option&gt;
-        &lt;option value="AF98753D-A80E-102D-9263-003048D8A48A"&gt;Paul Bocuse&lt;/option&gt;
-    &lt;/select&gt;
-
-    &lt;p class="formHint"&gt;
-        &lt;a class="add-another" id="add_id_recipe__dot__recipe__braceleft__profile__braceright__" href="/profile/create?displayAttribute=name&amp;amp;valueAttribute=id"&gt;Click here to create a new profile&lt;/a&gt;, if your choice isn't in the list.
-    &lt;/p&gt;
-&lt;/div&gt;
-</pre>
-
+        <select class="required " name="recipe.recipe[profile]" id="id_recipe__dot__recipe__braceleft__profile__braceright__">
+            <option value="29362F95-A80E-102D-9263-003048D8A48A">Marc Veyrat</option>
+            <option value="AF98753D-A80E-102D-9263-003048D8A48A">Paul Bocuse</option>
+        </select>
+   <p class="formHint">
+       <a class="add-another" id="add_id_recipe__dot__recipe__braceleft__profile__braceright__" href="/profile/create?displayAttribute=name&amp;valueAttribute=id">Click here to create a new profile</a>, if your choice isn't in the list.
+   </p>
+</div>
+{{< / highlight >}}
+```
 
 Example Javascript code with jQuery for the event binding:
 
-<pre class="sh_javascript">
+```
+{{< highlight  js>}}
 $(document).ready(function() {
     $( '.add-another' ).click(function(e) {
         e.preventDefault(  );
@@ -167,23 +168,28 @@ function id_to_windowname(text) {
 function windowname_to_id(text) {
     return text;
 }
-</pre>
+{{< / highlight >}}
+```
 
 Finally, the html which should be returned by the popup when the object is
 saved:
 
-<pre class="sh_html">
-&lt;script type="text/javascript"&gt;opener.dismissAddAnotherPopup( window, "name", "id" );&lt;/script&gt;
-</pre>
+```
+{{< highlight html>}}
+<script type="text/javascript">opener.dismissAddAnotherPopup( window, "name", "id" );</script>
+{{< / highlight >}}
+```
 
 Example generic PHP usage:
 
-<pre class="sh_php">
-if ( isset( $this-&gt;request-&gt;variables['popup'] ) ) { 
-    $result-&gt;variables['responseBody'] = sprintf( 
-        '&lt;script type="text/javascript"&gt;opener.dismissAddAnotherPopup( window, "%s", "%s" );&lt;/script&gt;',
-        $form[$this-&gt;request-&gt;variables['valueAttribute']], // "id" is the value attribute
-        $form[$this-&gt;request-&gt;variables['displayAttribute']] // "name" is the display attribute
+```
+{{<highlight php>}}
+if ( isset( $this->request->variables['popup'] ) ) { 
+    $result->variables['responseBody'] = sprintf( 
+        '<script type="text/javascript">opener.dismissAddAnotherPopup( window, "%s", "%s" );</script>',
+        $form[$this->request->variables['valueAttribute']], // "id" is the value attribute
+        $form[$this->request->variables['displayAttribute']] // "name" is the display attribute
     );  
 }
-</pre>
+{{< / highlight >}}
+```

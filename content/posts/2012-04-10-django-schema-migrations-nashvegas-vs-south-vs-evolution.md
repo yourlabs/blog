@@ -67,6 +67,7 @@ name: 0001_initial.sql, 0002_populate.py, 0003_add_column_foo.sql ...
 
 To apply missing migrations with nashvegas, run:
 
+
     ./manage.py upgradedb -e
 
 ### South

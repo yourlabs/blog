@@ -19,6 +19,8 @@ What's the relation between security and GDB ? Well it will help finding securit
 
 Consider the following C source code example for hello world:
 
+```
+{{< highlight c>}}
     #include<stdio.h>
 
     int YourGlobalVariable;
@@ -31,6 +33,8 @@ Consider the following C source code example for hello world:
 
         return 0;
     }
+{{< / highlight >}}
+```
 
 #### Compile with debug symbols with `-ggdb`:
 

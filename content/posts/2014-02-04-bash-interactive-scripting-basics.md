@@ -6,38 +6,47 @@ title = "Bash interactive scripting basics"
 +++
 A variable looks like this:
 
-<pre class="sh_shell">
+```
+{{< highlight bash>}}
     export FOO=bar
-</pre>
+{{< / highlight>}}
+```
 
 To get a variable in your interactive shell, source the script that contains it
 as such:
 
-<pre class="sh_shell">
+```
+{{< highlight bash>}}
     source script_that_contains_FOO
     echo $FOO
-</pre>
+{{< / highlight>}}
+```
 
 A function looks like this:
 
-<pre class="sh_shell">
+```
+{{< highlight bash>}}
     function foo() {
         echo foo
     }
-</pre>
+{{< / highlight >}}
+```
 
 To run a function in your interactive shell, source the script and call the
 function like this:
 
-<pre class="sh_shell">
+```
+{{< highlight bash>}}
     source script_that_contains_foo
     foo
-</pre>
+{{< / highlight>}}
+```
 
 To debug something that's wrapped in a bash function or script, set the `-x` option. To de-activate debugging, set `+x`. Example:
 
 
-<pre class="sh_shell">
+```
+{{< highlight bash>}}
     [env] 04/02 2014 02:17:26 jpic@etta /home/jpic 
     $ source script_that_contains_foo 
 
@@ -47,7 +56,8 @@ To debug something that's wrapped in a bash function or script, set the `-x` opt
     + echo bar
     bar
     + set +x
-</pre>
+{{< / highlight >}}
+```
 
 Lines prefixed with a `+` sign are those that are executed by bash. Lines without `+` prefix correspond to output.
 

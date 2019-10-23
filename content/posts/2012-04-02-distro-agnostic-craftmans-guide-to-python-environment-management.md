@@ -18,15 +18,23 @@ system administrators !
 First things first, to see the compile flags of an existing python
 installation, the “sysconfig” module can be used:
 
+```
+{{< highlight bash>}}
     In [1]: import sysconfig
 
     In [2]: sysconfig.get_config_var('CONFIG_ARGS')
     Out[2]: "'--prefix=/usr' '--enable-shared' '--with-threads' '--enable-unicode=ucs4' '--with-system-expat' 'CFLAGS=-march=i686 -mtune=generic -O2 -pipe' 'LDFLAGS=-Wl,--hash-style=gnu -Wl,--as-needed'"
+{{< / highlight>}}
+```
 
 Configuring sources from scratch just requires over reading the short —help
 output, for example:
 
+```
+{{< highlight  bash>}}
     ./configure --enable-unicode=ucs4 --without-cxx --prefix=/tmp
+{{< / highlight>}}
+```
 
 Of course, the —prefix argument is mandatory for proper environment management,
 for example:
@@ -41,7 +49,11 @@ In the last case, it installs the python executable in /tmp/bin, libraries in
 
 With a poor “Intel(R) Atom(TM) CPU N270 @ 1.60GHz” dual core, it compiles in 5 minutes.
 
+```
+{{< highlight  bash>}}
     make -j3  407.45s user 14.88s system 136% cpu 5:09.94 total
+{{< / highlight >}}
+```
 
 #### Crafting setuptools
 
@@ -56,7 +68,11 @@ matter of seconds.
 
 Again, the —prefix option should be used as such:
 
+```
+{{< highlight  bash>}}
     sh setuptools-0.6c11-py2.5.egg --prefix=/tmp
+{{< / highlight>}}
+```
 
 #### Crafting application specific dependencies
 
@@ -69,6 +85,8 @@ with just python and setuptools:
 Buildout comes from the Zope tribe of the Python community, it great for very large deployments.
 Virtualenv is easily usable and is sufficient in most cases, example usage:
 
+```
+{{< highlight bash>}}
     # install virtualenv
     /tmp/bin/pip install virtualenv
 
@@ -80,6 +98,8 @@ Virtualenv is easily usable and is sufficient in most cases, example usage:
 
     # activate the application specific environment
     source /tmp/your_application/bin/activate
+{{< / highlight>}}
+```
 
 Once the virtualenv is activated, anything done in the current python
 environment affects /tmp/your_application/your_application_env. For example:
@@ -89,7 +109,9 @@ environment affects /tmp/your_application/your_application_env. For example:
 
 It is time to install application specific dependencies:
 
+```
     pip install -r /tmp/your_applications/requirements.txt
+```
 
 #### Automating virtualenv activation
 
@@ -98,17 +120,27 @@ automating virtualenv activation.
 
 Instead of:
 
+```
+{{< highlight bash>}}
     $ cd /tmp/your_application
     $ source /tmp/your_application/your_application_env/bin/activate
     (your_application_env) $
+{{< / highlight>}}
+```
 
 It is better to just do:
 
+```
+{{< highlight bash>}}
     $ cd /tmp/your_application
     (your_application_env) $
+{{< / highlight>}}
+```
 
 With this .zshrc:
 
+```
+{{< highlight bash>}}
     function cd() {
         builtin cd $@; 
         if [ -f env/bin/activate ]
@@ -118,6 +150,8 @@ With this .zshrc:
             export RPROMPT="$RPROMPT%F{180}${PWD##*/}"
         fi 
     }
+{{< / highlight>}}
+```
 
 #### Questions
 

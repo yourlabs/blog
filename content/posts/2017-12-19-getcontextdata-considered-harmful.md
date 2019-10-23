@@ -13,10 +13,12 @@ Let's talk about ideas for deprecation / discouraging the use of `get_context_da
 I've seen things like this in many projects, I wonder if it's the case for other people too:
 
 ```
+{{< highlight python>}}
 def get_context_data(self, **kwargs):
     c = super().get_context_data(**kwargs)
     c['something'] = self.something
     return c
+{{< / highlight >}}
 ```
 
 And I'm guilty as charged you can find commits from myself like this all over internet.
@@ -26,7 +28,7 @@ Do you think this is really necessary and shouldn't we encourage users to take a
 Another thing that seems a bit weird is that a builtin CBV requires two calls to render a template and enforces dealing with the context, as we can see in Django's TemplateView:
 
 ```
-
+{{< highlight python>}}
 class TemplateView(TemplateResponseMixin, ContextMixin, View):
     """
     Render a template. Pass keyword arguments from the URLconf to the context.
@@ -34,6 +36,7 @@ class TemplateView(TemplateResponseMixin, ContextMixin, View):
     def get(self, request, *args, **kwargs):
         context = self.get_context_data(**kwargs)
         return self.render_to_response(context)
+{{< / highlight >}}
 ```
 
 So, there's not really a public API to render to response with the default context, either call `TemplateView.get()` directly either be [forced to cast a context](https://github.com/django/django/blob/master/django/views/generic/base.py#L115).
@@ -41,13 +44,17 @@ So, there's not really a public API to render to response with the default conte
 I'm hoping this will work long enough:
 
 ```
+{{< highlight python>}}
 return generic.TemplateView.get(self, request, *args, **kwargs)
+{{< / highlight >}}
 ```
 
 But really this should maybe be:
 
 ```
+{{< highlight python>}}
 return self.render_to_response()
+{{< / highlight >}}
 ```
 
 That's it !

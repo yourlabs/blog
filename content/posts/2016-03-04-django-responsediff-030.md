@@ -8,11 +8,15 @@ title = "django-responsediff 0.3.0"
 
 It now also checks the status_code, and has a cute mixin:
 
+```
+{{< highlight python>}}
     from responsediff.test import ResponseDiffTestMixin
 
     class MixinTest(ResponseDiffTestMixin, test.TestCase):
         def test_admin(self):
             self.assertResponseDiffEmpty(test.Client().get('/admin/'))
+{{< / highlight >}}
+```
 
 The above will fail on the first time with ``FixtureCreated`` to indicate that
 it has written

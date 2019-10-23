@@ -66,9 +66,13 @@ and then installing all your friends
 
 Run::
 
+```
+{{< highlight bash>}}
     playlabs bootstrap user:pass@somehost
     playlabs bootstrap user@somehost
     playlabs bootstrap @somehost          # will use sudo as your user
+{{< / highlight >}}
+```
 
 You might need to pass extra options to ansible in some cases, for example if
 your install provides a passworded sudo, add ``--ask-sudo-pass``.
@@ -93,9 +97,13 @@ Remember the architecture:
 
 The CLI itself is pretty straightforward::
 
+```
+{{< highlight bash>}}
     playlabs install docker,firewall,nginx @somehost # the paas for the project role
     playbabs install sendmail,netdata,mailcatcher,gitlab @staging
     playbabs install sendmail,netdata,sentry user@production
+{{< / highlight >}}
+```
 
 The difference between traditionnal roles and playlabs roles, is that in
 playlabs they strive to have stuff running inside docker to leverage the

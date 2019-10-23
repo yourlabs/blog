@@ -1,5 +1,4 @@
-#baseurl = "http://drclaw.yourlabs.io/yourlabs_blog/"
-baseurl = "127.0.0.1"
+baseurl = "http://drclaw.yourlabs.io/yourlabs_blog/"
 contentdir    = "content"
 layoutdir     = "layouts"
 publishdir    = "public"

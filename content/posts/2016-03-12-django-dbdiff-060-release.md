@@ -6,6 +6,8 @@ title = "django-dbdiff 0.6.0 release"
 +++
 [django-dbdiff](https://github.com/yourlabs/django-dbdiff) was released. It allows to exclude fields from tests with the new `exclude` parameter, ie::
 
+```
+{{< highlight python>}}
         Fixture(
             'tweets/tests/after_create_retweet.json',
             models=[Tweet, Retweets],
@@ -14,7 +16,9 @@ title = "django-dbdiff 0.6.0 release"
                 'tweets.tweet': ['datetime'],
                 'tweets.retweets': ['datetime'],
             },
-        )
+        }
+{{< / highlight>}}
+```
 
 This was initially requested by [Nicolas Joyard](https://github.com/njoyard) for the [Political Memory](https://github.com/political-memory) project.
 

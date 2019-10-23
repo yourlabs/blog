@@ -8,6 +8,8 @@ This article demonstrates how to have your own project-specific twitter-bootstra
 
 In `site_base.html`:
 
+```
+{{< highlight html>}}
     {% if debug %}
         <link href="{{ STATIC_URL }}bootstrap/less/bootstrap.less" charset="utf-8" type="text/less" rel="stylesheet">
         <link href="{{ STATIC_URL }}bootstrap/less/responsive.less" rel="stylesheet">
@@ -20,16 +22,20 @@ In `site_base.html`:
             <link rel="stylesheet" type="text/css" href="{% static 'autocomplete_light/style.css' %}" />
             {% endcompress %}
     {% endif %}
+{{< / highlight >}}
+```
 
 In `settings.py`:
 
+```
+{{< highlight python>}}
     COMPRESS_ENABLED = True
-
     COMPRESS_PRECOMPILERS = (
         ('text/less', 'recess --compile {infile} > {outfile}'),
     )
-
     COMPRESS_DEBUG_TOGGLE = 'debug'
+{{< / highlight >}}
+```
 
 Note the usage of [twitter recess](http://twitter.github.com/recess/), which you can get by [npm](http://npmjs.org).
 

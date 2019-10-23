@@ -33,7 +33,8 @@ SubstanceD uses integers as object ids, certainly for the integer specific optim
 
 Then, you can use ReferenceMap as such:
 
-<pre class="sh_python">
+```
+{{< highlight python>}}
     book1 = 'Book 1 UUID' # by Author 1 and Author 2
     book2 = 'Book 2 UUID' # by Author 2 only
 
@@ -65,19 +66,24 @@ Then, you can use ReferenceMap as such:
     # book2 should have author2
     self.assertEqual(list(themap.targetids(book2, refname)),
             [author2])
-</pre>
+{{< / highlight>}}
+```
 
 As you can see, relations are directional. This:
 
-<pre class="sh_python">
+```
+{{< highlight python>}}
     themap.connect(book1, author1, refname)
-</pre>
+{{< / highlight>}}
+```
 
 Is different from:
 
-<pre class="sh_python">
+```
+{{< highlight python>}}
     themap.connect(author1, book1, refname)
-</pre>
+{{< / highlight>}}
+```
 
 While this may seem like a problem at first, it is not a problem at a higher level, because you can:
 

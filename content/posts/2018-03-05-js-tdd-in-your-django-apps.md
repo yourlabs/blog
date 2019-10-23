@@ -11,6 +11,7 @@ Due to positive feedback in the django-users mailing list, I'm writing how I act
 Let's create an index.test.js file:
 
 ```
+{{< highlight js>}}
 /* global describe, jest, test, expect */
 import * as yourmodule from './index'
 
@@ -20,11 +21,13 @@ describe('Awesome', () => {
     expect(x.something).toEqual(2)
   })
 })
+{{< / highlight >}}
 ```
 
 And an index.js file with our runtime code:
 
 ```
+{{< highlight js>}}
 class Awesome {
   constructor(something) {
     this.something = something
@@ -34,6 +37,7 @@ class Awesome {
 export {
   Awesome
 }
+{{< / highlight >}}
 ```
 
 You need to install nodejs, because we'll run unit tests on it. You also need npm or yarn because we'll install JS modules with it - yay, same development workflows with JS as we have in Python, get ready for the XXIst century ! You could do the article in pure npm, but we'll use yarn:
@@ -60,9 +64,11 @@ This will create a new directory node_modules, which is like the virtualenv for 
 Next, create a .babelrc file to load the env preset:
 
 ```
+{{< highlight js>}}
 {
   "presets": ["env"]
 }
+{{< / highlight >}}
 ```
 
 We can now run the test runner with command:
@@ -72,6 +78,7 @@ We can now run the test runner with command:
 Now, let's build a webpack entrypoint, add a webpack.config.js to create a jstdd.js file in static/ directory based on index.js source ode, so django will be able to resolve it with staticfiles, as such:
 
 ```
+{{< highlight js>}}
 var path = require('path')
 
 module.exports = {
@@ -98,6 +105,7 @@ module.exports = {
     ]
   }
 }
+{{< / highlight >}}
 ```
 
 Now, you can build the static/jstdd.js file ready for production:
@@ -109,6 +117,7 @@ Next, open your package.json, we'll add a scripts configuration:
 We'll add a script section as such:
 
 ```
+{{< highlight js>}}
 {
   "name": "jstdd",
   ...
@@ -119,6 +128,7 @@ We'll add a script section as such:
     "lint": "eslint ."
   }
 }
+{{< / highlight >}}
 ```
 
 When a command is in scripts, it does not need to be specified with full ./node_modules path, we can now run those commands:
