@@ -1,6 +1,7 @@
 +++
 date = "2012-03-13T17:23:00+00:00"
 draft = false
+tags = []
 title = "Survive linux (*nix) permissions"
 +++
 It is common for junior developers and system administrators to be blocked

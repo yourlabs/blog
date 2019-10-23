@@ -1,6 +1,7 @@
 +++
 date = "2012-10-24T23:58:00+00:00"
 draft = false
+tags = []
 title = "Upcoming backward compatibility break in django-autocomplete-light v1.1.0"
 +++
 In the next week(s), django-autocomplete-light v 1.1.0 will succeed to v1.0.26. It will include commit [2c756a](https://github.com/yourlabs/django-autocomplete-light/commit/2c756aff2793ac81c51d8d0d674fb90376d2b376) may be short but it will break your custom Autocomplete classes that generate custom HTML and custom [django-autocomplete_light](http://github.com/yourlabs/django-autocomplete-light) templates.

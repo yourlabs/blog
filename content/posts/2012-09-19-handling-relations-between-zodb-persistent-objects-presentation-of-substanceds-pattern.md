@@ -1,6 +1,7 @@
 +++
 date = "2012-09-19T00:36:00+00:00"
 draft = false
+tags = []
 title = "Handling relations between ZODB persistent objects, presentation of SubstanceD's pattern"
 +++
 [ZODB](http://zodb.org) is an object oriented database for Python, or "NoSQL" database. In one sentence it resumes as such:
