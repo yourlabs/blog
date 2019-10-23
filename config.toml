@@ -2,7 +2,7 @@ baseurl = "http://drclaw.yourlabs.io/yourlabs_blog/"
 contentdir    = "content"
 layoutdir     = "layouts"
 publishdir    = "public"
-title = "Beautiful Hugo"
+title = "Yourlabs Blog"
 canonifyurls  = true
 
 DefaultContentLanguage = "en"
@@ -14,10 +14,10 @@ pygmentCodeFences = true
 #googleAnalytics = "XXX"
 
 [Params]
-  subtitle = "Hugo Blog Template for GitLab Pages"
-  logo = "img/avatar-icon.png"
-  favicon = "img/favicon.ico"
-  dateFormat = "January 2, 2006"
+  subtitle = "Where Hack meet Art"
+  logo = "img/logo.png"
+  favicon = "img/logo.png"
+  dateFormat = "2 January 2006"
   commit = false
   rss = true
   comments = true
