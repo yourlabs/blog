@@ -1,1 +1,1 @@
-[blo![image]](http://oss.yourlabs.io/yourlabs_blog)
+[blog](http://drclaw.yourlabs.io/yourlabs_blog/)
