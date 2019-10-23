@@ -1,0 +1,6 @@
++++
+date = "2012-07-13T07:16:33+00:00"
+draft = false
+title = "Flairbuilder: The Better Way to Wireframe Websites and Rich Internet Applications"
++++
+A very good website that allows to design website mockups online and share them. Try [Flairbuilder](http://flairbuilder.com/).
