@@ -6,7 +6,7 @@ title = "djcli: the new Django automation CLI command"
 +++
 djcli is the package , a new CLI [under design phase](https://yourlabs.io/oss/djcli), it is a simple python package, that provides a command with name `djcli`, to do more with Django on the CLI:
 
-```
+
 $ pip install djcli
 
 # find the content for this variable in your project manage.py
@@ -42,7 +42,7 @@ $ djcli delete auth.user username=pony --noinput
 
 # you can use other models
 $ djcli create sites.site name='awesome site' domain=awesome.com
-```
+
 
 ## Why not add it to INSTALLED_APPS ?
 

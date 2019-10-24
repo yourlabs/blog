@@ -6,15 +6,15 @@ title = "Never hardcode absolute paths"
 +++
 This is *nonono*:
 
-```
+
 {{< highlight python>}}
     STATIC_ROOT = '/home/coat/www/site/app/static/'
 {{< / highlight>}}
-```
+
 
 **Never** hardcode absolute paths, you're just making your settings file less portable and probably killing kittens. Adapt this to your needs:
 
-```
+
 {{< highlight python>}}
     import os.path
     import posixpath
@@ -26,4 +26,4 @@ This is *nonono*:
     # fix STATICFILES_DIRS too
     # and TEMPLATE_DIRS
 {{< / highlight>}}
-```
+

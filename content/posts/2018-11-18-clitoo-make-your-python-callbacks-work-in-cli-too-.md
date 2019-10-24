@@ -30,13 +30,13 @@ Examples:
 - `clitoo debug your.func -a --b --something='to see' how it=parses`: Dry run of your.mod with arguments, dump out actual calls.
 - `clitoo your.mod.funcname with your=args`: Call your.mod.funcname('with', your='args').
 
-```
+
 $ clitoo debug your.func -a --b --something='to see' how it=parses
 Could not import your.func nor your.func
 Args: ('how',)
 Kwargs: {'it': 'parses'}
 Context args: ['a', 'b']
 Context kwargs: {'something': 'to see'}
-```
+
 
 Get started today with pip install clitoo !

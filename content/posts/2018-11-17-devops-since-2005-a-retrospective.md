@@ -79,7 +79,7 @@ Of course we wanted to keep having deployment pipelines over several environment
 
 So I put together a [quick ansible role](http://github.com/peopledoc/ansible-role-boot) that would create system containers with [LXC on the fly](https://github.com/peopledoc/ansible-boot-lxc/), and another one [for lxd](https://github.com/peopledoc/ansible-boot-lxd/) that works as such, with a test.yml file containing:
 
-```
+
 ---
 
 - hosts: localhost
@@ -94,7 +94,7 @@ So I put together a [quick ansible role](http://github.com/peopledoc/ansible-rol
 - hosts: testboot
   roles:
   - yourroletotest
-```
+
 
 Note that instead of "yourroletotest" you can have a relative path, such as "." if the above test.yml playbook is at the root of a role to test.
 
@@ -141,7 +141,7 @@ To compare the cost of using Molecule overall and testing Ansible with Ansible, 
 
 Consider a [hundred SLOCs provisionner role](https://github.com/peopledoc/ansible-boot-lxd/blob/master/tasks/main.yml):
 
-```
+
 -------------------------------------------------------------------------------
 Language                     files          blank        comment           code
 -------------------------------------------------------------------------------
@@ -149,11 +149,11 @@ YAML                             6             23              1            180
 -------------------------------------------------------------------------------
 SUM:                             6             23              1            180
 -------------------------------------------------------------------------------
-```
+
 
 Well, there's just requirement for the boot role method: have ansible and lxc or lxd working, for which we had a standalone bash script that works both to setup a developer machine, a control host, or to provision CI, with custom ansible versions or branches, and that contained so dirty optimisations that could easily have been dropped by the next maintainer, in 239 SLOC:
 
-```
+
 $ cloc ansible-setup 
        1 text file.
        1 unique file.                              
@@ -165,11 +165,11 @@ Language                      files          blank        comment           code
 --------------------------------------------------------------------------------
 Bourne Again Shell                1             51             47            239
 --------------------------------------------------------------------------------
-```
+
 
 Another requirement is to have a functional ssh-agent, but that's something for another mini role [peopledoc.ssh-agent](https://github.com/peopledoc/ansible-ssh-agent) in 90 SLOCs:
 
-```
+
 github.com/AlDanial/cloc v 1.80  T=0.00 s (1133.5 files/s, 24257.6 lines/s)
 -------------------------------------------------------------------------------
 Language                     files          blank        comment           code
@@ -178,11 +178,11 @@ YAML                             5             15              2             90
 -------------------------------------------------------------------------------
 SUM:                             5             15              2             90
 -------------------------------------------------------------------------------
-```
+
 
 Compare to Molecule:
 
-```
+
 -------------------------------------------------------------------------------
 Language                     files          blank        comment           code
 -------------------------------------------------------------------------------
@@ -194,7 +194,7 @@ Ruby                             1              1              1              5
 -------------------------------------------------------------------------------
 SUM:                           107           2247           3909           6286
 -------------------------------------------------------------------------------
-```
+
 
 Talking about development cost, we're comparing a 180+239+90=509 SLOC solution composed of three loosely coupled components that made sense on their own, with a tightly coupled 6286 SLOC solution, that's an x12 ratio for the test stack, without counting testinfra.
 
@@ -206,7 +206,7 @@ But that's only for the testing tool. We have the chance that Molecule was added
 
 This case is a little bit particular because we're testing the provisionner itself, this is what we had, a test.yml:
 
-```
+
 ----
 
 - hosts: localhost
@@ -225,11 +225,11 @@ This case is a little bit particular because we're testing the provisionner itse
   tasks:
   - name: Check that bind mount works, with a bit of inception
     shell: grep inception /srv/test.yml
-```
+
 
 So, at the end of execution we test that we can SSH on the host that we created, and that we can find the word "inception" that comes from the "grep inception" itself. Then, test.yml was removed and instead we can see in the repo, a whole molecule/default directory:
 
-```
+
 $ tree
 .
 ├── create.yml
@@ -242,11 +242,11 @@ $ tree
 └── tests
     ├── canary
     └── test_default.py
-```
+
 
 ``create.yml`` configures molecule:
 
-```
+
 ---
 - name: Create
   hosts: localhost
@@ -259,11 +259,11 @@ $ tree
     molecule_scenario_directory: "{{ lookup('env', 'MOLECULE_SCENARIO_DIRECTORY') }}"
     molecule_yml: "{{ lookup('file', molecule_file) | molecule_from_yaml }}"
   tasks: []
-```
+
 
 ``destroy.yml`` as well:
 
-```
+
 ---
 - name: Destroy
   hosts: localhost
@@ -275,11 +275,11 @@ $ tree
     molecule_instance_config: "{{ lookup('env', 'MOLECULE_INSTANCE_CONFIG') }}"
     molecule_yml: "{{ lookup('file', molecule_file) | molecule_from_yaml }}"
   tasks: []
-```
+
 
 The molecule.yml file defines a couple of linter calls that could as well just have been added to .travis-ci.yml:
 
-```
+
 $ cat molecule.yml
 ---
 dependency:
@@ -311,11 +311,11 @@ verifier:
   name: testinfra
   lint:
     name: flake8
-```
+
 
 In playbook.yml, we find the test.yml code again that shows the role tasks execution:
 
-```
+
 ---
 - name: Converge
   hosts: all
@@ -334,7 +334,7 @@ In playbook.yml, we find the test.yml code again that shows the role tasks execu
       changed_when: False
   roles:
     - role: ansible-boot-lxc
-```
+
 
 A whole new prepare.yml file is also present to replace ansible-setup which had the advantage of being able to test against a specific branch of ansible in a virtualenv like tox.
 
@@ -344,7 +344,7 @@ Note that the new prepare.yml also calls a new bash script to finish LXC setup.
 
 Next, there is a test directory, which contains a test written in Python:
 
-```
+
 # -*- coding: utf-8 -*-
 import os
 
@@ -384,11 +384,11 @@ def test_lxc_container():
     assert f.exists
     assert f.contains("inception")
     assert not f.contains("not there")
-```
+
 
 So it also works, all this to replace the following maybe was a bit overkill:
 
-```
+
 - hosts: localhost
   pre_tasks:
   - add_host: name=testboot.lxd lxd_alias={{ lookup('env', 'LXD_ALIAS', 'alpine/3.4/amd64' ) }}
@@ -399,7 +399,7 @@ So it also works, all this to replace the following maybe was a bit overkill:
   tasks:
   - name: Check that bind mount works, with a bit of inception
     shell: grep inception /srv/test.yml
-```
+
 
 ## Testing Ansible in Ansible or Molecule for Ansible testing ?
 

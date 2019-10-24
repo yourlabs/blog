@@ -6,7 +6,7 @@ title = "clilabs 1.1.1 release"
 +++
 Clilabs now benefit a new command that automates a series of 3 lines that's I've been typing over and over again during 10 years of Django hacking.
 
-```
+
 $ clilabs help +django:settings
 Setting up django has failed !
 DJANGO_SETTINGS_MODULE env var not set !
@@ -21,14 +21,14 @@ How many times have you done the following ?
 Well it's over now ! Try this instead:
 
     clilabs +django:settings DATABASES INSTALLED_APPS # etc
-```
+
 
 
 Also, clilabs now automaticall detects the DJANGO_SETTINGS_MODULE if not set, by parsing the first manage.py it will find from the current working directory. What ? It's what I'd be doing manually anyway !!!
 
 Let's see that:
 
-```
+
 16/10 2018 13:14:39 jpic@jpic ~/src/djcall  (master)
 $ clilabs +django:settings DATABASES INSTALLED_APPS
 Auto-detected DJANGO_SETTINGS_MODULE=djcall_example.settings
@@ -62,4 +62,4 @@ INSTALLED_APPS=['django.contrib.admin',
  'django_filters',
  'django_tables2',
  'djcall']
-```
+

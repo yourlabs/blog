@@ -10,7 +10,7 @@ Fortunately, [mock-django](https://github.com/dcramer/mock-django) provides plen
 
 A simple example (courtesy of [django-appstore](https://github.com/yourlabs/django-appstore/)), asserts that ``your_function`` sends the right signal:
 
-```
+
 {{< highlight python>}}
     import unittest
     from mock import call
@@ -34,11 +34,11 @@ A simple example (courtesy of [django-appstore](https://github.com/yourlabs/djan
                         appversion=appversion),
                 ])
 {{< / highlight >}}
-```
+
 
 To test that a signal was called several times, with the right arguments in the right order:
 
-```
+
 {{< highlight python>}}
     def test_002_simple_dependency(self):
         artists_app = App.objects.create(name='artists',
@@ -61,4 +61,4 @@ To test that a signal was called several times, with the right arguments in the 
                     appversion=artworks_appversion),
             ])
 {{< / highlight>}}
-```
+

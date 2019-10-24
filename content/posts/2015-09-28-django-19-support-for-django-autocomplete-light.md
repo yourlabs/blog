@@ -8,11 +8,11 @@ Since Django 1.9a1 was released, many users are going to upgrade their project a
 
 Do:
 
-```
+
 {{< highlight bash>}}
     find test/ -name foo -exec sed -i 's/import autocomplete_light/from autocomplete_light import shortcuts as autocomplete_light/' '{}' \;
 {{< / highlight >}}
-```
+
 
 I don't remember why exactly since we've baked Django 1.9 support in April 2015 (victory !!!), but IIRC due to app-loading refactor we can't have anything in `__init__.py` for installed apps just for convenience anymore (ie. model imports). To maintain as much backward compatibility as possible, we still load what we can there, but please use ``autocomplete_light.shortcuts`` instead.
 
@@ -22,7 +22,7 @@ I've pushed the [dj19](https://github.com/yourlabs/django-autocomplete-light/com
 
 Commit [7e6d10e](https://github.com/yourlabs/django-autocomplete-light/commit/7e6d10e07cc3b6931f3ca738d07464d6667d4bda) demonstrates how taking the Generic autocompletes out of `autocomplete_light/__init__.py` was required for Django 1.9 to boot:
 
-```
+
 {{< highlight bash>}}
     $ ./manage.py runserver
     Traceback (most recent call last):
@@ -44,11 +44,11 @@ Commit [7e6d10e](https://github.com/yourlabs/django-autocomplete-light/commit/7e
         raise AppRegistryNotReady("Apps aren't loaded yet.")
     django.core.exceptions.AppRegistryNotReady: Apps aren't loaded yet.
 {{< / highlight>}}
-```
+
 
 Or pass tests:
 
-```
+
 {{< highlight bash>}}
     $ tox
     py34-djangomaster create: /home/jpic/env/src/autocomplete-light/.tox/py34-djangomaster
@@ -137,6 +137,6 @@ Or pass tests:
     django.core.exceptions.AppRegistryNotReady: Apps aren't loaded yet.
     ERROR: InvocationError: '/home/jpic/env/src/autocomplete-light/.tox/py34-djangomaster/bin/py.test --strict -r fEsxXw autocomplete_light'
 {{< / highlight >}}
-```
+
 
 Also, don't forget to [try Django 1.9's new admin theme](http://jpic.pythonanywhere.com) ! </module></module></module></module></module></frozen></frozen></frozen></frozen></frozen></frozen></frozen></module>

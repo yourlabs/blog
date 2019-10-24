@@ -15,7 +15,7 @@ title = "Using bootstrap and less css in django"
 
 This is how your `site_base.html` template could contain:
 
-```
+
 {{< highlight html>}}
     {% if debug %}
         <link rel="stylesheet" type="text/css" href="{% static 'autocomplete_light/style.css' %}" />
@@ -29,19 +29,19 @@ This is how your `site_base.html` template could contain:
          {% endcompress %}
     {% endif %}
 {{< / highlight >}}
-```
+
 
 Ok, that's the ugly part: it's not very DRY ... but it does work really great. As you can see, you need the [debug context processor](https://docs.djangoproject.com/en/dev/ref/templates/api/#django-core-context-processors-debug).
 
 This is how your settings could look like:
 
-```
+
 {{< highlight python>}}
     COMPRESS_PRECOMPILERS = (
         ('text/less', 'recess --compile {infile} > {outfile}'),
     )
 {{< / highlight>}}
-```
+
 
 Note: bootstrap only compiled on recess less compiler when I did this. Maybe other compilers are supported nowadays but I wouldn't bet on it.
 

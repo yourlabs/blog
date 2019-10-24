@@ -46,7 +46,7 @@ models=[YourModelToTest]).assertNoDiff()`` in a
 
 Example:
 
-```
+
 {{< highlight python>}}
     from django import TransactionTestCase
     from dbdiff.fixture import Fixture
@@ -61,7 +61,7 @@ Example:
             Fixture('yourapp/tests/yourtest.json',
                     models=[YourModel]).assertNoDiff()
 {{< / highlight >}}
-```
+
 
 The first time, it will raise a `FixtureCreated` exception, and the test will
 fail. This is to inform the user that the test didn't really run. On the next
@@ -81,9 +81,9 @@ for having 100% coverage.
 
 ### Install
 
-```
+
     Install `django-dbdiff` with pip and add ``dbdiff`` to ``INSTALLED_APPS``.
-```
+
 
 ### Other database testing related app: djmo
 

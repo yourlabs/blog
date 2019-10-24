@@ -6,7 +6,7 @@ title = "playlabs: 30 seconds overview"
 +++
 Quick version of the previous article on playlabs
 
-```
+
 $ playlabs 
 Playlabs: the obscene ansible distribution.
 
@@ -40,6 +40,6 @@ want to version configuration, add a deploy user for your CI, configure a
 secret backup password, add ssh-keys ...:
 
     playlabs scaffold ./your-inventory
-```
+
 
 See the [example inventory that scaffold creates for you](https://yourlabs.io/oss/playlabs/tree/master/playlabs/inventory_template) but in my opinion the most [obscene part is plugins](https://yourlabs.io/oss/playlabs/tree/master/playlabs/plugins).

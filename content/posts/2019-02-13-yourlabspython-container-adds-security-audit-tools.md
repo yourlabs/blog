@@ -8,7 +8,8 @@ The new version of yourlabs/python docker image, which bundles npm and pip3 on a
 
 You can benefit from it in your Open Source software by adding .gitlab-ci.yml:
 
-```
+
+{{< highlight yml>}}
 py-sec-bandit:
   image: yourlabs/python
   script: bandit -v -x commands,tests {posargs:-r src}
@@ -16,4 +17,5 @@ py-sec-bandit:
 py-sec-safety:
   image: yourlabs/python
   script: safety check
-```
+{{< / highlight >}}
+

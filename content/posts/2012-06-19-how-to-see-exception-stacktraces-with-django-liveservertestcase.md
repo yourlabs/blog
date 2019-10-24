@@ -7,7 +7,7 @@ title = "How to see exception stacktraces with django LiveServerTestCase"
 After playing with [selenium and LiveServerTestCase](https://docs.djangoproject.com/en/dev/topics/testing/?from=olddocs#live-test-server) a little while, you might
 see this:
 
-```
+
 {{< highlight python>}}
     Traceback (most recent call last):
       File "/usr/lib/python2.7/wsgiref/handlers.py", line 85, in run
@@ -32,13 +32,13 @@ see this:
         raise TemplateDoesNotExist(name)
     TemplateDoesNotExist: 500.html
 {{< / highlight>}}
-```
+
 
 Adding templates/500.html won't give you a stacktrace.
 
 The solution is to add something like this to [settings.LOGGERS](http://docs.djangoproject.com/en/dev/topics/logging):
 
-```
+
 {{< highlight python>}}
     'handlers': {
         'console':{
@@ -53,4 +53,4 @@ The solution is to add something like this to [settings.LOGGERS](http://docs.dja
             'level':'DEBUG',
         },
 {{< / highlight>}}
-```
+

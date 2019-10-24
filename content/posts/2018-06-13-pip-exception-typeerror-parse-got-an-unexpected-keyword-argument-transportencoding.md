@@ -6,7 +6,7 @@ title = "Pip exception TypeError: parse() got an unexpected keyword argument 'tr
 +++
 I had an old html5lib installed with --user, that would break globally installed pip from my Arch Linux system. Posting the solution that worked for me here because i couldn't find it elsewhere:
 
-```
+
 pip uninstall html
 Uninstalling html5lib-0.9999999:
   Would remove:
@@ -14,13 +14,13 @@ Uninstalling html5lib-0.9999999:
     /home/jpic/.local/lib/python3.6/site-packages/html5lib/*
 Proceed (y/n)? y
   Successfully uninstalled html5lib-0.9999999
-```
+
 
 Then, `pip install --user` worked again.
 
 The full traceback was:
 
-```
+
 Traceback (most recent call last):
   File "/usr/lib/python3.6/site-packages/pip/_internal/basecommand.py", line 228, in main
     status = self.run(options, args)
@@ -49,4 +49,3 @@ Traceback (most recent call last):
   File "/usr/lib/python3.6/site-packages/pip/_internal/index.py", line 753, in __init__
     namespaceHTMLElements=False,
 TypeError: parse() got an unexpected keyword argument 'transport_encoding'
-```

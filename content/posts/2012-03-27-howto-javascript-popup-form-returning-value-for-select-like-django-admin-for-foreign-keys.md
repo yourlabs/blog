@@ -70,7 +70,7 @@ is the name of the attribute which should be used as inner HTML of the option
 
 Example HTML using Uni-form:
 
-```
+
 {{< highlight  html>}}
 <div class="ctrlHolder">;
     <label for="profile"><em>*</em> Profile</label>
@@ -84,11 +84,11 @@ Example HTML using Uni-form:
    </p>
 </div>
 {{< / highlight >}}
-```
+
 
 Example Javascript code with jQuery for the event binding:
 
-```
+
 {{< highlight  js>}}
 $(document).ready(function() {
     $( '.add-another' ).click(function(e) {
@@ -169,20 +169,20 @@ function windowname_to_id(text) {
     return text;
 }
 {{< / highlight >}}
-```
+
 
 Finally, the html which should be returned by the popup when the object is
 saved:
 
-```
+
 {{< highlight html>}}
 <script type="text/javascript">opener.dismissAddAnotherPopup( window, "name", "id" );</script>
 {{< / highlight >}}
-```
+
 
 Example generic PHP usage:
 
-```
+
 {{<highlight php>}}
 if ( isset( $this->request->variables['popup'] ) ) { 
     $result->variables['responseBody'] = sprintf( 
@@ -192,4 +192,4 @@ if ( isset( $this->request->variables['popup'] ) ) {
     );  
 }
 {{< / highlight >}}
-```
+

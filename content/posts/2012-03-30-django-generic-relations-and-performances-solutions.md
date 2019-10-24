@@ -13,7 +13,7 @@ follow me through a generic foreign key … This article targets django users.
 
 At the time this article is written, this is what it looks like:
 
-```
+
 {{< highlight  python>}}
 class Follow(models.Model):
     """ 
@@ -28,7 +28,7 @@ class Follow(models.Model):
     class Meta:
         unique_together = ("user", "content_type", "object_id")
 {{< / highlight >}}
-```
+
 
 The model has two relations:
 
@@ -43,7 +43,7 @@ Django and django-actstream combine perfectly to let you display the list of
 actors followed by ‘user’, with their related profile, and without a single
 line of python code:
 
-```
+
 {{<  highlight html>}}
 {% for follow in user.follow_set.all.select_related %}
     <a href="{{ follow.actor.playlistprofile.get_absolute_url }}" 
@@ -53,13 +53,13 @@ line of python code:
     </a>
 {% endfor %}
 {{< / highlight >}}
-```
+
 
 If actor wasn’t a generic foreign key, the above code would not cost more than
 one database hit!  But actor is a generic key, which makes this snippet a
 query-o-plenty bottleneck:
 
-```
+
 {{< highlight sql>}}
 {% for follow in user.follow_set.all.select_related %} hits ->
 SELECT 
@@ -114,7 +114,7 @@ WHERE "actstream_follow"."user_id" = 175319;
     FROM "playlist_playlistprofile" 
     WHERE "playlist_playlistprofile"."user_id" = 305209;
 {{< / highlight >}}
-```
+
 
 That is, 1 query for the {% for %}, and 2 per loop:
 
@@ -155,7 +155,7 @@ The problem is still the “actor” relation. The quick hack consists of manual
 making one query on the left side and one on the right side of this relation.
 The quick hack looks like:
 
-```
+
 {{< highlight python>}}
 # query for the left side: just selecting ids
 follows_users_ids = []
@@ -171,7 +171,7 @@ for row in cursor.fetchall():
 follows_qs = User.objects.filter(id__in=follows_users_ids) \
                          .select_related('playlistprofile')
 {{< / highlight >}}
-```
+
 The con of this quick hack is that it uses two queries, and thus, is less
 performant than using one single query.
 
@@ -193,7 +193,7 @@ started stating the worst:
 Anyway, in the end, he found a brilliant solution to generate this query in
 pure django:
 
-```
+
 {{< highlight sql>}}
 SELECT 
     "auth_user"."id",
@@ -222,12 +222,12 @@ WHERE "auth_user"."id" IN (
     WHERE (U0."user_id" = 175319 AND NOT (U0."object_id" = 175319 ))) 
 LIMIT 2
 {{< / highlight >}}
-```
+
 
 This is the python code used by rozwell to defeat the generic key relation
 bottleneck:
 
-```
+
 {{< highlight python>}}
 follows_users_ids = Follow.objects.filter(user=user) \
                                   .exclude(object_id=user.pk) \
@@ -235,7 +235,7 @@ follows_users_ids = Follow.objects.filter(user=user) \
 follows_qs = User.objects.filter(id__in=follows_users_ids) \
                          .select_related('playlistprofile')
 {{< / highlight >}}
-```
+
 Note that the content type is not used in the filters, it is left as an exercise for the reader.
 
 #### Conclusion

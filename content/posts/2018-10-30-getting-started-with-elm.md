@@ -14,7 +14,7 @@ In this short tutorial, we create a basic counter application that changes the t
 
 Here are the necessary imports:
 
-```elm
+elm
 import Browser
 import Html exposing (Html, button, div, text, h1)
 import Html.Events exposing (onClick)
@@ -22,13 +22,13 @@ import Html.Attributes exposing (alt, class, classList, href, src, title, style)
 
 main =
   Browser.sandbox { init = init, update = update, view = view }
-```
+
 
 ## The model
 
 In elm, the idea is that your view is a function of some data. This data is defined in the model, that's its purpose! Let's see how we can define our model
 
-```elm
+elm
 type alias Model =
     { title : String
     , color1 : String
@@ -38,7 +38,7 @@ type alias Model =
 
 init : Model
 init = Model "Error 500" "red" "green" 0
-```
+
 
 Here, we are create a **type alias**, which is very similar to a C `struct`. That is it allows us to define custom types.
 
@@ -48,7 +48,7 @@ In the above code, we create a constant (there are no mutable variables in Elm, 
 
 Because in Elm our page is a function of our model, whenever we want to cause a change in our view, we shall mutate our model with *transition functions* which will the re-render our view based on the new values of our model: our new *application state*.
 
-```elm
+elm
 type Msg = Increment | Decrement
 
 update : Msg -> Model -> Model
@@ -59,7 +59,7 @@ update msg model =
 
     Decrement ->
       Model model.title model.color1 model.color2 (model.count - 1)
-```
+
 
 In the above code, we define 2 state transitions, one for incrementing `init.count` and one for decrementing it. But really, if there isn't a state transition for each of our state variables, then it means that we could remove them from our model. In this example, it makes no sense to have `title`, `color1`, and `color2` in our model since we don't define transitions for them.
 
@@ -80,7 +80,7 @@ Finally, we define our *view*. Remember that our view is a function of our curre
 
 Bellow is a code where we define our `view` component that uses a `title` component.
 
-```elm
+elm
 type alias TitleProps =
     { title : String
     , color: String
@@ -99,7 +99,7 @@ view model =
     , div [] [ text (String.fromInt model.count) ]
     , button [ onClick Increment ] [ text "+" ]
     ]
-```
+
 
 Notice that our `view` function takes a `model` argument of type `Model` and returns an `Html Msg`. This is different from our `title` function which take a `TitleProps` as an input and return an `Html Msg`.
 
@@ -113,9 +113,9 @@ We can also define a `title` component that takes a title and a color as argumen
 
 If you put your source files in `src/` and called your Elm file `Main.elm`, then you can compile your application with the following command:
 
-```sh
+sh
 elm make src/Main.elm
-```
+
 
 Which will produce a self contained `index.html` with inlined javascript.
 

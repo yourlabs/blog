@@ -15,7 +15,7 @@ doing the high-level assertions of page HTML rendering.
 
 Consider this example:
 
-```
+
 {{< highlight python>}}
     class TestYourView(TestCase):
         def test_your_page(self):
@@ -27,7 +27,7 @@ Consider this example:
             # Generate the fixture if necessary, otherwise GNU diff-it
             expected.assertNoDiff(result)
 {{< / highlight >}}
-```
+
 
 On the first run, this would create a directory in the directory containing
 TestYourView, named ``responsediff_fixtures``, with a sub-directory

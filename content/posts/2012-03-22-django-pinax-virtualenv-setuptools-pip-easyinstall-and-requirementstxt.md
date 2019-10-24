@@ -25,7 +25,7 @@ Now your "python" command should be the one from my_env_name/bin/python. And eve
 
 If you want to avoid conflicts with the system-wide site-packages, you might as well use the (*update*: now default)`--no-site-packages` option to create the virtualenv.
 
-```
+
 {{< highlight  sh >}}
     Pip
     Usage
@@ -42,7 +42,7 @@ If you want to avoid conflicts with the system-wide site-packages, you might as 
       unzip: Unzip individual packages
       zip: Zip individual packages
 {{< / highlight>}}
-```
+
 
 #### Simple package installation
 

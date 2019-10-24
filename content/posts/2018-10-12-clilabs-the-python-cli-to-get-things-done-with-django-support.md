@@ -8,7 +8,7 @@ Sometimes I want to execute a python callback with some args on the command line
 
 Get started:
 
-```
+
 $ pip install clilabs
 $ clilabs
 clilabs automates python callables parametered calls.
@@ -23,6 +23,6 @@ Examples:
     clilabs help clilabs.django
     clilabs clilabs.django:list auth.user
     clilabs +django:list auth.user  # also works
-```
+
 
 Moar in tutorial.md

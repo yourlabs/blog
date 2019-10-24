@@ -10,7 +10,7 @@ This article demonstrates how to easily create your own keyboard layout by exten
 
 Just add a file in `~/.xkb/symbols`, for example I put mine in `/home/jpic/.xkb/symbols/code`, and looks as such:
 
-```
+
 // Dvorak variant for polyglot coder
 
 partial alphanumeric_keys
@@ -36,12 +36,12 @@ xkb_symbols "dvorak-intl-code" {
 
     include "level3(ralt_switch)"
 };
-```
+
 
 Then, such a command can load it:
 
-```
+
 setxkbmap -I ~/.xkb code -print | xkbcomp -I$HOME/.xkb - $DISPLAY
-```
+
 
 That's it, have fun creating your own perfect layout !

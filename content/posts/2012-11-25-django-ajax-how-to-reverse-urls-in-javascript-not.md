@@ -8,13 +8,13 @@ title = "Django & ajax: how to reverse urls in javascript (not)"
 
 You can start building a user interface using Django's awesome CRUD in a matter of seconds, for example with just this server side configuration:
 
-```
+
 {{< highlight python>}}
     url(delete/(?P<pk>\d+)/$', 
         generic.DeleteView.as_view(model=YourModel),
         name='yourapp_yourmodel_delete'),
 {{< / highlight >}}
-```
+
 
 <!--more-->
 
@@ -32,7 +32,7 @@ A rich user interface might need to work with many Django views. It might even n
 
 A quick and easy way to do clear the way is to use the PkUrlKwarg mixin:
 
-```
+
 {{< highlight python>}}
     class PkUrlKwarg(SingleObjectMixin):
         """
@@ -43,11 +43,11 @@ A quick and easy way to do clear the way is to use the PkUrlKwarg mixin:
             self.kwargs[self.pk_url_kwarg] = self.request.REQUEST['pk']
             return super(PkUrlKwarg, self).get_object(queryset)
 {{< / highlight >}}
-```
+
 
 This will make `/update/?pk=123` to behave like `/update/123/`, eliminating the need to reverse urls:
 
-```
+
 {{< highlight python>}}
     # url
     url(r'tab/delete/$',
@@ -58,7 +58,7 @@ This will make `/update/?pk=123` to behave like `/update/123/`, eliminating the 
     class TabDeleteView(PkUrlKwarg, TabSecurity, AjaxDeleteView):
         model = Tab
 {{< / highlight >}}
-```
+
 
 ### Blablablabla
 
