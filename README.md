@@ -1,1 +1,1 @@
-[blog](http://drclaw.yourlabs.io/yourlabs_blog/)
+[blog](https://oss.yourlabs.io/blog/)
