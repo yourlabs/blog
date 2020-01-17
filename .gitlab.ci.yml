@@ -12,8 +12,6 @@ test:
 
 pages:
   script:
-  - env | grep PAGES
-  - sed -i "s@^baseurl.*@baseurl = \"$CI_PAGES_URL\"@" config.toml
   - hugo
   artifacts:
     paths:
