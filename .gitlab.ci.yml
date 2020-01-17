@@ -12,7 +12,7 @@ test:
 
 pages:
   script:
-  - sed -i "s/^baseurl.*/baseurl = \"$CI_PAGES_URL\"/"
+  - sed -i "s@^baseurl.*@baseurl = \"$CI_PAGES_URL\"@"
   - hugo
   artifacts:
     paths:
