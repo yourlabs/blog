@@ -101,6 +101,12 @@ not to run them as root after all.
 npm_config_prefix=$HOME/.local npm install -g cypress
 ```
 
+If you have node but not npm, install it as such:
+
+```
+npm_config_prefix=$HOME/.local curl -L https://npmjs.org/install.sh | sh
+```
+
 Then, the cypress command will work, also tried the eslint package and it seems
 to work.
 
