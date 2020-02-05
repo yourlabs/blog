@@ -84,16 +84,18 @@ polluting ``/`` which is not supposed to be writable by non-root users. It will
 contain directories such as ``/bin``, `/lib`, `/share`, `/etc`, `/include`,
 `/man` ...
 
-The only trick is to update the PATH variable as such:
+The only trick is to bend npm with the `$npm_config_prefix` environment variable
+and change `$PATH` and `$NODE_PATH` as such:
 
 ```
 export PATH=$HOME/.local/bin:$PATH
+export NODE_PATH=$HOME/.local/lib/node_modules:$NODE_PATH
+export npm_config_prefix=$HOME/.local
 ```
 
-Then, you can normally install a global node package that you don't want to
-pollute `package.json` or all CI stages with, or want to have at any time in your shell
-environment for work, the following npm command installs perfectly fine as non
-root in `$HOME/.local/bin` without altering your environment:
+Then, both `npm install -g` and `pip install --user` will work as your normal
+user: you're executing dependencies you've downloaded from internet, you'd like
+not to run them as root after all.
 
 ```
 npm_config_prefix=$HOME/.local npm install -g cypress
