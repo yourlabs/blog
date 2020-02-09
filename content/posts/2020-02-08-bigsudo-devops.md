@@ -285,4 +285,15 @@ containers some times, so that's something to be pretty careful with. However,
 this is never a problem in most projects so always be careful to verify your
 backups prior to operating on a database or file system.
 
-It's a bit tricky to setup monitoring on databases running inside docker too.
+It's a bit tricky to setup monitoring on databases running inside docker too,
+so you should favor not containerizing your production database.
+
+## Source code
+
+You can find source code matching this practice on github.com/betagouv/mrs
+
+## Future
+
+I'd like to have less configuration files in the future, if only I could have a
+nice little Python framework to replace my Dockerfile and docker-compose files
+... well that's what I'm currently working on in yourlabs.io/oss/podctl
