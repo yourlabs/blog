@@ -5,8 +5,6 @@ tags = []
 title = "BigSudo eXtreme DevOps: Hacking Operations"
 +++
 
-# BigSudo eXtreme DevOps: Hacking Operations
-
 BigSudo is a command line generator wrapping around Ansible: the excellent tool
 for automating operations which has proven itself in an extremely heterogenic
 ecosystem over the course of the last years, and currently maintained by Red
