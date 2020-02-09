@@ -296,4 +296,6 @@ You can find source code matching this practice on github.com/betagouv/mrs
 
 I'd like to have less configuration files in the future, if only I could have a
 nice little Python framework to replace my Dockerfile and docker-compose files
+which would support ephemeral deployments and backup/restore as well as custom
+operations out of the box
 ... well that's what I'm currently working on in yourlabs.io/oss/podctl
