@@ -260,22 +260,26 @@ regression ? how can I measure the impact on the user base ?
 But, prior to doing deployments, ensure that your systems have properly
 integrated new upstream versions: do the package update and upgrade operations
 and ensure services are functionnal after a reboot, first on the staging server
-and once that succeeds fully on the production server.
+and once that succeeds fully then on the production server.
 
 Deployments must be as small and often as possible (objective 10 deploys a
 day), rather than big and once in a month or week.
 
 When you write data migrations there will be a good chances you enjoy the
-restore.sh script after an unexpected data migration input or something.
+`restore.sh` script after an unexpected data migration input or something (ie.
+we have injected legacy data in production).
 
-Any breaks or step that takes more than 5 minutes should be reviewed,
-considered as "impediments". A typical pipeline for a full project should not
-exceed 25 minutes from master to production.
+In the pipeline, any breaks or step that takes more than 5 minutes should be
+reviewed, considered as "impediments". A typical pipeline for a full project
+should not exceed 25 minutes from master to production.
 
 It's okay if you wrap the line that connects through SSH in a one-liner in a CI
 script, something like this for example would be fine:
 
     mkdir -p ~/.ssh; echo "$SSH_KEY" > ~/.ssh/id_ed25519; echo "$SSH_FINGERPRINTS" > ~/.ssh/known_hosts; chmod 700 ~/.ssh; chmod 600 ~/.ssh/*
+
+You can use the `yourlabs/ansible` image which contains ansible, bigsudo and
+the whole [yourlabs role distribution](https://galaxy.ansible.com/yourlabs/).
 
 ### Continuous Deployment
 
@@ -323,9 +327,9 @@ will ask if you use something like Slack for your webhook URLs so that you can
 get alerting from Slack and Telegram for example. Netdata will warn you if it
 calculates that your disk drive will be full in 7 hours for example.
 
-Ideally, you'd create a pingdom so that each server monitors the other, then
-you don't need an external uptime monitoring service. Netdata is great at
-alerting prior to catastrophies, but how you respond to them is another story.
+Ideally, you'd configure each netdata to monitor the other, then you don't need
+an external uptime monitoring service. Netdata is great at alerting prior to
+catastrophies, but how you respond to them is another story.
 
 Netdata is great at discovering services running on a server: it will monitor
 every postgresql database it finds. Note that it won't look for databases
