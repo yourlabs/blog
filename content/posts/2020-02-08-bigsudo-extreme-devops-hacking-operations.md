@@ -5,17 +5,21 @@ tags = []
 title = "BigSudo eXtreme DevOps: Hacking Operations"
 +++
 
-BigSudo is a command line generator wrapping around Ansible: the excellent tool
-for automating operations which has proven itself in an extremely heterogenic
-ecosystem over the course of the last years, and currently maintained by Red
-Hat.
+**[BigSudo](https://pypi.org/project/bigsudo/)** is a command line generator
+wrapping around [Ansible](https://ansible.com): the excellent tool for
+automating operations which has proven itself in an extremely heterogenic
+ecosystem over the course of the last years, and currently maintained by [Red
+Hat](https://redhat.com).
 
-eXtreme DevOps is when code traditionnaly known as network and infrastructure
+**eXtreme DevOps** is when code traditionnaly known as network and infrastructure
 operations automation meet continuous integration, merges with continuous
 delivery, made it almost trivial to deploy per-branch ephemeral deployments on
-each git push, say on `test-$GIT_BRANCHNAME.ci.example.com`.
+each git push, say on `test-$GIT_BRANCHNAME.ci.example.com`, so that the
+product team can review a feature during development without forcing the
+developer to merge unfinished code into master, in order to keep the master
+branch clean and deployable at any moment.
 
-Hacking Operations on network and infrastructure means that we are going to
+**Hacking Operations** on network and infrastructure means that we are going to
 integrate bash scripts into an orchestrator with many expendable strategies.
 The orchestrator itself proposes an amazing number of plugins natively and has
 a thriving hacking ecosystem: you can even start from a code copy of many of
@@ -28,10 +32,11 @@ such no HA layer is introduced, although HA compatibility is not impossible to
 do with a bit of code: not the worries of our current userbase anyway.
 
 However, we adopt eXtreme Programing basics plus custom research or development
-in the field, for one reason: we need fast and efficient iterations to create
-more and faster than competition.
+in the field, because we need fast and efficient iterations to create more and
+faster than competition, or just to spend more time hacking on personal
+projects !
 
-Our setup fits on two servers:
+Our plan:
 
 - deploy ci (Continuous Integration) server
 - deploy production (Live Customers) server
@@ -55,40 +60,39 @@ As such, the partitioning has to be done manually on both servers unless the
 disks are the same size. Using fdisk, mdadm and btrfs on the command line is
 perfect.
 
-- /var/lib/docker: the btrfs partition volume for Docker, might not be
+- `/var/lib/docker`: the btrfs partition volume for Docker, might not be
   necessary, but this is ended becoming a regular automation so I would advise
   going through btrfs on /var/lib/docker
 
-- /home: all human user (bob, alice) and project deployment (test, staging,
+- `/home`: all human user (bob, alice) and project deployment (test, staging,
   production...) data. This should be the largest partition in our setup.
 
-- /: well, we don't need /boot because we're booting the default Linux kernel
-  which probably shows the default config in /proc anyway, most likely in this
-  setup 20G is plenty enough, but 5 should also work after only docker runs in
-  this setup and data accumulates only in /var/lib/docker and /home as
-  described above
+- `/`: well, we don't need /boot because we're booting the default Linux kernel
+  which probably shows the default config in /proc anyway so we benefit from no
+  protection if `/boot` is not mounted, most likely in this setup 20G is plenty
+  enough, but 5 should also work after only docker runs in this setup and data
+  accumulates only in `/var/lib/docker` and `/home` as described above
 
-- swap: you want disk-time before you can't SSH connect to your server
+- `swap`: you want disk-time before you can't SSH connect to your server
   anymore when memory becomes insufficient.
 
-- /backup: in production, you would want your database to dump which involves a
+- `/backup`: in production, you would want your database to dump which involves a
   disk copy on a different raid array, especially if you have HDDs (production:
   for disk space rather than speed)
 
 Choose a server with sufficient size for 6 months of production, based on
 traffic estimates and the likes. You will need to be able to re-install a
-server in 30 minutes or have a definitive ETA at this stage (file copy in
+server in 30 minutes, after 30 minutes have a definitive ETA (file copy in
 progress from remote backup site ?).
 
 ## Network architecture
 
 Both of your servers should run with the same domain name ("example.com"), and
-different hostnames ("ci", "production"). The FQDN (Fully Qualified Domain
-Name) of each server will be composed of hostname dot domain:
-"ci.example.com" and "production.example.com", the latter might also be named
-"prod.example.com" in which case it might stand for production. You might want
-to use the `bigsudo yourlabs.fqdn @host` command to sort it out with an
-interacttive wizard.
+different hostnames (`ci`, `production`). The **FQDN** (Fully Qualified Domain
+Name) of each server will be composed of hostname dot domain: `ci.example.com`
+and `production.example.com`, the latter might also be named `prod.example.com`
+in which case it might stand for production. You might want to use the `bigsudo
+yourlabs.fqdn @host` command to sort it out with an interacttive wizard.
 
 ### SSH
 
@@ -99,6 +103,19 @@ yourlabs.ssh someuser@somehost` does that:
 - sshd: disable password login, root login
 - create our user copy our ssh public key and grant sudo access without
   password
+
+`yourlabs.ssh` also provides a command to add a user given a github username,
+this is the command you could do to add me on your server for support:
+
+    bigsudo yourlabs.ssh adduser usergroups=sudo username=jpic @somehost
+
+If your user has a different username on github or published their private key
+elsewhere, you will need to type a little more:
+
+    bigsudo yourlabs.ssh adduser usergroups=sudo username=test key=https://gitlab.com/foobar.keys @somehost
+
+Or, you can still do that manually, but doing the same operation manually over
+and over might motivate you to script it.
 
 ### HTTP
 
@@ -133,25 +150,61 @@ web network will become usable by traefik.<
 We're going to split our configuration into multiple file so that we can
 maintain and reuse them:
 
-- docker-compose.yml for basic service configuration, core dependency of the
+- `docker-compose.yml` for basic service configuration, core dependency of the
   following
-- docker-compose.traefik.yml exposes the stack being the traefik LB
-- docker-compose.persist.yml persists deployments (staging, production ...)
-- docker-compose.override.yml for local development, startup command overrides,
-  mount source volumes ...
-- docker-compose.basicauth.yml to enable HTTP basic auth (non-production)
-- docker-compose.maildev.yml optionnal, adds maildev to the stack
+- `docker-compose.traefik.yml` exposes the stack being the traefik LB
+- `docker-compose.persist.yml` persists deployments (staging, production ...)
+  on volumes and also enable restart on each service
+- `docker-compose.override.yml` for local development, startup command
+  overrides, mount source volumes ...
+- `docker-compose.basicauth.yml` to enable HTTP basic auth (non-production)
+- `docker-compose.maildev.yml` optionnal, adds maildev to the stack
 
 So, the following combinations will be usable:
 
-- docker-compose+traefik+persist: production
-- docker-compose+traefik+persist+basicauth+maildev: staging
-- docker-compose+traefik+basicauth+maildev: ephemeral testing deployments
-- docker-compose+override: localhost
+- production: docker-compose+traefik+persist
+- staging: docker-compose+traefik+persist+basicauth+maildev
+- ephemeral testing deployments: docker-compose+traefik+basicauth+maildev
+- localhost: docker-compose+override
+
+Persistent deployments will be done in a `/home` directory, but ephemeral ones
+should not depend on having a directory. Since we still need the docker-compose
+file to control ephemeral stacks, we store it somewhere such as
+`~/.ephemeral-compose` or `~/.yourlabs.compose` if using `bigsudo
+yourlabs.compose`.
+
+Now for ephemeral deployments, you may add a cron or something to
+clean old deployment, but otherwise just restarting the CI server and then
+running `docker system prune -af` should clean it up because non-persistent
+deployments should not have `restart: always` policy.
+
+Still, `bigsudo yourlabs.compose` supports a `lifetime` argument which will
+create a file `removeat` next to the copied compose backup with the timestamp
+that it should be destructed after. `yourlabs.compose` will also deploy a
+systemd timer (with the `yourlabs.timer` ansible role, thanks to bigsudo's
+automatic dependency resolution) which will daily check for these lifetime
+files on the system and destroy the stacks which lifetime has been reached,
+example:
+
+    #!/bin/bash -eu
+    for home in /root /home/*; do
+        [ -d $home/.yourlabs.compose ] || continue
+        pushd $home/.yourlabs.compose &> /dev/null
+        for project in *; do
+            [ -f $project/removeat ] || continue
+            if [[ $(date +%s) -gt $(<$project/removeat) ]]; then
+                pushd $project
+                docker-compose down --rmi all --volumes --remove-orphans
+                popd &> /dev/null
+                rm -rf $project
+            fi
+        done
+        popd &> /dev/null
+    done
 
 ### Infrastructure code
 
-The ansible directory should contain a "deploy.yml" (you might find "site.yml")
+The ansible directory should contain a `deploy.yml` (you might find "site.yml")
 playbook which orchestrates the deployment work:
 
 - send a ChatOps notification (ie. Slack)
@@ -164,24 +217,25 @@ playbook which orchestrates the deployment work:
 
 It is based on a handful of scripts:
 
-- backup.sh: dump data from container, add them to the encrypted backup repo,
+- `backup.sh`: dump data from container, add them to the encrypted backup repo,
   mirror repo
-- restore.sh: download repo from mirror if repo is absent and print the list of
-  backups,
-- restore.sh <backup-id>: extract backup from repo, re-create containers and
+- `restore.sh`: download repo from mirror if repo is absent and print the list
+  of backups,
+- `restore.sh <backup-id>`: extract backup from repo, re-create containers and
   load data into them
-- prune.sh: apply the retencion policy, cleans old backups.
+- `prune.sh`: apply the retencion policy, cleans old backups.
 
 So, obviously the backup receipe should install missing packages (restic ? lftp
 ?), create the persistent directories, generate and upload the backup lifecycle
-management scripts.
+management scripts. Also: automate a backup so that you can still rollback
+after deploying a problematic data migration.
 
 #### Check
 
 A basic check at the end of a deployment will help eliminate false-positives,
 ie.: container stack started, but service not actually starting right. This is
 something we want to catch with a non-infinite loop at least with curl, so that
-we can return the proper exit code from deploy.yml or whatever we name our
+we can return the proper exit code from `deploy.yml` or whatever we name our
 deployment script. The point is integration in the continuous integration
 pipeline as such the return call is critical: work on eliminating false
 results.
@@ -197,19 +251,22 @@ go ahead and automate it too.
 ### Continuous Integration
 
 As a developer, I am responsible for the deliveries I make myself to the
-"production" platform in the hands of end users. As such, my work starts not
-when I get specifications nor write the first version, but rather when
-investigating the effects of the patch that is actually in production runtime.
+"production" platform in the hands of end users. As such, my work on a feature
+finishes not after I push a patch in a branch, not after it has passed tests,
+not after it was deployed into production, but after I have investigated on the
+effects of my patch in production: did it cause significant performance
+regression ? how can I measure the impact on the user base ?
 
-Prior to doing deployments, ensure that your systems have properly integrated
-new upstream versions: do the package update and upgrade operations and ensure
-services are functionnal after a reboot, first on the staging server and once
-that succeeds fully on the production server.
+But, prior to doing deployments, ensure that your systems have properly
+integrated new upstream versions: do the package update and upgrade operations
+and ensure services are functionnal after a reboot, first on the staging server
+and once that succeeds fully on the production server.
 
-Deployments must be as small and often as possible, rather than big and once in
-a month or week. When you write data migrations there will be a good chances
-you enjoy the restore.sh script after an unexpected data migration input or
-something.
+Deployments must be as small and often as possible (objective 10 deploys a
+day), rather than big and once in a month or week.
+
+When you write data migrations there will be a good chances you enjoy the
+restore.sh script after an unexpected data migration input or something.
 
 Any breaks or step that takes more than 5 minutes should be reviewed,
 considered as "impediments". A typical pipeline for a full project should not
