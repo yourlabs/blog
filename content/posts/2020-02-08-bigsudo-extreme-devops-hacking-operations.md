@@ -1,6 +1,6 @@
 +++
 date = "2020-02-08T13:37:00+00:00"
-draft = true
+draft = false
 tags = []
 title = "BigSudo eXtreme DevOps: Hacking Operations"
 +++
