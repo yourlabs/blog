@@ -31,8 +31,8 @@ ludique dans une esthétique hacker local.
 ## L'audit Blackbox
 
 **L'audit "blackbox"** scanne votre zone publique avec les outils spécialisés dans
-les langages et protocoles de communication des services exposés sur le réseau
-public (internet).
+les langages et protocoles de communication des services (HTTP, DNS, SSH, ...)
+exposés sur le réseau public (internet).
 
 **Le but** d'un tel audit est d'**identifier les vecteurs d'attaques** au
 travers de la zone réseau et géographique publique (internet, lieux publics)
