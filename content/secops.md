@@ -15,8 +15,9 @@ entreprises et services qui traitent de l'information privée.
 
 YourLabs Security Service propose un catalogue de prestations en
 constante évolution accessibles sous forme de missions ponctuelles pour
-justifier d'une obligation de moyens jusqu'à la surveillance continue contre
-les cyber criminels et autres menaces qui planent sur votre entreprise.
+justifier d'une obligation de moyens contre les cyber criminels jusqu'à la
+surveillance continue contre les autres menaces qui planent sur votre
+entreprise.
 
 ## Services
 
