@@ -68,11 +68,15 @@ de failles plus difficiles mais pas impossibles à voir en blackbox.
 
 ## L'audit pénétration
 
-L'**audit pénétration** étudie les possibilités d'infiltration, exfiltration de
-données, installations de malwares, de mouchards pour intercepter voire
-modifier le réseau à la volée, injection de certificats maitres sur les postes
-fixes pour trahir les protocoles de chiffrements, au travers de tactiques sans
-effraction de haute voltige: piratage de badges d'accès, crochetage de serrure
-de porte, baie de disque ou rack de serveur, escalade, neutralisation
-d'alarmes, de caméras et détecteurs en tout genre, usurpation d'identité ou de
-fonction...
+L'**audit pénétration** met en application le fruit des audits blackbox et 
+whitebox sur le terrain, permettant a l'entreprise de tester en situation réele 
+les risques d'infiltration, exfiltration de données, installations de malwares, 
+de mouchards pour intercepter voire modifier le réseau à la volée, 
+injection de certificats maitres sur les postes fixes pour trahir les protocoles
+de chiffrements, au travers de tactiques sans effraction de haute voltige: 
+piratage de badges d'accès, crochetage de serrure de porte, baie de disque ou 
+rack de serveur, escalade, neutralisation d'alarmes, de caméras et détecteurs en
+tout genre, usurpation d'identité ou de fonction...
+
+L'**audit pénétration** est la meilleure chance pour l'entreprise de constater
+et colmater les failles découvertes à tous les niveaux.
