@@ -8,7 +8,8 @@ Rien n'est impiratable: du piratage de mot de passe à l'injection de shellcode
 écrit pour une occasion qui se présente, comme des portes qu'ouvrent
 l'ingénierie sociale ajoutant le fameux facteur humain, tous les moyens sont
 bons pour escalader d'un privilège 0 à des ressources vitales pour
-l'entreprise.
+l'entreprise. La cyber-défense est un sujet incontournable pour toutes les
+entreprises et services qui traitent de l'information privée.
 
 ## Audits de sécurité ponctuels et continus
 
@@ -58,3 +59,9 @@ mobile, windows ...), infrastructures maintenances pour des tiers n'ayant pas
 donné leur accord écrit réglementaire préalable (clients, services publics
 ...), pénétration des locaux de jour, pénétration des locaux de nuit, phishing
 ...
+
+## L'audit whitebox
+
+L'**audit whitebox** est typiquement conduit en deuxième phase, passe par
+l'analyse statique du code source et des dépendances, et permet de se prémunir
+de failles plus difficiles mais pas impossibles à voir en blackbox.
