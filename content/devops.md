@@ -24,4 +24,4 @@ reproductible et automatique, persistents ou éphemères, pour vos propres
 applicatifs comme pour vos outils de monitoring, réseau, infrastructure...
 
 Une réponse en moins d'une heure soir & weekend compris pour toute urgence
-est offert avec chaque prestation à partir de 3750€ par mois.
+est offert avec chaque prestation à partir de 4250€ par mois.
