@@ -2,7 +2,7 @@ baseurl = "https://blog.yourlabs.org"
 contentdir    = "content"
 layoutdir     = "layouts"
 publishdir    = "public"
-title = "Yourlabs Blog"
+title = "Yourlabs"
 canonifyurls  = true
 
 DefaultContentLanguage = "en"
@@ -14,7 +14,7 @@ pygmentCodeFences = true
 #googleAnalytics = "XXX"
 
 [Params]
-  subtitle = "Where Hack meet Art"
+  subtitle = "Hack meets Art"
   logo = "img/logo.png"
   favicon = "img/logo.png"
   dateFormat = "2 January 2006"
@@ -48,8 +48,24 @@ pygmentCodeFences = true
 
 [[menu.main]]
     name = "About"
-    url = "page/about/"
+    url = "about/"
     weight = 3
+
+[[menu.main]]
+    name = "Service"
+    weight = 3
+
+[[menu.main]]
+    name = "Securité"
+    url = "blackbox/"
+    weight = 3
+    parent = "Service"
+
+[[menu.main]]
+    name = "DevOps"
+    url = "devops/"
+    weight = 3
+    parent = "Service"
 
 [[menu.main]]
     name = "Tags"
