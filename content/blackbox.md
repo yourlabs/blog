@@ -11,22 +11,25 @@ option, et probablement d'animer gratuitement un
 pour partager l'état d'esprit de la sécurité dans le cadre d'une ambiance
 convivialle et ludique dans une esthétique hacker local.
 
-Le premier rapport d'audit "blackbox" détaille niveaux (note sur 10) de risques
-de pénétration dans le premier périmètre de sécurité accessible au travers du
-réseau public (internet, cloud public ...). Les vecteurs d'attaques qu'un
-hacker équipé d'outils spécialisés et maison sont ainsi identifiés avant qu'un
-ingénieur informatique malveillant n'en exploite des bénéfices au détriment du
-revenu ou de l'image de marque du protégé, dans le cadre d'attaques à distances
-et d'[opérations d'infiltration faciles à
-difficiles](https://gitpitch.com/yourlabs/security).
+L'audit "blackbox" scanne votre zone publique avec les outils spécialisés dans
+les langages et protocoles de communication des services exposés sur le réseau
+public (internet, cloud public ...).
 
-Le rapport d'audit blackbox analyse les résultats des scans d'outils
-spécialisés en vue de pénétrer théoriquement au sein de l'entreprise au travers
-de la zone réseau et géographique publique exclut les recherches plus
-appronfondies de cibles distinctes: client lourd (app mobile, windows ...),
-infrastructures maintenances pour des tiers n'ayant pas donné leur accord écrit
-réglementaire préalable (clients, services publics ...), pénétration des locaux
-de jour, pénétration des locaux de nuit, phishing ...
+Les vecteurs d'attaques qu'un hacker équipé d'outils spécialisés et maison sont
+ainsi identifiés avant qu'un ingénieur informatique malveillant n'en exploite
+des bénéfices au détriment du revenu ou de l'image de marque du protégé, dans
+le cadre d'attaques à distances et d'[opérations d'infiltration avec divers
+gadgets spécialisés](https://gitpitch.com/yourlabs/security).
+
+Le **rapport d'audit** blackbox analyse les résultats et determine le niveau de
+risque (note sur 10) de chaque vecteur de penetration de l'entreprise au
+travers de la zone réseau et géographique publique.
+
+L'audit blackbox exclut les recherches plus appronfondies de cibles distinctes:
+client lourd (app mobile, windows ...), infrastructures maintenances pour des
+tiers n'ayant pas donné leur accord écrit réglementaire préalable (clients,
+services publics ...), pénétration des locaux de jour, pénétration des locaux
+de nuit, phishing ...
 
 Un rapport de contre-audit est offert avec chaque prestation à partir de 4250€.
 
