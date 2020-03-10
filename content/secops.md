@@ -56,9 +56,9 @@ d'infiltration aux gadgets](https://gitpitch.com/yourlabs/security).
 L'audit blackbox exclut les recherches plus approfondies de cibles distinctes:
 analyse statique de code source (whitebox), client lourd non-publics (app
 mobile, windows ...), infrastructures maintenances pour des tiers n'ayant pas
-donné leur accord écrit réglementaire préalable (clients, services publics
-...), pénétration des locaux de jour, pénétration des locaux de nuit, phishing
-...
+donné leur accord écrit réglementaire préalable (clients, prestataires,
+services publics ...), pénétration des locaux de jour, pénétration des locaux
+de nuit, phishing ...
 
 ## L'audit whitebox
 
