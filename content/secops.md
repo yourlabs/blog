@@ -21,12 +21,12 @@ les cyber criminels et autres menaces qui planent sur votre entreprise.
 ## Services
 
 **Rapport écrit personnalisés** certifiant des niveaux de risques des failles
-detectées, avec compte rendu stratégique pour décideur d'une demie journée sur
+détectées, avec compte rendu stratégique pour décideur d'une demie journée sur
 site en option.
 
 Animation en interne d'un
 [meetup](https://www.meetup.com/Angouleme-Hack-Dev-Barcamp-1337/) pour cultiver
-l'état d'esprit de la sécurité dans le cadre d'une ambiance convivialle et
+l'état d'esprit de la sécurité dans le cadre d'une ambiance conviviale et
 ludique dans une esthétique hacker local.
 
 ## L'audit Blackbox
@@ -44,8 +44,8 @@ d'infiltration aux gadgets](https://gitpitch.com/yourlabs/security).
 
 ## Le rapport d'audit et de contre-audit
 
-Le **rapport d'audit** blackbox analyse les résultats et determine le niveau de
-risque (note sur 10) de chaque vecteur de penetration.
+Le **rapport d'audit** blackbox analyse les résultats et détermine le niveau de
+risque (note sur 10) de chaque vecteur de pénétration.
 
 Un **rapport de contre-audit** est offert pour chaque prestation à partir de
 4250€, il sert de justificatif certifiant que les failles documentées dans le
@@ -53,7 +53,7 @@ Un **rapport de contre-audit** est offert pour chaque prestation à partir de
 
 ## Avertissement de limitation de profondeur
 
-L'audit blackbox exclut les recherches plus appronfondies de cibles distinctes:
+L'audit blackbox exclut les recherches plus approfondies de cibles distinctes:
 analyse statique de code source (whitebox), client lourd non-publics (app
 mobile, windows ...), infrastructures maintenances pour des tiers n'ayant pas
 donné leur accord écrit réglementaire préalable (clients, services publics
@@ -65,3 +65,13 @@ donné leur accord écrit réglementaire préalable (clients, services publics
 L'**audit whitebox** est typiquement conduit en deuxième phase, passe par
 l'analyse statique du code source et des dépendances, et permet de se prémunir
 de failles plus difficiles mais pas impossibles à voir en blackbox.
+
+## L'audit pénétration
+
+L'**audit pénétration** étudie les possibilités d'infiltration, exfiltration de
+données, installations de malwares, de mouchards pour intercepter voire
+modifier le réseau à la volée, injection de certificats maitres sur les postes
+fixes pour trahir les protocoles de chiffrements, au travers de tactiques de
+haute voltige: piratage de badges d'accès, crochetage de serrure de porte, baie
+de disque ou rack de serveur, escalade, neutralisation d'alarmes, de caméras et
+détecteurs en tout genre, usurpation d'identité ou de fonction...
