@@ -57,7 +57,7 @@ pygmentCodeFences = true
 
 [[menu.main]]
     name = "Securité"
-    url = "blackbox/"
+    url = "secops/"
     weight = 3
     parent = "Service"
 
