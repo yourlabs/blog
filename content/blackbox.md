@@ -26,8 +26,8 @@ spécialisés](https://gitpitch.com/yourlabs/security).
 Le **rapport d'audit** blackbox analyse les résultats et determine le niveau de
 risque (note sur 10) de chaque vecteur de penetration. Un **rapport de
 contre-audit** est offert pour chaque prestation à partir de 4250€, il sert de
-justificatif certifiant que les failles documentées dans l'audit sont bien
-corrigées.
+justificatif certifiant que les failles documentées dans le *rapport d'audit*
+sont bien corrigées.
 
 Rien n'est impiratable: du piratage de mot de passe à l'injection de shellcode
 écrit pour une occasion qui se présente, comme des portes qu'ouvrent
