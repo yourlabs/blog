@@ -36,7 +36,7 @@ pygmentCodeFences = true
 [Author]
   name = "Yourlabs"
   email = "contact@yourlabs.org"
-  gitlab = "username"
+  gitlab = "https://yourlabs.io/oss"
   github = "jpic"
   stackoverflow = "users/136008/jpic"
 
