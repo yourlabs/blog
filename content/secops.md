@@ -71,7 +71,8 @@ de failles plus difficiles mais pas impossibles à voir en blackbox.
 L'**audit pénétration** étudie les possibilités d'infiltration, exfiltration de
 données, installations de malwares, de mouchards pour intercepter voire
 modifier le réseau à la volée, injection de certificats maitres sur les postes
-fixes pour trahir les protocoles de chiffrements, au travers de tactiques de
-haute voltige: piratage de badges d'accès, crochetage de serrure de porte, baie
-de disque ou rack de serveur, escalade, neutralisation d'alarmes, de caméras et
-détecteurs en tout genre, usurpation d'identité ou de fonction...
+fixes pour trahir les protocoles de chiffrements, au travers de tactiques sans
+effraction de haute voltige: piratage de badges d'accès, crochetage de serrure
+de porte, baie de disque ou rack de serveur, escalade, neutralisation
+d'alarmes, de caméras et détecteurs en tout genre, usurpation d'identité ou de
+fonction...
