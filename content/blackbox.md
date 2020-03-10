@@ -4,11 +4,11 @@ subtitle: Pénétration de votre zone publique
 comments: false
 ---
 
-Nos SecOps passionnés proposent un rapport écrit personnalisé justifiant d'une
-obligation de moyen en sécurité à ses protégés, d'un compte rendu managerial
-sur site en option, et gratuitement d'animer un
+Nos SecOps passionnés proposent un rapport écrit personnalisé à ses protégés,
+et d'un compte rendu stratégique pour décideur d'une demie journée sur site en
+option, et probablement d'animer gratuitement un
 [meetup](https://www.meetup.com/Angouleme-Hack-Dev-Barcamp-1337/) en interne
-pour transmettre l'état d'esprit de la sécurité dans le cadre d'une ambiance
+pour partager l'état d'esprit de la sécurité dans le cadre d'une ambiance
 convivialle et ludique dans une esthétique hacker local.
 
 Le premier rapport d'audit "blackbox" détaille niveaux (note sur 10) de risques
@@ -34,6 +34,7 @@ Rien n'est impiratable: du piratage de mot de passe à l'injection de shellcode
 écrit pour une occasion qui se présente, comme des portes qu'ouvrent
 l'ingénierie sociale ajoutant le fameux facteur humain, tous les moyens sont
 bons pour escalader d'un privilège 0 à des ressources vitales pour
-l'entreprise. YourLabs Security Service propose un depistage regulier
-contre les cyber criminels les plus aguerris ou ponctuel pour justifier d'une
-obligation de moyens.
+l'entreprise. YourLabs Security Service propose un catalogue de prestations en
+constante évolution accessibles sous forme de missions ponctuelles pour
+justifier d'une obligation de moyens jusqu'à la surveillance continue contre
+les cyber criminels et autres menaces qui planent sur votre entreprise.
