@@ -24,10 +24,18 @@ les cyber criminels et autres menaces qui planent sur votre entreprise.
 détectées, avec compte rendu stratégique pour décideur d'une demie journée sur
 site en option.
 
-Animation en interne d'un
-[meetup](https://www.meetup.com/Angouleme-Hack-Dev-Barcamp-1337/) pour cultiver
-l'état d'esprit de la sécurité dans le cadre d'une ambiance conviviale et
-ludique dans une esthétique hacker local.
+**Formation en interne** pour cultiver l'état d'esprit de la sécurité dans un
+cadre convivial et une ambiance ludique, dans une esthétique [hacker
+local](https://www.meetup.com/Angouleme-Hack-Dev-Barcamp-1337/).
+
+## Le rapport d'audit et de contre-audit
+
+Le **rapport d'audit** blackbox analyse les résultats et détermine le niveau de
+risque (note sur 10) de chaque vecteur de pénétration.
+
+Un **rapport de contre-audit** est offert pour chaque prestation à partir de
+4250€, il sert de justificatif certifiant que les failles documentées dans le
+*rapport d'audit* sont bien corrigées.
 
 ## L'audit Blackbox
 
@@ -42,16 +50,7 @@ politiques ou autres, au détriment du revenu ou de l'image de marque de
 l'entreprise, dans le cadre d'**attaques à distances** et d'[opérations
 d'infiltration aux gadgets](https://gitpitch.com/yourlabs/security).
 
-## Le rapport d'audit et de contre-audit
-
-Le **rapport d'audit** blackbox analyse les résultats et détermine le niveau de
-risque (note sur 10) de chaque vecteur de pénétration.
-
-Un **rapport de contre-audit** est offert pour chaque prestation à partir de
-4250€, il sert de justificatif certifiant que les failles documentées dans le
-*rapport d'audit* sont bien corrigées.
-
-## Avertissement de limitation de profondeur
+### Avertissement de limitation de profondeur
 
 L'audit blackbox exclut les recherches plus approfondies de cibles distinctes:
 analyse statique de code source (whitebox), client lourd non-publics (app
