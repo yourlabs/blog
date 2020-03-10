@@ -1,6 +1,6 @@
 ---
 title: Cyber Sécurité
-subtitle: Pénétration par zone publique
+subtitle: Pénétration par internet
 comments: false
 ---
 
