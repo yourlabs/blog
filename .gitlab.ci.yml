@@ -1,16 +1,25 @@
-# All available Hugo versions are listed here: https://gitlab.com/pages/hugo/container_registry
-image: registry.gitlab.com/pages/hugo:latest
+stages: [build, pages]
 
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
 
-test:
+build:
+  stage: build
+  image: alpine:latest
   script:
+  - apk add npm g++ hugo
+  - touch main.js
+  - npm install && npm run build
+  - mv dist/* static
   - hugo
-  except:
-  - master
+  artifacts:
+    paths:
+    - static
 
 pages:
+  stage: pages
+  image: registry.gitlab.com/pages/hugo:latest
+  dependencies: [build]
   script:
   - hugo
   artifacts:
