@@ -1,5 +1,5 @@
 public
-themes/ybs/static/bundle.*
-themes/ybs/static/font/
+themes/ybs/static/bundle*
+themes/ybs/static/font*
 yarn-error.log
 node_modules
