@@ -6,7 +6,7 @@ title = "Yourlabs"
 canonifyurls  = true
 
 DefaultContentLanguage = "en"
-theme = "beautifulhugo"
+theme = "ybs"
 metaDataFormat = "yaml"
 pygmentsUseClasses = true
 pygmentCodeFences = true
@@ -47,27 +47,21 @@ pygmentCodeFences = true
     weight = 1
 
 [[menu.main]]
-    name = "About"
-    url = "about/"
-    weight = 3
-
-[[menu.main]]
-    name = "Service"
-    weight = 3
+    name = "Déploiement"
+    url = "devops/"
+    weight = 2
 
 [[menu.main]]
     name = "Securité"
     url = "secops/"
     weight = 3
-    parent = "Service"
 
 [[menu.main]]
-    name = "DevOps"
-    url = "devops/"
+    name = "About"
+    url = "about/"
     weight = 3
-    parent = "Service"
 
 [[menu.main]]
     name = "Tags"
     url = "tags"
-    weight = 3
+    weight = 4

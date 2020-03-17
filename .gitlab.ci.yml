@@ -5,12 +5,10 @@ variables:
 
 build:
   stage: build
-  image: alpine:latest
+  image: node:alpine
   script:
-  - apk add npm g++ hugo
-  - touch main.js
-  - npm install && npm run build
-  - mv dist/* static
+  - apk add g++ hugo
+  - yarn install && yarn build
   - hugo
   artifacts:
     paths:

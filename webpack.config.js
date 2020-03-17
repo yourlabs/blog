@@ -3,13 +3,14 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin")
 const GoogleFontsPlugin = require("@beyonk/google-fonts-webpack-plugin")
 
 const extractSass = new ExtractTextPlugin({
-    filename: 'index.css',
+    filename: 'bundle.css',
 })
 
 module.exports = {
   entry: './main.js',
   output: {
-    filename: './js/bundle.js'
+    path: __dirname + '/themes/ybs/static',
+    filename: 'bundle.js'
   },
   devtool: 'sourcemap',
   module: {
@@ -19,7 +20,6 @@ module.exports = {
         use: [
           {
             loader: 'file-loader',
-            options: {},
           },
         ],
       },
@@ -28,6 +28,7 @@ module.exports = {
         use: extractSass.extract({
           use: [{
             loader: 'css-loader', options: {
+              url: false,
               sourceMap: true
             }
           }, {
@@ -43,8 +44,8 @@ module.exports = {
     extractSass,
     new GoogleFontsPlugin({
         fonts: [
-            { family: 'Nunito', variants: [ '400', '700' ] }
+            { family: 'Open Sans', variants: [ '300', '400', '700' ] }
         ]
-    })
+    }),
   ]
 };
