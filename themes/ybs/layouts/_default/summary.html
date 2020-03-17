@@ -4,10 +4,12 @@
 	{{ range .Params.tags }}
 	<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
 	{{ end }}
-	<div>
+	<div style="padding: 1em 0">
 		{{ .Summary }}
 		{{ if .Truncated }}
 			<a class="read-more" href="{{ .Permalink }}">Read More</a>
+        {{ else }}
+            <div style="height: 3em"></div>
 		{{ end }}
 	</div>
 </article>
