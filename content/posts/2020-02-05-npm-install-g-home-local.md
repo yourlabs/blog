@@ -13,9 +13,6 @@ greets you with:
 
 ```
 $ npm install -g cypress
-[..................] \ fetchMetadata: sill resolveWithNewModule cypress@3.8.3 checking in
-[..................] | fetchMetadata: sill resolveWithNewModu
-[..................] / fetchMetadata: sill resolveWithNewModule figures@1.7npm
 WARN checkPermissions Missing write access to /usr/lib/node_modules
 npm ERR! code EACCES
 npm ERR! syscall access
@@ -37,6 +34,8 @@ npm ERR! If you believe this might be a permissions issue, please double-check t
 npm ERR! permissions of the file and its containing directories, or try running
 npm ERR! the command again as root/Administrator.
 ```
+
+<!--more-->
 
 You might even try with sudo, then it may work or:
 
