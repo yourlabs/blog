@@ -9,7 +9,11 @@
 	<main>
 		<article>
 			<h1>{{ .Title }}</h1>
-			<time>{{ .Date.Format "02.01.2006 15:04" }}</time>
+            <time>
+                {{ if ne .Date.Year 1 }}
+                  {{ .Date.Format "02.01.2006 15:04" }}
+                {{ end }}
+            </time>
 			<div>
 				{{ .Content }}
 			</div>
