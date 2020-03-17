@@ -1,0 +1,150 @@
+@import '~css-reset-and-normalize/scss/reset-and-normalize'
+@import '~rfs/scss'
+
+$break-large: 800px
+
+$color1: #b097fd
+$color0: #444fff
+$color2: rgb(255, 8, 131)
+$color3: #fa52d1
+$color4: #938dff
+$color5: #81eafd
+$color6: #ef64ee
+$color7: #ef64ee
+
+main
+  max-width: 80em
+  margin: 0 1em
+  @media screen and (min-width: $break-large)
+    margin: 0 auto
+    max-width: 960px
+
+  line-height: 1.6
+  padding: 1em
+
+  font-family: "Open Sans", "Helvetica", "Arial", sans-serif
+
+
+a, a:visited
+  color: $color0
+  &:hover
+    color: $color3
+
+h1
+  @include font-size(2.5rem)
+h2
+  @include font-size(2.3rem)
+h3
+  @include font-size(2.1rem)
+h4
+  @include font-size(1.8rem)
+h5
+  @include font-size(1.6rem)
+h6
+  @include font-size(1.4rem)
+p, li, div
+  @include font-size(1.3rem)
+code, pre
+  @include font-size(1.15rem)
+
+h1, h2, h3, h4, h5, h6
+  color: $color3
+  border-bottom: 1px solid $color4
+  font-weight: 300
+  a, a:visited, a:link, a:active
+    text-decoration: none
+    color: $color0
+    &:hover
+      color: $color0
+
+ul
+  margin-left: 1.6rem
+  li
+    list-style-type: disc
+
+time
+  color: #525252
+  line-height: 2.8em
+
+a.read-more, a.read-more:link, a.read-more:active, a.read-more:visited
+  display: block
+  margin-top: 1em
+  margin-bottom: 2em
+  text-align: center
+  line-height: 2
+  color: $color3
+  border: 1px solid $color3
+  text-decoration: none
+
+  &:hover
+    color: white
+    background-color: $color3
+    border: 1px solid white
+
+code, pre
+  background: #eee
+
+code
+  padding: 2px 4px
+  vertical-align: text-bottom
+
+pre
+  padding: 1em
+
+p
+  margin: 1em 0
+
+img
+  max-width: 100%
+  height: auto
+
+.main-header
+  padding: 0 2em
+  .container
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+
+.main-nav
+  ul
+    margin: 1em 0 .5em
+    text-align: center
+
+  li
+    display: inline
+
+  a
+    display: inline-block
+    padding: .3em .5em
+    text-decoration: none
+    color: $color6
+
+footer
+  background-color: #493fd8
+  color: white
+  text-align: center
+  margin-top: 1rem
+  padding: 1rem 0
+
+  h5, a, a:visited, a:active, a:link, a:hover
+    color: white
+    border: 0
+
+  .column
+    flex: 1
+    min-width: 300px
+    a
+      display: block
+      text-decoration: none
+      &:hover
+        color: $color3
+
+    h5
+      line-height: 1.6rem
+      padding: 0.8rem 0
+      font-weight: normal
+
+    a, li, p
+      line-height: 1.3
+      margin: 0
