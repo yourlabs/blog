@@ -30,7 +30,7 @@
         {{ end }}
 
         {{ if .Site.IsMultiLingual }}
-          {{ if ge (len .Site.Languages) 3 }}
+          {{ if ge (len .Site.Languages) 2 }}
             <li class="navlinks-container">
               <a class="navlinks-parent">{{ i18n "languageSwitcherLabel" }}</a>
               <div class="navlinks-children">

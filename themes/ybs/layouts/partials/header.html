@@ -9,6 +9,28 @@
                 {{ range . }}
                 <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
                 {{ end }}
+            {{ end }}
+            {{ if .Site.IsMultiLingual }}
+                {{ if ge (len .Site.Languages) 3 }}
+                    <li>
+                        <a>{{ i18n "languageSwitcherLabel" }}</a>
+                        <div>
+                        {{ range .Site.Languages }}
+                            {{ if not (eq .Lang $.Site.Language.Lang) }}
+                            <a href="/{{ .Lang }}" lang="{{ .Lang }}">{{ default .Lang .LanguageName }}</a>
+                            {{ end }}
+                        {{ end }}
+                        </div>
+                    </li>
+                {{ else }}
+                    <li>
+                        {{ range .Site.Languages }}
+                            {{ if not (eq .Lang $.Site.Language.Lang) }}
+                                <a href="/{{ .Lang }}" lang="{{ .Lang }}">{{ default .Lang .LanguageName }}</a>
+                            {{ end }}
+                        {{ end }}
+                    </li>
+                {{ end }}
             </ul>
         </nav>
         {{ end }}
