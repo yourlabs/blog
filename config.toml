@@ -47,7 +47,7 @@ pygmentCodeFences = true
     weight = 1
 
 [[menu.main]]
-    name = "Déploiement"
+    name = "DevOps"
     url = "devops/"
     weight = 2
 
