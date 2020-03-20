@@ -1,0 +1,17 @@
+version: '3.5'
+
+services:
+  hugo:
+    image: nginx
+    labels:
+    - "traefik.http.routers.blog-${CI_ENVIRONMENT_SLUG}.rule=Host(`${CI_ENVIRONMENT_SLUG}.blog.ci.yourlabs.io`)"
+    - "traefik.http.routers.blog-${CI_ENVIRONMENT_SLUG}.entrypoints=web"
+    - "traefik.enable=true"
+    - "traefik.port=80"
+    networks:
+    - web
+
+networks:
+  web:
+    external:
+      name: web
