@@ -1,7 +1,9 @@
-stages: [build, pages]
+stages: [build,docker,ci,test-stop,pages]
 
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
+  IMAGE_TAG: hugo:$CI_COMMIT_SHA
+  USER: gitlab
 
 build:
   stage: build
@@ -13,6 +15,39 @@ build:
   artifacts:
     paths:
     - public
+
+docker:
+  stage: docker
+  image: docker:stable
+  script:
+  - docker build -t $IMAGE_TAG .
+
+ci:
+  stage: ci
+  image: yourlabs/ansible
+  before_script:
+  - mkdir -p ~/.ssh; echo "$ci_key" > ~/.ssh/id_ed25519; echo "$ci_fingerprint" > ~/.ssh/known_hosts; chmod 700 ~/.ssh; chmod 600 ~/.ssh/*
+  environment:
+    name: hugo/$CI_COMMIT_REF_NAME
+    url: http://$CI_ENVIRONMENT_SLUG.blog.ci.yourlabs.io
+  script:
+  - bigsudo yourlabs.compose project=$CI_COMMIT_REF_NAME compose_hugo_image=$IMAGE_TAG lifetime=604800 hugo@ci.yourlabs.io -v | tee deploy.log
+  - grep unreachable=0 deploy.log &> /dev/null
+  - grep failed=0 deploy.log &> /dev/null
+
+test-stop:
+  stage: test-stop
+  image: yourlabs/ansible
+  variables:
+    GIT_STRATEGY: none
+  when: manual
+  environment:
+    action: stop
+    name: test/$CI_COMMIT_REF_NAME
+  script:
+  - mkdir -p ~/.ssh; echo "$ci_key" > ~/.ssh/id_ed25519; echo "$ci_fingerprint" > ~/.ssh/known_hosts; chmod 700 ~/.ssh; chmod 600 ~/.ssh/*
+  - bigsudo yourlabs.compose down jev@ci.yourlabs.io project=$CI_ENVIRONMENT_SLUG -v
+
 
 pages:
   stage: pages
