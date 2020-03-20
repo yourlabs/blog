@@ -41,27 +41,63 @@ pygmentCodeFences = true
   stackoverflow = "users/136008/jpic"
 
 
-[[menu.main]]
+[Languages]
+[Languages.en]
+languagename = "En"
+title = "Yourlabs"
+weight = 0
+
+[[Languages.en.menu.main]]
     name = "Blog"
-    url = ""
+    url = "/"
     weight = 1
 
-[[menu.main]]
+[[Languages.en.menu.main]]
     name = "DevOps"
     url = "devops/"
     weight = 2
 
-[[menu.main]]
+[[Languages.en.menu.main]]
     name = "Securité"
     url = "secops/"
     weight = 3
 
-[[menu.main]]
+[[Languages.en.menu.main]]
     name = "About"
     url = "about/"
     weight = 10
 
-[[menu.main]]
+[[Languages.en.menu.main]]
     name = "Tags"
-    url = "tags"
+    url = "tags/"
+    weight = 4
+
+[Languages.fr]
+languagename = "Fr"
+title = "Yourlabs"
+weight = 1
+
+[[Languages.fr.menu.main]]
+    name = "Blog"
+    url = "fr/"
+    weight = 1
+
+[[Languages.fr.menu.main]]
+    name = "DevOps"
+    url = "fr/devops/"
+    weight = 2
+
+[[Languages.fr.menu.main]]
+    name = "Securité"
+    url = "fr/secops/"
+    weight = 3
+
+[[Languages.fr.menu.main]]
+    name = "About"
+    url = "fr/about/"
+    weight = 10
+
+[[Languages.fr.menu.main]]
+    name = "Tags"
+    url = "fr/tags/"
     weight = 4
