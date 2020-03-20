@@ -1,82 +1,83 @@
 ---
 title: Cyber Sécurité
-subtitle: Pénétration par internet
+subtitle: Pentest over network
 comments: false
 ---
 
-Rien n'est impiratable: du piratage de mot de passe à l'injection de shellcode
-écrit pour une occasion qui se présente, comme des portes qu'ouvrent
-l'ingénierie sociale ajoutant le fameux facteur humain, tous les moyens sont
-bons pour escalader d'un privilège 0 à des ressources vitales pour
-l'entreprise. La cyber-défense est un sujet incontournable pour toutes les
-entreprises et services qui traitent de l'information privée.
+Nothing is safe from hacking: from password hacking to shellcode injection written for a specific occasion,
+social engineering adding the famous "Chair to keyboard interface" , all means are
+good for escalating from privilege 0 to vital resources for
+the company. 
+Cyber defense is an essential subject for all companies and services 
+that deal with private information.
 
-## Audits de sécurité ponctuels et continus
+## Punctual and continuous security audits
 
-YourLabs Security Service propose un catalogue de prestations en
-constante évolution accessibles sous forme de missions ponctuelles pour
-justifier d'une obligation de moyens contre les cyber criminels jusqu'à la
-surveillance continue contre les autres menaces qui planent sur votre
-entreprise.
+YourLabs Security Service offers a catalog of services in
+constantly evolving 
+accessible in the form of specific missions for justify an obligation of means 
+against cyber criminals up to the continuous surveillance against other threats to your
+business.
 
 ## Services
 
-**Rapport écrit personnalisés** certifiant des niveaux de risques des failles
-détectées, avec compte rendu stratégique pour décideur d'une demie journée sur
-site en option.
 
-**Formation en interne** pour cultiver l'état d'esprit de la sécurité dans un
-cadre convivial et une ambiance ludique, dans une esthétique [hacker
-local](https://www.meetup.com/Angouleme-Hack-Dev-Barcamp-1337/).
+** Personalized written report ** certifying levels of risk from
+detected vulnerabilities, 
+with a strategic report for a half-day decision maker on optional site.
 
-## Le rapport d'audit et de contre-audit
+** In-house training ** to cultivate the security mindset in a
+friendly setting and a fun atmosphere, in an [local hacker] (https://www.meetup.com/Angouleme-Hack-Dev-Barcamp-1337/) aestetic .
 
-Le **rapport d'audit** blackbox analyse les résultats et détermine le niveau de
-risque (note sur 10) de chaque vecteur de pénétration.
+## Audit and counter-audit report
 
-Un **rapport de contre-audit** est offert pour chaque prestation à partir de
-4250€, il sert de justificatif certifiant que les failles documentées dans le
-*rapport d'audit* sont bien corrigées.
+The blackbox ** audit report ** analyzes the results and determines the level of
+risk (score out of 10) of each penetration vector.
 
-## L'audit Blackbox
+A ** counter-audit report ** is offered for each service from
+€ 4,250, it serves as proof certifying that the documented vulnerabilities in the
+* audit report * are well corrected.
 
-**L'audit "blackbox"** scanne votre zone publique avec les outils spécialisés dans
-les langages et protocoles de communication des services (HTTP, DNS, SSH, ...)
-exposés sur le réseau public (internet).
 
-**Le but** d'un tel audit est d'**identifier les vecteurs d'attaques** au
-travers de la zone réseau et géographique publique (internet, lieux publics)
-avant qu'un hacker malveillant ne les exploite pour des raisons vénales,
-politiques ou autres, au détriment du revenu ou de l'image de marque de
-l'entreprise, dans le cadre d'**attaques à distances** et d'[opérations
-d'infiltration aux gadgets](https://gitpitch.com/yourlabs/security).
+## Blackbox audit
 
-### Avertissement de limitation de profondeur
+** The "blackbox" audit ** scans your public area with specialized tools in networking and protocols (HTTP, DNS, SSH, ...)
+exposed on the public network (internet).
 
-L'audit blackbox exclut les recherches plus approfondies de cibles distinctes:
-analyse statique de code source (whitebox), client lourd non-publics (app
-mobile, windows ...), infrastructures maintenances pour des tiers n'ayant pas
-donné leur accord écrit réglementaire préalable (clients, prestataires,
-services publics ...), pénétration des locaux de jour, pénétration des locaux
-de nuit, phishing ...
+** The goal ** of such an audit is to ** identify the attack vectors **
+across the public network and geographic area (internet, public places)
+before a malicious hacker exploits them in the context of ** remote attacks ** and [operations
+gadget infiltration] (https://gitpitch.com/yourlabs/security).
 
-## L'audit whitebox
+### Depth limitation warning
 
-L'**audit whitebox** est typiquement conduit en deuxième phase, passe par
-l'analyse statique du code source et des dépendances, et permet de se prémunir
-de failles plus difficiles mais pas impossibles à voir en blackbox.
+The blackbox audit excludes further research from separate targets:
 
-## L'audit pénétration
+- static analysis of source code (whitebox)
+- non-public thick client (mobile app, windows ...)
+- maintenance infrastructures for third parties who do not have
+given their prior written agreement in writing (customers, service providers,
+public services ...)
+- Phisical intrusion (night and day time)
+- phishing 
+- ...
 
-L'**audit pénétration** met en application le fruit des audits blackbox et 
-whitebox sur le terrain, permettant a l'entreprise de tester en situation réele 
-les risques d'infiltration, exfiltration de données, installations de malwares, 
-de mouchards pour intercepter voire modifier le réseau à la volée, 
-injection de certificats maitres sur les postes fixes pour trahir les protocoles
-de chiffrements, au travers de tactiques sans effraction de haute voltige: 
-piratage de badges d'accès, crochetage de serrure de porte, baie de disque ou 
-rack de serveur, escalade, neutralisation d'alarmes, de caméras et détecteurs en
-tout genre, usurpation d'identité ou de fonction...
+## Whitebox audit
 
-L'**audit pénétration** est la meilleure chance pour l'entreprise de constater
-et colmater les failles découvertes à tous les niveaux.
+The ** whitebox audit ** is typically carried out in the second phase, going through
+static analysis of source code and dependencies, and helps to guard against
+more difficult vulnerabilities but not impossible to see in blackbox.
+
+## Full pentest audit
+
+The ** full pentest audit ** applies the results of black and white boxe audit,
+allowing the company to test in real situations the risks of infiltration, 
+data exfiltration, malware installations, cookies to intercept or even modify the network on the fly,
+master certificates injection on fixed stations to betray protocols ciphers (https..), 
+through high-flying tactics without breaking and entering:
+access badge hacking, lockpicking: doors, hard drive bay or
+server rack, escalation, neutralization of alarms, cameras and all kind of detectors,
+, identity or function theft ...
+
+The ** full pentest audit ** is the best way for the company to see
+and fixe the security loopholes discovered at all levels.
