@@ -46,8 +46,7 @@ test-stop:
     name: test/$CI_COMMIT_REF_NAME
   script:
   - mkdir -p ~/.ssh; echo "$ci_key" > ~/.ssh/id_ed25519; echo "$ci_fingerprint" > ~/.ssh/known_hosts; chmod 700 ~/.ssh; chmod 600 ~/.ssh/*
-  - bigsudo yourlabs.compose down jev@ci.yourlabs.io project=$CI_ENVIRONMENT_SLUG -v
-
+  - bigsudo yourlabs.compose down hugo@ci.yourlabs.io project=$CI_COMMIT_REF_NAME -v
 
 pages:
   stage: pages
