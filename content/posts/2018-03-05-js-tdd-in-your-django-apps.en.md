@@ -3,7 +3,9 @@ date = "2018-03-05T15:40:44+00:00"
 draft = false
 tags = ["javascript", "best-practice"]
 title = "JS TDD in your Django apps"
+author = "jpic"
 +++
+
 Yesterday, I [confessed my guilt of writing shitty DOM manipulating JS code live in the browser]({{< relref "2018-03-04-djangonauts-say-no-to-selenium-drug.en.md" >}}), and said no, never again.
 
 Due to positive feedback in the django-users mailing list, I'm writing how I actually plan to change how I do JS in Django apps. Believe me, it's preventively fixing issues i've had with JS in Django apps during the last ten years. Nuff said, let's hack !

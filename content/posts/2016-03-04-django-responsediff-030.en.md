@@ -3,7 +3,9 @@ date = "2016-03-04T22:19:32+00:00"
 draft = false
 tags = ["python", "django", "best-practice", "django-responsediff"]
 title = "django-responsediff 0.3.0"
+author = "jpic"
 +++
+
 [django-responsediff](https://github.com/yourlabs/django-responsediff) 0.3.0 has been released !
 
 It now also checks the status_code, and has a cute mixin:

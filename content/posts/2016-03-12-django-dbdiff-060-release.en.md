@@ -3,7 +3,9 @@ date = "2016-03-12T14:15:33+00:00"
 draft = false
 tags = ["python", "django", "best-practice", "django-dbdiff"]
 title = "django-dbdiff 0.6.0 release"
+author = "jpic"
 +++
+
 [django-dbdiff](https://github.com/yourlabs/django-dbdiff) was released. It allows to exclude fields from tests with the new `exclude` parameter, ie::
 
 

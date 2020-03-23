@@ -3,7 +3,9 @@ date = "2016-08-17T13:44:22+00:00"
 draft = false
 tags = ["python", "django", "security"]
 title = "yourlabs-security mailing list"
+author = "jpic"
 +++
+
 This post announces the creation of a mailing list for security issues concerning yourlabs.
 
 Members can read messages, but external users may only post to it: yourlabs-security@googlegroups.com

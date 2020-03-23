@@ -3,7 +3,9 @@ date = "2016-10-05T17:42:04+00:00"
 draft = false
 tags = ["python", "django-autocomplete-light", "django"]
 title = "Django-autocomplete-light 3.2.0 release"
+author = "jpic"
 +++
+
 We have two major features:
 
 - [Advanced field forward options](http://django-autocomplete-light.readthedocs.io/en/master/tutorial.html#filtering-results-based-on-the-value-of-other-fields-in-the-form),

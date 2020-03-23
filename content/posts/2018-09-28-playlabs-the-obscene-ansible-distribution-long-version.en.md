@@ -3,7 +3,9 @@ date = "2018-09-28T22:12:51+00:00"
 draft = false
 tags = ["python", "linux", "ansible", "best-practice", "playlabs"]
 title = "PlayLabs: the Obscene Ansible Distribution, long version"
+author = "jpic"
 +++
+
 From baremetal to deploying docker images on a PaaS in one command ?
 
 [PlayLabs](https://yourlabs.io/oss/playlabs) is the result of a refactor of playbooks we've had in production for a while to acheive hackable docker-based PaaS. The refactor was designed to be Open Source, almost there to beta.

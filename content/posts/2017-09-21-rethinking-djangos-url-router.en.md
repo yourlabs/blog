@@ -3,7 +3,9 @@ date = "2017-09-21T18:12:35+00:00"
 draft = false
 tags = ["django", "python", "crudlfap"]
 title = "Rethinking Django’s URL Router"
+author = "jpic"
 +++
+
 This all started when a web developer learning Django was struggling to maintain a quantity of HTML and came to me: "I have a question for you, Django, can you generate a menu for me please ?".
 
 Oh my, is this person going to be the next wasting their time building something that's too complicated and worthless just like I have back when I used to try this kind of stunt ?

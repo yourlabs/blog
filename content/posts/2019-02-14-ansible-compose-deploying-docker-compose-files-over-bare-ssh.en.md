@@ -3,7 +3,9 @@ date = "2019-02-14T09:04:20+00:00"
 draft = false
 tags = ["python", "devops", "ansible", "docker", "docker-compose"]
 title = "ansible-compose: deploying docker-compose files over bare ssh"
+author = "jpic"
 +++
+
 In kubernetes, we have the joy of applying configuration directly from maintainer repositories:
 
     kubectl apply -f https://raw.github.../setup.yml

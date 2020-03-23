@@ -3,7 +3,9 @@ date = "2016-05-25T11:30:27+00:00"
 draft = false
 tags = ["french", "best-practice"]
 title = "French: CD & DevOps & Free Pipeline"
+author = "jpic"
 +++
+
 A presentation by [James Pic](https://github.com/jpic), founder of YourLabs, was filmed at djangocong 2016 Rennes:
 
 - [video (french)](https://www.youtube.com/watch?v=MnIQHVeTjaQ)

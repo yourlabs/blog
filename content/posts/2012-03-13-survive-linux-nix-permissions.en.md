@@ -3,7 +3,9 @@ date = "2012-03-13T17:23:00+00:00"
 draft = false
 tags = []
 title = "Survive linux (*nix) permissions"
+author = "jpic"
 +++
+
 It is common for junior developers and system administrators to be blocked
 because of permissions. This article describes how to identify and fix a
 permission issue, as this is a FAQ on StackOverflow.

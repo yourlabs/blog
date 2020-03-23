@@ -3,7 +3,9 @@ date = "2014-04-08T22:01:47+00:00"
 draft = false
 tags = ["linux", "security", "strace"]
 title = "Strace basics"
+author = "jpic"
 +++
+
 This is the first of a series of articles on security and exploiting. For starters we'll cover basic debugging tools before we get into actual exploiting because the first step to exploiting is reverse-engineering most of the time.
 
 The series targets experienced developers and tries to go straight to the point for them.  Every article in this series is tagged "security".

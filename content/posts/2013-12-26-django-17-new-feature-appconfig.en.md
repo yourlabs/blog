@@ -3,7 +3,9 @@ date = "2013-12-26T00:11:58+00:00"
 draft = false
 tags = ["django", "python"]
 title = "Django 1.7 new feature: AppConfig"
+author = "jpic"
 +++
+
 Check out the new [applications documentation](https://docs.djangoproject.com/en/dev/ref/applications/) for Django 1.7 !
 
 It's still quite cryptic what will "holding app metadata" be really able to do. For starters it enables changing the name of an app in the admin without any hack. It will probably make installing and customizing apps easier, ie.:

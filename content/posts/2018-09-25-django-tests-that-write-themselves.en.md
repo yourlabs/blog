@@ -3,7 +3,9 @@ date = "2018-09-25T22:40:56+00:00"
 draft = false
 tags = ["python", "django", "best-practices"]
 title = "Django tests that write themselves"
+author = "jpic"
 +++
+
 This is a plain advertisement for two excellent test utils maintained by YourLabs:
 
 - [django-dbdiff](https://github.com/yourlabs/django-dbdiff)

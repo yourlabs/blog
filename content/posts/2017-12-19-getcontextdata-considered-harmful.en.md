@@ -3,7 +3,9 @@ date = "2017-12-19T02:49:19+00:00"
 draft = false
 tags = ["django", "python"]
 title = "get_context_data() considered harmful"
+author = "jpic"
 +++
+
 Hello everybody <3
 
 Let's talk about ideas for deprecation / discouraging the use of `get_context_data()`.

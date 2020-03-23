@@ -3,7 +3,9 @@ date = "2018-04-12T23:39:54+00:00"
 draft = false
 tags = ["python", "django", "crudlfap"]
 title = "CRUDLFA+ 0.3 Series"
+author = "jpic"
 +++
+
 [CRUDLFA+](https://github.com/betagouv/mrs) is an expirement (read: pre-alpha state) of what Django could be if:
 
 - generic views provided templates and javascript for a rich experience out of the box,

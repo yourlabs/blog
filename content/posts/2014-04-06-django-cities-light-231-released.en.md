@@ -3,7 +3,9 @@ date = "2014-04-06T16:26:45+00:00"
 draft = false
 tags = ["django", "python", "django-cities-light"]
 title = "django-cities-light 2.3.1 released"
+author = "jpic"
 +++
+
 [django-cities-light](http://github.com/yourlabs/django-cities-light) 2.3.1 was [released](https://pypi.python.org/pypi/django-cities-light/2.3.1):
 
 - **[#42](http://github.com/yourlabs/django-cities-light/issues/42)** added FAQ: Some data fail to import or don't import like I want, how to skip them ?

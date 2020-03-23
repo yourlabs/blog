@@ -3,7 +3,9 @@ date = "2020-02-08T13:37:00+00:00"
 draft = false
 tags = ["devops"]
 title = "BigSudo eXtreme DevOps: Hacking Operations"
+author = "jpic"
 +++
+
 
 **[BigSudo](https://pypi.org/project/bigsudo/)** is a command line generator
 wrapping around [Ansible](https://ansible.com): the excellent tool for

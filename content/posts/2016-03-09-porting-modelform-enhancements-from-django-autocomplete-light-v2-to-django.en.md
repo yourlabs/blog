@@ -3,7 +3,9 @@ date = "2016-03-09T13:50:46+00:00"
 draft = false
 tags = ["python", "django", "django-autocomplete-light", "xmodelform"]
 title = "Porting ModelForm enhancements from django-autocomplete-light v2 to Django"
+author = "jpic"
 +++
+
 Currently, django-autocomplete-light v2 provides enhancement to default form field generation for model fields, depending on the registered autocompletes, as [shown in the tutorial](http://django-autocomplete-light.readthedocs.org/en/2.3.1/tutorial.html).
 
 For v3, we don't want this feature inside DAL anymore because it has really nothing to do with autocomplete. Instead, I'm trying to contribute a generic way to do that. It would not benefit only django-autocomplete-light anymore, but all Django apps. You could get enhanced default form fields for model fields just by installing and configuring apps in your project.

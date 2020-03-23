@@ -3,7 +3,9 @@ date = "2013-02-01T13:13:43+00:00"
 draft = false
 tags = ["javascript", "jquery"]
 title = "Lightweight jQuery plugin to drag'n'drop <table> columns"
+author = "jpic"
 +++
+
 This plugin allows to drag'n'drop HTML table columns. It is rather light and consistent with usual jQuery plugin and javascript patterns.
 
 

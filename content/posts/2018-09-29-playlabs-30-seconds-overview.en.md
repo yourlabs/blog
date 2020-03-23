@@ -3,7 +3,9 @@ date = "2018-09-29T04:25:22+00:00"
 draft = false
 tags = ["playlabs", "linux", "python", "ansible", "best-practice"]
 title = "playlabs: 30 seconds overview"
+author = "jpic"
 +++
+
 Quick version of the previous article on playlabs
 
 

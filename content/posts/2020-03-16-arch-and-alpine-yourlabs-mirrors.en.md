@@ -3,7 +3,9 @@ date = "2020-03-16T10:27:00+00:00"
 draft = false
 tags = []
 title = "Arch & Alpine Linux YourLabs Mirrors & Scripts"
+author = "jpic"
 +++
+
 
 This articles describes how to use the
 [scripts](https://yourlabs.io/oss/yourlabs.mirror) we use to maintain public

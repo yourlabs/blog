@@ -3,7 +3,9 @@ date = "2012-12-03T12:30:43+00:00"
 draft = false
 tags = ["python", "documentation", "service"]
 title = "Using rst for documentation on both GitHub and Sphinx/RTFD: code-block tip"
+author = "jpic"
 +++
+
 Good documentation should be readable from source, and usable to generate fancy HTML. That's why RST is so commonly used:
 
 - readable as text source,

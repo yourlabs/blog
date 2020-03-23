@@ -3,7 +3,9 @@ date = "2018-10-12T04:13:24+00:00"
 draft = false
 tags = []
 title = "clilabs: the Python CLI to get things done, with Django support"
+author = "jpic"
 +++
+
 Sometimes I want to execute a python callback with some args on the command line, but i get frustrated that it always requires to wrap my command in a wrapper of some sort. Then, I want to do generic CRUD operations from the command line in my automation tool. [Clilabs](https://yourlabs.io/oss/clilabs) unfrustrates me.
 
 Get started:

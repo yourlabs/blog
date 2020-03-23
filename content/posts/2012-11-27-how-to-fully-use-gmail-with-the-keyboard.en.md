@@ -3,7 +3,9 @@ date = "2012-11-27T13:25:00+00:00"
 draft = false
 tags = ["keyboard"]
 title = "How to: fully use gmail with the keyboard"
+author = "jpic"
 +++
+
 Keeping your inbox clean can be quite a pain. Except with keyboard shortcuts.
 
 - `?` shows the list of shortcuts,

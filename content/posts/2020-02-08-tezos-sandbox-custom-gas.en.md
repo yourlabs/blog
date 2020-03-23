@@ -3,7 +3,9 @@ date = "2020-02-08T10:27:00+00:00"
 draft = false
 tags = []
 title = "Developping on Tezos with custom gas restrictions"
+author = "Thomas Binetruy"
 +++
+
 Then next Tezos Protocol update, Carthage net, will increase the gas
 restrictions allowing the development of hungrier smart contracts. In
 this post, we document how to update these hard limits to arbitrary
