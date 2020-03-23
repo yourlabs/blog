@@ -3,7 +3,9 @@ date = "2012-04-05T08:01:00+00:00"
 draft = false
 tags = ["django", "best-practice"]
 title = "Coding standards for Django apps: names"
+author = "jpic"
 +++
+
 This post shows a coding standard which emerged from the Pinax community (formerly hot-club)[source needed] for predictive and consistent URL naming patterns. While this is still supported by Django, [namespaced URL `include()`](https://docs.djangoproject.com/en/1.8/intro/tutorial03/#namespacing-url-names) has been as well for some years now and urls should be translated when upgrading Django versions. [Django Contributing Commons](https://github.com/codingjoe/django-cc) maintains a technical description which you can reuse in your project. Check it out and try to contribute, this could be a nice community driven git based coding standards for Django !
 
 Here goes, for history:

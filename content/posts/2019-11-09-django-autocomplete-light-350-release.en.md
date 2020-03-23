@@ -3,7 +3,9 @@ date = "2019-11-22T13:33:37+00:00"
 draft = false
 tags = ["django-autocomplete-light", "python"]
 title = "django-autocomplete-light 3.5.0 jquery moving release"
+author = "jpic"
 +++
+
 [Django-autocomplete-light](https://github.com/yourlabs/django-autocomplete-light) 3.5.0 was released, including **backward compatibility breaks**.
 
 <!--more-->

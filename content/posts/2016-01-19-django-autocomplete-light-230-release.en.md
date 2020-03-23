@@ -3,7 +3,9 @@ date = "2016-01-19T19:35:17+00:00"
 draft = false
 tags = ["python", "django", "django-autocomplete-light"]
 title = "django-autocomplete-light 2.3.0 release"
+author = "jpic"
 +++
+
 - [#555](https://github.com/yourlabs/django-autocomplete-light/issues/555) Django 1.4, 1.5 and 1.6 deprecation
 - [#497](https://github.com/yourlabs/django-autocomplete-light/issues/497) Enable registration by model-name by [@luzfcb](https://github.com/luzfcb)
 - [#536](https://github.com/yourlabs/django-autocomplete-light/issues/536) [#551](https://github.com/yourlabs/django-autocomplete-light/issues/551) Support proxy models b

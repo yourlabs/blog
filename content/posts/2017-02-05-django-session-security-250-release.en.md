@@ -3,7 +3,9 @@ date = "2017-02-05T15:34:40+00:00"
 draft = false
 tags = ["python", "django", "django-session-security"]
 title = "django-session-security 2.5.0 release"
+author = "jpic"
 +++
+
 [DSS](https://github.com/yourlabs/django-session-security) release 2.5.0 was published in PyPi:
 
 - [#79](https://github.com/yourlabs/django-session-security/issues/79/) remove compiled binary from source to comply with Debian source code

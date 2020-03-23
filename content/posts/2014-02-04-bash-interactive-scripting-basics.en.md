@@ -3,7 +3,9 @@ date = "2014-02-04T01:20:00+00:00"
 draft = false
 tags = ["linux", "bash"]
 title = "Bash interactive scripting basics"
+author = "jpic"
 +++
+
 A variable looks like this:
 
 

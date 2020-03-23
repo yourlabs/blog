@@ -3,7 +3,9 @@ date = "2012-04-10T08:01:00+00:00"
 draft = false
 tags = ["django", "migrations"]
 title = "Django schema migrations: nashvegas vs. South vs. evolution"
+author = "jpic"
 +++
+
 Schema migration consists of altering a database structure. For example, adding
 a column, an index ...
 

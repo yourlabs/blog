@@ -3,7 +3,9 @@ date = "2013-03-27T12:30:00+00:00"
 draft = false
 tags = ["linux", "php", "uwsgi", "nginx"]
 title = "Drupal 7 with nginx and uwsgi-php example configuration"
+author = "jpic"
 +++
+
 [Drupal](http://drupal.org) is a [CMS](http://en.wikipedia.org/wiki/Content_management_system) written in [PHP](http://php.net) which supports [PostgreSQL](http://postgres.org). It is made for [mod_php](http://php.net/mod_php) and [Apache](http://apache.org), thought it works with [uWGSI](http://projects.unbit.it/uwsgi/) and [Nginx](http://nginx.org).
 
 When you have tried uWGSI you know why you want this.

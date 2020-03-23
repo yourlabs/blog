@@ -3,7 +3,9 @@ date = "2012-03-23T09:28:00+00:00"
 draft = false
 tags = ["django", "python", "best-practice"]
 title = "How to override a view from an external Django app"
+author = "jpic"
 +++
+
 This article describes how to override a view from an external Django app which is a FAQ on StackOverflow and IRC.
 
 You should understand that your urls.py is a really central and critical part of your django project.

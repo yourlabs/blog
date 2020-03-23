@@ -3,7 +3,9 @@ date = "2012-03-30T08:00:00+00:00"
 draft = false
 tags = ["django", "contenttype"]
 title = "Django generic relations and performances: solutions"
+author = "jpic"
 +++
+
 [django-actream](https://github.com/justquick/django-activity-stream) is a
 fresh and fantastic pluggable application for django. This article presents the
 solution to a simple performance issue: selecting followers and users who

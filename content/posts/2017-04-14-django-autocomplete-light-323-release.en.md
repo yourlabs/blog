@@ -3,7 +3,9 @@ date = "2017-04-14T00:41:49+00:00"
 draft = false
 tags = ["django-autocomplete-light", "python", "django"]
 title = "django-autocomplete-light 3.2.3 release"
+author = "jpic"
 +++
+
 3.2.3 Two seriously good community contributed bugfixes
 
 - [#799](https://github.com/yourlabs/django-autocomplete-light/issues/799): Support serializing UUIDs and add tests for models with UUIDs as PKs by [@blag](https://github.com/blag)

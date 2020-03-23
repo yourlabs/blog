@@ -3,7 +3,9 @@ date = "2019-01-28T23:32:56+00:00"
 draft = false
 tags = ["python", "django", "best-practice", "tdd"]
 title = "Automatic test rewrite for django-dbdiff/django-responsediff/cli2"
+author = "jpic"
 +++
+
 Still in the competition for most code coverage with least test code that is written manually and needs to be maintained manually, all our test autowriting software has been updated to support a new environment variable : FIXTURE_REWRITE.
 
 Instead of deleting fixtures manually to regenerate them by running the tests, you can now just run your tests with the FIXTURE_REWRITE env var. This will overwrite the fixtures and make the tests look like it passed.

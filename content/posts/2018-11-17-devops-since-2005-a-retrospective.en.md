@@ -3,7 +3,9 @@ date = "2018-11-17T16:30:25+00:00"
 draft = false
 tags = ["python", "ansible", "best-practice"]
 title = "DevOps since 2005: a  retrospective"
+author = "jpic"
 +++
+
 This article shares some history of DevOps testing in France during the last few years. How it looked like when I started in the industry in 2004 and almost 15 years later today.
 
 ## Background

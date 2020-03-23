@@ -3,7 +3,9 @@ date = "2012-06-19T07:56:00+00:00"
 draft = false
 tags = ["django", "python"]
 title = "How to see exception stacktraces with django LiveServerTestCase"
+author = "jpic"
 +++
+
 After playing with [selenium and LiveServerTestCase](https://docs.djangoproject.com/en/dev/topics/testing/?from=olddocs#live-test-server) a little while, you might
 see this:
 

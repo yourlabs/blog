@@ -3,7 +3,9 @@ date = "2018-11-18T12:44:19+00:00"
 draft = false
 tags = ["python", "best-practices"]
 title = "clitoo: make your python callbacks work in CLI too !"
+author = "jpic"
 +++
+
 [Clitoo](https://yourlabs.io/oss/clitoo) makes your python callbacks work on CLI too !
 
 This CLI can execute python callbacks with parameters.

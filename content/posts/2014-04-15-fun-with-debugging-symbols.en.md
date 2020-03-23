@@ -3,7 +3,9 @@ date = "2014-04-15T22:01:29+00:00"
 draft = false
 tags = ["linux", "gdb", "security"]
 title = "Fun with debugging symbols"
+author = "jpic"
 +++
+
 This article follows up with [Basics of GDB debugging](http://blog.yourlabs.org/post/81871406431/basics-of-gdb-debugging), focus on symbols.
 
 ### List symbols with `nm`

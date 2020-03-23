@@ -3,7 +3,9 @@ date = "2019-03-14T23:08:24+00:00"
 draft = false
 tags = ["devops", "docker", "compoctl", "docker-compose"]
 title = "compoctl 0.1.3 release"
+author = "jpic"
 +++
+
 The new ``compoctl apply`` command supports build by default and now chains the following:
 
 - pull

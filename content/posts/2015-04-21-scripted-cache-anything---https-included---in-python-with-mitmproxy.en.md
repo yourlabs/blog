@@ -3,7 +3,9 @@ date = "2015-04-21T10:28:17+00:00"
 draft = false
 tags = ["linux", "python", "security", "ci"]
 title = "Scripted Cache AnyThing - HTTPS included - in Python with mitmproxy"
+author = "jpic"
 +++
+
 The [last
 article](http://blog.yourlabs.org/post/116296979953/scripted-mitm-anything-in-python-with-mitmproxy)
 demonstrated how we could simply make any https flow going out a virtual

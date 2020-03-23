@@ -3,7 +3,9 @@ date = "2018-03-08T17:33:35+00:00"
 draft = false
 tags = ["best-practice", "python", "django"]
 title = "django-adapters audit writeup"
+author = "jpic"
 +++
+
 It's been probably 30 hours I've spent trying to contribute to the [django-adapters](https://github.com/mjtamlyn/django-adapters/). This article describes the approach we take when making investment audits on software @ YourLabs, and my conclusions on this project.
 
 I started by reading what had been done and issues. My first mistake was to not be patient enough to really read and profoundly understand absolutely every piece that had been done.

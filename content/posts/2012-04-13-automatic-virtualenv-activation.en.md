@@ -3,7 +3,9 @@ date = "2012-04-13T08:02:00+00:00"
 draft = false
 tags = ["virtualenv", "python"]
 title = "Automatic virtualenv activation"
+author = "jpic"
 +++
+
 This article proposes a proven standard which enables automatic virtualenv activation.
 
 ### Demonstration

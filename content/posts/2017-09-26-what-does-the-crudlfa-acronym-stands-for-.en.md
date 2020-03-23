@@ -3,7 +3,9 @@ date = "2017-09-26T08:00:15+00:00"
 draft = false
 tags = ["python", "django", "crudlfap"]
 title = "What does the CRUDLFA+ acronym stands for ?"
+author = "jpic"
 +++
+
 Well, it definitely stands for something ! And since this is becoming a FAQ, here's my answer:
 
 It stands for: Create Read Update Delete Form Autocomplete and more !

@@ -3,7 +3,9 @@ date = "2018-03-06T16:11:09+00:00"
 draft = false
 tags = ["best-practice"]
 title = "How I failed at documentation driven design"
+author = "jpic"
 +++
+
 A small anecdote about one of my most recent failures ! Now it's up to me to be a better coder next time ;)
 
 When I rewrote django-dynamic-fields into [facond](https://facond.readthedocs.org), I still had Form/Rule/Action/Conditions from ddf.

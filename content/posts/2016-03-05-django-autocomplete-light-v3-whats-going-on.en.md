@@ -3,7 +3,9 @@ date = "2016-03-05T01:54:34+00:00"
 draft = false
 tags = ["python", "django", "django-autocomplete-light"]
 title = "django-autocomplete-light v3: what’s going on"
+author = "jpic"
 +++
+
 This post clarifies the status of django-autocomplete-light and strategy for v3.
 
 ### Version 2

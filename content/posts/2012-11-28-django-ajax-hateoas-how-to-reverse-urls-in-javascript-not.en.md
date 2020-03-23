@@ -3,7 +3,9 @@ date = "2012-11-28T08:50:54+00:00"
 draft = false
 tags = ["http", "hateoas", "api"]
 title = "Django & ajax & HATEOAS: how to reverse urls in javascript (not)"
+author = "jpic"
 +++
+
 This is the second article about reversing urls in javascript. The [previous article](http://blog.yourlabs.org/post/36514630158/django-ajax-how-to-reverse-urls-in-javascript-not) actually presented a bad idea.
 
 ### Github API v3

@@ -3,7 +3,9 @@ date = "2018-10-16T11:22:45+00:00"
 draft = false
 tags = ["django", "python", "best-practice"]
 title = "clilabs 1.1.1 release"
+author = "jpic"
 +++
+
 Clilabs now benefit a new command that automates a series of 3 lines that's I've been typing over and over again during 10 years of Django hacking.
 
 

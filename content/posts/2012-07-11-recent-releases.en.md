@@ -3,7 +3,9 @@ date = "2012-07-11T13:58:00+00:00"
 draft = false
 tags = []
 title = "Recent releases"
+author = "jpic"
 +++
+
 Released:
 
 - [django-autocomplete-light 1.0.4](http://pypi.python.org/pypi/django-autocomplete-light), [changes](https://github.com/yourlabs/django-autocomplete-light/blob/master/CHANGELOG)
