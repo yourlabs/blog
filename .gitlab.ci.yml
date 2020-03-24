@@ -19,7 +19,12 @@ build:
 docker:
   stage: docker
   image: docker:stable
+  environment:
+    name: hugo/$CI_COMMIT_REF_NAME
+    url: http://$CI_ENVIRONMENT_SLUG.blog.ci.yourlabs.io
   script:
+  - echo $CI_ENVIRONMENT_URL
+  - sed -i "s@https://blog.yourlabs.org@$CI_ENVIRONMENT_URL@" config.toml
   - docker build -t $IMAGE_TAG .
 
 ci:

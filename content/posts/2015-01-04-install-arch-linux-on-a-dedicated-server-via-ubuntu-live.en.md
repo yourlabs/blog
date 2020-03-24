@@ -3,7 +3,9 @@ date = "2015-01-04T11:26:28+00:00"
 draft = false
 tags = ["linux", "dedibox", "ansible"]
 title = "Install Arch Linux on a dedicated server via Ubuntu Live"
+author = "jpic"
 +++
+
 In the process of making YourLabs new cloud, I ordered a first dedicated server at online.net. They don't provide an installer for Arch Linux, but they do provide a "rescue mode" which is at this time Ubuntu 13.04 Live. Boot that and get an Arch Linux install on BtrFS with just one command:
 
 Format [`/dev/sda` to BtrFS Partionning](https://wiki.archlinux.org/index.php/partitioning#Btrfs_Partitioning) and install arch linux in subvolumes with just one command:

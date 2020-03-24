@@ -3,7 +3,9 @@ date = "2018-08-29T00:03:40+00:00"
 draft = false
 tags = ["python", "django", "uwsgi", "spooler", "cron"]
 title = "djcall 0.0.5 release"
+author = "jpic"
 +++
+
 django-call is a model wrapper around uWSGI native [cron](http://uwsgi-docs.readthedocs.io/en/latest/Cron.html) and [spooler](http://uwsgi-docs.readthedocs.io/en/latest/Spooler.html) features, including the [signal framework](https://uwsgi-docs.readthedocs.io/en/latest/Signals.html) allowing to program callbacks on cron or run them in a given spooler with a given priority for example.
 
 For example right now on a betagouv project it logs the following when uWSGI starts:

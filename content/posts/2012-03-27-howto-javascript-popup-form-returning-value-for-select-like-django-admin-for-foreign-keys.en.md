@@ -3,7 +3,9 @@ date = "2012-03-27T08:00:00+00:00"
 draft = false
 tags = ["php", "django", "javascript"]
 title = "Howto: javascript popup form returning value for select like Django admin for foreign keys"
+author = "jpic"
 +++
+
 This article presents a technique to get the return value of a form opened in a
 javascript popup, like Django admin for foreign keys. It can be used to improve
 the ergonomy relation select inputs.

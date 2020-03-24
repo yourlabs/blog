@@ -3,7 +3,9 @@ date = "2018-10-30T16:47:14+00:00"
 draft = false
 tags = ["elm"]
 title = "Getting started with Elm"
+author = "jpic"
 +++
+
 This article was created by [Thomas Binetruy](https://yourlabs.io/oss/unsupported/elm500/blob/master/notes.md) as he's into R&D around Elm for YourLabs but maybe it will help you too !
 
 ## Introduction

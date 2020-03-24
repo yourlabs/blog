@@ -3,7 +3,9 @@ date = "2012-08-28T12:15:00+00:00"
 draft = false
 tags = ["django", "best-practice"]
 title = "Surviving django.contrib.staticfiles (or: how to manage static files with django)"
+author = "jpic"
 +++
+
 This article describes how to use [django.contrib.staticfiles](https://docs.djangoproject.com/en/dev/howto/static-files/) as this is a FAQ StackOverflow and IRC.
 
 ### Structure

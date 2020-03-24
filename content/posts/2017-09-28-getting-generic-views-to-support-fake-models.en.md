@@ -3,7 +3,9 @@ date = "2017-09-28T11:37:57+00:00"
 draft = false
 tags = ["python", "django", "crudlfap"]
 title = "Getting generic views to support “fake” models"
+author = "jpic"
 +++
+
 Sometimes, we need to make views around objects which are not stored in the database. They may be calculated on the fly in python, or come from some data source that's not the database, or which aggregates several objects in the database.
 
 This is supported out of the box with [CRUDLFA+](https://github.com/yourlabs/crudlfap), the modern web framework for Django. All you need to implement is:

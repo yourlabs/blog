@@ -3,7 +3,9 @@ date = "2012-07-18T11:49:00+00:00"
 draft = false
 tags = ["python", "django", "best-practice"]
 title = "Never hardcode absolute paths"
+author = "jpic"
 +++
+
 This is *nonono*:
 
 

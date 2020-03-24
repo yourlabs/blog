@@ -3,7 +3,9 @@ date = "2018-05-12T15:35:02+00:00"
 draft = false
 tags = ["shop"]
 title = "Announcing YourLabs BtoC Service"
+author = "jpic"
 +++
+
 It's an honnour to announce our new BtoC product at YourLabs: a computer repair shop.
 
 What makes it different from other computer repair shop is that we're going to expose OEM and data center provisionning technologies to end users.

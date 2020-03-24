@@ -3,7 +3,9 @@ date = "2012-12-01T08:29:00+00:00"
 draft = false
 tags = ["django-developers", "django"]
 title = "Django development: possible change of the .save() implementation"
+author = "jpic"
 +++
+
 An interesting [topic by Anssi Kääriäinen](https://groups.google.com/forum/?fromgroups=#!topic/django-developers/LMshzW3duNM) flew by django-developers mailing list about [ticket #16649: "Models.save() refactoring: check updated rows to determine action"](https://code.djangoproject.com/ticket/16649).
 
 The ticket mentions a **50% performance optimization**. Here's an explanation by akaariai (core developer):

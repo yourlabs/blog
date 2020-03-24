@@ -3,7 +3,9 @@ date = "2014-04-07T11:30:24+00:00"
 draft = false
 tags = ["linux"]
 title = "Better manual reader with most: the slang-pager"
+author = "jpic"
 +++
+
 The default pager in most linux distributions is `more`. But it's not very colorful. This article presents a more fun alternative: `most`.
 
 Your manual probably looks like this:

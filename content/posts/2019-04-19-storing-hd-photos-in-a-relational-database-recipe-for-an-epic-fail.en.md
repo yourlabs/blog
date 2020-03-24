@@ -3,7 +3,9 @@ date = "2019-04-19T08:28:10+00:00"
 draft = false
 tags = ["devops"]
 title = "Storing HD photos in a relational database: recipe for an epic fail"
+author = "jpic"
 +++
+
 Storing files in the database has already been [demonstrated as not an efficient trade-off here](https://softwareengineering.stackexchange.com/questions/150669/is-it-a-bad-practice-to-store-large-files-10-mb-in-a-database), and in many pages on internet. As such, this post provides subjective stories about files in the database, rather than an objective compare.
 
 Now Bob the manager has watched [Peter Chubb's talk](https://www.youtube.com/watch?v=wN6IwNriwHc) and decides that you will store uploaded PDFs and HD photos in the database when that doesn't even matter when people are going to upload files in AJAX, **before** they submit their form, during HTTP requests that occur **before** that request that causes a relational data write. If Bob the manager justifies with "it's going to make backup easier" then this article will demonstrate how wrong he is.

@@ -3,7 +3,9 @@ date = "2017-12-30T00:00:52+00:00"
 draft = false
 tags = ["django-autocomplete-light", "python"]
 title = "django-autocomplete-light 3.3.0-rc1"
+author = "jpic"
 +++
+
 To install 3.3.0-rc1, use:
 
     pip install django-autocomplete-light==3.3.0-rc1

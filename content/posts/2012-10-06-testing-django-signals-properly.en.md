@@ -3,7 +3,9 @@ date = "2012-10-06T14:17:00+00:00"
 draft = false
 tags = ["python", "django"]
 title = "Testing django signals properly"
+author = "jpic"
 +++
+
 Asserting that signals were sent properly can be a bit tricky: they must be sent in a particular order with specific arguments.
 
 Fortunately, [mock-django](https://github.com/dcramer/mock-django) provides plenty of cool features, including a nice signal receiver mock. The only problem with mock-django is that it's not documented. So I had to reverse-engineer and here's what I've found: the best way to test a signal is to use the ``call_args_list`` property of the receiver mock.

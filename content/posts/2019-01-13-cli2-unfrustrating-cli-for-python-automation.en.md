@@ -3,7 +3,9 @@ date = "2019-01-13T14:19:31+00:00"
 draft = false
 tags = ["python", "cli2"]
 title = "cli2: unfrustrating CLI for Python automation"
+author = "jpic"
 +++
+
 Sometimes I just want to execute a python callback and pass args/kwargs on the CLI, and not have to define any custom CLI entry point of any sort, nor change any code, typically when automating stuff, [cli2](https://pypi.org/project/cli2/) unfrustrates me (pun intended):
 
 

@@ -3,7 +3,9 @@ date = "2016-01-26T13:41:36+00:00"
 draft = false
 tags = ["python", "django", "test", "django-responsediff", "best-practice"]
 title = "Automatic fixtures for HTTP Response assertions"
+author = "jpic"
 +++
+
 As stated in the "Database state assertion" article: I'm pretty lazy
 when it comes to writing tests for existing code, however, I'm even lazier when
 it comes to repetitive manual testing action.

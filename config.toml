@@ -79,7 +79,7 @@ weight = 1
 
 [[Languages.fr.menu.main]]
     name = "Blog"
-    url = "fr/"
+    url = "fr/posts/"
     weight = 1
 
 [[Languages.fr.menu.main]]

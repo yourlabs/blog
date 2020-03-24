@@ -3,7 +3,9 @@ date = "2013-12-09T14:36:00+00:00"
 draft = false
 tags = ["python", "selenium", "pip"]
 title = "Interresting Python and pip behaviour with Python 2 and 3 compatible packages"
+author = "jpic"
 +++
+
 In this article we'll explore a gotcha with Python 2 and 3 support on the long run, using Selenium as an example.
 
 Selenium is an automated testing tool enabling the tests to control a temporary browser GUI - Firefox by default. You can use it to automate functional testing.

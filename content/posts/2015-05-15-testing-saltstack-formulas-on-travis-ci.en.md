@@ -3,7 +3,9 @@ date = "2015-05-15T00:50:31+00:00"
 draft = false
 tags = ["ci", "saltstack", "travis-ci"]
 title = "Testing SaltStack formulas on Travis-ci"
+author = "jpic"
 +++
+
 [SaltStack](http://saltstack.com) is an [Open
 Source](http://github.com/saltstack/salt)
 [DevOp](http://en.wikipedia.org/wiki/DevOps) tool to automate administration of

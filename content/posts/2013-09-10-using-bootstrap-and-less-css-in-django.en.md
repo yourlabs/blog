@@ -3,7 +3,9 @@ date = "2013-09-10T15:13:00+00:00"
 draft = false
 tags = ["python", "django", "git"]
 title = "Using bootstrap and less css in django"
+author = "jpic"
 +++
+
 ### Overview
 
 1. **Compile less in debug mode in the browser** for development. This enables your integrator to work faster and to view syntax errors reports in the browser and make development awesome.

@@ -3,7 +3,9 @@ date = "2014-04-13T22:01:54+00:00"
 draft = false
 tags = ["linux", "gdb", "security"]
 title = "GDB debugging basics"
+author = "jpic"
 +++
+
 ### Introduction
 
 [GDB](http://en.wikipedia.org/wiki/Gdb) is a debugger for executables "objects" on Linux. It will use source code

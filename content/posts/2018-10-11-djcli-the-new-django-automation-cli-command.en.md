@@ -3,7 +3,9 @@ date = "2018-10-11T21:37:46+00:00"
 draft = false
 tags = ["python", "django", "devops"]
 title = "djcli: the new Django automation CLI command"
+author = "jpic"
 +++
+
 djcli is the package , a new CLI [under design phase](https://yourlabs.io/oss/djcli), it is a simple python package, that provides a command with name `djcli`, to do more with Django on the CLI:
 
 

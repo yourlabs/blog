@@ -3,7 +3,9 @@ date = "2016-01-29T01:21:28+00:00"
 draft = false
 tags = ["python", "django", "django-autocomplete-light"]
 title = "django-autocomplete-light 2.3.3 release"
+author = "jpic"
 +++
+
 This release fixes an important usability but on the manychoice fields, and introduces a minor backward compatibility break:
 
 - [#563](https://github.com/yourlabs/django-autocomplete-light/issues/563) Don't disable multiplechoicewidgets if select is `[multiple]`, [bd9ca0085](https://github.com/yourlabs/jquery-autocomplete-light/commit/bd9ca008530c0206b07e58ecb4775c4ed6532c7a)

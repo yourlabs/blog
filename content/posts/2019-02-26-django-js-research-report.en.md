@@ -3,7 +3,9 @@ date = "2019-02-26T20:20:37+00:00"
 draft = false
 tags = ["python", "django", "best-practice", "npm", "nodejs", "js"]
 title = "Django & JS research report"
+author = "jpic"
 +++
+
 This article aims to report the current state of research about dealing with both JS and Django, for people that aim to primarly deal with Django and enjoy the same workflow they have with python package with their frontend development, and find patterns to connect them while keeping them loosely coupled at whatever limit feels right for them. Nuff said, let's hack !
 
 [crudlfap](https://gitpitch.com/yourlabs/crudlfap#/12) relies on django-webpack-loader, which does its job very well. Also maintaining an [override in production project](https://github.com/betagouv/mrs/blob/master/src/mrs/static/js/crudlfap.js) which works in pure webpack.

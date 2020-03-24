@@ -3,7 +3,9 @@ date = "2018-03-04T15:16:38+00:00"
 draft = false
 tags = ["selenium", "best-practice", "python", "django", "js"]
 title = "Djangonauts: Say no to selenium drug"
+author = "jpic"
 +++
+
 When you start applying best development practices such as TDD, you discover that you make much better software.
 
 First, you can TDD your python code with anything, django has a test runner, otherwise you have pytest and many friends.

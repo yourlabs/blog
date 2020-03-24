@@ -3,7 +3,9 @@ date = "2015-06-25T01:14:51+00:00"
 draft = false
 tags = ["saltstack", "ci"]
 title = "Test Driven Development with SaltStack SLS code"
+author = "jpic"
 +++
+
 Getting started with [SaltStack](http://saltstack.com) usually means piling up a bunch of YAML code templated with Jinja in a source code repository because that's the way to go from the documentation's point of view. With significant whitespace, YAML enables even non-developers to define data structures in non verbose way. Jinja2 is a templating engine which enables a non-developer to make YAML files dynamic, typically depending on variables. However, Jinja2 hasn't significant whitespace and this can decrease readability of YAML templates. And since YAML and Jinja2 are two different languages in the same file, there is no readable way to ident code. Not to mention that Jinja2, as a template language rather than a programing language, has a pretty limited subset of operators.
 
 ### A kitten dies somewhere in the world when you read this example

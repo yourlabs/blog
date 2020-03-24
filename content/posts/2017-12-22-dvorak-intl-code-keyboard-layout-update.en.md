@@ -3,7 +3,9 @@ date = "2017-12-22T18:20:13+00:00"
 draft = false
 tags = ["dvorak-intl-code"]
 title = "Dvorak-intl-code Keyboard Layout Update"
+author = "jpic"
 +++
+
 Dvorak-intl-code is a keyboard layout optimized for polyglot hackers I've started working on and using in 2008.
 
 This article demonstrates how to easily create your own keyboard layout by extending an existing one, storing your config in your home directory and load it with a command which .xinitrc or whatever can call.

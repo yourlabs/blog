@@ -3,7 +3,9 @@ date = "2018-01-14T23:36:33+00:00"
 draft = false
 tags = ["django-dbdiff", "python", "django"]
 title = "django-dbdiff 0.7.3 release"
+author = "jpic"
 +++
+
 I'm pretty lazy when it comes to writing tests for existing code, however, I'm
 even lazier when it comes to repetitive manual testing action, catching up with untested legacy code when I want a lot of coverage now, at least to ease upstream dependency upgrade testing. 
 

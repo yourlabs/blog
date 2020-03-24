@@ -3,7 +3,9 @@ date = "2018-03-09T12:09:00+00:00"
 draft = false
 tags = ["python", "django"]
 title = "Model in Django: not what you think they are"
+author = "jpic"
 +++
+
 It's funny how my imagination was completely anihilated when I actually read django model field source code.
 
 I thought a Django Model was dedicated to designing the database.

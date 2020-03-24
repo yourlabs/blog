@@ -3,7 +3,9 @@ date = "2012-04-27T08:26:33+00:00"
 draft = false
 tags = ["dvorak-intl-code"]
 title = "Dvorak-intl-code"
+author = "jpic"
 +++
+
 After upgrading Ubuntu, I had to redo my custom dvorak layout.
 
 To enable it, the only way I've found is to add the layout to /usr/share/X11/xkb/us.

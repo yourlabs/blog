@@ -3,7 +3,9 @@ date = "2018-06-13T16:25:15+00:00"
 draft = false
 tags = ["python", "pip"]
 title = "Pip exception TypeError: parse() got an unexpected keyword argument 'transport_encoding'"
+author = "jpic"
 +++
+
 I had an old html5lib installed with --user, that would break globally installed pip from my Arch Linux system. Posting the solution that worked for me here because i couldn't find it elsewhere:
 
 
