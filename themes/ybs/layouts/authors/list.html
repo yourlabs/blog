@@ -1,20 +1,43 @@
-<h1>{{ .Params.name }}</h1>
-<img src="{{ .Params.photo }}" alt=""/>
-
-<h2>Bio</h2>
-{{ .Content }}
-{{ with .Params.twitter }}
-  <p>
-    <a href="https://twitter.com/{{ substr . 1 }}">
-      Follow {{ $.Params.name }} on Twitter
-    </a>
-  </p>
-{{ end }}
-
-<h2>Articles</h2>
-<ul>
-{{ range .Data.Pages }}
-    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-{{ end }}
-</ul>
-
+<!DOCTYPE html>
+<html lang="{{ .Lang | default .Site.Params.DefaultContentLanguage }}">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>{{ .Title }}</title>
+	{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+	{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+	<link rel="stylesheet" href="{{ "bundle.css" | relURL }}">
+	<link rel="stylesheet" href="{{ "fonts.css" | relURL }}">
+	<link rel="stylesheet" href="{{ "prism.css" | relURL }}">
+	{{ with .OutputFormats.Get "RSS" -}}
+		{{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
+	{{- end }}
+</head>
+<body>
+	{{ partial "header" . }}
+    <main>
+        <h1>{{ .Params.name }}</h1>
+            <img src="{{ .Params.photo }}" alt=""/>
+            <h2>Bio</h2>
+            {{ .Content }}
+            <h2>Articles</h2>
+            <ul>
+                {{ range where .Site.Pages ".Params.author" .Params.name }}
+                <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                {{ end }}
+            </ul>
+    </main>
+	{{ partial "footer" . }}
+    <script type="text/javascript" src="{{ .Site.BaseURL }}bundle.js"></script>
+    <script type="text/javascript" src="{{ "prism.js" | relURL }}"></script>
+    <script type="text/javascript">
+        var links = document.getElementsByTagName("a");
+        for (var i = 0, linksLength = links.length; i < linksLength; i++) {
+           if (links[i].hostname != window.location.hostname) {
+              links[i].target = '_blank';
+           }
+        }
+    </script>
+</body>
+</html>
