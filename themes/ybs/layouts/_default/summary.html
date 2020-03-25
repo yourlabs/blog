@@ -1,6 +1,6 @@
-<article>
-	<h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
-    {{ if not (in .URL "/tags/") }}
+{{ if not (in .URL "/tags/") }}
+    <article>
+        <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
 	    <time>{{ .Date.Format "02.01.2006 15:04" }}</time>
         {{ if  (isset .Params "author") | and (not (eq .Params.author "")) }}
             <span> |
@@ -8,23 +8,25 @@
                 <a href="{{ "/authors/" | relLangURL }}{{ .Params.author | urlize }}">{{ .Params.author }}</a>
             </span>
         {{ end }}
-    {{ end }}
-    {{ if .Params.tags }}
-    <span>
-        |
-        {{ range .Params.tags }}
-	        <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
-        {{ end }}
-    </span>
-	{{ end }}
-	<div style="padding: 1em 0">
-		{{ .Summary }}
-		{{ if .Truncated }}
-			<a class="read-more" href="{{ .Permalink }}">Read More</a>
-        {{ else }}
-            {{ if not (in .URL "/tags/") }}
-                <div style="height: 3em"></div>
+        {{ if .Params.tags }}
+        <span>
+            |
+            {{ range .Params.tags }}
+	            <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
             {{ end }}
-		{{ end }}
-	</div>
-</article>
+        </span>
+	    {{ end }}
+	    <div style="padding: 1em 0">
+	    	{{ .Summary }}
+	    	{{ if .Truncated }}
+	    		<a class="read-more" href="{{ .Permalink }}">Read More</a>
+            {{ else }}
+                {{ if not (in .URL "/tags/") }}
+                    <div style="height: 3em"></div>
+                {{ end }}
+	    	{{ end }}
+	    </div>
+    </article>
+{{ else }}
+    <a href="{{ .Permalink }}">{{ .Title }}</a>
+{{ end }}
