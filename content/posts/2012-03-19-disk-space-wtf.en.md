@@ -3,7 +3,9 @@ date = "2012-03-19T11:30:58+00:00"
 draft = false
 tags = ["linux"]
 title = "Disk space WTF"
+author = "jpic"
 +++
+
 What do you think is the problem when vim starts complaining that it can't
 write swap files, postgresql starts complaining that there is no disk space
 left, when df output is:

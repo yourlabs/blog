@@ -3,7 +3,9 @@ date = "2015-09-28T00:33:38+00:00"
 draft = false
 tags = ["python", "django", "django-autocomplete-light"]
 title = "Django 1.9 support for Django-autocomplete-light"
+author = "jpic"
 +++
+
 Since Django 1.9a1 was released, many users are going to upgrade their project and wonder why django-autocomplete-light won't load anymore. Probably, some users are going to google ImportError or even [`django.core.exceptions.AppRegistryNotReady: Apps aren't loaded yet`](https://github.com/yourlabs/django-autocomplete-light/commit/7e6d10e07cc3b6931f3ca738d07464d6667d4bda) about autocomplete_light and Django 1.9. This post documents the situation and provides a solution.
 
 Do:

@@ -3,7 +3,9 @@ date = "2012-04-02T08:00:06+00:00"
 draft = false
 tags = ["linux", "python"]
 title = "Distro-agnostic craftman’s guide to python environment management"
+author = "jpic"
 +++
+
 This article demystifies deployment of Python applications on any unix flavor.
 It’s distro agnostic approach is possible by a pragmatic use of each layer of a
 standard python application.

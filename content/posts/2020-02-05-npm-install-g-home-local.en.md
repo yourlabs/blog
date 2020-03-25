@@ -3,7 +3,9 @@ date = "2020-02-05T13:33:37+00:00"
 draft = false
 tags = ["nodejs", "npm", "linux"]
 title = "Use npm install -g in ~/.local non-root"
+author = "jpic"
 +++
+
 
 This articles presents the most convenient way to deal with global node
 packages as non-root user.

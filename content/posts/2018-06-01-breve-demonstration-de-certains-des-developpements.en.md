@@ -3,7 +3,9 @@ date = "2018-06-01T20:02:35+00:00"
 draft = false
 tags = ["python", "crudlfap"]
 title = "breve-demonstration-de-certains-des-developpements"
+author = "jpic"
 +++
+
 I had an old html5lib installed with --user, that would break globally installed pip from my Arch Linux system. Posting the solution that worked for me here because i couldn't find it elsewhere:
 
 

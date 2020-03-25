@@ -3,7 +3,9 @@ date = "2012-12-14T12:55:22+00:00"
 draft = false
 tags = ["django"]
 title = "Django admin probably going bootstrap, maybe completely rewritten ?"
+author = "jpic"
 +++
+
 It seems that [django admin revamp discussions started again](https://groups.google.com/forum/?fromgroups=#!topic/django-developers/Vozu6U3gz84).
 
 Last year, I sent a letter to santa asking for 12 transformers with super laser powers. I waited nicely and then received a little playmobil.

@@ -3,7 +3,9 @@ date = "2020-02-08T10:27:00+00:00"
 draft = false
 tags = []
 title = "Python 3.8 AST updates"
+author = "Thomas Binetruy"
 +++
+
 On this Friday night, I decided to give my mini Python to
 pseudo-Michelson compiler [^1] a little polish. I remembered leaving it
 working flawlessly, so that it'd be easy to get back grinding at it

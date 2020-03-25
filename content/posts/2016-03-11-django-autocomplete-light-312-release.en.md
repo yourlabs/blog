@@ -3,7 +3,9 @@ date = "2016-03-11T18:06:08+00:00"
 draft = false
 tags = ["django", "python", "django-autocomplete-light"]
 title = "django-autocomplete-light 3.1.2 release"
+author = "jpic"
 +++
+
 This posts announces the release of django-autocomplete-light 3.1.2:
 
 - [#634](https://github.com/yourlabs/django-autocomplete-light/issues/634): Select2 Upgrade

@@ -3,7 +3,9 @@ date = "2017-09-26T09:29:49+00:00"
 draft = false
 tags = ["python", "django", "yourlabs", "crudlfap"]
 title = "YourLabs Business Service is born"
+author = "jpic"
 +++
+
 It's my pleasure to announce the official birth of our new company, YourLabs Business Service. This company will work in conjunction with the YourLabs foundation and of course sponsor the Django apps ecosystem.
 
 We are hiring freelancers to:

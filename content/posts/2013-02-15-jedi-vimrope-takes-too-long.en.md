@@ -3,7 +3,9 @@ date = "2013-02-15T12:30:26+00:00"
 draft = false
 tags = ["python", "vim"]
 title = "Jedi-vim/rope takes too long"
+author = "jpic"
 +++
+
 For those [using](https://github.com/jpic/dotfiles/tree/master/bundle) [jedi-vim](https://github.com/davidhalter/jedi-vim) are indirectly using [rope](http://rope.sourceforge.net/) refactoring library.
 
 If you are also using a home-level virtualenv ie. in `~/env/` then your vim instance might take crazy long time.

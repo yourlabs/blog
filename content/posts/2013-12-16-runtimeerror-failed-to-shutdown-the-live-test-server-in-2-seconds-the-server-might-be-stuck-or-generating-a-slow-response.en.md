@@ -3,7 +3,9 @@ date = "2013-12-16T09:01:00+00:00"
 draft = false
 tags = ["selenium", "python", "django", "travis-ci"]
 title = "RuntimeError: Failed to shutdown the live test server in 2 seconds. The server might be stuck or generating a slow response."
+author = "jpic"
 +++
+
 Another problem you [might run into](https://travis-ci.org/yourlabs/django-autocomplete-light/jobs/15177540) when testing Django apps with Selenium on Travis:
 
     ======================================================================

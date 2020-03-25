@@ -3,7 +3,9 @@ date = "2016-01-10T12:54:31+00:00"
 draft = false
 tags = ["python", "django", "django-cities-light"]
 title = "django-cities-light 3.2.0 release"
+author = "jpic"
 +++
+
 django-cities-light 3.2.0 was released, supporting Django 1.7 to 1.9 now, even though older versions should still work, they aren't tested anymore.
 
 - [#105](https://github.com/yourlabs/django-cities-light/pull/105): Drop LazyProgressBar, patch was accepted upstream by

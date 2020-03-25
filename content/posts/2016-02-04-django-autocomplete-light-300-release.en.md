@@ -3,7 +3,9 @@ date = "2016-02-04T13:03:37+00:00"
 draft = false
 tags = ["django-autocomplete-light", "django", "python"]
 title = "django-autocomplete-light 3.0.0 release"
+author = "jpic"
 +++
+
 After 4 years of supporting django-autocomplete-light, I'm beginning to figure what users expect and the common mistakes, like registering the wrong model for autocomplete, or having troubbles figuring how to link suggestions with other form fields, or create choices on the fly, or with the magic modelform.
 
 So at first, I really tried to find other autocompletion apps for with DAL could be just an extension. It turned out that with they had too much security issues, known security vulnerabilities which aren't going to be fixed (which I don't dare to post here). As I have strong feelings about security, I decided to take another road, and took a 2-week code sprint working at night to make version 3.

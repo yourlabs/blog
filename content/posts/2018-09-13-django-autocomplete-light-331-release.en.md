@@ -3,7 +3,9 @@ date = "2018-09-13T13:36:36+00:00"
 draft = false
 tags = ["python", "django", "django-autocomplete-light"]
 title = "django-autocomplete-light 3.3.1 release"
+author = "jpic"
 +++
+
 Thanks to awesome contributors from all around the world, DAL 3.3.1 is out, one month after 3.3.0, that was the first non-rc release of 3.3.0 which starts to require Django 2.0.
 
 3.3.1

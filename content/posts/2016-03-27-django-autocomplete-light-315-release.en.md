@@ -3,7 +3,9 @@ date = "2016-03-27T02:28:55+00:00"
 draft = false
 tags = ["django", "python", "django-autocomplete-light"]
 title = "django-autocomplete-light 3.1.5 release"
+author = "jpic"
 +++
+
 This release enables [field-forwarding](http://django-autocomplete-light.readthedocs.org/en/master/tutorial.html#filtering-results-based-on-the-value-of-other-fields-in-the-form) in formsets and forms with prefix.
 
 Also note that several things have been made to help users: a new [tutorial section showing placeholder and minimum-input-length select2 options](http://django-autocomplete-light.readthedocs.org/en/master/tutorial.html#passing-options-to-select2) has been added and a system check will raise an error if select2's js is not present - typically for users who have `git clone`'d the repo without `--recursive`, resulting in a wc without select2.

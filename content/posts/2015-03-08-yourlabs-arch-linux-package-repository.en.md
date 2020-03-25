@@ -3,7 +3,9 @@ date = "2015-03-08T19:52:33+00:00"
 draft = false
 tags = ["arch", "linux", "postgresql"]
 title = "YourLabs Arch Linux Package Repository"
+author = "jpic"
 +++
+
 Today is the grand openning of our Arch Linux package repository, with the release of postgresql-bdr. It's a patched PostgreSQL server with BiDirectionnal Replication which seems too good to be true. I ran split brain tests and it reacted amazingly well, although it needs all nodes to be up for schema updates which is ok to me because I won't be running upgrades while I have a broken node: I'll be working on fixing it.
 
 Anyway, don't take my word for it and try it for yourself, something like this would probably work from an Arch box:

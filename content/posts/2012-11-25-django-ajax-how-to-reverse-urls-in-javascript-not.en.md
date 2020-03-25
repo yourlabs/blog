@@ -3,7 +3,9 @@ date = "2012-11-25T16:07:00+00:00"
 draft = false
 tags = ["ajax", "django", "http", "api"]
 title = "Django & ajax: how to reverse urls in javascript (not)"
+author = "jpic"
 +++
+
 **IMPORTANT UPDATE**: the approach proposed in this article is bad. Read [this one](http://blog.yourlabs.org/post/36729349793/django-ajax-hateoas-how-to-reverse-urls-in) instead.
 
 You can start building a user interface using Django's awesome CRUD in a matter of seconds, for example with just this server side configuration:

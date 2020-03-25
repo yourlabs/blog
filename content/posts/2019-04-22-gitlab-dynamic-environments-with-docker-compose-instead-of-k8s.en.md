@@ -3,7 +3,9 @@ date = "2019-04-22T07:34:26+00:00"
 draft = false
 tags = ["gitlab", "continuous-delivery", "best-practice"]
 title = "GitLab Dynamic Environments with Docker-Compose instead of K8S"
+author = "jpic"
 +++
+
 [Dynamic Environment](https://docs.gitlab.com/ee/ci/environments.html#configuring-dynamic-environments) is when your pipeline creates a branchname.example.com deployment, for integration tests or manual review. 
 
 Gitlab in autodevops mode and with Kubernetes lets you enjoy this kind of stuff by just starting projects from their template images. Note that YourLabs offers consulting if you need help to setup/maintain your baremetal K8S or GitLab instance to do this kind of thing. (Please forgive [horrible sound recording in our demo](https://www.youtube.com/watch?v=tAsg0AgTaMk))

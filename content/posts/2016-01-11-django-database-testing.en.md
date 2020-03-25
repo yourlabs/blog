@@ -3,7 +3,9 @@ date = "2016-01-11T12:30:16+00:00"
 draft = false
 tags = ["python", "django", "django-dbdiff"]
 title = "Django database testing"
+author = "jpic"
 +++
+
 I'm pretty lazy when it comes to writing tests for existing code, however, I'm even lazier when it comes to repetitive manual testing action, we've got so much patches to review and test against so many versions of Python and Django, we **need** testing to be automated.
 
 This article presents a new Django app for testing the database. [Java has DBunit](http://dbunit.sourceforge.net/) and [so does PHP](https://phpunit.de/manual/current/en/database.html), and [django now has django-dbdiff](https://github.com/yourlabs/django-dbdiff).

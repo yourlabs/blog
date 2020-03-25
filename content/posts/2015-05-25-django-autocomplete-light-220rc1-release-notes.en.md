@@ -3,7 +3,9 @@ date = "2015-05-25T16:45:02+00:00"
 draft = false
 tags = ["django-autocomplete-light", "django", "python"]
 title = "django-autocomplete-light 2.2.0rc1 release notes"
+author = "jpic"
 +++
+
 This article presents the changelog for django-autocomplete-light 2.2.0 release. To upgrade to 2.2.0rc1:
 
     pip install -U --pre django-autocomplete-light

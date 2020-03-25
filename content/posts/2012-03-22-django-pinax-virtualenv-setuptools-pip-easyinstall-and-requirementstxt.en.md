@@ -3,7 +3,9 @@ date = "2012-03-22T08:50:00+00:00"
 draft = false
 tags = ["django", "pinax", "python", "virtualenv", "best-practice"]
 title = "Django, Pinax, virtualenv, setuptools, pip, easy_install and requirements.txt"
+author = "jpic"
 +++
+
 This article describes how to build project dependencies with virtualenv. It is appliable to [Pinax](http://pinaxproject.com/).
 Pinax uses [virtualenv](http://pypi.python.org/pypi/virtualenv) by default. It lets the developer have a project-specific python directory, including binaries, packages etc … OpenSuse for example supplies very bad Pinax packages which allows the user to mess with his operating system. It is much better to isolate project dependencies from a project to another for more granular control of the maintenance cost; for example if a package upgrade breaks the user project.
 

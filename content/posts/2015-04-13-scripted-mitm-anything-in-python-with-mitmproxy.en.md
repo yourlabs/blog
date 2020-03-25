@@ -3,7 +3,9 @@ date = "2015-04-13T14:13:44+00:00"
 draft = false
 tags = ["linux", "python", "security", "ci"]
 title = "Scripted MITM AnyThing in Python with mitmproxy"
+author = "jpic"
 +++
+
 This article describes how to get a working transparent HTTP/HTTPS proxy which
 you can script in Python. I intend to use it to have custom caching and be able
 to abstract away all HTTP/HTTPS connections made in my LXC containers which are

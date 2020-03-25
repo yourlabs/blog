@@ -3,7 +3,9 @@ date = "2012-05-25T09:48:00+00:00"
 draft = false
 tags = ["python"]
 title = "Free services you can use to make a great python app"
+author = "jpic"
 +++
+
 A great django app should have:
 
 - a source repository

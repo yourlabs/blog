@@ -3,7 +3,9 @@ date = "2013-03-07T04:21:00+00:00"
 draft = false
 tags = ["postgresql", "linux"]
 title = "PostgreSQL for beginners: Initial configuration"
+author = "jpic"
 +++
+
 Those are notes taken from the talk ["PostgreSQL when it is not
 your job"](http://klewel.com/conferences/djangocon-2012/index.php?talkID=3) by
 [Christophe Pettus](http://thebuild.com/blog/) from 

@@ -3,7 +3,9 @@ date = "2018-08-12T08:06:35+00:00"
 draft = false
 tags = ["python", "django-autocomplete-light", "django"]
 title = "Django-autocomplete-light 3.3.0 release"
+author = "jpic"
 +++
+
 Changes since 3.3.0-rc6:
 
     - use admin statics

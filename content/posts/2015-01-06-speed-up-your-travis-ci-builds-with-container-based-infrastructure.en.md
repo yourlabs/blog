@@ -3,7 +3,9 @@ date = "2015-01-06T09:00:31+00:00"
 draft = false
 tags = ["travis-ci", "python", "django", "linux"]
 title = "Speed up your travis-ci builds with container based infrastructure"
+author = "jpic"
 +++
+
 Travis-ci just [released container based infrastructure for open source repository (free users)](http://blog.travis-ci.com/2014-12-17-faster-builds-with-container-based-infrastructure/).
 
 We tried it with our apps, and you can see we had some performance increase, even on database-intensive jobs:

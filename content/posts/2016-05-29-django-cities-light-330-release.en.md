@@ -3,7 +3,9 @@ date = "2016-05-29T12:37:18+00:00"
 draft = false
 tags = ["django", "python", "django-cities-light"]
 title = "django-cities-light 3.3.0 release"
+author = "jpic"
 +++
+
 Thanks to the amazing work by the YourLabs community, I'm proud to release 3.3.0 of django-cities-light:
 
 - [#118](https://github.com/yourlabs/django-autocomplete-light/issue/118): Add Django 1.10 support, drop Django 1.7 support by [@jpic](https://github.com/jpic)
