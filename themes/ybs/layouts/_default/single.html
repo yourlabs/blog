@@ -7,21 +7,23 @@
                   {{ .Date.Format "02.01.2006 15:04" }}
                 {{ end }}
             </time>
+            {{ if  (isset .Params "author") | and (not (eq .Params.author "")) }}
+            <span> |
+                {{ if eq .Lang "fr" }}par{{ else }}by {{ end }}
+                <a href="{{ "/authors/" | relLangURL }}{{ .Params.author | urlize }}">{{ .Params.author }}</a>
+            </span>
+            {{ end }}
+            {{ if (isset .Params "tags") | and (not (eq .Params.tags ""))}}
+			    {{ with .Params.tags }}
+                  |
+					{{ range . }}
+					<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+					{{ end }}
+			    {{ end }}
+            {{ end }}
 			<div>
 				{{ .Content }}
 			</div>
-            {{ if  (isset .Params "tags") | and (not (eq .Params.tags ""))}}
-			    {{ with .Params.tags }}
-			<div>
-                    <u>Tags:</u>
-				<ul id="tags">
-					{{ range . }}
-					<li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></li>
-					{{ end }}
-				</ul>
-			</div>
-			    {{ end }}
-            {{ end }}
 			{{ with .Site.DisqusShortname }}
 			<div>
 				{{ template "_internal/disqus.html" . }}

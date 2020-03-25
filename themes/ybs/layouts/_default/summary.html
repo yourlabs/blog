@@ -3,20 +3,18 @@
     {{ if not (in .URL "/tags/") }}
 	    <time>{{ .Date.Format "02.01.2006 15:04" }}</time>
         {{ if  (isset .Params "author") | and (not (eq .Params.author "")) }}
-            {{ if eq .Lang "fr" }}
-                <span> | par <a href="{{ "/authors/" | relLangURL }}{{ .Params.author | urlize }}">{{ .Params.author }}</a></span>
-            {{ else }}
-                <span> | by <a href="{{ "/authors/" | relLangURL }}{{ .Params.author | urlize }}">{{ .Params.author }}</a></span>
-            {{ end }}
+            <span> |
+                {{ if eq .Lang "fr" }}par{{ else }}by {{ end }}
+                <a href="{{ "/authors/" | relLangURL }}{{ .Params.author | urlize }}">{{ .Params.author }}</a>
+            </span>
         {{ end }}
     {{ end }}
-    {{if .Params.tags}}
+    {{ if .Params.tags }}
     <span>
-        <b> | </b>
-        tags:
+        |
         {{ range .Params.tags }}
 	        <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
-            {{ end }}
+        {{ end }}
     </span>
 	{{ end }}
 	<div style="padding: 1em 0">
