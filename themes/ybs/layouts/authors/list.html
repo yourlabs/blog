@@ -18,15 +18,72 @@
 	{{ partial "header" . }}
     <main>
         <h1>{{ .Params.name }}</h1>
-            <img src="{{ .Params.photo }}" alt=""/>
-            <h2>Bio</h2>
-            {{ .Content }}
-            <h2>Articles</h2>
-            <ul>
-                {{ range where .Site.Pages ".Params.author" .Params.name }}
+        <img src="{{ .Params.avatar }}" alt=""/>
+        <h2>Bio</h2>
+        {{ .Content }}
+        <h2>Links</h2>
+        <ul style="list-style-type:none">
+        {{ if  (isset .Params "email") | and (not (eq .Params.email "")) }}
+            <li class="li-svg">
+                <svg class="svg-icon" ViewBox="0 0 23 23">
+                    <use xlink:href="/img/social_icons.svg#email">
+                    </use>
+                </svg>
+                <a href="mailto:{{ .Params.email }}">{{ .Params.email }}</a>
+            </li>
+        {{ end }}
+        {{ if  (isset .Params "yourlabs") | and (not (eq .Params.yourlabs "")) }}
+            <li class="li-svg">
+                <svg class="svg-icon" ViewBox="0 0 23 23">
+                    <use xlink:href="/img/social_icons.svg#gitlab">
+                    </use>
+                </svg>
+                <a href="{{ .Params.yourlabs }}">Yourlabs</a>
+            </li>
+        {{ end }}
+        {{ if  (isset .Params "github") | and (not (eq .Params.github "")) }}
+            <li class="li-svg">
+                <svg class="svg-icon" ViewBox="0 0 23 23">
+                    <use xlink:href="/img/social_icons.svg#github">
+                    </use>
+                </svg>
+                <a href="{{ .Params.github }}">Github</a>
+            </li>
+        {{ end }}
+        {{ if  (isset .Params "gitlab") | and (not (eq .Params.gitlab "")) }}
+            <li class="li-svg">
+                <svg class="svg-icon" ViewBox="0 0 23 23">
+                    <use xlink:href="/img/social_icons.svg#gitlab">
+                    </use>
+                </svg>
+                <a href="{{ .Params.gitab }}">Gitlab</a>
+            </li>
+        {{ end }}
+        {{ if  (isset .Params "stackoverflow") | and (not (eq .Params.stackoverflow "")) }}
+            <li class="li-svg">
+                <svg class="svg-icon" ViewBox="0 0 23 23">
+                    <use xlink:href="/img/social_icons.svg#stackoverflow">
+                    </use>
+                </svg>
+                <a href="{{ .Params.stackoverflow }}">Stackoverflow</a>
+            </li>
+        {{ end }}
+        {{ if  (isset .Params "linkedin") | and (not (eq .Params.linkedin "")) }}
+            <li class="li-svg">
+                <svg class="svg-icon" ViewBox="0 0 23 23">
+                    <use xlink:href="/img/social_icons.svg#linkedin">
+                    </use>
+                </svg>
+                <a href="{{ .Params.linkedin }}">LinkedIn</a>
+            </li>
+        {{ end }}
+        </ul>
+        <h2>Articles</h2>
+        <ul>
+            {{ range where .Site.Pages ".Params.author" .Params.name }}
                 <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-                {{ end }}
-            </ul>
+            {{ end }}
+        </ul>
     </main>
 	{{ partial "footer" . }}
     <script type="text/javascript" src="{{ .Site.BaseURL }}bundle.js"></script>
