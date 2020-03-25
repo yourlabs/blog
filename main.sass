@@ -64,6 +64,9 @@ ul
   li
     list-style-type: disc
 
+p, ul
+  margin: 1em 0
+
 time
   color: #525252
   line-height: 2.8em
@@ -104,9 +107,6 @@ code
 
 pre
   padding: 1em
-
-p
-  margin: 1em 0
 
 img
   max-width: 100%
@@ -164,6 +164,17 @@ footer
       line-height: 1.3
       margin: 0
 
+.author-detail
+  div.avatar
+    @media screen and (min-width: 600px)
+      float: right
+      padding: 0 0 0 1.4em
+    @media screen and (max-width: 600px)
+      text-align: center
+
+  .articles li
+    list-style-type: none
+
 @media screen and (min-width: 1100px)
   nav li
     @include font-size(1.5rem)
@@ -172,11 +183,15 @@ footer
     margin: 3.5em auto
     max-width: 1100px
 
-.svg-icon
+.icon
   vertical-align: middle
-  margin-bottom: 10px
   width: 45px
   height: 45px
 
 .li-svg
   list-style-type: none
+  display: inline
+  margin: 1em
+
+  a
+    text-decoration: none
