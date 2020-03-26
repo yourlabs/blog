@@ -15,7 +15,15 @@ $color7: #ef64ee
 nav li
   font-family: 'Press Start 2P'
 
+header.main-header
+  position: fixed
+  top: 0
+  left: 1em
+  right: 0
+  background-color: white
+
 main
+  margin-top: 8vh
   max-width: 80em
   margin: 0 1em
   border-radius: 20px
@@ -176,9 +184,6 @@ footer
     list-style-type: none
 
 @media screen and (min-width: 1100px)
-  nav li
-    @include font-size(1.5rem)
-
   main
     margin: 3.5em auto
     max-width: 1100px
