@@ -12,9 +12,6 @@ $color5: #81eafd
 $color6: #ef64ee
 $color7: #ef64ee
 
-nav li
-  font-family: 'Press Start 2P'
-
 header.main-header
   position: fixed
   top: 0
@@ -130,11 +127,12 @@ img
 
 .main-nav
   ul
-    margin: 1em 0 .5em
     text-align: center
 
   li
     display: inline
+    font-family: 'Press Start 2P'
+    @include font-size(1rem)
 
   a
     display: inline-block
