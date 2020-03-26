@@ -13,6 +13,7 @@ build:
   - apk add g++ hugo
   - yarn install && yarn build
   - hugo
+  - gzip -k -6 $(find public -type f)
   artifacts:
     paths:
     - public
