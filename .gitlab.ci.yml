@@ -1,10 +1,6 @@
-stages: [build,docker,ci,test-stop,pages]
-
 variables:
-  GIT_SUBMODULE_STRATEGY: recursive
   IMAGE_TAG: hugo:$CI_COMMIT_SHA
   USER: gitlab
-  CI_URL: http://$CI_ENVIRONMENT_SLUG.blog.ci.yourlabs.io
 
 build:
   stage: build
@@ -13,7 +9,7 @@ build:
     name: hugo/$CI_COMMIT_REF_NAME
     url: http://$CI_ENVIRONMENT_SLUG.blog.ci.yourlabs.io
   script:
-  - sed -i "s@https://blog.yourlabs.org@$CI_URL@" config.toml
+  - sed -i "s@https://blog.yourlabs.org@$CI_ENVIRONMENT_URL@" config.toml
   - docker build -t $IMAGE_TAG .
 
 test:
