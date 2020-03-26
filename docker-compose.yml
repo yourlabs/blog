@@ -4,8 +4,17 @@ services:
   hugo:
     image: nginx
     labels:
-    - "traefik.http.routers.blog-${CI_ENVIRONMENT_SLUG}.rule=Host(`${CI_ENVIRONMENT_SLUG}.blog.ci.yourlabs.io`)"
+    - "traefik.http.routers.blog-${CI_ENVIRONMENT_SLUG}.rule=Host(`{{ lookup('env', 'CI_ENVIRONMENT_URL').split('/')[2] }}`)"
     - "traefik.http.routers.blog-${CI_ENVIRONMENT_SLUG}.entrypoints=web"
+{% if lookup('env', 'CI_ENVIRONMENT_URL').startswith('https') %}
+    - "traefik.http.routers.${CI_ENVIRONMENT_SLUG}.middlewares=redirect-to-https"
+    - "traefik.http.routers.${CI_ENVIRONMENT_SLUG}-ssl.entryPoints=websecure"
+    - "traefik.http.routers.${CI_ENVIRONMENT_SLUG}-ssl.rule=host(`{{ lookup('env', 'CI_ENVIRONMENT_URL').split('/')[2] }}`)"
+    - "traefik.http.routers.${CI_ENVIRONMENT_SLUG}-ssl.tls=true"
+    - "traefik.http.routers.${CI_ENVIRONMENT_SLUG}-ssl.tls.certResolver=leresolver"
+    - "traefik.http.routers.${CI_ENVIRONMENT_SLUG}-ssl.service=${CI_ENVIRONMENT_SLUG}-ssl"
+    - "traefik.http.services.${CI_ENVIRONMENT_SLUG}-ssl.loadBalancer.server.port=80"
+{% endif %}
     - "traefik.enable=true"
     - "traefik.port=80"
     networks:

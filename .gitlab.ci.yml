@@ -8,19 +8,6 @@ variables:
 
 build:
   stage: build
-  image: node:alpine
-  script:
-  - apk add g++ hugo
-  - yarn install && yarn build
-  - hugo
-  - npx clean-css-cli -o public/prism.css public/prism.css
-  - npx clean-css-cli -o public/fonts.css public/fonts.css
-  artifacts:
-    paths:
-    - public
-
-docker:
-  stage: docker
   image: docker:stable
   environment:
     name: hugo/$CI_COMMIT_REF_NAME
@@ -29,8 +16,8 @@ docker:
   - sed -i "s@https://blog.yourlabs.org@$CI_URL@" config.toml
   - docker build -t $IMAGE_TAG .
 
-ci:
-  stage: ci
+test:
+  stage: test
   image: yourlabs/ansible
   before_script:
   - mkdir -p ~/.ssh; echo "$ci_key" > ~/.ssh/id_ed25519; echo "$ci_fingerprint" > ~/.ssh/known_hosts; chmod 700 ~/.ssh; chmod 600 ~/.ssh/*
@@ -43,7 +30,7 @@ ci:
   - grep failed=0 deploy.log &> /dev/null
 
 test-stop:
-  stage: test-stop
+  stage: test
   image: yourlabs/ansible
   variables:
     GIT_STRATEGY: none
@@ -55,15 +42,15 @@ test-stop:
   - mkdir -p ~/.ssh; echo "$ci_key" > ~/.ssh/id_ed25519; echo "$ci_fingerprint" > ~/.ssh/known_hosts; chmod 700 ~/.ssh; chmod 600 ~/.ssh/*
   - bigsudo yourlabs.compose down hugo@ci.yourlabs.io project=$CI_COMMIT_REF_NAME -v
 
-pages:
-  stage: pages
-  image: registry.gitlab.com/pages/hugo:latest
-  dependencies: [build]
+deploy:
+  stage:
+  image: yourlabs/ansible
+  before_script:
+  - mkdir -p ~/.ssh; echo "$ci_key" > ~/.ssh/id_ed25519; echo "$ci_fingerprint" > ~/.ssh/known_hosts; chmod 700 ~/.ssh; chmod 600 ~/.ssh/*
+  environment:
+    name: production
+    url: https://yourlabs.org
   script:
-  - gzip -k -6 $(find public -type f)
-  artifacts:
-    paths:
-    - public
-  only:
-  - master
-
+  - bigsudo yourlabs.compose project=$CI_ENVIRONMENT_SLUG compose_hugo_image=$IMAGE_TAG hugo@ci.yourlabs.io -v | tee deploy.log
+  - grep unreachable=0 deploy.log &> /dev/null
+  - grep failed=0 deploy.log &> /dev/null
