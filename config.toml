@@ -10,6 +10,7 @@ theme = "ybs"
 metaDataFormat = "yaml"
 pygmentsUseClasses = true
 pygmentCodeFences = true
+enableRobotsTXT = "true"
 #disqusShortname = "XXX"
 #googleAnalytics = "XXX"
 
@@ -22,6 +23,7 @@ pygmentCodeFences = true
   rss = true
   comments = true
 #  gcse = "012345678901234567890:abcdefghijk" # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
+  description ="Yourlabs blog with posts about Continuous integration, Developpement, DevOps, Infra, Security, Automation"
 
 #[[Params.bigimg]]
 #  src = "img/triangle.jpg"
@@ -58,7 +60,7 @@ weight = 0
     weight = 2
 
 [[Languages.en.menu.main]]
-    name = "Securité"
+    name = "Security"
     url = "secops/"
     weight = 3
 
