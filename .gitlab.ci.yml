@@ -59,6 +59,7 @@ pages:
   dependencies: [build]
   script:
   - hugo
+  - gzip -k -6 $(find public -type f)
   artifacts:
     paths:
     - public
