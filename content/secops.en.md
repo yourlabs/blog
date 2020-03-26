@@ -1,5 +1,5 @@
 ---
-title: Cyber Sécurité
+title: Cyber Security
 subtitle: Pentest over network
 comments: false
 ---

@@ -13,6 +13,8 @@ build:
   - apk add g++ hugo
   - yarn install && yarn build
   - hugo
+  - npx clean-css-cli -o public/prism.css public/prism.css
+  - npx clean-css-cli -o public/fonts.css public/fonts.css
   artifacts:
     paths:
     - public
@@ -58,11 +60,10 @@ pages:
   image: registry.gitlab.com/pages/hugo:latest
   dependencies: [build]
   script:
-  - hugo
+  - gzip -k -6 $(find public -type f)
   artifacts:
     paths:
     - public
   only:
   - master
-
 

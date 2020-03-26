@@ -9,7 +9,6 @@
 	{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
 	<link rel="stylesheet" href="{{ "bundle.css" | relURL }}">
 	<link rel="stylesheet" href="{{ "fonts.css" | relURL }}">
-    <link rel="icon" href="/favicon.ico" >
 	<link rel="stylesheet" href="{{ "prism.css" | relURL }}">
 	{{ with .OutputFormats.Get "RSS" -}}
 		{{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
@@ -17,7 +16,8 @@
 </head>
 <body>
 	{{ partial "header" . }}
-	{{ block "main" . }}{{ end }}
+    <div>
+        <p>Sorry page not found</p>
 	{{ partial "footer" . }}
 
     <script src="{{ "bundle.js" | relURL }}"></script>

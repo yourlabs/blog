@@ -1,6 +1,7 @@
 {{ define "main" }}
 	<main>
 		{{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
+        <h1>Posts</h1>
 		{{ range $paginator.Pages }}
 			{{ .Render "summary" }}
 		{{ end }}
