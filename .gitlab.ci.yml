@@ -24,6 +24,9 @@ test:
   - bigsudo yourlabs.compose project=$CI_COMMIT_REF_NAME compose_hugo_image=$IMAGE_TAG lifetime=604800 hugo@ci.yourlabs.io -v | tee deploy.log
   - grep unreachable=0 deploy.log &> /dev/null
   - grep failed=0 deploy.log &> /dev/null
+  except:
+    refs:
+      - master
 
 test-stop:
   stage: test
@@ -37,9 +40,12 @@ test-stop:
   script:
   - mkdir -p ~/.ssh; echo "$ci_key" > ~/.ssh/id_ed25519; echo "$ci_fingerprint" > ~/.ssh/known_hosts; chmod 700 ~/.ssh; chmod 600 ~/.ssh/*
   - bigsudo yourlabs.compose down hugo@ci.yourlabs.io project=$CI_COMMIT_REF_NAME -v
+  except:
+    refs:
+      - master
 
 deploy:
-  stage:
+  stage: deploy
   image: yourlabs/ansible
   before_script:
   - mkdir -p ~/.ssh; echo "$ci_key" > ~/.ssh/id_ed25519; echo "$ci_fingerprint" > ~/.ssh/known_hosts; chmod 700 ~/.ssh; chmod 600 ~/.ssh/*
@@ -50,3 +56,6 @@ deploy:
   - bigsudo yourlabs.compose project=$CI_ENVIRONMENT_SLUG compose_hugo_image=$IMAGE_TAG hugo@ci.yourlabs.io -v | tee deploy.log
   - grep unreachable=0 deploy.log &> /dev/null
   - grep failed=0 deploy.log &> /dev/null
+  only:
+    refs:
+      - master
