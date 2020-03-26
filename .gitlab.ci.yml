@@ -1,5 +1,5 @@
 variables:
-  IMAGE_TAG: hugo:$CI_COMMIT_SHA
+  IMAGE_TAG: $CI_REGISTRY/blog:$CI_COMMIT_SHA
   USER: gitlab
 
 build:
@@ -11,6 +11,8 @@ build:
   script:
   - sed -i "s@https://blog.yourlabs.org@$CI_ENVIRONMENT_URL@" config.toml
   - docker build -t $IMAGE_TAG .
+  - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+  - docker push $IMAGE_TAG
 
 test:
   stage: test
@@ -53,7 +55,15 @@ deploy:
     name: production
     url: https://yourlabs.org
   script:
-  - bigsudo yourlabs.compose project=$CI_ENVIRONMENT_SLUG compose_hugo_image=$IMAGE_TAG hugo@ci.yourlabs.io -v | tee deploy.log
+  - bigsudo
+    yourlabs.compose
+    project=$CI_ENVIRONMENT_SLUG
+    compose_hugo_image=$IMAGE_TAG
+    docker_auth_username=$CI_REGISTRY_USER
+    docker_auth_password=$CI_REGISTRY_PASSWORD
+    docker_auth_registry=$CI_REGISTRY
+    hugo@ci.yourlabs.io
+    -v | tee deploy.log
   - grep unreachable=0 deploy.log &> /dev/null
   - grep failed=0 deploy.log &> /dev/null
   only:
