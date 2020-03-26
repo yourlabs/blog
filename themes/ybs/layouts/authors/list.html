@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>{{ .Title }}</title>
+	<title>{{ .Params.name }}</title>
 	{{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
 	{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
 	<link rel="stylesheet" href="{{ "bundle.css" | relURL }}">
@@ -22,7 +22,7 @@
         </div>
         <h1>{{ .Params.name }}</h1>
         {{ .Content }}
-        <br height="3em " />
+        <br/>
         <ul style="list-style-type:none; text-align: center; margin-top: 3em">
         {{ if  (isset .Params "yourlabs") | and (not (eq .Params.yourlabs "")) }}
             <li class="li-svg">
@@ -92,9 +92,9 @@
         </div>
     </main>
 	{{ partial "footer" . }}
-    <script type="text/javascript" src="{{ .Site.BaseURL }}bundle.js"></script>
-    <script type="text/javascript" src="{{ "prism.js" | relURL }}"></script>
-    <script type="text/javascript">
+    <script src="{{ .Site.BaseURL }}bundle.js"></script>
+    <script src="{{ "prism.js" | relURL }}"></script>
+    <script>
         var links = document.getElementsByTagName("a");
         for (var i = 0, linksLength = links.length; i < linksLength; i++) {
            if (links[i].hostname != window.location.hostname) {

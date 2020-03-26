@@ -19,9 +19,9 @@
 	{{ block "main" . }}{{ end }}
 	{{ partial "footer" . }}
 
-    <script type="text/javascript" src="{{ "bundle.js" | relURL }}"></script>
-    <script type="text/javascript" src="{{ "prism.js" | relURL }}"></script>
-    <script type="text/javascript">
+    <script src="{{ "bundle.js" | relURL }}"></script>
+    <script src="{{ "prism.js" | relURL }}"></script>
+    <script>
         var links = document.getElementsByTagName("a");
         for (var i = 0, linksLength = links.length; i < linksLength; i++) {
            if (links[i].hostname != window.location.hostname) {
