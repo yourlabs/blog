@@ -1,7 +1,7 @@
 {{ define "main" }}
-	<main>
-		<article>
-			<h1>{{ .Title }}</h1>
+    <main>
+        <article>
+            <h1>{{ .Title }}</h1>
                 {{ if ne .Date.Year 1 }}
                     <time datetime="{{ replace  ( .Date.Format "2006.07.07" ) "." "-" }}">
                     {{ .Date.Format "02.01.2006 15:04" }}
@@ -14,22 +14,22 @@
             </span>
             {{ end }}
             {{ if (isset .Params "tags") | and (not (eq .Params.tags ""))}}
-			    {{ with .Params.tags }}
+                {{ with .Params.tags }}
                   |
-					{{ range . }}
-					<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
-					{{ end }}
-			    {{ end }}
+                    {{ range . }}
+                    <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+                    {{ end }}
+                {{ end }}
             {{ end }}
-			<div>
-				{{ .Content }}
-			</div>
-			{{ with .Site.DisqusShortname }}
-			<div>
-				{{ template "_internal/disqus.html" . }}
-			</div>
-			{{ end }}
-		</article>
-	</main>
+            <div>
+                {{ .Content }}
+            </div>
+            {{ with .Site.DisqusShortname }}
+            <div>
+                {{ template "_internal/disqus.html" . }}
+            </div>
+            {{ end }}
+        </article>
+    </main>
 {{ partial "sidebar.html" . }}
 {{ end }}

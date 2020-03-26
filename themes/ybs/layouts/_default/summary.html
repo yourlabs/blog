@@ -14,20 +14,20 @@
         <span>
             |
             {{ range .Params.tags }}
-	            <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+                <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
             {{ end }}
         </span>
-	    {{ end }}
-	    <div style="padding: 1em 0">
-	    	{{ .Summary }}
-	    	{{ if .Truncated }}
-	    		<a class="read-more" href="{{ .Permalink }}">Read More</a>
+        {{ end }}
+        <div style="padding: 1em 0">
+            {{ .Summary }}
+            {{ if .Truncated }}
+                <a class="read-more" href="{{ .Permalink }}">Read More</a>
             {{ else }}
                 {{ if not (in .URL "/tags/") }}
                     <div style="height: 3em"></div>
                 {{ end }}
-	    	{{ end }}
-	    </div>
+            {{ end }}
+        </div>
     </article>
 {{ else }}
     <a href="{{ .Permalink }}">{{ .Title }}</a>
