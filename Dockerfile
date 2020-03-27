@@ -16,3 +16,4 @@ RUN gzip -k -6 $(find public -type f)
 
 FROM nginx:alpine
 COPY --from=1 /app/public /usr/share/nginx/html
+RUN sed -i 's@^.*#error_page  404.* /404.html;@    error_page  404  /404.html;@g' /etc/nginx/conf.d/default.conf

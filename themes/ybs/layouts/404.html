@@ -16,8 +16,26 @@
 </head>
 <body>
     {{ partial "header" . }}
-    <div>
-        <p>Sorry page not found</p>
+    <main>
+        <h1 style="text-align:center;size:34;padding:2.5em">{{ if eq .Lang "fr"}}Erreur{{ else }}Error{{ end }} 404</h1>
+        <h2>{{ if eq .Lang "fr"}}Derniers posts:{{ else }} Last posts:{{ end }}</h2>
+        <ul style="padding: 0 1em">
+            {{ range first 25 .Site.RegularPages }}
+                <li style="list-style-type:none;">
+                    <a href="{{ .Permalink }}">{{ .Title }}</a>
+                </li>
+            {{ end }}
+        </ul>
+        <h2>Tags:</h2>
+        <ul style="padding: 0 1em">
+            {{ $ctx := . }}
+            {{range $name, $taxonomy := .Site.Taxonomies.tags}}
+                <li style="display:inline;">
+                    <a href="{{ $ctx.Site.BaseURL }}{{"tags/" | relLangURL}}{{$name | urlize}}">{{$name}}</a>
+                </li>
+            {{end}}
+        </ul>
+    </main>
     {{ partial "footer" . }}
 
     <script src="{{ "bundle.js" | relURL }}"></script>
