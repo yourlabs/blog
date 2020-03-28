@@ -36,7 +36,7 @@ ci:
   - mkdir -p ~/.ssh; echo "$ci_key" > ~/.ssh/id_ed25519; echo "$ci_fingerprint" > ~/.ssh/known_hosts; chmod 700 ~/.ssh; chmod 600 ~/.ssh/*
   environment:
     name: hugo/$CI_COMMIT_REF_NAME
-    url: http://$CI_ENVIRONMENT_SLUG.blog.ci.yourlabs.io
+    url: http://hugo:hugo_boss@$CI_ENVIRONMENT_SLUG.blog.ci.yourlabs.io
   script:
   - bigsudo yourlabs.compose project=$CI_COMMIT_REF_NAME compose_hugo_image=$IMAGE_TAG lifetime=604800 hugo@ci.yourlabs.io -v | tee deploy.log
   - grep unreachable=0 deploy.log &> /dev/null
