@@ -6,7 +6,11 @@ services:
     labels:
     - "traefik.http.routers.blog-${CI_ENVIRONMENT_SLUG}.rule=Host(`${CI_ENVIRONMENT_SLUG}.blog.ci.yourlabs.io`)"
     - "traefik.http.routers.blog-${CI_ENVIRONMENT_SLUG}.entrypoints=web"
+    - "traefik.http.middlewares.hugobaseauth.basicauth.usersFile=/htpasswd/hugo"
+    - "traefik.http.middlewares.hugobaseauth.basicauth.removeheader=true"
+    - "traefik.http.routers.blog-${CI_ENVIRONMENT_SLUG}.middlewares=hugobaseauth"
     - "traefik.enable=true"
+    - "traefik.docker.network=web"
     - "traefik.port=80"
     networks:
     - web

@@ -1,4 +1,4 @@
-stages: [build,docker,ci,test-stop,pages]
+stages: [build,docker,ci,deploy,pages]
 
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
@@ -29,6 +29,23 @@ docker:
   - sed -i "s@https://blog.yourlabs.org@$CI_URL@" config.toml
   - docker build -t $IMAGE_TAG .
 
+preprod-docker:
+  stage: docker
+  image: docker:stable
+  environment:
+    name: hugo/$CI_COMMIT_REF_NAME
+    url: http://$CI_ENVIRONMENT_SLUG.blog.ci.yourlabs.io
+  script:
+    - sed -i "s@https://blog.yourlabs.org@https://test.ybs.re@" config.toml
+    - docker build -t hugo_preprod .
+    - docker save hugo_preprod | bzip2 > hugo.preprod
+  artifacts:
+    paths:
+    - hugo.preprod
+  only:
+    refs:
+      - mad
+
 ci:
   stage: ci
   image: yourlabs/ansible
@@ -36,24 +53,66 @@ ci:
   - mkdir -p ~/.ssh; echo "$ci_key" > ~/.ssh/id_ed25519; echo "$ci_fingerprint" > ~/.ssh/known_hosts; chmod 700 ~/.ssh; chmod 600 ~/.ssh/*
   environment:
     name: hugo/$CI_COMMIT_REF_NAME
-    url: http://$CI_ENVIRONMENT_SLUG.blog.ci.yourlabs.io
+    url: http://hugo:hugo_boss@$CI_ENVIRONMENT_SLUG.blog.ci.yourlabs.io
+    on_stop: ci-stop
   script:
   - bigsudo yourlabs.compose project=$CI_COMMIT_REF_NAME compose_hugo_image=$IMAGE_TAG lifetime=604800 hugo@ci.yourlabs.io -v | tee deploy.log
   - grep unreachable=0 deploy.log &> /dev/null
   - grep failed=0 deploy.log &> /dev/null
 
-test-stop:
-  stage: test-stop
+ci-stop:
+  stage: ci
   image: yourlabs/ansible
   variables:
     GIT_STRATEGY: none
   when: manual
   environment:
     action: stop
-    name: test/$CI_COMMIT_REF_NAME
+    name: hugo/$CI_COMMIT_REF_NAME
   script:
   - mkdir -p ~/.ssh; echo "$ci_key" > ~/.ssh/id_ed25519; echo "$ci_fingerprint" > ~/.ssh/known_hosts; chmod 700 ~/.ssh; chmod 600 ~/.ssh/*
   - bigsudo yourlabs.compose down hugo@ci.yourlabs.io project=$CI_COMMIT_REF_NAME -v
+
+deploy-preprod :
+  stage: deploy
+  image: alpine
+  before_script:
+  - mkdir -p ~/.ssh; echo "$fake_prod_key" > ~/.ssh/id_ed25519; echo "$fake_prod_fingerprint" > ~/.ssh/known_hosts; chmod 700 ~/.ssh; chmod 600 ~/.ssh/*
+  - apk add openssh-client
+  environment:
+    name: preprod/$CI_COMMIT_REF_NAME
+    url: https://hugo:hugo_boss@test.ybs.re
+    on_stop: preprod-stop
+  dependencies: [preprod-docker]
+  script:
+  - ssh hugo@test.ybs.re "mkdir -p /tmp/$CI_ENVIRONMENT_SLUG/hugo"
+  - scp docker-compose-preprod.yml hugo@test.ybs.re:/tmp/$CI_ENVIRONMENT_SLUG/hugo/docker-compose.yml
+  - scp hugo.preprod hugo@test.ybs.re:/tmp/$CI_ENVIRONMENT_SLUG/hugo/.
+  - ssh hugo@test.ybs.re "cd /tmp/$CI_ENVIRONMENT_SLUG/hugo/. ;
+                          sudo docker rm -f hugo_preprod || :;
+                          sudo docker rmi -f hugo_preprod:latest || :;
+                          bunzip2 -c hugo.preprod | sudo docker load &&
+                          sudo docker-compose up -d"
+  only:
+    refs:
+      - mad
+
+
+preprod-stop:
+  stage: deploy
+  image: alpine
+  before_script:
+  - mkdir -p ~/.ssh; echo "$fake_prod_key" > ~/.ssh/id_ed25519; echo "$fake_prod_fingerprint" > ~/.ssh/known_hosts; chmod 700 ~/.ssh; chmod 600 ~/.ssh/*
+  - apk add openssh-client
+  environment:
+    name: preprod/$CI_COMMIT_REF_NAME
+    action: stop
+  when: manual
+  script:
+  - ssh hugo@test.ybs.re "cd /tmp/$CI_ENVIRONMENT_SLUG/hugo/. &&
+                          sudo docker rm -f hugo_preprod ||:;
+                          sudo docker rmi -f hugo_preprod:latest || :;"
+
 
 pages:
   stage: pages
