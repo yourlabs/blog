@@ -45,6 +45,7 @@ preprod-docker:
   only:
     refs:
       - mad
+      - master
 
 ci:
   stage: ci
@@ -96,6 +97,7 @@ deploy-preprod :
   only:
     refs:
       - mad
+      - master
 
 
 preprod-stop:
@@ -112,7 +114,10 @@ preprod-stop:
   - ssh hugo@test.ybs.re "cd /tmp/$CI_ENVIRONMENT_SLUG/hugo/. &&
                           sudo docker rm -f hugo_preprod ||:;
                           sudo docker rmi -f hugo_preprod:latest || :;"
-
+  only:
+    refs:
+      - mad
+      - master
 
 pages:
   stage: pages
