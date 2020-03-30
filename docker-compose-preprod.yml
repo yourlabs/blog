@@ -7,13 +7,15 @@ services:
     - "traefik.http.routers.hugo.rule=Host(`test.ybs.re`)"
     - "traefik.http.middlewares.hugobaseauth.basicauth.usersFile=/htpasswd/hugo"
     - "traefik.http.middlewares.hugobaseauth.basicauth.removeheader=true"
+    - "traefik.http.middlewares.redirect-to-https.redirectscheme.scheme=https"
     - "traefik.http.routers.hugo.middlewares=hugobaseauth"
     - "traefik.enable=true"
     - "traefik.docker.network=web"
+    - "traefik.http.routers.redirs.rule=hostregexp(`{host:.+}`)"
+    - "traefik.http.routers.redirs.entrypoints=web"
+    - "traefik.http.routers.redirs.middlewares=redirect-to-https"
     - "traefik.http.routers.hugo.tls=true"
     - "traefik.http.routers.hugo.tls.certresolver=leresolver"
-    - "traefik.port=443"
-    - "traefik.hugo.protocol=https"
     networks:
     - web
     container_name: hugo_preprod
