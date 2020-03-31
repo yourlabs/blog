@@ -10,7 +10,7 @@ build:
   stage: build
   image: node:alpine
   script:
-  - apk add g++ hugo
+  - apk add g++ hugo --repository=http://dl-cdn.alpinelinux.org/alpine/edge/community
   - yarn install && yarn build
   - hugo
   - npx clean-css-cli -o public/prism.css public/prism.css
@@ -26,8 +26,7 @@ docker:
     name: hugo/$CI_COMMIT_REF_NAME
     url: http://$CI_ENVIRONMENT_SLUG.blog.ci.yourlabs.io
   script:
-  - sed -i "s@https://blog.yourlabs.org@$CI_URL@" config.toml
-  - docker build -t $IMAGE_TAG .
+  - docker build -t $IMAGE_TAG --build-arg HUGO_URL=$CI_URL .
 
 preprod-docker:
   stage: docker
@@ -36,8 +35,7 @@ preprod-docker:
     name: hugo/$CI_COMMIT_REF_NAME
     url: http://$CI_ENVIRONMENT_SLUG.blog.ci.yourlabs.io
   script:
-    - sed -i "s@https://blog.yourlabs.org@https://test.ybs.re@" config.toml
-    - docker build -t hugo_preprod .
+    - docker build -t hugo_preprod --build-arg HUGO_URL="https://test.ybs.re" .
     - docker save hugo_preprod | bzip2 > hugo.preprod
   artifacts:
     paths:

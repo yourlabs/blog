@@ -10,9 +10,10 @@ FROM registry.gitlab.com/pages/hugo:latest
 COPY . /app
 COPY --from=0 /app/themes/ybs/static /app/themes/ybs/static
 WORKDIR /app
-RUN hugo
+ARG HUGO_URL="https://blog.yourlabs.org"
+RUN hugo --baseURL=$HUGO_URL
 RUN gzip -k -6 $(find public -type f)
 
 FROM nginx:alpine
 COPY --from=1 /app/public /usr/share/nginx/html
-RUN sed -i 's@^.*#error_page  404.* /404.html;@    error_page  404  /404.html;@g' /etc/nginx/conf.d/default.conf
+RUN sed -i '/^.*#error*/s/^.*#/    /' /etc/nginx/conf.d/default.conf
