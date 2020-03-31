@@ -5,10 +5,7 @@ services:
     image: hugo_preprod
     labels:
     - "traefik.http.routers.hugo.rule=Host(`test.ybs.re`)"
-    - "traefik.http.middlewares.hugobaseauth.basicauth.usersFile=/htpasswd/hugo"
-    - "traefik.http.middlewares.hugobaseauth.basicauth.removeheader=true"
     - "traefik.http.middlewares.redirect-to-https.redirectscheme.scheme=https"
-    - "traefik.http.routers.hugo.middlewares=hugobaseauth"
     - "traefik.enable=true"
     - "traefik.docker.network=web"
     - "traefik.http.routers.redirs.rule=hostregexp(`{host:.+}`)"
@@ -16,6 +13,19 @@ services:
     - "traefik.http.routers.redirs.middlewares=redirect-to-https"
     - "traefik.http.routers.hugo.tls=true"
     - "traefik.http.routers.hugo.tls.certresolver=leresolver"
+# Remove basicauth in prod
+    - "traefik.http.middlewares.hugobaseauth.basicauth.usersFile=/htpasswd/hugo"
+    - "traefik.http.middlewares.hugobaseauth.basicauth.removeheader=true"
+# end basicauth
+    - "traefik.http.middlewares.hugoHeader.headers.framedeny=true"
+    - "traefik.http.middlewares.hugoHeader.headers.sslredirect=true"
+    - "traefik.http.middlewares.hugoHeader.headers.contenttypenosniff=true"
+    - "traefik.http.middlewares.hugoHeader.headers.browserxssfilter=true"
+    - "traefik.http.middlewares.hugoHeader.headers.contentsecuritypolicy=frame-src 'self';default-src 'self';script-src 'self';object-src 'self'"
+    - "traefik.http.middlewares.hugoHeader.headers.sslforcehost=true"
+    - "traefik.http.middlewares.hugoHeader.headers.stsseconds=63072000"
+    - "traefik.http.middlewares.hugoHeader.headers.stspreload=true"
+    - "traefik.http.routers.hugo.middlewares=hugoHeader, hugobaseauth"
     networks:
     - web
     container_name: hugo_preprod
