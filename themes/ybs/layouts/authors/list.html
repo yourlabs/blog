@@ -24,7 +24,7 @@
         <h1>{{ .Params.name }}</h1>
         {{ .Content }}
         <br/>
-        <ul style="list-style-type:none; text-align: center; margin-top: 3em">
+        <ul class="author-links">
         {{ if  (isset .Params "yourlabs") | and (not (eq .Params.yourlabs "")) }}
             <li class="li-svg">
                 <a href="{{ .Params.yourlabs }}" title="YourLabs Hacker account for {{ .Params.name }}">
@@ -93,15 +93,7 @@
         </div>
     </main>
     {{ partial "footer" . }}
-    <script src="{{ .Site.BaseURL }}bundle.js"></script>
+    <script src="{{ "bundle.js" | relURL }}"></script>
     <script src="{{ "prism.js" | relURL }}"></script>
-    <script>
-        var links = document.getElementsByTagName("a");
-        for (var i = 0, linksLength = links.length; i < linksLength; i++) {
-           if (links[i].hostname != window.location.hostname) {
-              links[i].target = '_blank';
-           }
-        }
-    </script>
 </body>
 </html>

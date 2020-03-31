@@ -17,20 +17,20 @@
 <body>
     {{ partial "header" . }}
     <main>
-        <h1 style="text-align:center;size:34;padding:2.5em">{{ if eq .Lang "fr"}}Erreur{{ else }}Error{{ end }} 404</h1>
+        <h1 class="notfound">{{ if eq .Lang "fr"}}Erreur{{ else }}Error{{ end }} 404</h1>
         <h2>{{ if eq .Lang "fr"}}Derniers posts:{{ else }} Last posts:{{ end }}</h2>
-        <ul style="padding: 0 1em">
+        <ul class="post-list">
             {{ range first 25 .Site.RegularPages }}
-                <li style="list-style-type:none;">
+                <li class="post-list">
                     <a href="{{ .Permalink }}">{{ .Title }}</a>
                 </li>
             {{ end }}
         </ul>
         <h2>Tags:</h2>
-        <ul style="padding: 0 1em">
+        <ul class="tag-list">
             {{ $ctx := . }}
             {{range $name, $taxonomy := .Site.Taxonomies.tags}}
-                <li style="display:inline;">
+                <li>
                     <a href="{{ $ctx.Site.BaseURL }}{{"tags/" | relLangURL}}{{$name | urlize}}">{{$name}}</a>
                 </li>
             {{end}}
@@ -40,13 +40,5 @@
 
     <script src="{{ "bundle.js" | relURL }}"></script>
     <script src="{{ "prism.js" | relURL }}"></script>
-    <script>
-        var links = document.getElementsByTagName("a");
-        for (var i = 0, linksLength = links.length; i < linksLength; i++) {
-           if (links[i].hostname != window.location.hostname) {
-              links[i].target = '_blank';
-           }
-        }
-    </script>
 </body>
 </html>
