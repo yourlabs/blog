@@ -1,4 +1,4 @@
-stages: [build,docker,ci,deploy,pages]
+stages: [build,deploy,pages]
 
 variables:
   GIT_SUBMODULE_STRATEGY: recursive
@@ -20,7 +20,7 @@ build:
     - public
 
 docker:
-  stage: docker
+  stage: build
   image: docker:stable
   environment:
     name: hugo/$CI_COMMIT_REF_NAME
@@ -29,7 +29,7 @@ docker:
   - docker build -t $IMAGE_TAG --build-arg HUGO_URL=$CI_URL .
 
 preprod-docker:
-  stage: docker
+  stage: build
   image: docker:stable
   environment:
     name: hugo/$CI_COMMIT_REF_NAME
@@ -46,7 +46,7 @@ preprod-docker:
       - master
 
 ci:
-  stage: ci
+  stage: deploy
   image: yourlabs/ansible
   before_script:
   - mkdir -p ~/.ssh; echo "$ci_key" > ~/.ssh/id_ed25519; echo "$ci_fingerprint" > ~/.ssh/known_hosts; chmod 700 ~/.ssh; chmod 600 ~/.ssh/*
@@ -60,7 +60,7 @@ ci:
   - grep failed=0 deploy.log &> /dev/null
 
 ci-stop:
-  stage: ci
+  stage: deploy
   image: yourlabs/ansible
   variables:
     GIT_STRATEGY: none
