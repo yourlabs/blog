@@ -18,13 +18,13 @@
             {{ end }}
         </span>
         {{ end }}
-        <div style="padding: 1em 0">
+        <div class="articlepreview">
             {{ .Summary }}
             {{ if .Truncated }}
                 <a class="read-more" href="{{ .Permalink }}">Read More</a>
             {{ else }}
                 {{ if not (in .URL "/tags/") }}
-                    <div style="height: 3em"></div>
+                    <div class="tags"></div>
                 {{ end }}
             {{ end }}
         </div>
