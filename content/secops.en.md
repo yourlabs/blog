@@ -34,7 +34,7 @@ hacker](https://www.meetup.com/Angouleme-Hack-Dev-Barcamp-1337/) aestetic.
 The blackbox **audit report** analyzes the results and determines the level of
 risk (score out of 10) of each penetration vector.
 
-A **counter-audit report** is offered for each service from € 4,250, it serves
+A **counter-audit report** is offered for each service from € 5,000, it serves
 as proof certifying that the documented vulnerabilities in the
 *audit report* are well corrected.
 
