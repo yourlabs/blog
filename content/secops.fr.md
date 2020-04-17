@@ -40,7 +40,7 @@ Un **rapport de contre-audit** est offert pour chaque prestation à partir de
 
 ## L'audit Blackbox
 
-**L'audit "blackbox"** scanne votre zone publique avec les outils spécialisés dans
+**L'audit "blackbox"** scan votre zone publique avec les outils spécialisés dans
 les langages et protocoles de communication des services (HTTP, DNS, SSH, ...)
 exposés sur le réseau public (internet).
 
