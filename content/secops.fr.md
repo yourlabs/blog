@@ -35,7 +35,7 @@ Le **rapport d'audit** blackbox analyse les résultats et détermine le niveau d
 risque (note sur 10) de chaque vecteur de pénétration.
 
 Un **rapport de contre-audit** est offert pour chaque prestation à partir de
-5000€, il sert de justificatif certifiant que les failles documentées dans le
+4250€, il sert de justificatif certifiant que les failles documentées dans le
 *rapport d'audit* sont bien corrigées.
 
 ## L'audit Blackbox
