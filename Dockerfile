@@ -2,6 +2,7 @@ FROM node:alpine
 
 COPY . /app
 WORKDIR /app
+RUN apk update && apk add python2 make g++
 RUN yarn && yarn build
 RUN npx clean-css-cli -o themes/ybs/static/prism.css themes/ybs/static/prism.css
 RUN npx clean-css-cli -o themes/ybs/static/fonts.css themes/ybs/static/fonts.css
