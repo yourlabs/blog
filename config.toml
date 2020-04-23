@@ -51,7 +51,7 @@ title = "Yourlabs"
 weight = 0
 
 [[Languages.en.menu.main]]
-    name = "BLOG BLOG BLOG"
+    name = "Blog"
     url = "/"
     weight = 1
 
