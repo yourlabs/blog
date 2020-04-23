@@ -10,7 +10,7 @@ build:
   stage: build
   image: node:alpine
   script:
-  - apk add g++ hugo --repository=http://dl-cdn.alpinelinux.org/alpine/edge/community
+  - apk add g++ hugo python2 make --repository=http://dl-cdn.alpinelinux.org/alpine/edge/community
   - yarn install && yarn build
   - hugo
   - npx clean-css-cli -o public/prism.css public/prism.css
