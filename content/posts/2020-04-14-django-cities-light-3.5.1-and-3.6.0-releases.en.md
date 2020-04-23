@@ -2,7 +2,7 @@
 date = "2020-04-14T10:27:00+00:00"
 draft = false
 tags = []
-title = "django-cities-light 3.5.1 and 3.6.0 releases, and jazzband move"
+title = "SUPER TITLE"
 author = "jpic"
 +++
 
