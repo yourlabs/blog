@@ -28,23 +28,6 @@ docker:
   script:
   - docker build -t $IMAGE_TAG --build-arg HUGO_URL=$CI_URL .
 
-preprod-docker:
-  stage: build
-  image: docker:stable
-  environment:
-    name: hugo/$CI_COMMIT_REF_NAME
-    url: http://$CI_ENVIRONMENT_SLUG.blog.ci.yourlabs.io
-  script:
-    - docker build -t hugo_preprod --build-arg HUGO_URL="https://test.ybs.re" .
-    - docker save hugo_preprod | bzip2 > hugo.preprod
-  artifacts:
-    paths:
-    - hugo.preprod
-  only:
-    refs:
-      - mad
-      - master
-
 ci:
   stage: deploy
   image: yourlabs/ansible
@@ -71,51 +54,6 @@ ci-stop:
   script:
   - mkdir -p ~/.ssh; echo "$ci_key" > ~/.ssh/id_ed25519; echo "$ci_fingerprint" > ~/.ssh/known_hosts; chmod 700 ~/.ssh; chmod 600 ~/.ssh/*
   - bigsudo yourlabs.compose down hugo@ci.yourlabs.io project=$CI_COMMIT_REF_NAME -v
-
-deploy-preprod :
-  stage: deploy
-  image: alpine
-  before_script:
-  - mkdir -p ~/.ssh; echo "$fake_prod_key" > ~/.ssh/id_ed25519; echo "$fake_prod_fingerprint" > ~/.ssh/known_hosts; chmod 700 ~/.ssh; chmod 600 ~/.ssh/*
-  - apk add openssh-client
-  environment:
-    name: preprod/$CI_COMMIT_REF_NAME
-    url: https://hugo:hugo_boss@test.ybs.re
-    on_stop: preprod-stop
-  dependencies: [preprod-docker]
-  script:
-  - ssh hugo@test.ybs.re "mkdir -p /tmp/$CI_ENVIRONMENT_SLUG/hugo"
-  - scp docker-compose-preprod.yml hugo@test.ybs.re:/tmp/$CI_ENVIRONMENT_SLUG/hugo/docker-compose.yml
-  - scp hugo.preprod hugo@test.ybs.re:/tmp/$CI_ENVIRONMENT_SLUG/hugo/.
-  - ssh hugo@test.ybs.re "cd /tmp/$CI_ENVIRONMENT_SLUG/hugo/. ;
-                          sudo docker rm -f hugo_preprod || :;
-                          sudo docker rmi -f hugo_preprod:latest || :;
-                          bunzip2 -c hugo.preprod | sudo docker load &&
-                          sudo docker-compose up -d"
-  only:
-    refs:
-      - mad
-      - master
-
-
-preprod-stop:
-  stage: deploy
-  image: alpine
-  before_script:
-  - mkdir -p ~/.ssh; echo "$fake_prod_key" > ~/.ssh/id_ed25519; echo "$fake_prod_fingerprint" > ~/.ssh/known_hosts; chmod 700 ~/.ssh; chmod 600 ~/.ssh/*
-  - apk add openssh-client
-  environment:
-    name: preprod/$CI_COMMIT_REF_NAME
-    action: stop
-  when: manual
-  script:
-  - ssh hugo@test.ybs.re "cd /tmp/$CI_ENVIRONMENT_SLUG/hugo/. &&
-                          sudo docker rm -f hugo_preprod ||:;
-                          sudo docker rmi -f hugo_preprod:latest || :;"
-  only:
-    refs:
-      - mad
-      - master
 
 pages:
   stage: pages
