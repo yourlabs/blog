@@ -27,6 +27,8 @@ docker:
     url: http://$CI_ENVIRONMENT_SLUG.blog.ci.yourlabs.io
   script:
   - docker build -t $IMAGE_TAG --build-arg HUGO_URL=$CI_URL .
+  except:
+  - master
 
 ci:
   stage: deploy
@@ -41,6 +43,8 @@ ci:
   - bigsudo yourlabs.compose project=$CI_COMMIT_REF_NAME compose_hugo_image=$IMAGE_TAG lifetime=604800 hugo@ci.yourlabs.io -v | tee deploy.log
   - grep unreachable=0 deploy.log &> /dev/null
   - grep failed=0 deploy.log &> /dev/null
+  except:
+  - master
 
 ci-stop:
   stage: deploy
@@ -54,6 +58,8 @@ ci-stop:
   script:
   - mkdir -p ~/.ssh; echo "$ci_key" > ~/.ssh/id_ed25519; echo "$ci_fingerprint" > ~/.ssh/known_hosts; chmod 700 ~/.ssh; chmod 600 ~/.ssh/*
   - bigsudo yourlabs.compose down hugo@ci.yourlabs.io project=$CI_COMMIT_REF_NAME -v
+  except:
+  - master
 
 pages:
   stage: pages
@@ -66,4 +72,3 @@ pages:
     - public
   only:
   - master
-
