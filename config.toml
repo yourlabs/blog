@@ -43,7 +43,6 @@ enableRobotsTXT = "true"
   github = "jpic"
   stackoverflow = "users/136008/jpic"
 
-
 [Languages]
 [Languages.en]
 languagename = "En"
@@ -51,7 +50,7 @@ title = "Yourlabs"
 weight = 0
 
 [[Languages.en.menu.main]]
-    name = "Blog"
+    name = "Home"
     url = "/"
     weight = 1
 
@@ -81,7 +80,7 @@ title = "Yourlabs"
 weight = 1
 
 [[Languages.fr.menu.main]]
-    name = "Blog"
+    name = "Accueil"
     url = "fr/"
     weight = 1
 

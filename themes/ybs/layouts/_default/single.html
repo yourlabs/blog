@@ -1,6 +1,6 @@
 {{ define "main" }}
     <main>
-        <article>
+        <article class="container">
             <h1>{{ .Title }}</h1>
                 {{ if ne .Date.Year 1 }}
                     <time datetime="{{ replace  ( .Date.Format "2006.07.07" ) "." "-" }}">
