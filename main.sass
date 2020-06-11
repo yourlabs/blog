@@ -3,25 +3,35 @@
 
 $break-large: 800px
 
-$color1: #b097fd
 $color0: #444fff
-$color2: rgb(255, 8, 131)
+$color1: #b097fd  // light purlple
+$color2: rgb(255, 8, 131)  // pink
 $color3: #fa52d1
 $color4: #938dff
-$color5: #81eafd
+$color5: #81eafd  // lightblue
 $color6: #ef64ee
-$color7: #ef64ee
 
 main
-  max-width: 80em
-  margin: 0 1em
-  border-radius: 20px
-
   line-height: 1.6
-  padding: 1em
-
   font-family: "Open Sans", "Helvetica", "Arial", sans-serif
 
+.hero
+  min-height: 33vh
+  background: linear-gradient(to bottom, $color0 0, $color4 100%)
+
+  color: white
+  text-align: center
+  h1
+    color: white
+    padding-top: 7vh
+    line-height: 2.5
+  span.subtitle
+    display: block
+
+.container
+  max-width: 80em
+  margin: 0 1em
+  padding: 1em
 
 a, a:visited
   color: $color0
@@ -111,9 +121,14 @@ img
 
 @media screen and (min-width: 1100px)
   main
+    margin-top: 8vh
+
+  .container
     margin: 3.5em auto
     max-width: 1100px
-    margin-top: 8vh
+
+  .hero
+    min-height: 35vh
 
   header.main-header
     position: fixed
@@ -139,8 +154,8 @@ img
       text-align: center
     li
       display: inline
-      font-family: 'Press Start 2P'
       @include font-size(1rem)
+      font-weight: bold
     a
       display: inline-block
       padding: .3em .5em
@@ -148,7 +163,7 @@ img
       color: $color6
 
 footer
-  background-color: #000A
+  background-color: #000000
   color: white
   text-align: center
   margin-top: 4.5rem
