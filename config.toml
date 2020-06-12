@@ -6,7 +6,6 @@ title = "Yourlabs"
 canonifyurls  = true
 
 DefaultContentLanguage = "en"
-theme = "ybs"
 metaDataFormat = "yaml"
 pygmentsUseClasses = true
 pygmentCodeFences = true
