@@ -11,7 +11,7 @@ pygmentsUseClasses = true
 pygmentCodeFences = true
 enableRobotsTXT = "true"
 #disqusShortname = "XXX"
-#googleAnalytics = "XXX"
+googleAnalytics = "UA-169189134-1"
 
 [Params]
   subtitle = "Hack meets Art"
