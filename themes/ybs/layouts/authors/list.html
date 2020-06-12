@@ -1,99 +1,14 @@
-<!DOCTYPE html>
-<html lang="{{ .Lang | default .Site.Params.DefaultContentLanguage }}">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{{ .Params.name }}</title>
-    {{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
-    {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
-    <link rel="stylesheet" href="{{ "bundle.css" | relURL }}">
-    <link rel="stylesheet" href="{{ "fonts.css" | relURL }}">
-    <link rel="icon" href="favicon.ico">
-    <link rel="stylesheet" href="{{ "prism.css" | relURL }}">
-    {{ with .OutputFormats.Get "RSS" -}}
-        {{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
-    {{- end }}
-</head>
-<body class="author-detail">
-    {{ partial "header" . }}
-    <main>
-        <div class="avatar">
-            <img src="{{ .Params.avatar }}" alt="" class="avatar" />
-        </div>
-        <h1>{{ .Params.name }}</h1>
-        {{ .Content }}
-        <br/>
-        <ul class="author-links">
-        {{ if  (isset .Params "yourlabs") | and (not (eq .Params.yourlabs "")) }}
-            <li class="li-svg">
-                <a href="{{ .Params.yourlabs }}" title="YourLabs Hacker account for {{ .Params.name }}">
-                    <img class="icon" src="/img/logo_icon.png" alt="YourLabs 1337 c0des" />
-                </a>
-            </li>
-        {{ end }}
-        {{ if  (isset .Params "email") | and (not (eq .Params.email "")) }}
-            <li class="li-svg">
-                <a href="mailto:{{ .Params.email }}">
-                    <svg class="icon" ViewBox="0 0 25 25">
-                        <use xlink:href="/img/social_icons.svg#email">
-                        </use>
-                    </svg>
-                </a>
-            </li>
-        {{ end }}
-        {{ if  (isset .Params "github") | and (not (eq .Params.github "")) }}
-            <li class="li-svg">
-                <a href="{{ .Params.github }}" title="GitHub account for {{ .Params.name }}">
-                    <svg class="icon" ViewBox="0 0 25 25">
-                        <use xlink:href="/img/social_icons.svg#github">
-                        </use>
-                    </svg>
-                </a>
-            </li>
-        {{ end }}
-        {{ if  (isset .Params "gitlab") | and (not (eq .Params.gitlab "")) }}
-            <li class="li-svg">
-                <a href="{{ .Params.gitab }}" title="GitLab account for {{ .Params.name }}">
-                    <svg class="icon" ViewBox="0 0 25 25">
-                        <use xlink:href="/img/social_icons.svg#gitlab">
-                        </use>
-                    </svg>
-                </a>
-            </li>
-        {{ end }}
-        {{ if  (isset .Params "stackoverflow") | and (not (eq .Params.stackoverflow "")) }}
-            <li class="li-svg">
-                <a href="{{ .Params.stackoverflow }}">
-                    <svg class="icon" ViewBox="0 0 25 25">
-                        <use xlink:href="/img/social_icons.svg#stackoverflow">
-                        </use>
-                    </svg>
-                </a>
-            </li>
-        {{ end }}
-        {{ if  (isset .Params "linkedin") | and (not (eq .Params.linkedin "")) }}
-            <li class="li-svg">
-                <a href="{{ .Params.linkedin }}">
-                    <svg class="icon" ViewBox="0 0 25 25">
-                        <use xlink:href="/img/social_icons.svg#linkedin">
-                        </use>
-                    </svg>
-                </a>
-            </li>
-        {{ end }}
-        </ul>
-        <div class="articles">
-            <h2>Articles</h2>
-            <ul>
-                {{ range where .Site.Pages ".Params.author" .Params.name }}
-                    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-                {{ end }}
-            </ul>
-        </div>
-    </main>
-    {{ partial "footer" . }}
-    <script src="{{ "bundle.js" | relURL }}"></script>
-    <script src="{{ "prism.js" | relURL }}"></script>
-</body>
-</html>
+{{ define "main" }}
+<main>
+  <div class="hero">
+    <h1>{{.Title}}</h1>
+    <span class="subtitle">
+        {{.Params.subtitle}}
+    </span>
+  </div>
+
+  <div class="container">
+    {{ .Content }}
+  </div>
+</main>
+{{ end }}
