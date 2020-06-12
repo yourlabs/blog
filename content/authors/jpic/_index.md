@@ -1,5 +1,5 @@
 ---
-name: jpic
+name: James Pic
 photo_url: ''
 avatar: '/img/authors/jpic.jpg'
 github: https://github.com/jpic
@@ -23,3 +23,13 @@ lists, often anonymously. He claims for excuse that just like you would spend
 part of your time solving chess problems if you want to be Grand Master one
 day, and that helping others with their problems is an important part of his
 training. This makes James an amazing go-to "flying doctor" to have on call.
+
+{{< rawhtml >}}
+<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'>
+<iframe
+    frameborder="0"
+    allowfullscreen
+    src="https://www.youtube.com/embed/DPuVNNemEuM"
+></iframe>
+</div>
+{{< /rawhtml >}}

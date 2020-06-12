@@ -45,7 +45,7 @@ enableRobotsTXT = "true"
 
 [Languages]
 [Languages.en]
-languagename = "En"
+languagename = "English"
 title = "Yourlabs"
 weight = 0
 
@@ -55,14 +55,14 @@ weight = 0
     weight = 1
 
 [[Languages.en.menu.main]]
-    name = "DevOps"
-    url = "devops/"
+    name = "Software"
+    url = "software/"
     weight = 2
 
 [[Languages.en.menu.main]]
-    name = "Security"
-    url = "secops/"
-    weight = 3
+    name = "IT Consulting"
+    url = "services/"
+    weight = 2
 
 [[Languages.en.menu.main]]
     name = "About"
@@ -75,7 +75,7 @@ weight = 0
     weight = 4
 
 [Languages.fr]
-languagename = "Fr"
+languagename = "Français"
 title = "Yourlabs"
 weight = 1
 
@@ -85,14 +85,14 @@ weight = 1
     weight = 1
 
 [[Languages.fr.menu.main]]
-    name = "DevOps"
-    url = "fr/devops/"
+    name = "Logiciels"
+    url = "fr/software/"
     weight = 2
 
 [[Languages.fr.menu.main]]
-    name = "Securité"
-    url = "fr/secops/"
-    weight = 3
+    name = "Services"
+    url = "fr/services/"
+    weight = 2
 
 [[Languages.fr.menu.main]]
     name = "About"
