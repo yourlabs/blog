@@ -1,5 +1,6 @@
 ---
 name: James Pic
+subtitle: '"Deleted code is debugged code"'
 photo_url: ''
 avatar: '/img/authors/jpic.jpg'
 github: https://github.com/jpic

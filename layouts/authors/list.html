@@ -1,13 +1,14 @@
 {{ define "main" }}
 <main>
   <div class="hero">
-    <h1>{{.Title}}</h1>
+    <h1>{{.Params.Name}}</h1>
     <span class="subtitle">
         {{.Params.subtitle}}
     </span>
   </div>
 
   <div class="container">
+    <img src="{{ .Params.avatar }}" style="float: left; padding-right: 1em"/>
     {{ .Content }}
   </div>
 </main>
