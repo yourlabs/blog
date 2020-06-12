@@ -20,6 +20,3 @@ ephemeral branch deployments which streamline communication between your teams.
 We transform any deployment (and appreciating the challenges), into deployment
 reproducible and automatic, persistent or ephemeral, for your own applications
 as for your monitoring tools, network, infrastructure ...
-
-An answer in less than an hour evening & weekend included for any emergency
-is offered with each service from €4,250 per month.
