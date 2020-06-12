@@ -21,14 +21,19 @@ main
   color: white
   text-align: center
   padding: 1em
+  font-weight: lighter
+
   h1
     color: white
     padding-top: 7vh
     line-height: 2.5
+    text-shadow: 0 0 6px #FFF
+
   span.subtitle
     display: block
     padding-bottom: 7vh
     padding-top: 0.9em
+    text-shadow: 0 0 1px #FFF
 
 .container
   max-width: 80em
@@ -175,13 +180,19 @@ footer
   text-align: center
   margin-top: 4.5rem
   padding: 1rem 0
+  font-weight: lighter
+
+  p
+    @include font-size(1.1rem)
 
   h5
     border: 0
     color: white
+    text-shadow: 0 0 3px #FFF
 
   a, a:visited, a:active, a:link, a:hover
     color: $color5
+    text-shadow: 0 0 3px $color5
 
   .column
     display: inline-block
@@ -196,7 +207,6 @@ footer
     h5
       line-height: 1.6rem
       padding: 0.8rem 0
-      font-weight: normal
 
     a, li, p
       line-height: 1.3
