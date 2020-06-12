@@ -66,15 +66,20 @@ p, li, div
 code, pre
   @include font-size(1.15rem)
 
+h2, h3, h4, h5, h6
+  border-bottom: 1px solid $color4
+  &:hover
+    transition: all 200ms linear
+    border-bottom: 1px solid $color6
+
 h1, h2, h3, h4, h5, h6
   color: $color3
-  border-bottom: 1px solid $color4
   font-weight: 300
   a, a:visited, a:link, a:active
     text-decoration: none
     color: $color0
     &:hover
-      color: $color0
+      color: $color6
 
 ul, ol
   margin-left: 1.6rem
