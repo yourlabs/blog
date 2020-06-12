@@ -33,7 +33,6 @@ main
     display: block
     padding-bottom: 7vh
     padding-top: 0.9em
-    text-shadow: 0 0 1px #FFF
 
 .container
   max-width: 80em
@@ -46,6 +45,7 @@ main
 
 a, a:visited
   color: $color0
+  transition: all 400ms linear
   &:hover
     color: $color3
 
@@ -102,11 +102,13 @@ a.read-more, a.read-more:link, a.read-more:active, a.read-more:visited
   color: $color3
   border: 1px solid $color3
   text-decoration: none
+  transition: all 177ms linear
 
   &:hover
     color: white
     background-color: $color3
     border: 1px solid white
+    text-shadow: 0 0 6px #fff
 
 code, pre
   background: #f6fff2
@@ -168,11 +170,20 @@ img
       display: inline
       @include font-size(1rem)
       font-weight: bold
+
     a
       display: inline-block
       padding: .3em .5em
       text-decoration: none
       color: $color6
+      transition: all 200ms linear
+      margin-bottom: 4px
+
+      &:hover
+        color: #fff
+        background-color: $color6
+        border-radius: 50px
+        text-shadow: 0 0 3px #fff
 
 footer
   background: linear-gradient(to bottom, $color0 0, #070088 100%)
