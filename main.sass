@@ -16,22 +16,28 @@ main
   font-family: "Open Sans", "Helvetica", "Arial", sans-serif
 
 .hero
-  min-height: 33vh
-  background: linear-gradient(to bottom, $color0 0, $color4 100%)
+  background: linear-gradient(to bottom, $color0 0, #100c65 100%)
 
   color: white
   text-align: center
+  padding: 1em
   h1
     color: white
     padding-top: 7vh
     line-height: 2.5
   span.subtitle
     display: block
+    padding-bottom: 7vh
+    padding-top: 0.9em
 
 .container
   max-width: 80em
   margin: 0 1em
   padding: 1em
+  color: #555
+
+  strong
+    color: #333
 
 a, a:visited
   color: $color0
@@ -41,9 +47,9 @@ a, a:visited
 h1
   @include font-size(2.5rem)
 h2
-  @include font-size(2.3rem)
+  @include font-size(2.2rem)
 h3
-  @include font-size(2.1rem)
+  @include font-size(2rem)
 h4
   @include font-size(1.8rem)
 h5
@@ -65,13 +71,17 @@ h1, h2, h3, h4, h5, h6
     &:hover
       color: $color0
 
-ul
+ul, ol
   margin-left: 1.6rem
   margin-bottom: 1em
-  li
-    list-style-type: disc
 
-p, ul
+ul li
+  list-style-type: disc
+
+ol li
+  list-style-type: decimal
+
+p
   margin: 1em 0
 
 time
@@ -119,22 +129,17 @@ img
   max-width: 100%
   height: auto
 
-@media screen and (min-width: 1100px)
-  main
-    margin-top: 8vh
+@media screen and (min-width: 800px)
+  .hero
+    padding-left: 20vh
+    padding-right: 20vh
 
+@media screen and (min-width: 1100px)
   .container
     margin: 3.5em auto
     max-width: 1100px
 
-  .hero
-    min-height: 35vh
-
   header.main-header
-    position: fixed
-    top: 0
-    left: 0
-    right: 0
     background-color: white
 
     img
@@ -150,8 +155,10 @@ img
     justify-content: space-between
 
   .main-nav
+    font-family: "Raleway", "Helvetica", "Arial", sans-serif
     ul
       text-align: center
+      margin: 0 1em
     li
       display: inline
       @include font-size(1rem)
@@ -163,15 +170,18 @@ img
       color: $color6
 
 footer
-  background-color: #000000
+  background: linear-gradient(to bottom, $color0 0, #070088 100%)
   color: white
   text-align: center
   margin-top: 4.5rem
   padding: 1rem 0
 
-  h5, a, a:visited, a:active, a:link, a:hover
-    color: white
+  h5
     border: 0
+    color: white
+
+  a, a:visited, a:active, a:link, a:hover
+    color: $color5
 
   .column
     display: inline-block
@@ -181,7 +191,7 @@ footer
       display: block
       text-decoration: none
       &:hover
-        color: $color3
+        color: #DDD
 
     h5
       line-height: 1.6rem

@@ -1,7 +1,7 @@
 ---
 title: YourLabs Business Service
-subtitle: L'aventure technico-manageriale d'une marque de logiciels libres depuis 2012
-subtitle2: et la pratique d'une ingénierie tel un sport, un art, au service d'êtres humains.
+subtitle: Marque de logiciels libres depuis 2012
+subtitle2: La pratique d'une ingénierie tel un sport, un art, au service d'êtres humains.
 comments: false
 ---
 
@@ -19,9 +19,9 @@ Consultez le catalogue complêt sur [GitHub](https://github.com/yourlabs) et
 
 [BigSudo](https://yourlabs.io/oss/bigsudo) est un logiciel libre et léger de déploiement automatisé.
 
-- `bigsudo yourlabs.ssh @host` sécurise votre serveur SSH en conformité avec les standards Mozilla Defense
-- `bigsudo yourlabs.traefik @host` déploie un serveur HTTPS completement automatique en conformité avec les standards Mozilla Defense
-- `bigsudo votreproject? @host` déploie le projet dont **vous** êtes le héro !
+1. `bigsudo yourlabs.ssh @host` sécurise votre serveur SSH en conformité avec les standards Mozilla Defense
+2. `bigsudo yourlabs.traefik @host` déploie un serveur HTTPS completement automatique en conformité avec les standards Mozilla Defense
+3. `bigsudo votreproject? @host` déploie le projet dont **vous** êtes le héro !
 
 ## CRUDLFA+
 
@@ -29,9 +29,10 @@ Consultez le catalogue complêt sur [GitHub](https://github.com/yourlabs) et
 MVC qui inclut une gestion des permissions "en dents de scie" particulièrement
 élegante.
 
-Basé sur le brilliantissime framework Django qui permet la meilleure
-vélocité itérative grace a ses fantastiques fonctionnalités d'ORM et de
-migrations sur un langage particulièrement conçu pour la lisibilité: Python.
+Basé sur le brilliantissime framework Django qui permet la meilleure vélocité
+itérative grace a ses fantastiques fonctionnalités d'ORM et de migrations sur
+un langage orienté objet particulièrement conçu pour l'introspection comme pour
+la lisibilité du code: Python.
 
 ## Ryzom
 
