@@ -20,8 +20,8 @@ discussions during barbecues and with live music until 1AM (please
 YourLabs Business Service is a company registered in France in 2017 sponsors
 Open Source R&D and offers extremely competitive services:
 
-- [eXtreme DevOps](https://blog.yourlabs.org/posts/2020-02-08-bigsudo-extreme-devops-hacking-operations/)
-- [Security](https://blog.yourlabs.org/secops/) (french)
+- [eXtreme DevOps](/posts/2020-02-08-bigsudo-extreme-devops-hacking-operations/)
+- [Cyber Security](/secops/)
 - [Development](https://yourlabs.io/oss)
 
 # Contact Us

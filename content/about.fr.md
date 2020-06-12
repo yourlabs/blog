@@ -19,8 +19,8 @@ discussions pendant les barbecues et avec de la musique live jusqu'à
 Société enregistrée en France en 2017 parraine la R&D Open Source et offres
 services extrêmement compétitifs:
 
-- [eXtreme DevOps](https://blog.yourlabs.org/posts/2020-02-08-bigsudo-extreme-devops-hacking-operations/)
-- [Security](https://blog.yourlabs.org/secops/) (french)
+- [eXtreme DevOps](/posts/2020-02-08-bigsudo-extreme-devops-hacking-operations/)
+- [Cyber Securité](/fr/secops/)
 - [Development](https://yourlabs.io/oss)
 
 # Contactez nous
