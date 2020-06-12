@@ -17,7 +17,7 @@ Consultez le catalogue complêt sur [GitHub](https://github.com/yourlabs) et
 
 1. `bigsudo yourlabs.ssh @host` sécurise votre serveur SSH en conformité avec les standards Mozilla Defense
 2. `bigsudo yourlabs.traefik @host` déploie un serveur HTTPS completement automatique en conformité avec les standards Mozilla Defense
-3. `bigsudo votreproject? @host` déploie le projet dont **vous** êtes le héro !
+3. `bigsudo yourlabs.compose @host` déploie le projet dont **vous** êtes le héro !
 
 ## CRUDLFA+
 
@@ -39,3 +39,8 @@ le data-binding comme le framework Meteor.
 
 Templates, votre heure de gloire n'a pas survecu la nouvelle vague "Full Stack"
 !
+
+# Sponsors
+
+YourLabs Business Service cofinance le developpement de logiciels incluants:
+Python, Django, Transcrypt, Django-AllAuth

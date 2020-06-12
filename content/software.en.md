@@ -16,26 +16,32 @@ Check the full catalog on [GitHub](https://github.com/yourlabs) and
 
 [BigSudo](https://yourlabs.io/oss/bigsudo) is a lightweight free software to automate deployment.
 
-1. `bigsudo yourlabs.ssh @host` secures your SSH server, compliant with Mozilla Defense standards,
-1. `bigsudo yourlabs.traefik @host` depoys an automatic HTTPS server, compliant with Mozilla Defense standards
-1. `bigsudo yourproject? @host` deploys the project in which **you** are the hero !
+1. `bigsudo yourlabs.ssh @host` secures your SSH server, compliant with Mozilla
+   Defense standards,
+1. `bigsudo yourlabs.traefik @host` depoys an automatic HTTPS server, compliant
+   with Mozilla Defense standards
+1. `bigsudo yourlabs.compose @host` deploys the project in which **you** are
+   the hero !
 
 ## CRUDLFA+
 
-[CRUDLFA+](https://yourlabs.io/oss/crudlfap) est une bibliothèque de CRUD en
-MVC qui inclut une gestion des permissions "en dents de scie" particulièrement
-élegante.
+[CRUDLFA+](https://yourlabs.io/oss/crudlfap) is an MVC CRUD library featuring
+a smart design pattern to support granular permission code in a particularely
+elegant manner.
 
-Basé sur le brilliantissime framework Django qui permet la meilleure
-vélocité itérative grace a ses fantastiques fonctionnalités d'ORM et de
-migrations sur un langage particulièrement conçu pour la lisibilité: Python.
+Based on the brilliant Django framework, which offers the best iterative
+velocity thanks to its fantastic features such as ORM and migrations on an
+object oriented language particularily designed for introspection and
+readability: Python.
 
 ## Ryzom
 
-[Ryzom](https://yourlabs.io/oss/ryzom) est une bibliothèque de "components"
-type React, VueJS et consorts en pur Python, exploitant la transliteration
-isomorphique pour exporter les fonctions necessaires en JavaScript et proposant
-le data-binding comme le framework Meteor.
+[Ryzom](https://yourlabs.io/oss/ryzom) is a pur Python components library
+leveraging isomorphic transliteration to export Python callbacks to JavaScript
+and offering data-binding such as the Meteor framework.
 
-Templates, votre heure de gloire n'a pas survecu la nouvelle vague "Full Stack"
-!
+Templates, your glory didn't survive the new wave of "Full Stack" !
+
+# Sponsors
+
+Softwares we sponsor include: Python, Django, Transcrypt, Django-AllAuth
