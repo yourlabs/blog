@@ -1,15 +1,42 @@
 {{ define "main" }}
 <main>
   <div class="hero">
-    <h1>{{.Params.Name}}</h1>
-    <span class="subtitle">
-        {{.Params.subtitle}}
-    </span>
+    {{ if (eq .File.Path "") }}
+      <h1>Authors list</h1>
+    {{else}}
+      <h1>{{.Params.Name}}</h1>
+      {{ if (eq .Params.Name "James Pic")}}
+          {{ $.Scratch.Set "author_name" "jpic" }}
+      {{ else }}
+          {{ $.Scratch.Set "author_name" .Params.Name }}
+      {{ end }}
+      <span class="subtitle">
+          {{.Params.subtitle}}
+      </span>
+    {{ end }}
   </div>
 
   <div class="container">
-    <img src="{{ .Params.avatar }}" style="float: left; padding-right: 1em"/>
-    {{ .Content }}
+    {{ if not (eq .File.Path "") }}
+        <img src="{{ .Params.avatar }}" style="float: left; padding-right: 1em"/>
+        {{ .Content }}
+        {{ range .Site.Pages }}
+            {{ if (eq .Params.author ($.Scratch.Get "author_name" | urlize)) | or (eq .Params.author ($.Scratch.Get "author_name"))}}
+                <h3><a href="{{ .Permalink }}">{{ .Title }}<a></h2>
+            {{ end }}
+        {{ end }}
+    {{ else }}
+        {{ range .Site.Pages }}
+            {{ $author := replace .Params.author "[" "" }}
+            {{ $author := replace $author "]" "" }}
+            {{ with $author }}
+              {{ $.Scratch.Add "author" (slice $author) }}
+            {{ end }}
+        {{ end }}
+        {{ range ($.Scratch.Get "author" | uniq)}}
+        <h3><img src="/img/authors/{{ . | urlize }}.jpg"></img><a href="/authors/{{ . | urlize }}">{{ . }}</a></h3>
+        {{ end }}
+    {{ end }}
   </div>
 </main>
 {{ end }}

@@ -1,0 +1,24 @@
+{{ define "main" }}
+<main>
+  <div class="hero">
+    <h1>Tags list</h1>
+  </div>
+
+  <div class="container">
+    {{ range .Site.Pages }}
+        {{ with .Params.Tags }}
+            {{ range . }}
+                {{ $tags := replace . "[" "" }}
+                {{ $tags := replace $tags "]" "" }}
+                {{ with $tags }}
+                    {{ $.Scratch.Add "tags" (slice $tags) }}
+                {{ end }}
+            {{ end }}
+        {{ end }}
+    {{ end }}
+    {{ range ($.Scratch.Get "tags" | uniq)}}
+        <h3><a href="/tags/{{ . | urlize }}">{{ . }}</a></h3>
+    {{ end }}
+  </div>
+</main>
+{{ end }}
