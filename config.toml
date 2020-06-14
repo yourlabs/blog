@@ -9,7 +9,7 @@ DefaultContentLanguage = "en"
 metaDataFormat = "yaml"
 pygmentsUseClasses = true
 pygmentCodeFences = true
-enableRobotsTXT = "true"
+enableRobotsTXT = true
 #disqusShortname = "XXX"
 googleAnalytics = "UA-169189134-1"
 
@@ -102,4 +102,3 @@ weight = 1
     name = "Tags"
     url = "fr/tags/"
     weight = 4
-
