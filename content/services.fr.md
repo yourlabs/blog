@@ -25,11 +25,15 @@ esthétique hacker local.
 
 ## Service Infrastructure
 
-L'infrastructure a besoin d'être automatisée pour tester une migration en pré-production avant de l'appliquer sur l'environnement de production.
+L'infrastructure a besoin d'être automatisée pour tester une migration en
+pré-production avant de l'appliquer sur l'environnement de production.
 
-Nous transformons tout déploiement (et appreciant les défis), en déploiement reproductible et automatique, persistents ou éphemères, pour vos propres applicatifs comme pour vos outils de monitoring, réseau, infrastructure…
+Nous transformons tout déploiement (et appreciant les défis), en déploiement
+reproductible et automatique, persistents ou éphemères, pour vos propres
+applicatifs comme pour vos outils de monitoring, réseau, infrastructure…
 
-YourLabs fait partie des meneurs du monde technique en matière d'eXtreme DevOps, une pratique qui augmente le rendement de vos équipes de developpement !
+YourLabs fait partie des meneurs du monde technique en matière d'eXtreme DevOps,
+une pratique qui augmente le rendement de vos équipes de developpement !
 
 {{< rawhtml >}}
 <a href="/fr/devops" class="read-more">Lire l'offre DevOps</a>
@@ -37,11 +41,19 @@ YourLabs fait partie des meneurs du monde technique en matière d'eXtreme DevOps
 
 ## Service Cyber-Sécurité
 
-Rien n’est impiratable: du piratage de mot de passe à l’injection de shellcode écrit pour une occasion qui se présente, comme des portes qu’ouvrent l’ingénierie sociale ajoutant le fameux facteur humain ...
+Rien n’est impiratable: du piratage de mot de passe à l’injection de shellcode
+écrit pour une occasion qui se présente, comme des portes qu’ouvrent
+l’ingénierie sociale ajoutant le fameux facteur humain ...
 
-Pour un cyber-criminel: tous les moyens sont bons pour escalader d’un privilège 0 à des ressources vitales pour l’entreprise. La cyber-défense est un sujet incontournable pour toutes les entreprises et services qui traitent de l’information privée.
+Pour un cyber-criminel: tous les moyens sont bons pour escalader d’un privilège
+0 à des ressources vitales pour l’entreprise. La cyber-défense est un sujet
+incontournable pour toutes les entreprises et services qui traitent de
+l’information privée.
 
-YourLabs Security Service propose un catalogue de prestations en constante évolution accessibles sous forme de missions ponctuelles pour justifier d’une obligation de moyens contre les cyber criminels jusqu’à la surveillance continue contre les autres menaces qui planent sur votre entreprise.
+YourLabs Security Service propose un catalogue de prestations en constante
+évolution accessibles sous forme de missions ponctuelles pour justifier d’une
+obligation de moyens contre les cyber criminels jusqu’à la surveillance
+continue contre les autres menaces qui planent sur votre entreprise.
 
 {{< rawhtml >}}
 <a href="/fr/secops" class="read-more">Lire l'offre SecOps</a>
