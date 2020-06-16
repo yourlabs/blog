@@ -13,10 +13,13 @@ Consultez le catalogue complêt sur [GitHub](https://github.com/yourlabs) et
 
 ## BigSudo
 
-[BigSudo](https://yourlabs.io/oss/bigsudo) est un logiciel libre et léger de déploiement automatisé.
+[BigSudo](https://yourlabs.io/oss/bigsudo) est un logiciel libre et léger de
+déploiement automatisé.
 
-1. `bigsudo yourlabs.ssh @host` sécurise votre serveur SSH en conformité avec les standards Mozilla Defense
-2. `bigsudo yourlabs.traefik @host` déploie un serveur HTTPS completement automatique en conformité avec les standards Mozilla Defense
+1. `bigsudo yourlabs.ssh @host` sécurise votre serveur SSH en conformité avec
+les standards Mozilla Defense
+2. `bigsudo yourlabs.traefik @host` déploie un serveur HTTPS completement
+automatique en conformité avec les standards Mozilla Defense
 3. `bigsudo yourlabs.compose @host` déploie le projet dont **vous** êtes le héro !
 
 ## CRUDLFA+

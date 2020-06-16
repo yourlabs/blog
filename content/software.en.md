@@ -14,14 +14,15 @@ Check the full catalog on [GitHub](https://github.com/yourlabs) and
 
 ## BigSudo
 
-[BigSudo](https://yourlabs.io/oss/bigsudo) is a lightweight free software to automate deployment.
+[BigSudo](https://yourlabs.io/oss/bigsudo) is a lightweight free software to
+automate deployment.
 
 1. `bigsudo yourlabs.ssh @host` secures your SSH server, compliant with Mozilla
-   Defense standards,
-1. `bigsudo yourlabs.traefik @host` depoys an automatic HTTPS server, compliant
-   with Mozilla Defense standards
-1. `bigsudo yourlabs.compose @host` deploys the project in which **you** are
-   the hero !
+Defense standards,
+2. `bigsudo yourlabs.traefik @host` depoys an automatic HTTPS server, compliant
+with Mozilla Defense standards
+3. `bigsudo yourlabs.compose @host` deploys the project in which **you** are 
+the hero !
 
 ## CRUDLFA+
 
