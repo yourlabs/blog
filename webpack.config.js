@@ -45,7 +45,6 @@ module.exports = {
     new GoogleFontsPlugin({
         fonts: [
             { family: 'Open Sans', variants: [ '300', '400', '700' ] },
-            { family: 'Raleway' }
         ]
     }),
   ]
