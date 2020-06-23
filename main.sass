@@ -11,9 +11,11 @@ $color4: #938dff
 $color5: #81eafd  // lightblue
 $color6: #ef64ee
 
+body
+  font-family: "Open Sans", "Helvetica", "Arial", sans-serif
+
 main
   line-height: 1.6
-  font-family: "Open Sans", "Helvetica", "Arial", sans-serif
 
 .hero
   background: linear-gradient(to bottom, $color0 0, #100c65 100%)
@@ -174,14 +176,13 @@ img
     justify-content: space-between
 
   .main-nav
-    font-family: "Raleway", "Helvetica", "Arial", sans-serif
     ul
       text-align: center
       margin: 0 1em
     li
       display: inline
       @include font-size(1rem)
-      font-weight: bold
+      font-weight: light
 
     a
       display: inline-block
