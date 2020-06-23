@@ -26,8 +26,6 @@ Open Source R&D and offers extremely competitive services:
 
 # Contact Us
 
-Sales: +33.671.573.763
-
+Sales: +33.769.836.100
 Tech (24/7): +33.605.757.226
-
 Email: contact@yourlabs.org
