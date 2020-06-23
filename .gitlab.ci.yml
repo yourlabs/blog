@@ -8,13 +8,9 @@ variables:
 
 build:
   stage: build
-  image: node:alpine
+  image: registry.gitlab.com/pages/hugo:latest
   script:
-  - apk add g++ hugo python2 make --repository=http://dl-cdn.alpinelinux.org/alpine/edge/community
-  - yarn install && yarn build
   - hugo
-  - npx clean-css-cli -o public/prism.css public/prism.css
-  - npx clean-css-cli -o public/fonts.css public/fonts.css
   artifacts:
     paths:
     - public
