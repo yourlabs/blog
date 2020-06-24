@@ -2,7 +2,7 @@
 date = "2018-05-15T15:47:47+00:00"
 draft = false
 tags = ["python"]
-title = "the-ultimate-guide-to-data-classes-in-python-37"
+title = "the ultimate guide to data classes in python 3.7"
 author = "jpic"
 +++
 

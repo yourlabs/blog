@@ -2,7 +2,7 @@
 date = "2018-10-11T18:58:57+00:00"
 draft = false
 tags = ["python", "django", "best-practice", "devops", "playlabs"]
-title = "extreme-devops-screenshot-where-you-see"
+title = "Extreme devops"
 author = "jpic"
 +++
 

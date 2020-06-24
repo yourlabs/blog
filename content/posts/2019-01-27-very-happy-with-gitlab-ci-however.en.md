@@ -2,7 +2,7 @@
 date = "2019-01-27T22:50:47+00:00"
 draft = false
 tags = ["playlabs", "k8s", "gitlab"]
-title = "very-happy-with-gitlab-ci-however"
+title = "very happy with gitlab-ci"
 author = "jpic"
 +++
 

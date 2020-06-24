@@ -2,7 +2,7 @@
 date = "2018-09-16T15:32:08+00:00"
 draft = false
 tags = ["python", "lol"]
-title = "jack-daniels-writes-to-python-language-programers"
+title = "Jack Daniels writes to python language programers"
 author = "jpic"
 +++
 

@@ -2,7 +2,7 @@
 date = "2018-07-11T16:33:58+00:00"
 draft = false
 tags = ["gitlab"]
-title = "love-gitlabs-merge-mini-form"
+title = "love gitlabs merge mini form"
 author = "jpic"
 +++
 

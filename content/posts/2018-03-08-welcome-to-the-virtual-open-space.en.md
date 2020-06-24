@@ -2,7 +2,7 @@
 date = "2018-03-08T15:21:32+00:00"
 draft = false
 tags = ["best-practice"]
-title = "welcome-to-the-virtual-open-space"
+title = "welcome to the virtual open space"
 author = "jpic"
 +++
 

@@ -2,7 +2,7 @@
 date = "2018-07-13T21:24:55+00:00"
 draft = false
 tags = ["gitlab", "kubernetes", "best-practice"]
-title = "demonstration-of-our-baremetal-devops-platform"
+title = "demonstration of our baremetal devops platform"
 author = "jpic"
 +++
 

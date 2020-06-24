@@ -2,7 +2,7 @@
 date = "2018-08-12T09:18:18+00:00"
 draft = false
 tags = ["linux", "bash"]
-title = "niieanibash-oo-framework"
+title = "niieanibash oo framework"
 author = "jpic"
 +++
 

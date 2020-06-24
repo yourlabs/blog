@@ -2,7 +2,7 @@
 date = "2018-03-27T09:02:57+00:00"
 draft = false
 tags = ["hactivism"]
-title = "china-labor-watch-is-an-ngo-defending-workers"
+title = "china labor watch: defending workers right in China"
 author = "jpic"
 +++
 

@@ -2,7 +2,7 @@
 date = "2018-09-21T12:59:56+00:00"
 draft = false
 tags = ["python", "django", "best-practice"]
-title = "open-source-software-django-collectdir"
+title = "Django collectdir"
 author = "jpic"
 +++
 

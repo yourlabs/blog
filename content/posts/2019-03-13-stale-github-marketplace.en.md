@@ -2,7 +2,7 @@
 date = "2019-03-13T17:53:41+00:00"
 draft = false
 tags = []
-title = "stale-github-marketplace"
+title = "Stale: automatically close stale issues of a repository"
 author = "jpic"
 +++
 

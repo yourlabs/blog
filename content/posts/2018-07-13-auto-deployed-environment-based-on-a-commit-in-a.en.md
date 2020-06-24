@@ -2,7 +2,7 @@
 date = "2018-07-13T10:35:36+00:00"
 draft = false
 tags = ["gitlab", "kubernetes"]
-title = "auto-deployed-environment-based-on-a-commit-in-a"
+title = "auto deployed environment based on a commit in a brranch"
 author = "jpic"
 +++
 

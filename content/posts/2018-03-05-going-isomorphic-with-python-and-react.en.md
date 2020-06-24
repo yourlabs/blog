@@ -2,7 +2,7 @@
 date = "2018-03-05T00:03:59+00:00"
 draft = false
 tags = ["python", "javascript", "isomorphic", "turbogears"]
-title = "going-isomorphic-with-python-and-react"
+title = "going isomorphic with python and react"
 author = "jpic"
 +++
 

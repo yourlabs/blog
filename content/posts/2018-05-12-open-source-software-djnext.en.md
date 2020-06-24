@@ -2,7 +2,7 @@
 date = "2018-05-12T00:42:39+00:00"
 draft = false
 tags = ["python", "django", "javascript", "react", "djnext", "best-practice"]
-title = "open-source-software-djnext"
+title = "open source software djnext"
 author = "jpic"
 +++
 

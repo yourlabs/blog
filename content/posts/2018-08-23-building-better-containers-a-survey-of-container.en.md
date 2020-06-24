@@ -1,8 +1,8 @@
 +++
 date = "2018-08-23T01:07:26+00:00"
 draft = false
-tags = ["linux", "docker", "linuxcontainers"]
-title = "building-better-containers-a-survey-of-container"
+tags = ["linux", "docker", "containers"]
+title = "Building better containers: A Survey of Container Build Tools"
 author = "jpic"
 +++
 

@@ -2,7 +2,7 @@
 date = "2018-11-21T21:41:35+00:00"
 draft = false
 tags = ["django", "javascript", "python"]
-title = "renderentrypoint-tag-by-alihazemfarouk-pull"
+title = "Django webpack loader"
 author = "jpic"
 +++
 

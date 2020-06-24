@@ -2,7 +2,7 @@
 date = "2017-12-16T21:37:47+00:00"
 draft = false
 tags = ["sponsoring", "materializecss"]
-title = "alan-and-alvin-are-creating-materialize-patreon"
+title = "Alan and Alvin are creating materialize patreon"
 author = "jpic"
 +++
 

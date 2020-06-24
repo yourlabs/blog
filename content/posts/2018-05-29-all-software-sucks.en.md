@@ -2,7 +2,7 @@
 date = "2018-05-29T12:36:36+00:00"
 draft = false
 tags = ["best-practice"]
-title = "all-software-sucks"
+title = "all software sucks"
 author = "jpic"
 +++
 

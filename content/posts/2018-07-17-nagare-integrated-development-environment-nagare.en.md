@@ -2,7 +2,7 @@
 date = "2018-07-17T21:18:28+00:00"
 draft = false
 tags = ["python", "framework", "django", "best-practice"]
-title = "nagare-integrated-development-environment-nagare"
+title = "nagare integrated development environment nagare"
 author = "jpic"
 +++
 

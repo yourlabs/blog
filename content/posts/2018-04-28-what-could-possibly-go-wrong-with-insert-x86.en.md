@@ -2,7 +2,7 @@
 date = "2018-04-28T12:35:53+00:00"
 draft = false
 tags = ["security"]
-title = "what-could-possibly-go-wrong-with-insert-x86"
+title = "what could possibly go wrong with insert x86 instruction here"
 author = "jpic"
 +++
 

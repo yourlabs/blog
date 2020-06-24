@@ -2,7 +2,7 @@
 date = "2019-02-15T16:33:08+00:00"
 draft = false
 tags = ["docker-compose", "best-practice", "devops", "ci", "cd"]
-title = "well-thats-a-nice-way-to-automate-backups-and"
+title = "Automate backups and rollbacks during deploy"
 author = "jpic"
 +++
 

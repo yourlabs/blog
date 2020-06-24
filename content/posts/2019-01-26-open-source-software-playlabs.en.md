@@ -2,7 +2,7 @@
 date = "2019-01-26T14:42:46+00:00"
 draft = false
 tags = ["python", "ansible", "devops", "playlabs"]
-title = "open-source-software-playlabs"
+title = "open source software playlabs"
 author = "jpic"
 +++
 

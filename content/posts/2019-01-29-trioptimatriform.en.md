@@ -2,7 +2,7 @@
 date = "2019-01-29T14:40:38+00:00"
 draft = false
 tags = ["python", "django"]
-title = "trioptimatriform"
+title = "tri.form: ALternative to Django forms"
 author = "jpic"
 +++
 

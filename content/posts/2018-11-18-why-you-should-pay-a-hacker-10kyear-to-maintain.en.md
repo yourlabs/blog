@@ -2,7 +2,7 @@
 date = "2018-11-18T18:54:22+00:00"
 draft = false
 tags = ["best-practice"]
-title = "why-you-should-pay-a-hacker-10kyear-to-maintain"
+title = "why you should pay a hacker 10k/year to maintain CI server"
 author = "jpic"
 +++
 

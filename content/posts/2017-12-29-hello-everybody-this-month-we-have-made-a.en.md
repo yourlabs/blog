@@ -2,7 +2,7 @@
 date = "2017-12-29T12:14:27+00:00"
 draft = false
 tags = ["philantropy"]
-title = "hello-everybody-this-month-we-have-made-a"
+title = "Red Cross donation"
 author = "jpic"
 +++
 

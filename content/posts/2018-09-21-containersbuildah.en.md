@@ -2,7 +2,7 @@
 date = "2018-09-21T00:44:47+00:00"
 draft = false
 tags = ["linux", "containers", "docker"]
-title = "containersbuildah"
+title = "containers buildah"
 author = "jpic"
 +++
 

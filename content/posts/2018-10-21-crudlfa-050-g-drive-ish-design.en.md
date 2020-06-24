@@ -2,7 +2,7 @@
 date = "2018-10-21T23:31:20+00:00"
 draft = false
 tags = ["python", "django", "crudlfap"]
-title = "crudlfa-050-g-drive-ish-design"
+title = "crudlfa 0.5.0 g drive ish design"
 author = "jpic"
 +++
 
