@@ -2,7 +2,7 @@
 date = "2018-03-09T10:23:02+00:00"
 draft = false
 tags = ["python", "django", "best-practice", "adapters"]
-title = "jpicdjango-adapters"
+title = "Django-adapters"
 author = "jpic"
 +++
 

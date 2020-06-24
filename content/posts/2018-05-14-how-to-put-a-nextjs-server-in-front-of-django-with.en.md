@@ -2,7 +2,7 @@
 date = "2018-05-14T13:11:17+00:00"
 draft = false
 tags = ["python", "django", "nextjs", "react", "django-appwatch"]
-title = "how-to-put-a-nextjs-server-in-front-of-django-with"
+title = "Put a nextjs server in front of django"
 author = "jpic"
 +++
 

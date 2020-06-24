@@ -2,7 +2,7 @@
 date = "2018-05-11T16:33:27+00:00"
 draft = false
 tags = ["gitlab", "best-practice"]
-title = "gitlab-web-ide-screenshot"
+title = "gitlab web ide screenshot"
 author = "jpic"
 +++
 

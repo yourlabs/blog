@@ -2,7 +2,7 @@
 date = "2018-11-30T09:00:11+00:00"
 draft = false
 tags = ["playlabs", "ansible", "ci", "cd"]
-title = "playlabs-the-obscene-ansible-distribution-for"
+title = "playlabs the obscene ansible distribution"
 author = "jpic"
 +++
 

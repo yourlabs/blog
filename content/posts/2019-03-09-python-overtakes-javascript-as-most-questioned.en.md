@@ -2,7 +2,7 @@
 date = "2019-03-09T16:13:51+00:00"
 draft = false
 tags = ["python", "javascript"]
-title = "python-overtakes-javascript-as-most-questioned"
+title = "python overtakes javascript as most questioned language"
 author = "jpic"
 +++
 

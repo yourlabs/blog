@@ -2,7 +2,7 @@
 date = "2018-07-10T22:30:12+00:00"
 draft = false
 tags = ["love"]
-title = "setup-by-tom-giraud-scene-techie-hacker-who-did"
+title = "tom giraud's setup"
 author = "jpic"
 +++
 

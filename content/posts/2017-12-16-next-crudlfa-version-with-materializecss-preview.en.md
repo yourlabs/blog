@@ -2,7 +2,7 @@
 date = "2017-12-16T21:56:33+00:00"
 draft = false
 tags = ["crudlfap", "materializecss"]
-title = "next-crudlfa-version-with-materializecss-preview"
+title = "next crudlfa version with materializecss preview"
 author = "jpic"
 +++
 

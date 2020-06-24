@@ -2,7 +2,7 @@
 date = "2019-04-27T17:42:27+00:00"
 draft = false
 tags = ["devops"]
-title = "join-the-testers-chat"
+title = "join the testers chat"
 author = "jpic"
 +++
 

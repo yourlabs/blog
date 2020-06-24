@@ -2,7 +2,7 @@
 date = "2012-11-06T18:15:51+00:00"
 draft = false
 tags = []
-title = "html5-modal-dialog-api"
+title = "html5 modal dialog api"
 author = "jpic"
 +++
 

@@ -2,7 +2,7 @@
 date = "2019-01-28T21:22:44+00:00"
 draft = false
 tags = ["python", "continuous-delivery", "best-practice"]
-title = "zsimicsetupmeta"
+title = "Setupmeta"
 author = "jpic"
 +++
 

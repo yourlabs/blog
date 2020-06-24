@@ -2,7 +2,7 @@
 date = "2018-03-09T13:56:48+00:00"
 draft = false
 tags = ["python", "django", "adapters"]
-title = "is-everything-an-adapter-issue-40"
+title = "Django adapters"
 author = "jpic"
 +++
 

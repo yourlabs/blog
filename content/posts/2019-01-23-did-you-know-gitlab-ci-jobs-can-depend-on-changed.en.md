@@ -2,7 +2,7 @@
 date = "2019-01-23T09:21:51+00:00"
 draft = false
 tags = ["gitlab", "best-practice"]
-title = "did-you-know-gitlab-ci-jobs-can-depend-on-changed"
+title = "Optimize ci pipeline"
 author = "jpic"
 +++
 

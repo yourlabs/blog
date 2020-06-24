@@ -2,7 +2,7 @@
 date = "2019-01-14T11:03:02+00:00"
 draft = false
 tags = ["python", "djcli", "django"]
-title = "djcli-11-screenshot"
+title = "djcli 1.1 screenshot"
 author = "jpic"
 +++
 

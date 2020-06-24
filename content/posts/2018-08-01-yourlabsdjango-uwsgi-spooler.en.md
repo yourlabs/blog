@@ -2,7 +2,7 @@
 date = "2018-08-01T19:16:07+00:00"
 draft = false
 tags = ["python", "django", "uwsgi", "django-uwsgi-spooler"]
-title = "yourlabsdjango-uwsgi-spooler"
+title = "yourlabs django uwsgi spooler"
 author = "jpic"
 +++
 

@@ -2,7 +2,7 @@
 date = "2018-11-29T02:02:21+00:00"
 draft = false
 tags = ["gitlab", "best-practice"]
-title = "docdevelopmentcontributingissueworkflowmd"
+title = "doc development contributing issue workflow"
 author = "jpic"
 +++
 

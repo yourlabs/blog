@@ -2,7 +2,7 @@
 date = "2019-02-25T22:54:18+00:00"
 draft = false
 tags = ["python", "django", "best-practice"]
-title = "nerdocs-gdaps"
+title = "nerdocs gdaps"
 author = "jpic"
 +++
 

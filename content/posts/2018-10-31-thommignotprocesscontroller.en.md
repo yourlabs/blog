@@ -2,7 +2,7 @@
 date = "2018-10-31T11:32:41+00:00"
 draft = false
 tags = ["python", "best-practice", "automation"]
-title = "thommignotprocesscontroller"
+title = "Process controller"
 author = "jpic"
 +++
 

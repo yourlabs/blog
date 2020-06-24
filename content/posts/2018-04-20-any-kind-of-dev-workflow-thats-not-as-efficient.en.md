@@ -2,7 +2,7 @@
 date = "2018-04-20T20:40:11+00:00"
 draft = false
 tags = ["best-practice"]
-title = "any-kind-of-dev-workflow-thats-not-as-efficient"
+title = "dev workflow"
 author = "jpic"
 +++
 

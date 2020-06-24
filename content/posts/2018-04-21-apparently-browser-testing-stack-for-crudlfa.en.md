@@ -2,7 +2,7 @@
 date = "2018-04-21T14:42:40+00:00"
 draft = false
 tags = ["best-practice", "crudlfap"]
-title = "apparently-browser-testing-stack-for-crudlfa"
+title = "apparently browser testing stack for crudlfa+"
 author = "jpic"
 +++
 

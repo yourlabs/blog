@@ -2,7 +2,7 @@
 date = "2018-12-11T23:57:04+00:00"
 draft = false
 tags = ["chatops"]
-title = "zulip-advertisement"
+title = "zulip advertisement"
 author = "jpic"
 +++
 

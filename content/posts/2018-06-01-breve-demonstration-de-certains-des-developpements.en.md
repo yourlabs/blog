@@ -2,7 +2,7 @@
 date = "2018-06-01T20:02:35+00:00"
 draft = false
 tags = ["python", "crudlfap"]
-title = "breve-demonstration-de-certains-des-developpements"
+title = "breve demonstration de certains des developpements"
 author = "jpic"
 +++
 

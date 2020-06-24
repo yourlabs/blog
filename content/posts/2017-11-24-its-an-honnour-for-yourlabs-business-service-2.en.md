@@ -2,7 +2,7 @@
 date = "2017-11-24T10:44:39+00:00"
 draft = false
 tags = ["philantropy", "sponsoring"]
-title = "its-an-honnour-for-yourlabs-business-service-2"
+title = "L'Hermitage donation"
 author = "jpic"
 +++
 

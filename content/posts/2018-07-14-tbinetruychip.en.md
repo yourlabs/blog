@@ -2,7 +2,7 @@
 date = "2018-07-14T16:05:56+00:00"
 draft = false
 tags = ["python", "best-practice"]
-title = "tbinetruychip"
+title = "CHIP: a python's functional implementation of ReactJS"
 author = "jpic"
 +++
 

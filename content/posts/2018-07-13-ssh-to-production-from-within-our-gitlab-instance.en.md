@@ -2,7 +2,7 @@
 date = "2018-07-13T10:24:42+00:00"
 draft = false
 tags = ["gitlab", "kubernetes"]
-title = "ssh-to-production-from-within-our-gitlab-instance"
+title = "ssh to production from within our gitlab instance"
 author = "jpic"
 +++
 

@@ -2,7 +2,7 @@
 date = "2018-09-09T13:13:08+00:00"
 draft = false
 tags = ["python"]
-title = "why-structlog-documentation"
+title = "Structlog documentation"
 author = "jpic"
 +++
 

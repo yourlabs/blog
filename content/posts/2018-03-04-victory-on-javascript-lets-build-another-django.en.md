@@ -2,7 +2,7 @@
 date = "2018-03-04T22:55:24+00:00"
 draft = false
 tags = ["python", "django-dynamic-fields", "best-practice", "javascript"]
-title = "victory-on-javascript-lets-build-another-django"
+title = "victory on javascript lets build another django"
 author = "jpic"
 +++
 

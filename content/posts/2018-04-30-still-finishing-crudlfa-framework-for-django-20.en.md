@@ -2,7 +2,7 @@
 date = "2018-04-30T20:34:37+00:00"
 draft = false
 tags = ["materializecss", "crudlfap", "python", "django", "turbolinks", "stimulusjs"]
-title = "still-finishing-crudlfa-framework-for-django-20"
+title = "still finishing crudlfa framework for django 2.0"
 author = "jpic"
 +++
 
