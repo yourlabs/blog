@@ -733,6 +733,20 @@ ul.tag-list {
     display: inline;
     font-size: 1rem; }
 
+ul.team {
+  list-style-type: none; }
+  ul.team li {
+    list-style-type: none;
+    display: inline-block; }
+  ul.team img {
+    border-radius: 50%;
+    width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+  ul.team p {
+    text-align: center; }
+
 .author-list {
   list-style-type: none;
   text-align: center;

@@ -74,6 +74,11 @@ weight = 0
     weight = 10
 
 [[Languages.en.menu.main]]
+    name = "Team"
+    url = "team/"
+    weight = 10
+
+[[Languages.en.menu.main]]
     name = "Tags"
     url = "tags/"
     weight = 4
@@ -106,6 +111,11 @@ weight = 1
 [[Languages.fr.menu.main]]
     name = "About"
     url = "fr/about/"
+    weight = 10
+
+[[Languages.fr.menu.main]]
+    name = "équipe"
+    url = "fr/equipe/"
     weight = 10
 
 [[Languages.fr.menu.main]]
