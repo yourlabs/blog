@@ -16,7 +16,7 @@ De ce fait un utilisateur ne va pas directement communiquer avec le serveur xxxx
 
 #### Avantage de Cloudflare
 
-Le principale avantage de Cloudflare est de pouvoir bloquer les attaques dos et ddos **Réseau** (inutile contre les dos ou ddos cpu, memoire ou espace disque)
+Le principale avantage de Cloudflare (en simplifiant un maximum) est de pouvoir bloquer les attaques dos et ddos **Réseau** (inutile contre les dos ou ddos espace disque etc ..)
 
 
 #### Pourquoi vouloir decouvrir la veritable ip du serveur
