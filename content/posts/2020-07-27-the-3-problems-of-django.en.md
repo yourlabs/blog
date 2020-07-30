@@ -22,8 +22,10 @@ form.media }}` and `{% csrf_token %}`.
 
 For example, Django would need to have a base.html that can display a
 `View.title` attribute, exactly like in all CMS and frameworks that exist on
-top of Django, and that Iommi solves with a **beautiful python API for
-generating HTML**, because of the problem with templates.
+top of Django, and that [Iommi](https://docs.iommi.rocks) solves with a
+**beautiful python API for generating HTML**, because of the problem with
+templates (see below), or [Ryzom](https://yourlabs.io/oss/ryzom) which also
+provide data-binding with django-channels.
 
 ## 3. No menus ?
 
@@ -86,6 +88,8 @@ Controller is a lot of fun just like in the admin because it is the result of a
 standard **refactor of the code in-between Models and Views**.
 
 ## MVC
+
+This part of the article is proven by [CRUDLFA+](https://yourlabs.io/oss/crudlfap).
 
 ### Example Controller
 
