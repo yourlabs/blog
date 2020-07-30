@@ -197,4 +197,6 @@ class MRSRequestRejectView(EmailViewMixin,
 
 h4x0|2z out there will just go down the rabbit hole of refactoring their HTML code built on bare Django, like Django itself was made, it's legacy will live on.
 
+[Discussion on Django forum](https://forum.djangoproject.com/t/the-3-problems-of-django/3625)
+
 EPIC
