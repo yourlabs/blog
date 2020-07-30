@@ -2,36 +2,57 @@
 date = "2020-07-27T13:37:00+00:00"
 draft = false
 tags = ["python", "django", "crud", "iommi", "crudlfap", "best-practice", "framework"]
-title = "Django: generating HTML menus gone wrong"
+title = "The 3 problems of Django"
 author = "jpic"
 +++
 
 # Why Django feels "unfinish"
 
+## 1. Non admins ?
+
 The problem is pretty obvious: Django admin provides barely anything that's
 usable for non-admin, not even working base templates and sane default features
-such as searchable lists with some kind of row level security, and only basic
+such as searchable lists with some kind of row level security.
+
+## 2. No templates ?
+
+For your internet users, Django only generates basic
 HTML forms without even a default template that calls `{{ form }}` and `{{
 form.media }}` and `{% csrf_token %}`.
 
 For example, Django would need to have a base.html that can display a
 `View.title` attribute, exactly like in all CMS and frameworks that exist on
-top of Django, and that Iommi solves with a *beautiful python API for
-generating HTML*.
+top of Django, and that Iommi solves with a **beautiful python API for
+generating HTML**, because of the problem with templates.
+
+## 3. No menus ?
+
+This one you would think I have added for the lulz because let's be honest: who has never tried to code a menu in Python and then went back to doing it in HTML templates and just tell others to live with it ? Well the real problem here is not just having a navigation menu, but also different menus such as the one in the object detail view, or the one in the object list item view that you will see per item on the list page.
+
+Let's be honest, Django has almost all it needs to generate a menu: it knows the urls, the views, what models the views are for, and so on, it just needs a view attribute for the names of the menus that the view should display in ... as well as some hat tricks:
+
+## Performant view-per-object security
+
+To generate menus efficiently: you need to be able to code permission code that does not hit the database, which is actually possible with a nice little trick possible by executing views on a target object with the same authenticated request prior to adding a link for this view in this object:
+
+```python
+for view in Controller.for_object(object).for_menu('object_list'):
+    if view.clone(request=request, object=object).has_perm():
+        yield view.as('a')
+```
 
 ## The problem with Templates
 
-Personnally I'd be better off without templates at all, so ultimately I would
-like to reach the level where this is possible:
+Ultimately I would like to reach the level where this is possible:
 
 ```python
 class IommiView:
     template = BaseTemplate(
-        title='Your Title',
-        content=[
-            ... list of python components here
-            ... and name of methods too
-        ]
+        title=html.h1('Your Title'),
+        content=html.div(
+            SomeModelTable(),   # a Table object for some model
+            cls="large",
+        )
     )
 ```
 
@@ -64,7 +85,11 @@ it is **secure by default** (which default CBV **are not**), overriding the
 Controller is a lot of fun just like in the admin because it is the result of a
 standard **refactor of the code in-between Models and Views**.
 
-## Example Controller
+## MVC
+
+### Example Controller
+
+To sit in between our view classes and our model, we make a Controller which is the same as a ModelAdmin, DRF ViewSet or a django SmartView. It should centralize the base queryset filter code for all the views of this controller and register just like a ModelAdmin:
 
 ```python
 class UserController(crudlfap.Controller):
@@ -117,7 +142,7 @@ class UserController(crudlfap.Controller):
 UserController().register()
 ```
 
-## Example custom action
+## Example secure custom object action
 
 But you will reach your full potential when you can add your own
 `ObjectFormView` with custom allowance based on properties of the object, ie:
@@ -164,17 +189,8 @@ class MRSRequestRejectView(EmailViewMixin,
             )
 ```
 
-# 1337 Conclusion
+# Epic Conclusion
 
-h4x0|2z out there on the wild internet will just go down the rabbit hole of
-refactoring their code built on bare Django to generate **HTML menu efficiently
-and DRYly**, because, who never been trying to refactor how the generate HTML
-menus in Django ? :D There are many refactors that gives a framework on top of
-Django, based on providing you with you generic secure-by-default and
-working-by-default CRUD frontend, such as Iommi, CRUDLFA+, and *many* others
-even django-smartviews, and, well, generating HTML, which is better done with
-Python than whatever template language (except maybe mako)
-
-Keep up the gr8 work TriOptima !!!! Love it !!!!
+h4x0|2z out there will just go down the rabbit hole of refactoring their HTML code built on bare Django, like Django itself was made, it's legacy will live on.
 
 EPIC
