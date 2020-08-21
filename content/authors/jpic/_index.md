@@ -52,7 +52,7 @@ project.
 
 In 2012 James Pic started a new plugin for the Django framework, which today
 benefits from more than one million downloads per year, which attests to the
-confidence that his colleagues have in his code, now used by FANGs, banks,
+confidence that the industry have in his code, now used by FANGs, banks,
 insurance, governments around the world.
 
 This was the start of the free software brand YourLabs which offers a catalog
