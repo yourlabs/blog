@@ -43,13 +43,6 @@ Circa 2010, James Pic began to introduce SCRUM in French companies while
 following a developer path, while working "in the shadows" to ensure great
 success.
 
-In 20 years, James has worked for large accounts such as Bull, Alcatel or the
-CNRS, in the cloud for Numergy which has earned him to contribute to OpenStack,
-as well as for small startups or SMEs that he is passionate about, but also on
-a voluntary basis for groups such as Quadrature du Net on the Memopol project
-which is famous for being the critical software to block the ACTA EU law
-project.
-
 In 2012 James Pic started a new plugin for the Django framework, which today
 benefits from more than one million downloads per year, which attests to the
 confidence that the industry have in his code, now used by FANGs, banks,
@@ -57,6 +50,13 @@ insurance, governments around the world.
 
 This was the start of the free software brand YourLabs which offers a catalog
 of many free software for making software.
+
+In 20 years, James has worked for large accounts such as Bull, Alcatel or the
+CNRS, in the cloud for Numergy which has earned him to contribute to OpenStack,
+as well as for small startups or SMEs that he is passionate about, but also on
+a voluntary basis for groups such as Quadrature du Net on the Memopol project
+which is famous for being the critical software to block the ACTA EU law
+project.
 
 James Pic still contributes to major Open Source projects such as Python,
 Django, and Ansible, as well as a huge range of minor projects.
