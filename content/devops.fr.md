@@ -5,7 +5,7 @@ comments: false
 tags: ["devops"]
 ---
 
-Nos DevOps acharnés proposent formation et developpement personnalisé pour
+Nos DevOps acharnés proposent formation et développement personnalisé pour
 fluidifier les déploiements des patches de ses protégés, d'un compte rendu
 managerial sur site en option, et gratuitement d'animer un
 [meetup](https://www.meetup.com/Angouleme-Hack-Dev-Barcamp-1337/) en interne
@@ -15,9 +15,9 @@ local.
 
 Practicien d'une [ingénierie en constant
 mouvement](https://blog.yourlabs.org/posts/2020-02-08-bigsudo-extreme-devops-hacking-operations/),
-nous optimisons le temps de déploiement en local (developpement) jusqu'en en
+nous optimisons le temps de déploiement en local (développement) jusqu'en en
 production (live), en passant par les déploiements de branche éphèmere qui
-fluidifient la communication entre vos équipes.
+fluidifient la communication au sein de vos équipes.
 
 Nous transformons tout déploiement (et appreciant les défis), en déploiement
 reproductible et automatique, persistents ou éphemères, pour vos propres
