@@ -1,20 +1,7 @@
 {{ define "main" }}
 <main>
-  <div class="hero">
-    <h1>{{.Title}}</h1>
-    <span class="subtitle">
-        {{.Params.subtitle}}
-        <br />
-        {{.Params.subtitle2}}
-    </span>
-  </div>
 
-  <div class="container">
-    <div class="homepage-content">
-      {{.Content}}
-    </div>
+  {{.Content}}
 
-
-  </div>
 </main>
 {{ end }}

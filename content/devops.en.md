@@ -2,7 +2,6 @@
 title: DevOps Business Service
 subtitle: Maintenance en condition opérationnelle, déploiement automatique continu réseau, processeurs, stockage
 comments: false
-tags: ["devops"]
 ---
 
 Our relentless DevOps offer personalized training and development for

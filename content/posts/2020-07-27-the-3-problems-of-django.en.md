@@ -2,11 +2,12 @@
 date = "2020-07-27T13:37:00+00:00"
 draft = false
 tags = ["python", "django", "crud", "iommi", "crudlfap", "best-practice", "framework"]
-title = "The 3 problems of Django"
+title = "Why CRUDLFA+"
 author = "jpic"
 +++
 
-# Why Django feels "unfinish"
+This post describes how I feel Django could be even more awesome to use
+out of the box !
 
 ## 1. Non admins ?
 

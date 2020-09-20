@@ -1,13 +1,10 @@
 {{ define "main" }}
 <main>
-  <div class="hero">
+  <div class="container">
     {{ $title :=  . }}
     {{ $title :=  replace . "Page(/tags/" "" }}
     {{ $title := replace $title ")" "" }}
     <h1>{{ $title }}</h1>
-  </div>
-
-  <div class="container">
     {{ range .Site.Pages }}
         {{ if in .Params.Tags $title }}
           <h3><a href="{{ .Permalink }}">{{ .Name }}</a></h3>

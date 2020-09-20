@@ -1,8 +1,5 @@
 {{ define "main" }}
 <main>
-  <div class="hero">
-    <h1>Blog</h1>
-  </div>
   <div class="container">
     {{ if or .Title .Content }}
       {{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}

@@ -1,10 +1,7 @@
 {{ define "main" }}
 <main>
-  <div class="hero">
-    <h1>Tags list</h1>
-  </div>
-
   <div class="container">
+    <h1>Tags</h1>
     {{ range .Site.Pages }}
         {{ with .Params.Tags }}
             {{ range . }}
