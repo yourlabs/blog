@@ -1,4 +1,5 @@
 import './main.sass'
+import 'loading-attribute-polyfill/loading-attribute-polyfill.js'
 
 var links = document.getElementsByTagName("a");
 for (var i = 0, linksLength = links.length; i < linksLength; i++) {

@@ -1,6 +1,6 @@
 {{ define "main" }}
 <main>
-  <div class="hero">
+  <div class="container">
     {{ if (eq .File.Path "") }}
       <h1>Authors list</h1>
     {{else}}
@@ -10,13 +10,8 @@
       {{ else }}
           {{ $.Scratch.Set "author_name" .Params.Name }}
       {{ end }}
-      <span class="subtitle">
-          {{.Params.subtitle}}
-      </span>
     {{ end }}
-  </div>
 
-  <div class="container">
     {{ if not (eq .File.Path "") }}
         <img src="{{ .Params.avatar }}" style="float: left; padding-right: 1em"/>
         {{ .Content }}

@@ -4,7 +4,9 @@ subtitle: Pénétration par internet
 comments: false
 ---
 
-Rien n'est impiratable: du piratage de mot de passe à l'injection de shellcode écrit pour une occasion qui se présente, comme des portes qu'ouvrent l'ingénierie sociale ajoutant le fameux facteur humain, tous les moyens sont bons pour escalader d'un privilège 0 à des ressources vitales pour l'entreprise. La cyber-défense est un sujet incontournable pour toutes les entreprises et services qui traitent de l'information privée.
+Rien n’est impiratable : du piratage de mot de passe à l’injection de shellcode écrit pour une occasion qui se présente, comme des portes qu’ouvrent l’ingénierie sociale ajoutant le fameux facteur humain …
+
+Pour un cyber-criminel : tous les moyens sont bons pour escalader d’un “privilège 0” à des ressources vitales pour l’entreprise. La cyber-défense est un sujet incontournable pour toutes les entreprises et services qui traitent de l’information privée.
 
 ## Audits de sécurité ponctuels et continus
 
