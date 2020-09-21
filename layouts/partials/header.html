@@ -11,7 +11,9 @@
         {{ end }}
         {{ if .Site.IsMultiLingual }}
             {{ range .Site.Languages }}
-              <a href="{{ $.Site.BaseURL }}/" lang="{{ .Lang }}">{{ default .Lang .LanguageName }}</a>
+                {{ if not (eq .Lang $.Site.Language.Lang) }}
+                    <a href="{{ $.Site.BaseURL }}/" lang="{{ .Lang }}">{{ default .Lang .LanguageName }}</a>
+                {{ end }}
             {{ end }}
         {{ end }}
     </header>
