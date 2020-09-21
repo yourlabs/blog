@@ -166,5 +166,5 @@ $ python firefox_decrypt.py
 ![](/img/sec/password.png)
 
 
-- [Partie 2: Ransomware](/fr/posts/2020-03-24-windows_ransomware/)
-- [Partie 3: SSL mitm](/fr/posts/2020-03-24-ssl_mitm/)
+- [Partie 2: Ransomware](/posts/2020-03-24-windows_ransomware/)
+- [Partie 3: SSL mitm](/posts/2020-03-24-ssl_mitm/)

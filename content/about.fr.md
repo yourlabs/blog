@@ -22,7 +22,7 @@ Société enregistrée en France en 2017 parraine la R&D Open Source et offres
 services extrêmement compétitifs:
 
 - [eXtreme DevOps](/posts/2020-02-08-bigsudo-extreme-devops-hacking-operations/)
-- [Cyber Securité](/fr/secops/)
+- [Cyber Securité](/secops/)
 - [Development](https://yourlabs.io/oss)
 
 # Team

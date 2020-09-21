@@ -47,21 +47,21 @@ intervenir en développement.
 
 | | |
 | :--------- | ----: | ---: |
-| Junior        | 1  J.H. | 300  € H.T |
-| Intermediaire | 1  J.H. | 750  € H.T |
-| Senior        | 1  J.H. | 1000 € H.T |
-| Junior        | 5  J.H. | 275  € H.T |
-| Intermediaire | 5  J.H. | 700  € H.T |
-| Senior        | 5  J.H. | 950  € H.T |
+| Junior        | 20 J.H. | 200  € H.T |
+| Intermediaire | 20 J.H. | 500  € H.T |
+| Senior        | 20 J.H. | 800  € H.T |
+| Junior        | 15 J.H. | 225  € H.T |
+| Intermediaire | 15 J.H. | 550  € H.T |
+| Senior        | 15 J.H. | 850  € H.T |
 | Junior        | 10 J.H. | 250  € H.T |
 | Intermediaire | 10 J.H. | 650  € H.T |
 | Senior        | 10 J.H. | 900  € H.T |
-| Junior        | 15 J.H. | 225  € H.T |
-| Intermediaire | 15 J.H. | 600  € H.T |
-| Senior        | 15 J.H. | 850  € H.T |
-| Junior        | 20 J.H. | 200  € H.T |
-| Intermediaire | 20 J.H. | 600  € H.T |
-| Senior        | 20 J.H. | 800  € H.T |
+| Junior        | 5  J.H. | 275  € H.T |
+| Intermediaire | 5  J.H. | 700  € H.T |
+| Senior        | 5  J.H. | 950  € H.T |
+| Junior        | 1  J.H. | 300  € H.T |
+| Intermediaire | 1  J.H. | 750  € H.T |
+| Senior        | 1  J.H. | 1000 € H.T |
 
 Profils selon disponnibilté.
 

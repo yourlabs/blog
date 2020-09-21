@@ -36,7 +36,7 @@ YourLabs fait partie des meneurs du monde technique en matière d'eXtreme DevOps
 une pratique qui augmente le rendement de vos équipes de developpement !
 
 {{< rawhtml >}}
-<a href="/fr/devops" class="read-more">Lire l'offre DevOps</a>
+<a href="/devops" class="read-more">Lire l'offre DevOps</a>
 {{< /rawhtml >}}
 
 ## Service Cyber-Sécurité
@@ -57,5 +57,5 @@ les cyber criminels, jusqu’aux missions de surveillance continue contre les
 autres menaces qui planent sur votre entreprise.
 
 {{< rawhtml >}}
-<a href="/fr/secops" class="read-more">Lire l'offre SecOps</a>
+<a href="/secops" class="read-more">Lire l'offre SecOps</a>
 {{< /rawhtml >}}

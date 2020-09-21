@@ -244,6 +244,6 @@ foreach ($i in $(Get-ChildItem /users/$env:USERNAME -recurse -include *.LCK_666 
 - necessite compétences variées et combinées
 <!--  -->
 
-- [Partie 1: RubberDucky](/fr/posts/2020-03-24-rubberducky/)
-- [Partie 3: SSL mitm](/fr/posts/2020-03-24-ssl_mitm/)            
+- [Partie 1: RubberDucky](/posts/2020-03-24-rubberducky/)
+- [Partie 3: SSL mitm](/posts/2020-03-24-ssl_mitm/)            
 

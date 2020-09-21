@@ -38,19 +38,19 @@ a h3 {
     <h2>Nos Services</h2>
     <div class="services">
       <div class="service">
-        <a href="/fr/secops/">
+        <a href="/secops/">
           <img loading="lazy" src="/img/backgrounds/security-thumb-400.jpg" />
           <h3>Cyber-Sécurité</h3>
         </a>
       </div>
       <div class="service">
-        <a href="/fr/dev/">
+        <a href="/dev/">
           <img loading="lazy" src="/img/backgrounds/code-400.jpg" />
           <h3>Développement</h3>
         </a>
       </div>
       <div class="service">
-        <a href="/fr/devops/">
+        <a href="/devops/">
           <img loading="lazy" src="/img/backgrounds/servers-400.jpg" />
           <h3>DevOps</h3>
         </a>
@@ -65,7 +65,7 @@ a h3 {
     <div class="container">
       <span class="subtitle">
         YourLabs Business Service est une société de services du numérique immatriculée
-        en France qui offre la meilleure expertise sur les <a href="/fr/software/">logiciels de marque
+        en France qui offre la meilleure expertise sur les <a href="/software/">logiciels de marque
         YourLabs</a> ainsi qu'une expertise particulièrement forte sur les
         languages Python, PHP, le framework Django et l'ecosystème de logiciels libres
         en général, et les systèmes Linux ou BSD.
