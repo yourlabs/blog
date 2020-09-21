@@ -12,11 +12,7 @@
         {{ if .Site.IsMultiLingual }}
             {{ range .Site.Languages }}
                 {{ if not (eq .Lang $.Site.Language.Lang) }}
-                    {{ if not ( eq .Lang $ctx.Site.Params.defaultLang) }}
-                        <a href="{{ $ctx.Site.BaseURL }}/{{ .Lang }}/" lang="{{ .Lang }}">{{ default .Lang .LanguageName }}</a>
-                    {{ else }}
-                        <a href="{{ $ctx.Site.BaseURL }}/" lang="{{ .Lang }}">{{ default .Lang .LanguageName }}</a>
-                    {{ end }}
+                    <a href="{{ $ctx.Site.BaseURL }}/" lang="{{ .Lang }}">{{ default .Lang .LanguageName }}</a>
                 {{ end }}
             {{ end }}
         {{ end }}
