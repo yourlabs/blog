@@ -21,7 +21,7 @@ comments : false
       </p>
   </div>
   <div class="team-item">
-      <img src="/img/authors/john.png"></img>
+      <img src="/img/authors/magineo.png"></img>
       <p>
         Eric Grivet
         Marketing & Project Management
