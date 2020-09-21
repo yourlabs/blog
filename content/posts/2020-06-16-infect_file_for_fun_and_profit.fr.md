@@ -2,7 +2,7 @@
 date = "2020-04-26T13:37:00+00:00"
 draft = false
 tags = ['security']
-title = "Malicious files"
+title = "Armement de fichiers malicieux"
 author = "claw"
 +++
 
@@ -17,17 +17,17 @@ Des sample de fichiers infecté peuvent être téléchargés [ici](https://yourl
 ### Images
 
 Il existe princialment quatre principales facons de compromettre une image. A
-noter que dans la majoritées des cas une image malveilante servira a compromettre 
+noter que dans la majoritées des cas une image malveilante servira a compromettre
 une application web (ou les utilisateur de celle ci)
 
 - Son nom en lui même
-- Ses matadonnées  
+- Ses matadonnées
 - La steganographie
 - Sa taille
 
 ##### Le nom de l'image
 
-Si un attaquant peut uploader une image se nommant 
+Si un attaquant peut uploader une image se nommant
 `><img src=x onerror=alert(0)>.jpeg` **ET** que le nom de  l'image n'est pas renommer
 par l'applicaion, il peut alors de produire une xss (cross-site scripting
 (injection de javascript)).
@@ -60,7 +60,7 @@ exemple:  `http://xxxxxxx.xxx/uploads/img/evilfile.png?cmd=ls`
 Si le site est vulnerable, nous obtiendrons le resultats de la commande `ls` dans
 une balise html "pre".
 
-Dans de très rares cas (principalement en CTF) les metadonnées seront inserées 
+Dans de très rares cas (principalement en CTF) les metadonnées seront inserées
 dans la base de données et peut donc provoquer une injection sql.
 
 
@@ -93,8 +93,8 @@ limite de taille un simple
 dd if=/dev/zero of=big.jpg bs=1G count=20 status=progress
 ```
 
-Si un attaquant se met à en uploader 20, 50 ou même 100, il peut se produire alors un 
-"Deni de service" ou "deni de service distribué" en saturant la bande passante 
+Si un attaquant se met à en uploader 20, 50 ou même 100, il peut se produire alors un
+"Deni de service" ou "deni de service distribué" en saturant la bande passante
 sur un instant T et/ou dans le temps en saturant l'éspace disque.
 Si il y a une verification de l'header rien n'enpeche d'ouvrir un fichier png ou
 jpeg valide et de coller des GB de texte a l'interieur.
@@ -130,8 +130,8 @@ Des coomandes PowerShell peuvent être executer à partir d'un pdf.
       /Action
         /S
           /Launch
-            /Win << 
-                /F (cmd.exe) 
+            /Win <<
+                /F (cmd.exe)
                   /P (/C start powershell.exe -Command "echo 'hello, this windows will be close in 10sec...'; sleep 10"
 
 
@@ -147,7 +147,7 @@ on utilise:
 - `Action/S/Launch/Win`: pour spécifier quelle action on va lancer, ici,  lancer une commande sur windows
 - `/F (cmd.exe)`: pour lancer cmd.exe
 - `/P (/C start powershell.exe -Command "....."`: les arguments passés à cmd.exe
-- `This document...` + les deux lignes vides: Pour masquer le message original 
+- `This document...` + les deux lignes vides: Pour masquer le message original
 (bien que toujours visible si on scrolle vers le haut). ! Ne marche seulement sur adobe < 9.3.4
 
 
@@ -160,7 +160,7 @@ souvent associé à une `/A | /Action | /AA`).
 Vous trouverez [ici](https://www.adobe.com/content/dam/acom/en/devnet/acrobat/pdfs/js_api_reference.pdf) le manuel de l'api javascript pour adobe (plus de 750 pages... bon courage ^^) .
 
 
-###### Adobe version 
+###### Adobe version
 
 L'obtention de la version d'adobe utilisée est extremement utile pour un attaquant;
 il lui permetera de chercher des exploits spécifiques à cette version et par ce fait
