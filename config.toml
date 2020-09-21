@@ -50,7 +50,7 @@ baseurl = "https://yourlabs.org"
 
 [[Languages.en.menu.main]]
     name = "Services"
-    url = "/"
+    url = "/#services"
     weight = 1
 
 [[Languages.en.menu.main]]
@@ -71,7 +71,7 @@ baseurl = "https://yourlabs.fr"
 
 [[Languages.fr.menu.main]]
     name = "Services"
-    url = "/"
+    url = "/#services"
     weight = 1
 
 [[Languages.fr.menu.main]]

@@ -35,6 +35,7 @@ a h3 {
 
 <div class="container">
   <div class="homepage-content">
+    <a name="services"></a>
     <h2>Our Services</h2>
     <div class="services">
       <div class="service">

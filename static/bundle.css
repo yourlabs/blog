@@ -695,6 +695,8 @@ img {
 
 .main-header {
   text-align: center; }
+  .main-header .active {
+    text-decoration: underline; }
   @media screen and (min-width: 900px) {
     .main-header {
       display: flex;

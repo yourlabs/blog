@@ -107,9 +107,13 @@ __webpack_require__.r(__webpack_exports__);
 var links = document.getElementsByTagName("a");
 var sites = ['yourlabs.org', 'yourlabs.fr', window.location.hostname]
 for (var i = 0, linksLength = links.length; i < linksLength; i++) {
-   if (sites.indexOf(links[i].hostname) < 0) {
-      links[i].target = '_blank';
-   }
+  if (sites.indexOf(links[i].hostname) < 0) {
+    links[i].target = '_blank';
+  }
+  if (links[i].pathname == window.location.pathname && links[i].hostname == window.location.hostname) {
+    if (links[i].childNodes.length > 1) continue // it's an image or something we don't want to underline
+    links[i].classList.add('active')
+  }
 }
 
 
@@ -117,10 +121,10 @@ instantclick__WEBPACK_IMPORTED_MODULE_2___default.a.init()
 var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
 var doNotTrack = (dnt == "1" || dnt == "yes");
 if (!doNotTrack) {
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-169189134-1', 'auto');
-	ga('set', 'anonymizeIp', true);
-	ga('send', 'pageview');
+  window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+  ga('create', 'UA-169189134-1', 'auto');
+  ga('set', 'anonymizeIp', true);
+  ga('send', 'pageview');
 }
 
 
