@@ -58,6 +58,11 @@ baseurl = "https://yourlabs.org"
     url = "posts/"
     weight = 2
 
+[[Languages.en.menu.main]]
+    name = "Français"
+    url = "https://yourlabs.fr"
+    weight = 3
+
 [Languages.fr]
 languagename = "Français"
 title = "Yourlabs Business Service"
@@ -73,3 +78,8 @@ baseurl = "https://yourlabs.fr"
     name = "Blog"
     url = "posts/"
     weight = 2
+
+[[Languages.fr.menu.main]]
+    name = "English"
+    url = "https://yourlabs.org"
+    weight = 3

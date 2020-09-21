@@ -9,12 +9,5 @@
             <a href="{{ .URL | relURL }}">{{ .Name }}</a>
             {{ end }}
         {{ end }}
-        {{ if .Site.IsMultiLingual }}
-            {{ range .Site.Languages }}
-                {{ if not (eq .Lang $.Site.Language.Lang) }}
-                    <a href="{{ $.Site.BaseURL }}/" lang="{{ .Lang }}">{{ default .Lang .LanguageName }}</a>
-                {{ end }}
-            {{ end }}
-        {{ end }}
     </header>
 </div>
