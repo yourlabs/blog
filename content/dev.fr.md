@@ -41,30 +41,31 @@ intervenir en développement.
 {{< rawhtml >}}
 <style type="text/css">
   table { width: 100%; }
+  table thead tr th { align: right !important; }
 </style>
 {{< /rawhtml >}}
 
-|  | Jours | TJM |
-| :---------: | :----: | ---: |
-| Junior        | 1  | 300  € H.T |
-| Intermediaire | 1  | 750  € H.T |
-| Senior        | 1  | 1000 € H.T |
-| Junior        | 5  | 275  € H.T |
-| Intermediaire | 5  | 700  € H.T |
-| Senior        | 5  | 950  € H.T |
-| Junior        | 10 | 250  € H.T |
-| Intermediaire | 10 | 650  € H.T |
-| Senior        | 10 | 900  € H.T |
-| Junior        | 15 | 225  € H.T |
-| Intermediaire | 15 | 600  € H.T |
-| Senior        | 15 | 850  € H.T |
-| Junior        | 20 | 200  € H.T |
-| Intermediaire | 20 | 600  € H.T |
-| Senior        | 20 | 800  € H.T |
+| | |
+| :--------- | ----: | ---: |
+| Junior        | 1  J.H. | 300  € H.T |
+| Intermediaire | 1  J.H. | 750  € H.T |
+| Senior        | 1  J.H. | 1000 € H.T |
+| Junior        | 5  J.H. | 275  € H.T |
+| Intermediaire | 5  J.H. | 700  € H.T |
+| Senior        | 5  J.H. | 950  € H.T |
+| Junior        | 10 J.H. | 250  € H.T |
+| Intermediaire | 10 J.H. | 650  € H.T |
+| Senior        | 10 J.H. | 900  € H.T |
+| Junior        | 15 J.H. | 225  € H.T |
+| Intermediaire | 15 J.H. | 600  € H.T |
+| Senior        | 15 J.H. | 850  € H.T |
+| Junior        | 20 J.H. | 200  € H.T |
+| Intermediaire | 20 J.H. | 600  € H.T |
+| Senior        | 20 J.H. | 800  € H.T |
 
 Profils selon disponnibilté.
 
-## Bugfix
+## Bugfix, Formation, CI/CD, XP ...
 
 Pratiquant du bug squashing depuis les années 90, notre expertise en
 Integration Continue rayonnera de bonnes pratiques sur vos équipes de
