@@ -105,8 +105,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var links = document.getElementsByTagName("a");
+var sites = ['yourlabs.org', 'yourlabs.fr', window.location.hostname]
 for (var i = 0, linksLength = links.length; i < linksLength; i++) {
-   if (links[i].hostname != window.location.hostname) {
+   if (sites.indexOf(links[i].hostname) < 0) {
       links[i].target = '_blank';
    }
 }

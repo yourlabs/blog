@@ -2,8 +2,9 @@ import './main.sass'
 import 'loading-attribute-polyfill/loading-attribute-polyfill.js'
 
 var links = document.getElementsByTagName("a");
+var sites = ['yourlabs.org', 'yourlabs.fr', window.location.hostname]
 for (var i = 0, linksLength = links.length; i < linksLength; i++) {
-   if (links[i].hostname != window.location.hostname) {
+   if (sites.indexOf(links[i].hostname) < 0) {
       links[i].target = '_blank';
    }
 }
