@@ -9,7 +9,7 @@ comments  : false
   <div class="team-item">
       <img src="/img/authors/jamesp.png">
       <p>
-      <a href="/fr/authors/jpic/">
+      <a href="/authors/jpic/">
         James Pic
       </a> : Président
       </p>
