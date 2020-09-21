@@ -39,7 +39,6 @@ main
   margin-bottom: 5rem
 
 .hero
-  background-image: url(/img/backgrounds/pexel-1312.jpg)
   background-size: cover
   background-position: top
   padding: 0
@@ -91,20 +90,21 @@ main
   grid-gap: 2rem
   margin-bottom: 6.66rem
 
-  @media screen and (max-width: 600px)
-    img
-      width: 100vw
-
-  @media screen and (min-width: 600px)
-    img
-      width: 50vw
-
-  @media screen and (min-width: 900px)
+  @media screen and (min-width: 700px)
     grid-template-columns: repeat(3, minmax(0, 1fr))
     .service
       grid-row: 1
+
+  img
+    width: 100%
+
+  @media screen and (min-width: 400px)
     img
-      width: 30vw
+      width: 50%
+
+  @media screen and (min-width: 600px)
+    img
+      width: 33vw
 
   .service
     text-align: center

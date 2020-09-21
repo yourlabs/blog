@@ -477,7 +477,6 @@ main {
   margin-bottom: 5rem; }
 
 .hero {
-  background-image: url(/img/backgrounds/pexel-1312.jpg);
   background-size: cover;
   background-position: top;
   padding: 0; }
@@ -529,19 +528,19 @@ main {
   display: grid;
   grid-gap: 2rem;
   margin-bottom: 6.66rem; }
-  @media screen and (max-width: 600px) {
-    .services img {
-      width: 100vw; } }
-  @media screen and (min-width: 600px) {
-    .services img {
-      width: 50vw; } }
-  @media screen and (min-width: 900px) {
+  @media screen and (min-width: 700px) {
     .services {
       grid-template-columns: repeat(3, minmax(0, 1fr)); }
       .services .service {
-        grid-row: 1; }
-      .services img {
-        width: 30vw; } }
+        grid-row: 1; } }
+  .services img {
+    width: 100%; }
+  @media screen and (min-width: 400px) {
+    .services img {
+      width: 50%; } }
+  @media screen and (min-width: 600px) {
+    .services img {
+      width: 33vw; } }
   .services .service {
     text-align: center; }
     .services .service h2 {

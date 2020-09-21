@@ -22,7 +22,7 @@ a h3 {
 }
 </style>
 
-<div class="hero">
+<div class="hero" style="background-image: url(/img/backgrounds/pexel-1312.jpg)">
   <div class="hero-inner">
     <h1>YourLabs Business Service</h1>
     <span class="subtitle">
