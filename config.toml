@@ -66,10 +66,10 @@ baseurl = "https://yourlabs.fr"
 
 [[Languages.fr.menu.main]]
     name = "Services"
-    url = "fr/"
+    url = "/"
     weight = 1
 
 [[Languages.fr.menu.main]]
     name = "Blog"
-    url = "fr/posts/"
+    url = "posts/"
     weight = 2
