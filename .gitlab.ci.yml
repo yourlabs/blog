@@ -68,3 +68,14 @@ pages:
     - public
   only:
   - master
+
+prod:
+  stage: deploy
+  only: [master]
+  script:
+  - mkdir -p ~/.ssh; echo "$prod_key" > ~/.ssh/id_ed25519; echo "$prod_fingerprint" > ~/.ssh/known_hosts; chmod 700 ~/.ssh; chmod 600 ~/.ssh/*
+  - scp -r public/* blog@yourlabs.io:html
+  - ssh blog@yourlabs.io sh -c "cd ~/html; gzip -k -6 $(find public -type f)"
+  artifacts:
+    paths:
+    - public
