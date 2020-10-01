@@ -708,6 +708,7 @@ img {
     padding: .6rem 1.2rem;
     border-radius: 50px;
     font-size: 1.2rem;
+    display: block;
     text-decoration: none;
     color: #ff0883;
     margin-bottom: 4px;
@@ -715,7 +716,8 @@ img {
     transition: all 200ms linear; }
     @media screen and (min-width: 500px) {
       .main-header a {
-        font-size: calc(1.275rem + 0.3vw); } }
+        font-size: calc(1.275rem + 0.3vw);
+        display: inline-block; } }
   @media screen and (min-width: 500px) and (min-width: 1200px) {
     .main-header a {
       font-size: 1.5rem; } }

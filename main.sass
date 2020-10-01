@@ -12,7 +12,7 @@ $color5: #81eafd  // lightblue
 $color6: #ef64ee
 
 body
-  font-family: "Open Sans", "Helvetica", "Arial", sans-serif
+  font-family: "ubuntu", "Helvetica", "Arial", sans-serif
 
 main
   line-height: 1.4
@@ -253,8 +253,10 @@ img
 
     @include font-size(1.2rem)
 
+    display: block
     @media screen and (min-width: 500px)
       @include font-size(1.5rem)
+      display: inline-block
 
     @media screen and (min-width: 900px)
       @include font-size(1.8rem)
