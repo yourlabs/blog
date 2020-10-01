@@ -725,7 +725,7 @@ img {
   @media screen and (min-width: 900px) and (min-width: 1200px) {
     .main-header a {
       font-size: 1.8rem; } }
-    .main-header a:hover {
+    .main-header a:hover:not(.logo) {
       color: white;
       background-color: #fa52d1; }
   .main-header a.logo {
