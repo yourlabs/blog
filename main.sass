@@ -237,15 +237,19 @@ img
   text-align: center
   text-transform: uppercase
 
-  .active
-    background-color: $color2
-    color: white
+  @media screen and (max-width: 500px)
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+    flex-direction: column
 
   @media screen and (min-width: 900px)
     display: flex
     align-items: center
     justify-content: space-between
     flex-wrap: wrap
+    flex-direction: row
 
   a
     padding: .6rem 1.2rem
@@ -253,13 +257,11 @@ img
 
     @include font-size(1.2rem)
 
-    display: block
     @media screen and (min-width: 500px)
       @include font-size(1.5rem)
-      display: inline-block
 
     @media screen and (min-width: 900px)
-      @include font-size(1.8rem)
+      @include font-size(1.1rem)
 
     text-decoration: none
     color: $color2
@@ -270,6 +272,10 @@ img
     &:hover:not(.logo)
       color: white
       background-color: $color3
+
+    &.active
+      color: white
+      background-color: $color2
 
   a.logo
     display: block
