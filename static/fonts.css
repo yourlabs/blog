@@ -1,47 +1,46 @@
-/* === Ubuntu - 300 */
+/* === Raleway - 300 */
 @font-face {
-	font-family: 'Ubuntu';
+	font-family: 'Raleway';
 	font-style: normal;
 	font-weight: 300;
 	font-display: swap;
-	src: url("./font/Ubuntu-Light.eot");
-	src: local("Ubuntu Light"),
-		local("Ubuntu-Light"),
-		url("./font/Ubuntu-Light.eot") format("embedded-opentype"),
-		url("./font/Ubuntu-Light.woff2") format("woff2"),
-		url("./font/Ubuntu-Light.woff") format("woff"),
-		url("./font/Ubuntu-Light.ttf") format("truetype"),
-		url("./font/Ubuntu-Light.svg") format("svg");
+	src: url("./font/Raleway-Light.eot");
+	src: local("'Raleway'"),
+		url("./font/Raleway-Light.eot") format("embedded-opentype"),
+		url("./font/Raleway-Light.woff2") format("woff2"),
+		url("./font/Raleway-Light.woff") format("woff"),
+		url("./font/Raleway-Light.ttf") format("truetype"),
+		url("./font/Raleway-Light.svg") format("svg");
 }
 
-/* === Ubuntu - regular */
+/* === Roboto - regular */
 @font-face {
-	font-family: 'Ubuntu';
+	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 400;
 	font-display: swap;
-	src: url("./font/Ubuntu-Regular.eot");
-	src: local("Ubuntu Regular"),
-		local("Ubuntu-Regular"),
-		url("./font/Ubuntu-Regular.eot") format("embedded-opentype"),
-		url("./font/Ubuntu-Regular.woff2") format("woff2"),
-		url("./font/Ubuntu-Regular.woff") format("woff"),
-		url("./font/Ubuntu-Regular.ttf") format("truetype"),
-		url("./font/Ubuntu-Regular.svg") format("svg");
+	src: url("./font/Roboto-Regular.eot");
+	src: local("Roboto"),
+		local("Roboto-Regular"),
+		url("./font/Roboto-Regular.eot") format("embedded-opentype"),
+		url("./font/Roboto-Regular.woff2") format("woff2"),
+		url("./font/Roboto-Regular.woff") format("woff"),
+		url("./font/Roboto-Regular.ttf") format("truetype"),
+		url("./font/Roboto-Regular.svg") format("svg");
 }
 
-/* === Ubuntu - 700 */
+/* === Roboto - 700 */
 @font-face {
-	font-family: 'Ubuntu';
+	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 700;
 	font-display: swap;
-	src: url("./font/Ubuntu-Bold.eot");
-	src: local("Ubuntu Bold"),
-		local("Ubuntu-Bold"),
-		url("./font/Ubuntu-Bold.eot") format("embedded-opentype"),
-		url("./font/Ubuntu-Bold.woff2") format("woff2"),
-		url("./font/Ubuntu-Bold.woff") format("woff"),
-		url("./font/Ubuntu-Bold.ttf") format("truetype"),
-		url("./font/Ubuntu-Bold.svg") format("svg");
+	src: url("./font/Roboto-Bold.eot");
+	src: local("Roboto Bold"),
+		local("Roboto-Bold"),
+		url("./font/Roboto-Bold.eot") format("embedded-opentype"),
+		url("./font/Roboto-Bold.woff2") format("woff2"),
+		url("./font/Roboto-Bold.woff") format("woff"),
+		url("./font/Roboto-Bold.ttf") format("truetype"),
+		url("./font/Roboto-Bold.svg") format("svg");
 }

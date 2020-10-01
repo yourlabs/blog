@@ -12,115 +12,11 @@ $color5: #81eafd  // lightblue
 $color6: #ef64ee
 
 body
-  font-family: "ubuntu", "Helvetica", "Arial", sans-serif
+  color: #555
+  font-family: "Roboto", "Helvetica Neue", "Arial", sans-serif
 
 main
   line-height: 1.4
-
-.logos
-  text-align: center
-
-  img
-    width: 90%
-
-    @media screen and (min-width: 400px)
-      width: 35vw
-
-    @media screen and (min-width: 800px)
-      width: 19%
-
-    filter: grayscale(100%)
-    transition: all 400ms linear
-
-    &:hover
-      filter: grayscale(0)
-
-.section
-  margin-bottom: 5rem
-
-.hero
-  background-size: cover
-  background-position: top
-  padding: 0
-
-  .hero-inner
-    min-height: 100%
-    min-width: 100%
-    padding: 1em
-    color: white
-    text-align: center
-    font-weight: lighter
-
-  h1, h2
-    color: white
-    line-height: 1.3
-    text-shadow: 0 0 9px #000
-    font-weight: 600
-    margin: 2vh 0
-
-  h1
-    @include font-size(4rem)
-
-  h2
-    @include font-size(3rem)
-
-  span.subtitle
-    display: block
-    text-shadow: 0 0 9px #000
-    font-weight: 600
-    @include font-size(1.5rem)
-    margin: 2vh 0
-    color: white
-
-    a, a:visited
-      color: $color5
-
-  @media screen and (min-width: 800px)
-    height: 66vh
-
-    .hero
-      padding-left: 20vh
-      padding-right: 20vh
-
-    h1
-      margin-top: 20vh
-
-.services
-  display: grid
-  grid-gap: 2rem
-  margin-bottom: 6.66rem
-
-  @media screen and (min-width: 700px)
-    grid-template-columns: repeat(3, minmax(0, 1fr))
-    .service
-      grid-row: 1
-
-  img
-    width: 100%
-
-  @media screen and (min-width: 400px)
-    img
-      width: 50%
-
-  @media screen and (min-width: 600px)
-    img
-      width: 33vw
-
-  .service
-    text-align: center
-
-    h2
-      text-align: center
-      @include font-size(1.8rem)
-      border: 0
-
-.container
-  max-width: 80em
-  margin: 2rem
-  color: #555
-
-  strong
-    color: #333
 
 a, a:visited
   color: $color0
@@ -153,6 +49,8 @@ code, pre
 h1, h2, h3, h4, h5, h6
   color: $color3
   font-weight: 300
+  font-family: Raleway, sans-serif
+
   a, a:visited, a:link, a:active
     text-decoration: none
     color: $color0
@@ -218,6 +116,10 @@ img
   max-width: 100%
   height: auto
 
+.container
+  max-width: 80em
+  margin: 2rem auto
+
 @media screen and (max-width: 500px)
   .container
     margin: 2rem 0.5em
@@ -233,9 +135,149 @@ img
     img
       margin-left: 1em
 
+body a.action, body a.action:visited
+  border-radius: 7px
+  padding: .9rem 1.4rem
+  margin: 1rem
+  text-align: center
+  border: 3px solid $color2
+  color: $color2
+  font-weight: bold
+
+.logos
+  text-align: center
+
+  img
+    width: 90%
+
+    @media screen and (min-width: 400px)
+      width: 35vw
+
+    @media screen and (min-width: 800px)
+      width: 19%
+
+    filter: grayscale(100%)
+    transition: all 400ms linear
+
+    &:hover
+      filter: grayscale(0)
+
+.section
+  margin-bottom: 5rem
+
+.hero
+  background-size: cover
+  background-position: top
+  padding: 0
+
+  .hero-inner
+    min-height: 100%
+    min-width: 100%
+    padding: 1em
+    color: white
+    text-align: center
+    font-weight: lighter
+
+  a.action
+    margin-top: 3rem
+    background-color: $color2
+    color: white !important
+    text-shadow: none
+
+  h1, h2
+    color: white
+    line-height: 1.3
+    text-shadow: 0 0 9px #000
+    font-weight: 600
+    margin: 2vh 0
+
+  h1
+    @include font-size(4rem)
+
+  h2
+    @include font-size(3rem)
+
+  span.subtitle
+    display: block
+    text-shadow: 0 0 9px #000
+    font-weight: 600
+    @include font-size(1.5rem)
+    margin: 2vh 0
+    color: white
+
+    a, a:visited
+      color: $color5
+      display: inline-block
+
+  @media screen and (min-width: 800px)
+    height: 66vh
+
+    .hero
+      padding-left: 20vh
+      padding-right: 20vh
+
+    h1
+      margin-top: 20vh
+
+
+.product-container
+  display: flex
+  justify-content: center
+  margin: auto
+
+.services
+  display: inline-flex
+  flex-wrap: wrap
+  justify-content: center
+  margin: 3.3rem auto
+
+  img
+    max-width: 100%
+    height: 180px
+    margin-top: .7rem
+
+  .service
+    width: 364px
+    border: 1px solid #e9e9e9
+    box-shadow: 2px 2px 10px #f4f4f4
+    border-radius: 5px
+    padding: 1.25rem
+    margin: 1rem
+    display: flex
+    flex-direction: column
+
+    img
+      border-radius: 7px
+
+    h2
+      text-align: center
+      @include font-size(1.8rem)
+      border: 0
+      margin: .9rem .1rem .3rem .1rem
+      color: $color1
+
+    img, h2, a, ul
+      margin: 1.25rem
+
+    ul
+      margin: 0
+      padding: 0
+
+      li
+        list-style-type: none
+        text-align: center
+
+  @media screen and (max-width: 950px)
+    margin: auto
+
+  strong
+    color: #333
+
 .main-header
   text-align: center
   text-transform: uppercase
+  .logo
+    margin-top: .3rem
 
   @media screen and (max-width: 500px)
     display: flex
@@ -257,7 +299,7 @@ img
     flex-direction: row
 
   a:not(.logo)
-    font-family: sans-serif
+    font-family: Raleway, sans-serif
     padding: .6rem 1.2rem
     border-radius: 50px
 

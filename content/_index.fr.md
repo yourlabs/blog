@@ -29,32 +29,77 @@ a h3 {
       Marque de logiciels libres depuis 2012
       <br />
       La pratique d'une ingénierie tel un sport, un art, au service d'êtres humains.
+      <br />
+      <a href="/#services" class="action">Haute couture sur mesure</a>
     </span>
   </div>
 </div>
 
-<div class="container">
+<div class="product-container" style="">
   <div class="homepage-content">
     <a name="services"></a>
-    <h2>Nos Services</h2>
     <div class="services">
       <div class="service">
-        <a href="/secops/">
-          <img loading="lazy" src="/img/backgrounds/security-thumb-400.jpg" />
-          <h3>Cyber-Sécurité</h3>
-        </a>
+        <img loading="lazy" src="/img/cybersecurity.svg" />
+        <h2>Cyber-Sécurité</h2>
+        <a class="action" href="/secops/">Offres</a>
+        <ul>
+            <li>Audits personnalisés</li>
+            <li>Contre audits</li>
+            <li>Formations</li>
+            <li>Blackbox, Whitebox</li>
+            <li>Standards: OWASP, NIST...</li>
+            <li>Red Team: Protection active</li>
+        </ul>
       </div>
       <div class="service">
-        <a href="/dev/">
-          <img loading="lazy" src="/img/backgrounds/code-400.jpg" />
-          <h3>Développement</h3>
-        </a>
+        <img loading="lazy" src="/img/web_development.svg" />
+        <h2>Développement</h2>
+        <a class="action" href="/dev/">Offres</a>
+        <ul>
+            <li>
+                Web: frontend, backend
+            </li>
+            <li>
+                IOT, IA, Blockchain
+            </li>
+            <li>
+                Création: Directeur Artistique
+            </li>
+            <li>
+                Maitrise: Lean Sensei
+            </li>
+            <li>
+                Scrum, Lean, Kanban, Scrumban
+            </li>
+            <li>
+                Continuous Integration (CI)
+            </li>
+            <li>
+                Test Driven Development (TDD)
+            </li>
+            <li>
+                eXtreme Programing (XP)
+            </li>
+        </ul>
       </div>
       <div class="service">
-        <a href="/devops/">
-          <img loading="lazy" src="/img/backgrounds/servers-400.jpg" />
-          <h3>DevOps</h3>
-        </a>
+        <img loading="lazy" src="/img/online_storage.svg" />
+        <h2>DevOps</h2>
+        <a class="action" href="/devops/">Offres</a>
+        <ul>
+            <li>
+                Continuous Delivery (CD)
+            </li>
+            <li>
+                Réseaux Linux, BSD...
+            </li>
+            <li>ARP, TCP, IP, DNS...</li>
+            <li>Containers, Virtualisation...</li>
+            <li>GitHub, GitLab, Jenkins...</li>
+            <li>Métriques, Statistiques, KPI...</li>
+            <li>eXtreme DevOps (XD)</li>
+        </ul>
       </div>
     </div>
   </div>

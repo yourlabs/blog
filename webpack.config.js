@@ -44,7 +44,8 @@ module.exports = {
     extractSass,
     new GoogleFontsPlugin({
         fonts: [
-            { family: 'Ubuntu', variants: [ '300', '400', '700' ] },
+            { family: 'Roboto', variants: [ '400', '700' ] },
+            { family: 'Raleway', variants: [ '300' ] },
         ]
     }),
   ]
