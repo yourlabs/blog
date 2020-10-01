@@ -235,9 +235,11 @@ img
 
 .main-header
   text-align: center
+  text-transform: uppercase
 
   .active
-    text-decoration: underline
+    background-color: $color2
+    color: white
 
   @media screen and (min-width: 900px)
     display: flex
@@ -246,6 +248,9 @@ img
     flex-wrap: wrap
 
   a
+    padding: .6rem 1.2rem
+    border-radius: 50px
+
     @include font-size(1.2rem)
 
     @media screen and (min-width: 500px)
@@ -258,11 +263,11 @@ img
     color: $color2
     margin-bottom: 4px
     background-color: white
-    transition: all 400ms linear
-    padding: 0 .5rem
+    transition: all 200ms linear
 
     &:hover
-      color: $color6
+      color: white
+      background-color: $color3
 
   a.logo
     display: block

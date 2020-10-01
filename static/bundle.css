@@ -693,9 +693,11 @@ img {
       margin-left: 1em; } }
 
 .main-header {
-  text-align: center; }
+  text-align: center;
+  text-transform: uppercase; }
   .main-header .active {
-    text-decoration: underline; }
+    background-color: #ff0883;
+    color: white; }
   @media screen and (min-width: 900px) {
     .main-header {
       display: flex;
@@ -703,13 +705,14 @@ img {
       justify-content: space-between;
       flex-wrap: wrap; } }
   .main-header a {
+    padding: .6rem 1.2rem;
+    border-radius: 50px;
     font-size: 1.2rem;
     text-decoration: none;
     color: #ff0883;
     margin-bottom: 4px;
     background-color: white;
-    transition: all 400ms linear;
-    padding: 0 .5rem; }
+    transition: all 200ms linear; }
     @media screen and (min-width: 500px) {
       .main-header a {
         font-size: calc(1.275rem + 0.3vw); } }
@@ -723,7 +726,8 @@ img {
     .main-header a {
       font-size: 1.8rem; } }
     .main-header a:hover {
-      color: #ef64ee; }
+      color: white;
+      background-color: #fa52d1; }
   .main-header a.logo {
     display: block; }
 
