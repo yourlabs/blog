@@ -244,23 +244,29 @@ img
     flex-wrap: wrap
     flex-direction: column
 
-  @media screen and (min-width: 900px)
+  @media screen and (min-width: 500px) and (max-width: 700px)
+    margin-bottom: 1rem
+    .logo
+      margin-bottom: .3rem
+
+  @media screen and (min-width: 700px)
     display: flex
     align-items: center
     justify-content: space-between
     flex-wrap: wrap
     flex-direction: row
 
-  a
+  a:not(.logo)
+    font-family: sans-serif
     padding: .6rem 1.2rem
     border-radius: 50px
 
-    @include font-size(1.2rem)
+    @include font-size(1rem)
 
     @media screen and (min-width: 500px)
-      @include font-size(1.5rem)
+      @include font-size(1rem)
 
-    @media screen and (min-width: 900px)
+    @media screen and (min-width: 700px)
       @include font-size(1.1rem)
 
     text-decoration: none
@@ -269,7 +275,7 @@ img
     background-color: white
     transition: all 200ms linear
 
-    &:hover:not(.logo)
+    &:hover
       color: white
       background-color: $color3
 

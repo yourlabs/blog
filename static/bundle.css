@@ -702,35 +702,38 @@ img {
       justify-content: space-between;
       flex-wrap: wrap;
       flex-direction: column; } }
-  @media screen and (min-width: 900px) {
+  @media screen and (min-width: 500px) and (max-width: 700px) {
+    .main-header {
+      margin-bottom: 1rem; }
+      .main-header .logo {
+        margin-bottom: .3rem; } }
+  @media screen and (min-width: 700px) {
     .main-header {
       display: flex;
       align-items: center;
       justify-content: space-between;
       flex-wrap: wrap;
       flex-direction: row; } }
-  .main-header a {
+  .main-header a:not(.logo) {
+    font-family: sans-serif;
     padding: .6rem 1.2rem;
     border-radius: 50px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-decoration: none;
     color: #ff0883;
     margin-bottom: 4px;
     background-color: white;
     transition: all 200ms linear; }
     @media screen and (min-width: 500px) {
-      .main-header a {
-        font-size: calc(1.275rem + 0.3vw); } }
-  @media screen and (min-width: 500px) and (min-width: 1200px) {
-    .main-header a {
-      font-size: 1.5rem; } }
-    @media screen and (min-width: 900px) {
-      .main-header a {
+      .main-header a:not(.logo) {
+        font-size: 1rem; } }
+    @media screen and (min-width: 700px) {
+      .main-header a:not(.logo) {
         font-size: 1.1rem; } }
-    .main-header a:hover:not(.logo) {
+    .main-header a:not(.logo):hover {
       color: white;
       background-color: #fa52d1; }
-    .main-header a.active {
+    .main-header a:not(.logo).active {
       color: white;
       background-color: #ff0883; }
   .main-header a.logo {
