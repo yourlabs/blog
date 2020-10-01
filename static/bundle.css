@@ -716,7 +716,7 @@ body a.action, body a.action:visited {
     .services .service img, .services .service h2, .services .service a, .services .service ul {
       margin: 1.25rem; }
     .services .service ul {
-      margin: 0;
+      margin: .9rem .1rem;
       padding: 0; }
       .services .service ul li {
         list-style-type: none;
