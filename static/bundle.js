@@ -127,6 +127,35 @@ if (!doNotTrack) {
   ga('send', 'pageview');
 }
 
+try {
+  var header = document.querySelector('header.main-header')
+  var hero = header.parentNode.children[1].children[1].classList[0]
+  if (hero == 'hero') {
+    header.classList.add('hero-header')
+  }
+
+  var headerScroll = function() {
+    if (window.scrollY > 50 && header.classList.contains('transparent'))
+        window.requestAnimationFrame(
+          () => {
+            header.classList.remove('transparent')
+            document.querySelector('header.main-header img').src = '/img/yourlabs-transparent.png'
+          }
+        )
+
+    else if (window.scrollY < 50 && !header.classList.contains('transparent'))
+        window.requestAnimationFrame(() => {
+          header.classList.add('transparent')
+          document.querySelector('header.main-header img').src = '/img/yourlabs-transparent-whitetext.png'
+        })
+  }
+  window.addEventListener('scroll', headerScroll)
+  headerScroll()
+
+} catch {
+  console.log('u 1337 ? -> contact us')
+}
+
 
 /***/ }),
 

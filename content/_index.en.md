@@ -3,6 +3,7 @@ title: YourLabs Business Service
 subtitle: Free Software brand since 2012.
 subtitle2: A practice of engineering as a sport, an art, for humans.
 comments: false
+headerclass: hero
 ---
 
 {{< rawhtml >}}
