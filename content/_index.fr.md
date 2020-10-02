@@ -14,7 +14,6 @@ main h2 {
   text-align: center;
   margin-top: 5rem;
   margin-bottom: 3rem;
-  font-weight: 600;
   font-size: 3rem;
 }
 a h3 {
