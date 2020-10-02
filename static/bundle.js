@@ -1,8 +1,1440 @@
-!function(e){var t={};function n(r){if(t[r])return t[r].exports;var o=t[r]={i:r,l:!1,exports:{}};return e[r].call(o.exports,o,o.exports,n),o.l=!0,o.exports}n.m=e,n.c=t,n.d=function(e,t,r){n.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:r})},n.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},n.t=function(e,t){if(1&t&&(e=n(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var r=Object.create(null);if(n.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var o in e)n.d(r,o,function(t){return e[t]}.bind(null,o));return r},n.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return n.d(t,"a",t),t},n.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},n.p="",n(n.s=1)}([function(e,t,n){e.exports=function(){"use strict";return function(e,t,n){var r,o,a,i,s,c,l,d,u,f,p=0,h={},m=!1,v=!1,g=!1,y=0,w=!1,b=!1,E=!1,L=[],x=65,A={preload:[],receive:[],wait:[],change:[],restore:[],exit:[]},S={},C=[],T={},N={};function k(e){var t=e.indexOf("#");return-1==t?e:e.substr(0,t)}function O(e){for(;e&&"A"!=e.nodeName;)e=e.parentNode;return e}function P(e){var n=t.protocol+"//"+t.host;return!(e.target||e.hasAttribute("download")||0!=e.href.indexOf(n+"/")||e.href.indexOf("#")>-1&&k(e.href)==r||function(e){do{if(!e.hasAttribute)break;if(e.hasAttribute("data-instant"))return!1;if(e.hasAttribute("data-no-instant"))return!0}while(e=e.parentNode);return!1}(e))}function z(e){for(var t=Array.prototype.slice.call(arguments,1),n=!1,r=0;r<A[e].length;r++)if("receive"==e){var o=A[e][r].apply(window,t);o&&("body"in o&&(t[1]=o.body),"title"in o&&(t[2]=o.title),n=o)}else A[e][r].apply(window,t);return n}function q(o,a,i,s){if(function(){for(var e=0;e<C.length;e++)"object"==typeof C[e]&&"abort"in C[e]&&(C[e].instantclickAbort=!0,C[e].abort());C=[]}(),e.documentElement.replaceChild(a,e.body),e.title=o,i){F("remove"),i!=t.href&&(history.pushState(null,null,i),n.indexOf(" CriOS/")>-1&&(e.title==o?e.title=o+String.fromCharCode(160):e.title=o));var c=i.indexOf("#"),d=c>-1&&e.getElementById(i.substr(c+1)),u=0;if(d)for(;d.offsetParent;)u+=d.offsetTop,d=d.offsetParent;"requestAnimationFrame"in window?requestAnimationFrame((function(){scrollTo(0,u)})):scrollTo(0,u),I(),(r=k(i))in T&&(T[r]=[]),S[r]={},j((function(e){return!e.hasAttribute("data-instant-track")})),z("change",!1)}else scrollTo(0,s),l.abort(),M(),j((function(e){return e.hasAttribute("data-instant-restore")})),function(){for(var e in S[r])if("delayLeft"in S[r][e]){for(var t=[S[r][e].callback,S[r][e].delayLeft],n=0;n<S[r][e].params.length;n++)t.push(S[r][e].params[n]);B(t,S[r][e].isRepeating,S[r][e].delay),delete S[r][e]}}(),z("restore")}function M(){w=!1,b=!1}function I(){for(var e in S[r]){var t=S[r][e];window.clearTimeout(t.realId),t.delayLeft=t.delay-+new Date+t.timestamp}}function D(){l.abort(),M()}function F(e){if(r in T)for(var t=0;t<T[r].length;t++)window[e+"EventListener"].apply(window,T[r][t])}function j(t){var n,r,o,a,i,s=e.body.getElementsByTagName("script"),c=[];for(i=0;i<s.length;i++)c.push(s[i]);for(i=0;i<c.length;i++)if((n=c[i])&&t(n)){r=e.createElement("script");for(var l=0;l<n.attributes.length;l++)r.setAttribute(n.attributes[l].name,n.attributes[l].value);r.textContent=n.textContent,o=n.parentNode,a=n.nextSibling,o.removeChild(n),o.insertBefore(r,a)}}function H(){for(var t,n,r=e.querySelectorAll("[data-instant-track]"),o=0;o<r.length;o++)n=(t=r[o]).getAttribute("href")||t.getAttribute("src")||t.textContent,L.push(n)}function B(e,t,n){var o,a=e[0],i=e[1],s=[].slice.call(e,2),c=+new Date,l=++p;o=t?function(t){a(t),delete S[r][l],e[0]=a,e[1]=i,B(e,!0)}:function(e){a(e),delete S[r][l]},e[0]=o,null!=n&&(c+=i-n,i=n);var d=window.setTimeout.apply(window,e);return S[r][l]={realId:d,timestamp:c,callback:a,delay:i,params:s,isRepeating:t},-l}function _(e){var t=O(e.target);t&&P(t)&&Q(t.href)}function R(e){if(!(i>+new Date-500||+new Date-y<100)){var t=O(e.target);t&&t!=O(e.relatedTarget)&&P(t)&&(t.addEventListener("mouseout",G),b||(o=t.href,a=re(Q,x)))}}function Y(e){i=+new Date;var t=O(e.target);t&&P(t)&&(c&&(oe(c),c=!1),t.addEventListener("touchend",W),t.addEventListener("touchcancel",W),Q(t.href))}function K(){e.addEventListener("click",U)}function U(t){if(e.removeEventListener("click",U),c&&(oe(c),c=!1),!t.defaultPrevented){var n=O(t.target);n&&P(n)&&(0!=t.button||t.metaKey||t.ctrlKey||(t.preventDefault(),V(n.href)))}}function G(e){if(O(e.target)!=O(e.relatedTarget))return a?(oe(a),void(a=!1)):void(w&&!b&&(l.abort(),M()))}function W(e){w&&!b&&(c=re(D,500))}function X(){if(2==l.readyState){var n=l.getResponseHeader("Content-Type");n&&/^text\/html/i.test(n)||(d=!0)}if(!(l.readyState<4)){if(0==l.status)return E=!0,void(b&&(z("exit",m,"network error"),t.href=m));if(d)b&&(z("exit",m,"non-html content-type"),t.href=m);else{var r=e.implementation.createHTMLDocument("");r.documentElement.innerHTML=l.responseText.replace(/<noscript[\s\S]+?<\/noscript>/gi,""),v=r.title,g=r.body;var o=z("receive",m,g,v);o&&("body"in o&&(g=o.body),"title"in o&&(v=o.title));var a=k(m);h[a]={body:g,title:v,scrollPosition:a in h?h[a].scrollPosition:0};var i,s,c=r.querySelectorAll("[data-instant-track]");if(c.length!=L.length)u=!0;else for(var f=0;f<c.length;f++)s=(i=c[f]).getAttribute("href")||i.getAttribute("src")||i.textContent,-1==L.indexOf(s)&&(u=!0);b&&(b=!1,V(m))}}}function J(){var e=k(t.href);if(e!=r){if(b&&(M(),l.abort()),!(e in h))return z("exit",t.href,"not in history"),void(e==t.href?t.href=t.href:t.reload());h[r].scrollPosition=pageYOffset,I(),F("remove"),r=e,q(h[e].title,h[e].body,!1,h[e].scrollPosition),F("add")}}function Q(e){a&&(oe(a),a=!1),e||(e=o),w&&(e==m||b)||(w=!0,b=!1,m=e,g=!1,d=!1,E=!1,u=!1,z("preload"),l.open("GET",e),l.timeout=9e4,l.send())}function V(e){return y=+new Date,a||!w?a&&m&&m!=e?(z("exit",e,"click occured while preloading planned"),void(t.href=e)):(Q(e),z("wait"),void(b=!0)):b?(z("exit",e,"clicked on a link while waiting for another page to display"),void(t.href=e)):d?(z("exit",m,"non-html content-type"),void(t.href=m)):E?(z("exit",m,"network error"),void(t.href=m)):u?(z("exit",m,"different assets"),void(t.href=m)):g?(h[r].scrollPosition=pageYOffset,M(),void q(v,g,m)):(z("wait"),void(b=!0))}Element.prototype.matches||(Element.prototype.matches=Element.prototype.webkitMatchesSelector||Element.prototype.msMatchesSelector||function(t){for(var n=e.querySelectorAll(t),r=0;r<n.length;r++)if(n[r]==this)return!0;return!1});var Z=!1;if("pushState"in history&&"file:"!=t.protocol){Z=!0;var $=n.indexOf("Android ");if($>-1){var ee=parseFloat(n.substr($+"Android ".length));if(ee<4.4&&(Z=!1,ee>=4))for(var te=[/ Chrome\//,/ UCBrowser\//,/ Firefox\//,/ Windows Phone /],ne=0;ne<te.length;ne++)if(te[ne].test(n)){Z=!0;break}}}function re(){return B(arguments,!1)}function oe(e){for(var t in e=-e,S)e in S[t]&&(window.clearTimeout(S[t][e].realId),delete S[t][e])}function ae(e,t,n){var r=N[t][e].indexOf(n);r>-1&&N[t][e].splice(r,1)}return{supported:Z,init:function(n){Z?s||(s=!0,"mousedown"==n?f=!0:"number"==typeof n&&(x=n),r=k(t.href),S[r]={},h[r]={body:e.body,title:e.title,scrollPosition:pageYOffset},"loading"==e.readyState?e.addEventListener("DOMContentLoaded",H):H(),(l=new XMLHttpRequest).addEventListener("readystatechange",X),e.addEventListener("touchstart",Y,!0),f?e.addEventListener("mousedown",_,!0):e.addEventListener("mouseover",R,!0),e.addEventListener("click",K,!0),addEventListener("popstate",J)):z("change",!0)},on:function(e,t){A[e].push(t),"change"==e&&t(!y)},setTimeout:re,setInterval:function(){return B(arguments,!0)},clearTimeout:oe,xhr:function(e){C.push(e)},addPageEvent:function(){r in T||(T[r]=[]),T[r].push(arguments),addEventListener.apply(window,arguments)},removePageEvent:function(){var e=arguments;if(r in T)e:for(var t=0;t<T[r].length;t++)if(e.length==T[r][t].length){for(var n=0;n<T[r][t].length;n++)if(e[n]!=T[r][t][n])continue e;T[r].splice(t,1)}},addEvent:function(t,r,o){if(!(r in N)&&(N[r]={},e.addEventListener(r,(function(e){var t=e.target;for(e.originalStopPropagation=e.stopPropagation,e.stopPropagation=function(){this.isPropagationStopped=!0,this.originalStopPropagation()};t&&1==t.nodeType;){for(var n in N[r])if(t.matches(n)){for(var o=0;o<N[r][n].length;o++)N[r][n][o].call(t,e);if(e.isPropagationStopped)return;break}t=t.parentNode}}),!1),"click"==r&&/iP(?:hone|ad|od)/.test(n))){var a=e.createElement("style");a.setAttribute("instantclick-mobile-safari-cursor",""),a.textContent="body { cursor: pointer !important; }",e.head.appendChild(a)}t in N[r]||(N[r][t]=[]),ae(t,r,o),N[r][t].push(o)},removeEvent:ae}}(document,location,navigator.userAgent)}()},function(e,t,n){"use strict";n.r(t);n(3),n(2);for(var r=n(0),o=n.n(r),a=document.getElementsByTagName("a"),i=["yourlabs.org","yourlabs.fr",window.location.hostname],s=0,c=a.length;s<c;s++)if(i.indexOf(a[s].hostname)<0&&(a[s].target="_blank"),a[s].pathname==window.location.pathname&&a[s].hostname==window.location.hostname){if(a[s].childNodes.length>1)continue;a[s].classList.add("active")}o.a.init();var l=navigator.doNotTrack||window.doNotTrack||navigator.msDoNotTrack;"1"==l||"yes"==l||(window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)},ga.l=+new Date,ga("create","UA-169189134-1","auto"),ga("set","anonymizeIp",!0),ga("send","pageview"));try{var d=document.querySelector("header.main-header");"hero"==d.parentNode.children[1].children[1].classList[0]&&d.classList.add("hero-header");var u=function(){window.scrollY>50&&d.classList.contains("transparent")?window.requestAnimationFrame(()=>{d.classList.remove("transparent"),document.querySelector("header.main-header img").src="/img/yourlabs-transparent.png"}):window.scrollY<50&&!d.classList.contains("transparent")&&window.requestAnimationFrame(()=>{d.classList.add("transparent"),document.querySelector("header.main-header img").src="/img/yourlabs-transparent-whitetext.png"})};window.addEventListener("scroll",u),u()}catch{console.log("u 1337 ? -> contact us")}},function(e,t){
+/******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// define __esModule on exports
+/******/ 	__webpack_require__.r = function(exports) {
+/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 		}
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
+/******/
+/******/ 	// create a fake namespace object
+/******/ 	// mode & 1: value is a module id, require it
+/******/ 	// mode & 2: merge all properties of value into the ns
+/******/ 	// mode & 4: return value when already ns object
+/******/ 	// mode & 8|1: behave like require
+/******/ 	__webpack_require__.t = function(value, mode) {
+/******/ 		if(mode & 1) value = __webpack_require__(value);
+/******/ 		if(mode & 8) return value;
+/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
+/******/ 		var ns = Object.create(null);
+/******/ 		__webpack_require__.r(ns);
+/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
+/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
+/******/ 		return ns;
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+/******/
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = "./main.js");
+/******/ })
+/************************************************************************/
+/******/ ({
+
+/***/ "./main.js":
+/*!*****************!*\
+  !*** ./main.js ***!
+  \*****************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _main_sass__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./main.sass */ "./main.sass");
+/* harmony import */ var _main_sass__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_main_sass__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var loading_attribute_polyfill_loading_attribute_polyfill_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! loading-attribute-polyfill/loading-attribute-polyfill.js */ "./node_modules/loading-attribute-polyfill/loading-attribute-polyfill.js");
+/* harmony import */ var loading_attribute_polyfill_loading_attribute_polyfill_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(loading_attribute_polyfill_loading_attribute_polyfill_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var instantclick__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! instantclick */ "./node_modules/instantclick/dist/instantclick.js");
+/* harmony import */ var instantclick__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(instantclick__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+var links = document.getElementsByTagName("a");
+var sites = ['yourlabs.org', 'yourlabs.fr', window.location.hostname]
+for (var i = 0, linksLength = links.length; i < linksLength; i++) {
+  if (sites.indexOf(links[i].hostname) < 0) {
+    links[i].target = '_blank';
+  }
+  if (links[i].pathname == window.location.pathname && links[i].hostname == window.location.hostname) {
+    if (links[i].childNodes.length > 1) continue // it's an image or something we don't want to underline
+    links[i].classList.add('active')
+  }
+}
+
+
+instantclick__WEBPACK_IMPORTED_MODULE_2___default.a.init()
+var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+var doNotTrack = (dnt == "1" || dnt == "yes");
+if (!doNotTrack) {
+  window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+  ga('create', 'UA-169189134-1', 'auto');
+  ga('set', 'anonymizeIp', true);
+  ga('send', 'pageview');
+}
+
+try {
+  var header = document.querySelector('header.main-header')
+  var hero = header.parentNode.children[1].children[1].classList[0]
+  if (hero == 'hero') {
+    header.classList.add('hero-header')
+  }
+
+  var headerScroll = function() {
+    if (window.scrollY > 50 && header.classList.contains('transparent'))
+        window.requestAnimationFrame(
+          () => {
+            header.classList.remove('transparent')
+            document.querySelector('header.main-header img').src = '/img/yourlabs-transparent.png'
+          }
+        )
+
+    else if (window.scrollY < 50 && !header.classList.contains('transparent'))
+        window.requestAnimationFrame(() => {
+          header.classList.add('transparent')
+          document.querySelector('header.main-header img').src = '/img/yourlabs-transparent-whitetext.png'
+        })
+  }
+  window.addEventListener('scroll', headerScroll)
+  headerScroll()
+
+} catch {
+  console.log('u 1337 ? -> contact us')
+}
+
+
+/***/ }),
+
+/***/ "./main.sass":
+/*!*******************!*\
+  !*** ./main.sass ***!
+  \*******************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./node_modules/instantclick/dist/instantclick.js":
+/*!********************************************************!*\
+  !*** ./node_modules/instantclick/dist/instantclick.js ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+(function (global, factory) {
+	 true ? module.exports = factory() :
+	undefined;
+}(this, (function () { 'use strict';
+
+/* InstantClick 3.1.0 | (C) 2014-2017 Alexandre Dieulot | http://instantclick.io/license */
+
+var instantclick;
+var InstantClick = instantclick = function(document, location, $userAgent) {
+  // Internal variables
+  var $currentLocationWithoutHash
+    , $urlToPreload
+    , $preloadTimer
+    , $lastTouchTimestamp
+    , $hasBeenInitialized
+    , $touchEndedWithoutClickTimer
+    , $lastUsedTimeoutId = 0
+
+  // Preloading-related variables
+    , $history = {}
+    , $xhr
+    , $url = false
+    , $title = false
+    , $isContentTypeNotHTML
+    , $areTrackedElementsDifferent
+    , $body = false
+    , $lastDisplayTimestamp = 0
+    , $isPreloading = false
+    , $isWaitingForCompletion = false
+    , $gotANetworkError = false
+    , $trackedElementsData = []
+
+  // Variables defined by public functions
+    , $preloadOnMousedown
+    , $delayBeforePreload = 65
+    , $eventsCallbacks = {
+        preload: [],
+        receive: [],
+        wait: [],
+        change: [],
+        restore: [],
+        exit: []
+      }
+    , $timers = {}
+    , $currentPageXhrs = []
+    , $windowEventListeners = {}
+    , $delegatedEvents = {};
+
+
+  ////////// POLYFILL //////////
+
+
+  // Needed for `addEvent`
+  if (!Element.prototype.matches) {
+    Element.prototype.matches =
+      Element.prototype.webkitMatchesSelector ||
+      Element.prototype.msMatchesSelector ||
+      function (selector) {
+        var this$1 = this;
+
+        var matches = document.querySelectorAll(selector);
+        for (var i = 0; i < matches.length; i++) {
+          if (matches[i] == this$1) {
+            return true
+          }
+        }
+        return false
+      };
+  }
+
+
+  ////////// HELPERS //////////
+
+
+  function removeHash(url) {
+    var index = url.indexOf('#');
+    if (index == -1) {
+      return url
+    }
+    return url.substr(0, index)
+  }
+
+  function getParentLinkElement(element) {
+    while (element && element.nodeName != 'A') {
+      element = element.parentNode;
+    }
+    // `element` will be null if no link element is found
+    return element
+  }
+
+  function isBlacklisted(element) {
+    do {
+      if (!element.hasAttribute) { // Parent of <html>
+        break
+      }
+      if (element.hasAttribute('data-instant')) {
+        return false
+      }
+      if (element.hasAttribute('data-no-instant')) {
+        return true
+      }
+    }
+    while (element = element.parentNode)
+    return false
+  }
+
+  function isPreloadable(linkElement) {
+    var domain = location.protocol + '//' + location.host;
+
+    if (linkElement.target // target="_blank" etc.
+        || linkElement.hasAttribute('download')
+        || linkElement.href.indexOf(domain + '/') != 0 // Another domain, or no href attribute
+        || (linkElement.href.indexOf('#') > -1
+            && removeHash(linkElement.href) == $currentLocationWithoutHash) // Anchor
+        || isBlacklisted(linkElement)
+       ) {
+      return false
+    }
+    return true
+  }
+
+  function triggerPageEvent(eventType) {
+    var argumentsToApply = Array.prototype.slice.call(arguments, 1)
+      , returnValue = false;
+    for (var i = 0; i < $eventsCallbacks[eventType].length; i++) {
+      if (eventType == 'receive') {
+        var altered = $eventsCallbacks[eventType][i].apply(window, argumentsToApply);
+        if (altered) {
+          // Update arguments for the next iteration of the loop.
+          if ('body' in altered) {
+            argumentsToApply[1] = altered.body;
+          }
+          if ('title' in altered) {
+            argumentsToApply[2] = altered.title;
+          }
+
+          returnValue = altered;
+        }
+      }
+      else {
+        $eventsCallbacks[eventType][i].apply(window, argumentsToApply);
+      }
+    }
+    return returnValue
+  }
+
+  function changePage(title, body, urlToPush, scrollPosition) {
+    abortCurrentPageXhrs();
+
+    document.documentElement.replaceChild(body, document.body);
+    // We cannot just use `document.body = doc.body`, it causes Safari (tested
+    // 5.1, 6.0 and Mobile 7.0) to execute script tags directly.
+
+    document.title = title;
+
+    if (urlToPush) {
+      addOrRemoveWindowEventListeners('remove');
+      if (urlToPush != location.href) {
+        history.pushState(null, null, urlToPush);
+
+        if ($userAgent.indexOf(' CriOS/') > -1) {
+          // Chrome for iOS:
+          //
+          // 1. Removes title in tab on pushState, so it needs to be set after.
+          //
+          // 2. Will not set the title if it's identical after trimming, so we
+          //    add a non-breaking space.
+          if (document.title == title) {
+            document.title = title + String.fromCharCode(160);
+          }
+          else {
+            document.title = title;
+          }
+        }
+      }
+
+      var hashIndex = urlToPush.indexOf('#')
+        , offsetElement = hashIndex > -1
+                     && document.getElementById(urlToPush.substr(hashIndex + 1))
+        , offset = 0;
+
+      if (offsetElement) {
+        while (offsetElement.offsetParent) {
+          offset += offsetElement.offsetTop;
+
+          offsetElement = offsetElement.offsetParent;
+        }
+      }
+      if ('requestAnimationFrame' in window) {
+        // Safari on macOS doesn't immediately visually change the page on
+        // `document.documentElement.replaceChild`, so if `scrollTo` is called
+        // without `requestAnimationFrame` it often scrolls before the page
+        // is displayed.
+        requestAnimationFrame(function() {
+          scrollTo(0, offset);
+        });
+      }
+      else {
+        scrollTo(0, offset);
+        // Safari on macOS scrolls before the page is visually changed, but
+        // adding `requestAnimationFrame` doesn't fix it in this case.
+      }
+
+      clearCurrentPageTimeouts();
+
+      $currentLocationWithoutHash = removeHash(urlToPush);
+
+      if ($currentLocationWithoutHash in $windowEventListeners) {
+        $windowEventListeners[$currentLocationWithoutHash] = [];
+      }
+
+      $timers[$currentLocationWithoutHash] = {};
+
+      applyScriptElements(function(element) {
+        return !element.hasAttribute('data-instant-track')
+      });
+
+      triggerPageEvent('change', false);
+    }
+    else {
+      // On popstate, browsers scroll by themselves, but at least Firefox
+      // scrolls BEFORE popstate is fired and thus before we can replace the
+      // page. If the page before popstate is too short the user won't be
+      // scrolled at the right position as a result. We need to scroll again.
+      scrollTo(0, scrollPosition);
+
+      // iOS's gesture to go back by swiping from the left edge of the screen
+      // will start a preloading if the user touches a link, it needs to be
+      // cancelled otherwise the page behind the touched link will be
+      // displayed.
+      $xhr.abort();
+      setPreloadingAsHalted();
+
+      applyScriptElements(function(element) {
+        return element.hasAttribute('data-instant-restore')
+      });
+
+      restoreTimers();
+
+      triggerPageEvent('restore');
+    }
+  }
+
+  function setPreloadingAsHalted() {
+    $isPreloading = false;
+    $isWaitingForCompletion = false;
+  }
+
+  function removeNoscriptTags(html) {
+    // Must be done on text, not on a node's innerHTML, otherwise strange
+    // things happen with implicitly closed elements (see the Noscript test).
+    return html.replace(/<noscript[\s\S]+?<\/noscript>/gi, '')
+  }
+
+  function abortCurrentPageXhrs() {
+    for (var i = 0; i < $currentPageXhrs.length; i++) {
+      if (typeof $currentPageXhrs[i] == 'object' && 'abort' in $currentPageXhrs[i]) {
+        $currentPageXhrs[i].instantclickAbort = true;
+        $currentPageXhrs[i].abort();
+      }
+    }
+    $currentPageXhrs = [];
+  }
+
+  function clearCurrentPageTimeouts() {
+    for (var i in $timers[$currentLocationWithoutHash]) {
+      var timeout = $timers[$currentLocationWithoutHash][i];
+      window.clearTimeout(timeout.realId);
+      timeout.delayLeft = timeout.delay - +new Date + timeout.timestamp;
+    }
+  }
+
+  function restoreTimers() {
+    for (var i in $timers[$currentLocationWithoutHash]) {
+      if (!('delayLeft' in $timers[$currentLocationWithoutHash][i])) {
+        continue
+      }
+      var args = [
+        $timers[$currentLocationWithoutHash][i].callback,
+        $timers[$currentLocationWithoutHash][i].delayLeft
+      ];
+      for (var j = 0; j < $timers[$currentLocationWithoutHash][i].params.length; j++) {
+        args.push($timers[$currentLocationWithoutHash][i].params[j]);
+      }
+      addTimer(args, $timers[$currentLocationWithoutHash][i].isRepeating, $timers[$currentLocationWithoutHash][i].delay);
+      delete $timers[$currentLocationWithoutHash][i];
+    }
+  }
+
+  function handleTouchendWithoutClick() {
+    $xhr.abort();
+    setPreloadingAsHalted();
+  }
+
+  function addOrRemoveWindowEventListeners(addOrRemove) {
+    if ($currentLocationWithoutHash in $windowEventListeners) {
+      for (var i = 0; i < $windowEventListeners[$currentLocationWithoutHash].length; i++) {
+        window[addOrRemove + 'EventListener'].apply(window, $windowEventListeners[$currentLocationWithoutHash][i]);
+      }
+    }
+  }
+
+  function applyScriptElements(condition) {
+    var scriptElementsInDOM = document.body.getElementsByTagName('script')
+      , scriptElementsToCopy = []
+      , originalElement
+      , copyElement
+      , parentNode
+      , nextSibling
+      , i;
+
+    // `scriptElementsInDOM` will change during the copy of scripts if
+    // a script add or delete script elements, so we need to put script
+    // elements in an array to loop through them correctly.
+    for (i = 0; i < scriptElementsInDOM.length; i++) {
+      scriptElementsToCopy.push(scriptElementsInDOM[i]);
+    }
+
+    for (i = 0; i < scriptElementsToCopy.length; i++) {
+      originalElement = scriptElementsToCopy[i];
+      if (!originalElement) { // Might have disappeared, see previous comment
+        continue
+      }
+      if (!condition(originalElement)) {
+        continue
+      }
+
+      copyElement = document.createElement('script');
+      for (var j = 0; j < originalElement.attributes.length; j++) {
+        copyElement.setAttribute(originalElement.attributes[j].name, originalElement.attributes[j].value);
+      }
+      copyElement.textContent = originalElement.textContent;
+
+      parentNode = originalElement.parentNode;
+      nextSibling = originalElement.nextSibling;
+      parentNode.removeChild(originalElement);
+      parentNode.insertBefore(copyElement, nextSibling);
+    }
+  }
+
+  function addTrackedElements() {
+    var trackedElements = document.querySelectorAll('[data-instant-track]')
+      , element
+      , elementData;
+    for (var i = 0; i < trackedElements.length; i++) {
+      element = trackedElements[i];
+      elementData = element.getAttribute('href') || element.getAttribute('src') || element.textContent;
+      // We can't use just `element.href` and `element.src` because we can't
+      // retrieve `href`s and `src`s from the Ajax response.
+      $trackedElementsData.push(elementData);
+    }
+  }
+
+  function addTimer(args, isRepeating, realDelay) {
+    var callback = args[0]
+      , delay = args[1]
+      , params = [].slice.call(args, 2)
+      , timestamp = +new Date;
+
+    $lastUsedTimeoutId++;
+    var id = $lastUsedTimeoutId;
+
+    var callbackModified;
+    if (isRepeating) {
+      callbackModified = function(args2) {
+        callback(args2);
+        delete $timers[$currentLocationWithoutHash][id];
+        args[0] = callback;
+        args[1] = delay;
+        addTimer(args, true);
+      };
+    }
+    else {
+      callbackModified = function(args2) {
+        callback(args2);
+        delete $timers[$currentLocationWithoutHash][id];
+      };
+    }
+
+    args[0] = callbackModified;
+    if (realDelay != undefined) {
+      timestamp += delay - realDelay;
+      delay = realDelay;
+    }
+    var realId = window.setTimeout.apply(window, args);
+    $timers[$currentLocationWithoutHash][id] = {
+      realId: realId,
+      timestamp: timestamp,
+      callback: callback,
+      delay: delay,
+      params: params,
+      isRepeating: isRepeating
+    };
+    return -id
+  }
+
+
+  ////////// EVENT LISTENERS //////////
+
+
+  function mousedownListener(event) {
+    var linkElement = getParentLinkElement(event.target);
+
+    if (!linkElement || !isPreloadable(linkElement)) {
+      return
+    }
+
+    preload(linkElement.href);
+  }
+
+  function mouseoverListener(event) {
+    if ($lastTouchTimestamp > (+new Date - 500)) {
+      // On a touch device, if the content of the page change on mouseover
+      // click is never fired and the user will need to tap a second time.
+      // https://developer.apple.com/library/content/documentation/AppleApplications/Reference/SafariWebContent/HandlingEvents/HandlingEvents.html#//apple_ref/doc/uid/TP40006511-SW4
+      //
+      // Content change could happen in the `preload` event, so we stop there.
+      return
+    }
+
+    if (+new Date - $lastDisplayTimestamp < 100) {
+      // After a page is displayed, if the user's cursor happens to be above
+      // a link a mouseover event will be in most browsers triggered
+      // automatically, and in other browsers it will be triggered when the
+      // user moves his mouse by 1px.
+      //
+      // Here are the behaviors I noticed, all on Windows:
+      // - Safari 5.1: auto-triggers after 0 ms
+      // - IE 11: auto-triggers after 30-80 ms (depends on page's size?)
+      // - Firefox: auto-triggers after 10 ms
+      // - Opera 18: auto-triggers after 10 ms
+      //
+      // - Chrome: triggers when cursor moved
+      // - Opera 12.16: triggers when cursor moved
+      //
+      // To remedy to this, we do nothing if the last display occurred less
+      // than 100 ms ago.
+
+      return
+    }
+
+    var linkElement = getParentLinkElement(event.target);
+
+    if (!linkElement) {
+      return
+    }
+
+    if (linkElement == getParentLinkElement(event.relatedTarget)) {
+      // Happens when mouseout-ing and mouseover-ing child elements of the same link element
+      return
+    }
+
+    if (!isPreloadable(linkElement)) {
+      return
+    }
+
+    linkElement.addEventListener('mouseout', mouseoutListener);
+
+    if (!$isWaitingForCompletion) {
+      $urlToPreload = linkElement.href;
+      $preloadTimer = setTimeout(preload, $delayBeforePreload);
+    }
+  }
+
+  function touchstartListener(event) {
+    $lastTouchTimestamp = +new Date;
+
+    var linkElement = getParentLinkElement(event.target);
+
+    if (!linkElement || !isPreloadable(linkElement)) {
+      return
+    }
+
+    if ($touchEndedWithoutClickTimer) {
+      clearTimeout($touchEndedWithoutClickTimer);
+      $touchEndedWithoutClickTimer = false;
+    }
+
+    linkElement.addEventListener('touchend', touchendAndTouchcancelListener);
+    linkElement.addEventListener('touchcancel', touchendAndTouchcancelListener);
+
+    preload(linkElement.href);
+  }
+
+  function clickListenerPrelude() {
+    // Makes clickListener be fired after everyone else, so that we can respect
+    // event.preventDefault.
+    document.addEventListener('click', clickListener);
+  }
+
+  function clickListener(event) {
+    document.removeEventListener('click', clickListener);
+
+    if ($touchEndedWithoutClickTimer) {
+      clearTimeout($touchEndedWithoutClickTimer);
+      $touchEndedWithoutClickTimer = false;
+    }
+
+    if (event.defaultPrevented) {
+      return
+    }
+
+    var linkElement = getParentLinkElement(event.target);
+
+    if (!linkElement || !isPreloadable(linkElement)) {
+      return
+    }
+
+    // Check if it's opening in a new tab
+    if (event.button != 0 // Chrome < 55 fires a click event when the middle mouse button is pressed
+      || event.metaKey
+      || event.ctrlKey) {
+      return
+    }
+    event.preventDefault();
+    display(linkElement.href);
+  }
+
+  function mouseoutListener(event) {
+    if (getParentLinkElement(event.target) == getParentLinkElement(event.relatedTarget)) {
+      // Happens when mouseout-ing and mouseover-ing child elements of the same link element,
+      // we don't want to stop preloading then.
+      return
+    }
+
+    if ($preloadTimer) {
+      clearTimeout($preloadTimer);
+      $preloadTimer = false;
+      return
+    }
+
+    if (!$isPreloading || $isWaitingForCompletion) {
+      return
+    }
+
+    $xhr.abort();
+    setPreloadingAsHalted();
+  }
+
+  function touchendAndTouchcancelListener(event) {
+    if (!$isPreloading || $isWaitingForCompletion) {
+      return
+    }
+
+    $touchEndedWithoutClickTimer = setTimeout(handleTouchendWithoutClick, 500);
+  }
+
+  function readystatechangeListener() {
+    if ($xhr.readyState == 2) { // headers received
+      var contentType = $xhr.getResponseHeader('Content-Type');
+      if (!contentType || !/^text\/html/i.test(contentType)) {
+        $isContentTypeNotHTML = true;
+      }
+    }
+
+    if ($xhr.readyState < 4) {
+      return
+    }
+
+    if ($xhr.status == 0) {
+      // Request error/timeout/abort
+      $gotANetworkError = true;
+      if ($isWaitingForCompletion) {
+        triggerPageEvent('exit', $url, 'network error');
+        location.href = $url;
+      }
+      return
+    }
+
+    if ($isContentTypeNotHTML) {
+      if ($isWaitingForCompletion) {
+        triggerPageEvent('exit', $url, 'non-html content-type');
+        location.href = $url;
+      }
+      return
+    }
+
+    var doc = document.implementation.createHTMLDocument('');
+    doc.documentElement.innerHTML = removeNoscriptTags($xhr.responseText);
+    $title = doc.title;
+    $body = doc.body;
+
+    var alteredOnReceive = triggerPageEvent('receive', $url, $body, $title);
+    if (alteredOnReceive) {
+      if ('body' in alteredOnReceive) {
+        $body = alteredOnReceive.body;
+      }
+      if ('title' in alteredOnReceive) {
+        $title = alteredOnReceive.title;
+      }
+    }
+
+    var urlWithoutHash = removeHash($url);
+    $history[urlWithoutHash] = {
+      body: $body,
+      title: $title,
+      scrollPosition: urlWithoutHash in $history ? $history[urlWithoutHash].scrollPosition : 0
+    };
+
+    var trackedElements = doc.querySelectorAll('[data-instant-track]')
+      , element
+      , elementData;
+
+    if (trackedElements.length != $trackedElementsData.length) {
+      $areTrackedElementsDifferent = true;
+    }
+    else {
+      for (var i = 0; i < trackedElements.length; i++) {
+        element = trackedElements[i];
+        elementData = element.getAttribute('href') || element.getAttribute('src') || element.textContent;
+        if ($trackedElementsData.indexOf(elementData) == -1) {
+          $areTrackedElementsDifferent = true;
+        }
+      }
+    }
+
+    if ($isWaitingForCompletion) {
+      $isWaitingForCompletion = false;
+      display($url);
+    }
+  }
+
+  function popstateListener() {
+    var loc = removeHash(location.href);
+    if (loc == $currentLocationWithoutHash) {
+      return
+    }
+
+    if ($isWaitingForCompletion) {
+      setPreloadingAsHalted();
+      $xhr.abort();
+    }
+
+    if (!(loc in $history)) {
+      triggerPageEvent('exit', location.href, 'not in history');
+      if (loc == location.href) { // no location.hash
+        location.href = location.href;
+        // Reloads the page while using cache for scripts, styles and images,
+        // unlike `location.reload()`
+      }
+      else {
+        // When there's a hash, `location.href = location.href` won't reload
+        // the page (but will trigger a popstate event, thus causing an infinite
+        // loop), so we need to call `location.reload()`
+        location.reload();
+      }
+      return
+    }
+
+    $history[$currentLocationWithoutHash].scrollPosition = pageYOffset;
+    clearCurrentPageTimeouts();
+    addOrRemoveWindowEventListeners('remove');
+    $currentLocationWithoutHash = loc;
+    changePage($history[loc].title, $history[loc].body, false, $history[loc].scrollPosition);
+    addOrRemoveWindowEventListeners('add');
+  }
+
+
+  ////////// MAIN FUNCTIONS //////////
+
+
+  function preload(url) {
+    if ($preloadTimer) {
+      clearTimeout($preloadTimer);
+      $preloadTimer = false;
+    }
+
+    if (!url) {
+      url = $urlToPreload;
+    }
+
+    if ($isPreloading && (url == $url || $isWaitingForCompletion)) {
+      return
+    }
+    $isPreloading = true;
+    $isWaitingForCompletion = false;
+
+    $url = url;
+    $body = false;
+    $isContentTypeNotHTML = false;
+    $gotANetworkError = false;
+    $areTrackedElementsDifferent = false;
+    triggerPageEvent('preload');
+    $xhr.open('GET', url);
+    $xhr.timeout = 90000; // Must be set after `open()` with IE
+    $xhr.send();
+  }
+
+  function display(url) {
+    $lastDisplayTimestamp = +new Date;
+    if ($preloadTimer || !$isPreloading) {
+      // $preloadTimer:
+      // Happens when there's a delay before preloading and that delay
+      // hasn't expired (preloading didn't kick in).
+      //
+      // !$isPreloading:
+      // A link has been clicked, and preloading hasn't been initiated.
+      // It happens with touch devices when a user taps *near* the link,
+      // causing `touchstart` not to be fired. Safari/Chrome will trigger
+      // `mouseover`, `mousedown`, `click` (and others), but when that happens
+      // we do nothing in `mouseover` as it may cause `click` not to fire (see
+      // comment in `mouseoverListener`).
+      //
+      // It also happens when a user uses his keyboard to navigate (with Tab
+      // and Return), and possibly in other non-mainstream ways to navigate
+      // a website.
+
+      if ($preloadTimer && $url && $url != url) {
+        // Happens when the user clicks on a link before preloading
+        // kicks in while another link is already preloading.
+
+        triggerPageEvent('exit', url, 'click occured while preloading planned');
+        location.href = url;
+        return
+      }
+
+      preload(url);
+      triggerPageEvent('wait');
+      $isWaitingForCompletion = true; // Must be set *after* calling `preload`
+      return
+    }
+    if ($isWaitingForCompletion) {
+      // The user clicked on a link while a page to display was preloading.
+      // Either on the same link or on another link. If it's the same link
+      // something might have gone wrong (or he could have double clicked, we
+      // don't handle that case), so we send him to the page without pjax.
+      // If it's another link, it hasn't been preloaded, so we redirect the
+      // user to it.
+      triggerPageEvent('exit', url, 'clicked on a link while waiting for another page to display');
+      location.href = url;
+      return
+    }
+    if ($isContentTypeNotHTML) {
+      triggerPageEvent('exit', $url, 'non-html content-type');
+      location.href = $url;
+      return
+    }
+    if ($gotANetworkError) {
+      triggerPageEvent('exit', $url, 'network error');
+      location.href = $url;
+      return
+    }
+    if ($areTrackedElementsDifferent) {
+      triggerPageEvent('exit', $url, 'different assets');
+      location.href = $url;
+      return
+    }
+    if (!$body) {
+      triggerPageEvent('wait');
+      $isWaitingForCompletion = true;
+      return
+    }
+    $history[$currentLocationWithoutHash].scrollPosition = pageYOffset;
+    setPreloadingAsHalted();
+    changePage($title, $body, $url);
+  }
+
+
+  ////////// PUBLIC VARIABLE AND FUNCTIONS //////////
+
+
+  var supported = false;
+  if ('pushState' in history
+      && location.protocol != "file:") {
+    supported = true;
+
+    var indexOfAndroid = $userAgent.indexOf('Android ');
+    if (indexOfAndroid > -1) {
+      // The stock browser in Android 4.0.3 through 4.3.1 supports pushState,
+      // though it doesn't update the address bar.
+      //
+      // More problematic is that it has a bug on `popstate` when coming back
+      // from a page not displayed through InstantClick: `location.href` is
+      // undefined and `location.reload()` doesn't work.
+      //
+      // Android < 4.4 is therefore blacklisted, unless it's a browser known
+      // not to have that latter bug.
+
+      var androidVersion = parseFloat($userAgent.substr(indexOfAndroid + 'Android '.length));
+      if (androidVersion < 4.4) {
+        supported = false;
+        if (androidVersion >= 4) {
+          var whitelistedBrowsersUserAgentsOnAndroid4 = [
+            / Chrome\//, // Chrome, Opera, Puffin, QQ, Yandex
+            / UCBrowser\//,
+            / Firefox\//,
+            / Windows Phone / ];
+          for (var i = 0; i < whitelistedBrowsersUserAgentsOnAndroid4.length; i++) {
+            if (whitelistedBrowsersUserAgentsOnAndroid4[i].test($userAgent)) {
+              supported = true;
+              break
+            }
+          }
+        }
+      }
+    }
+  }
+
+  function init(preloadingMode) {
+    if (!supported) {
+      triggerPageEvent('change', true);
+      return
+    }
+
+    if ($hasBeenInitialized) {
+      return
+    }
+    $hasBeenInitialized = true;
+
+    if (preloadingMode == 'mousedown') {
+      $preloadOnMousedown = true;
+    }
+    else if (typeof preloadingMode == 'number') {
+      $delayBeforePreload = preloadingMode;
+    }
+
+    $currentLocationWithoutHash = removeHash(location.href);
+    $timers[$currentLocationWithoutHash] = {};
+    $history[$currentLocationWithoutHash] = {
+      body: document.body,
+      title: document.title,
+      scrollPosition: pageYOffset
+    };
+
+    if (document.readyState == 'loading') {
+      document.addEventListener('DOMContentLoaded', addTrackedElements);
+    }
+    else {
+      addTrackedElements();
+    }
+
+    $xhr = new XMLHttpRequest();
+    $xhr.addEventListener('readystatechange', readystatechangeListener);
+
+    document.addEventListener('touchstart', touchstartListener, true);
+    if ($preloadOnMousedown) {
+      document.addEventListener('mousedown', mousedownListener, true);
+    }
+    else {
+      document.addEventListener('mouseover', mouseoverListener, true);
+    }
+    document.addEventListener('click', clickListenerPrelude, true);
+
+    addEventListener('popstate', popstateListener);
+  }
+
+  function on(eventType, callback) {
+    $eventsCallbacks[eventType].push(callback);
+
+    if (eventType == 'change') {
+      callback(!$lastDisplayTimestamp);
+    }
+  }
+
+  function setTimeout() {
+    return addTimer(arguments, false)
+  }
+
+  function setInterval() {
+    return addTimer(arguments, true)
+  }
+
+  function clearTimeout(id) {
+    id = -id;
+    for (var loc in $timers) {
+      if (id in $timers[loc]) {
+        window.clearTimeout($timers[loc][id].realId);
+        delete $timers[loc][id];
+      }
+    }
+  }
+
+  function xhr(xhr) {
+    $currentPageXhrs.push(xhr);
+  }
+
+  function addPageEvent() {
+    if (!($currentLocationWithoutHash in $windowEventListeners)) {
+      $windowEventListeners[$currentLocationWithoutHash] = [];
+    }
+    $windowEventListeners[$currentLocationWithoutHash].push(arguments);
+    addEventListener.apply(window, arguments);
+  }
+
+  function removePageEvent() {
+    var arguments$1 = arguments;
+
+    if (!($currentLocationWithoutHash in $windowEventListeners)) {
+      return
+    }
+    firstLoop:
+    for (var i = 0; i < $windowEventListeners[$currentLocationWithoutHash].length; i++) {
+      if (arguments$1.length != $windowEventListeners[$currentLocationWithoutHash][i].length) {
+        continue
+      }
+      for (var j = 0; j < $windowEventListeners[$currentLocationWithoutHash][i].length; j++) {
+        if (arguments$1[j] != $windowEventListeners[$currentLocationWithoutHash][i][j]) {
+          continue firstLoop
+        }
+      }
+      $windowEventListeners[$currentLocationWithoutHash].splice(i, 1);
+    }
+  }
+
+  function addEvent(selector, type, listener) {
+    if (!(type in $delegatedEvents)) {
+      $delegatedEvents[type] = {};
+
+      document.addEventListener(type, function(event) {
+        var element = event.target;
+        event.originalStopPropagation = event.stopPropagation;
+        event.stopPropagation = function() {
+          this.isPropagationStopped = true;
+          this.originalStopPropagation();
+        };
+        while (element && element.nodeType == 1) {
+          for (var selector in $delegatedEvents[type]) {
+            if (element.matches(selector)) {
+              for (var i = 0; i < $delegatedEvents[type][selector].length; i++) {
+                $delegatedEvents[type][selector][i].call(element, event);
+              }
+              if (event.isPropagationStopped) {
+                return
+              }
+              break
+            }
+          }
+          element = element.parentNode;
+        }
+      }, false); // Third parameter isn't optional in Firefox < 6
+
+      if (type == 'click' && /iP(?:hone|ad|od)/.test($userAgent)) {
+        // Force Mobile Safari to trigger the click event on document by adding a pointer cursor to body
+
+        var styleElement = document.createElement('style');
+        styleElement.setAttribute('instantclick-mobile-safari-cursor', ''); // So that this style element doesn't surprise developers in the browser DOM inspector.
+        styleElement.textContent = 'body { cursor: pointer !important; }';
+        document.head.appendChild(styleElement);
+      }
+    }
+
+    if (!(selector in $delegatedEvents[type])) {
+      $delegatedEvents[type][selector] = [];
+    }
+
+    // Run removeEvent beforehand so that it can't be added twice
+    removeEvent(selector, type, listener);
+
+    $delegatedEvents[type][selector].push(listener);
+  }
+
+  function removeEvent(selector, type, listener) {
+    var index = $delegatedEvents[type][selector].indexOf(listener);
+    if (index > -1) {
+      $delegatedEvents[type][selector].splice(index, 1);
+    }
+  }
+
+
+  ////////////////////
+
+
+  return {
+    supported: supported,
+    init: init,
+    on: on,
+    setTimeout: setTimeout,
+    setInterval: setInterval,
+    clearTimeout: clearTimeout,
+    xhr: xhr,
+    addPageEvent: addPageEvent,
+    removePageEvent: removePageEvent,
+    addEvent: addEvent,
+    removeEvent: removeEvent
+  }
+
+}(document, location, navigator.userAgent);
+
+return InstantClick;
+
+})));
+
+
+/***/ }),
+
+/***/ "./node_modules/loading-attribute-polyfill/loading-attribute-polyfill.js":
+/*!*******************************************************************************!*\
+  !*** ./node_modules/loading-attribute-polyfill/loading-attribute-polyfill.js ***!
+  \*******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
 /*
  * Loading attribute polyfill - https://github.com/mfranzke/loading-attribute-polyfill
  * @license Copyright(c) 2019 by Maximilian Franzke
  * Credits for the initial kickstarter / script to @Sora2455, and supported by @cbirdsong, @eklingen, @DaPo, @nextgenthemes, @diogoterremoto, @dracos, @Flimm, @TomS- and @vinyfc93 - many thanks for that !
  */
-!function(e,t){"use strict";var n,r,o={rootMargin:"256px 0px",threshold:.01,lazyImage:'img[loading="lazy"]',lazyIframe:'iframe[loading="lazy"]'},a="loading"in HTMLImageElement.prototype&&"loading"in HTMLIFrameElement.prototype,i="onscroll"in window;function s(e){var t,n,r=[];"picture"===e.parentNode.tagName.toLowerCase()&&(t=e.parentNode,(n=t.querySelector("source[data-lazy-remove]"))&&t.removeChild(n),r=Array.prototype.slice.call(e.parentNode.querySelectorAll("source"))),r.push(e),r.forEach((function(e){e.hasAttribute("data-lazy-srcset")&&(e.setAttribute("srcset",e.getAttribute("data-lazy-srcset")),e.removeAttribute("data-lazy-srcset"))})),e.setAttribute("src",e.getAttribute("data-lazy-src")),e.removeAttribute("data-lazy-src")}function c(e){var t=document.createElement("div");for(t.innerHTML=function(e){var t=e.textContent||e.innerHTML,r="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 "+((t.match(/width=['"](\d+)['"]/)||!1)[1]||1)+" "+((t.match(/height=['"](\d+)['"]/)||!1)[1]||1)+"%27%3E%3C/svg%3E";return!a&&i&&(void 0===n?t=t.replace(/(?:\r\n|\r|\n|\t| )src=/g,' lazyload="1" src='):("picture"===e.parentNode.tagName.toLowerCase()&&(t='<source srcset="'+r+'" data-lazy-remove="true"></source>'+t),t=t.replace(/(?:\r\n|\r|\n|\t| )srcset=/g," data-lazy-srcset=").replace(/(?:\r\n|\r|\n|\t| )src=/g,' src="'+r+'" data-lazy-src='))),t}(e);t.firstChild;)a||!i||void 0===n||!t.firstChild.tagName||"img"!==t.firstChild.tagName.toLowerCase()&&"iframe"!==t.firstChild.tagName.toLowerCase()||n.observe(t.firstChild),e.parentNode.insertBefore(t.firstChild,e);e.parentNode.removeChild(e)}function l(){document.querySelectorAll("noscript.loading-lazy").forEach(c),void 0!==window.matchMedia&&window.matchMedia("print").addListener((function(e){e.matches&&document.querySelectorAll(o.lazyImage+"[data-lazy-src],"+o.lazyIframe+"[data-lazy-src]").forEach((function(e){s(e)}))}))}"undefined"!=typeof NodeList&&NodeList.prototype&&!NodeList.prototype.forEach&&(NodeList.prototype.forEach=Array.prototype.forEach),"IntersectionObserver"in window&&(n=new IntersectionObserver((function(e,t){e.forEach((function(e){if(0!==e.intersectionRatio){var n=e.target;t.unobserve(n),s(n)}}))}),o)),r="requestAnimationFrame"in window?window.requestAnimationFrame:function(e){e()},/comp|inter/.test(document.readyState)?r(l):"addEventListener"in document?document.addEventListener("DOMContentLoaded",(function(){r(l)})):document.attachEvent("onreadystatechange",(function(){"complete"===document.readyState&&l()}))}()},function(e,t){}]);
+/*
+ * A minimal and dependency-free vanilla JavaScript loading attribute polyfill.
+ * Supports standard's functionality and tests for native support upfront.
+ * Elsewhere the functionality gets emulated with the support of noscript wrapper tags.
+ * Use an IntersectionObserver polyfill in case of IE11 support necessary.
+ */
+
+(function (noscriptClass, rootMargin) {
+	'use strict';
+
+	var config = {
+		// Start download if the item gets within 256px in the Y axis
+		rootMargin: rootMargin || '0px 0px 256px 0px',
+		threshold: 0.01,
+		lazyImage: 'img[loading="lazy"]',
+		lazyIframe: 'iframe[loading="lazy"]'
+	};
+
+	// Device/browser capabilities object
+	var capabilities = {
+		loading:
+			'loading' in HTMLImageElement.prototype &&
+			'loading' in HTMLIFrameElement.prototype,
+		scrolling: 'onscroll' in window
+	};
+
+	// Nodelist foreach polyfill / source: https://stackoverflow.com/a/46929259
+	if (
+		typeof NodeList !== 'undefined' &&
+		NodeList.prototype &&
+		!NodeList.prototype.forEach
+	) {
+		// Yes, there's really no need for `Object.defineProperty` here
+		NodeList.prototype.forEach = Array.prototype.forEach;
+	}
+
+	// Define according to browsers support of the IntersectionObserver feature (missing e.g. on IE11 or Safari 11)
+	var intersectionObserver;
+
+	if ('IntersectionObserver' in window) {
+		intersectionObserver = new IntersectionObserver(onIntersection, config);
+	}
+
+	// On using a browser w/o requestAnimationFrame support (IE9, Opera Mini), just run the passed function
+	var rAFWrapper;
+
+	if ('requestAnimationFrame' in window) {
+		rAFWrapper = window.requestAnimationFrame;
+	} else {
+		rAFWrapper = function (func) {
+			func();
+		};
+	}
+
+	/**
+	 * Put the source and srcset back where it belongs - now that the elements content is attached to the document, it will load now
+	 * @param {Object} lazyItem Current item to be restored after lazy loading.
+	 */
+	function restoreSource(lazyItem) {
+		var srcsetItems = [];
+
+		// Just in case the img is the decendent of a picture element, check for source tags
+		if (lazyItem.parentNode.tagName.toLowerCase() === 'picture') {
+			removePlaceholderSource(lazyItem.parentNode);
+
+			srcsetItems = Array.prototype.slice.call(
+				lazyItem.parentNode.querySelectorAll('source')
+			);
+		}
+
+		srcsetItems.push(lazyItem);
+
+		// Not using .dataset within those upfollowing lines of code for polyfill independent compatibility down to IE9
+		srcsetItems.forEach(function (item) {
+			if (item.hasAttribute('data-lazy-srcset')) {
+				item.setAttribute('srcset', item.getAttribute('data-lazy-srcset'));
+				item.removeAttribute('data-lazy-srcset'); // Not using delete .dataset here for compatibility down to IE9
+			}
+		});
+
+		lazyItem.setAttribute('src', lazyItem.getAttribute('data-lazy-src'));
+		lazyItem.removeAttribute('data-lazy-src'); // Not using delete .dataset here for compatibility down to IE9
+	}
+
+	/**
+	 * Remove the source tag preventing the loading of picture assets
+	 * @param {Object} lazyItemPicture Current <picture> item to be restored after lazy loading.
+	 */
+	function removePlaceholderSource(lazyItemPicture) {
+		var placeholderSource = lazyItemPicture.querySelector(
+			'source[data-lazy-remove]'
+		);
+
+		if (placeholderSource) {
+			lazyItemPicture.removeChild(placeholderSource); // Preferred .removeChild over .remove here for IE
+		}
+	}
+
+	/**
+	 * Handle IntersectionObservers callback
+	 * @param {Object} entries Target elements Intersection observed changes
+	 * @param {Object} observer IntersectionObserver instance reference
+	 */
+	function onIntersection(entries, observer) {
+		entries.forEach(function (entry) {
+			// Mitigation for EDGE lacking support of .isIntersecting until v15, compare to e.g. https://github.com/w3c/IntersectionObserver/issues/211#issuecomment-309144669
+			if (entry.intersectionRatio === 0) {
+				return;
+			}
+
+			// If the item is visible now, load it and stop watching it
+			var lazyItem = entry.target;
+
+			observer.unobserve(lazyItem);
+
+			restoreSource(lazyItem);
+		});
+	}
+
+	/**
+	 * Handle printing the page
+	 */
+	function onPrinting() {
+		if (typeof window.matchMedia === 'undefined') {
+			return;
+		}
+
+		var mediaQueryList = window.matchMedia('print');
+
+		mediaQueryList.addListener(function (mql) {
+			if (mql.matches) {
+				document
+					.querySelectorAll(
+						config.lazyImage +
+							'[data-lazy-src],' +
+							config.lazyIframe +
+							'[data-lazy-src]'
+					)
+					.forEach(function (lazyItem) {
+						restoreSource(lazyItem);
+					});
+			}
+		});
+	}
+
+	/**
+	 * Get and prepare the HTML code depending on feature detection for both image as well as iframe,
+	 * and if not scrolling supported, because it's a Google or Bing Bot
+	 * @param {String} lazyAreaHtml Noscript inner HTML code that src-urls need to get rewritten
+	 */
+	function getAndPrepareHTMLCode(noScriptTag) {
+		// The contents of a <noscript> tag are treated as text to JavaScript
+		var lazyAreaHtml = noScriptTag.textContent || noScriptTag.innerHTML;
+
+		var getImageWidth = lazyAreaHtml.match(/width=['"](\d+)['"]/) || false;
+		var temporaryImageWidth = getImageWidth[1] || 1;
+		var getImageHeight = lazyAreaHtml.match(/height=['"](\d+)['"]/) || false;
+		var temporaryImageHeight = getImageHeight[1] || 1;
+
+		var temporaryImage =
+			'data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 ' +
+			temporaryImageWidth +
+			' ' +
+			temporaryImageHeight +
+			'%27%3E%3C/svg%3E';
+
+		if (!capabilities.loading && capabilities.scrolling) {
+			// Check for IntersectionObserver support
+			if (typeof intersectionObserver === 'undefined') {
+				// Attach abandonned attribute 'lazyload' to the HTML tags on browsers w/o IntersectionObserver being available
+				lazyAreaHtml = lazyAreaHtml.replace(
+					/(?:\r\n|\r|\n|\t| )src=/g,
+					' lazyload="1" src='
+				);
+			} else {
+				if (noScriptTag.parentNode.tagName.toLowerCase() === 'picture') {
+					// Temporarily prevent expensive resource loading by inserting a <source> tag pointing to a simple one (data URI)
+					lazyAreaHtml =
+						'<source srcset="' +
+						temporaryImage +
+						'" data-lazy-remove="true"></source>' +
+						lazyAreaHtml;
+				}
+
+				// Temporarily replace a expensive resource load with a simple one by storing the actual source and srcset for later and point src to a temporary replacement (data URI)
+				lazyAreaHtml = lazyAreaHtml
+					.replace(/(?:\r\n|\r|\n|\t| )srcset=/g, ' data-lazy-srcset=')
+					.replace(
+						/(?:\r\n|\r|\n|\t| )src=/g,
+						' src="' + temporaryImage + '" data-lazy-src='
+					);
+			}
+		}
+
+		return lazyAreaHtml;
+	}
+
+	/**
+	 * Retrieve the elements from the 'lazy load' <noscript> tag and prepare them for display
+	 * @param {Object} noScriptTag noscript HTML tag that should get initially transformed
+	 */
+	function prepareElement(noScriptTag) {
+		// Sticking the noscript HTML code in the innerHTML of a new <div> tag to 'load' it after creating that <div>
+		var lazyArea = document.createElement('div');
+
+		lazyArea.innerHTML = getAndPrepareHTMLCode(noScriptTag);
+
+		// Move all children out of the element
+		while (lazyArea.firstChild) {
+			if (
+				!capabilities.loading &&
+				capabilities.scrolling &&
+				typeof intersectionObserver !== 'undefined' &&
+				lazyArea.firstChild.tagName &&
+				(lazyArea.firstChild.tagName.toLowerCase() === 'img' ||
+					lazyArea.firstChild.tagName.toLowerCase() === 'iframe')
+			) {
+				// Observe the item so that loading could start when it gets close to the viewport
+				intersectionObserver.observe(lazyArea.firstChild);
+			}
+
+			noScriptTag.parentNode.insertBefore(lazyArea.firstChild, noScriptTag);
+		}
+
+		// Remove the empty element - not using .remove() here for IE11 compatibility
+		noScriptTag.parentNode.removeChild(noScriptTag); // Preferred .removeChild over .remove here for IE
+	}
+
+	/**
+	 * Get all the <noscript> tags on the page and setup the printing
+	 */
+	function prepareElements() {
+		//
+		var lazyLoadAreas = document.querySelectorAll('noscript.' + noscriptClass);
+
+		lazyLoadAreas.forEach(prepareElement);
+
+		// Bind for someone printing the page
+		onPrinting();
+	}
+
+	// If the page has loaded already, run setup - if it hasn't, run as soon as it has.
+	// Use requestAnimationFrame as this will propably cause repaints
+	// document.readyState values: https://www.w3schools.com/jsref/prop_doc_readystate.asp
+	if (/comp|inter/.test(document.readyState)) {
+		rAFWrapper(prepareElements);
+	} else if ('addEventListener' in document) {
+		document.addEventListener('DOMContentLoaded', function () {
+			rAFWrapper(prepareElements);
+		});
+	} else {
+		document.attachEvent('onreadystatechange', function () {
+			if (document.readyState === 'complete') {
+				prepareElements();
+			}
+		});
+	}
+})('loading-lazy', '256px 0px');
+
+
+/***/ })
+
+/******/ });
 //# sourceMappingURL=bundle.js.map
