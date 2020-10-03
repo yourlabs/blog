@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="{{ .Lang | default .Site.Params.DefaultContentLanguage }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{{ .Title }}</title>
+    {{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+    {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+    <link rel="stylesheet" href="{{ "fonts.css" | relURL }}">
+    <link rel="icon" href="/favicon.ico" >
+    {{ with .OutputFormats.Get "RSS" -}}
+        {{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
+    {{- end }}
+<link href="/main.f1e6442fe5ab9b879585.css" rel="stylesheet"><link href="/fonts.css" rel="stylesheet"></head>
+<body>
+    {{ partial "header" . }}
+    {{ block "main" . }}{{ end }}
+    {{ partial "footer" . }}
+
+    <link rel="stylesheet" href="{{ "prism.css" | relURL }}">
+    <script src="{{ "prism.js" | relURL }}" async="true"></script>
+<script type="text/javascript" src="/main.f1e6442fe5ab9b879585.js"></script></body>
+</html>
