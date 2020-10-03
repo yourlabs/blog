@@ -4,18 +4,14 @@ const GoogleFontsPlugin = require("@beyonk/google-fonts-webpack-plugin")
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const extractSass = new ExtractTextPlugin({
-    filename: 'bundle.css',
+  filename: '[name].[hash].css'
 })
 
 module.exports = {
   entry: './main.js',
   output: {
-    path: __dirname + '/static',
-    filename: 'bundle.js'
-  },
-  output: {
     path: path.resolve(__dirname) + '/static/',
-    publicPath: '/static/',
+    publicPath: '/',
     filename: '[name].[hash].js'
   },
   devtool: 'sourcemap',

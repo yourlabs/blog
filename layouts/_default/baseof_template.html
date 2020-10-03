@@ -7,7 +7,6 @@
     <title>{{ .Title }}</title>
     {{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
     {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
-    <link rel="stylesheet" href="{{ "bundle.css" | relURL }}">
     <link rel="stylesheet" href="{{ "fonts.css" | relURL }}">
     <link rel="icon" href="/favicon.ico" >
     {{ with .OutputFormats.Get "RSS" -}}
@@ -20,7 +19,6 @@
     {{ partial "footer" . }}
 
     <link rel="stylesheet" href="{{ "prism.css" | relURL }}">
-    <script src="{{ "bundle.js" | relURL }}" async="true"></script>
     <script src="{{ "prism.js" | relURL }}" async="true"></script>
 </body>
 </html>
