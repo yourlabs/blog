@@ -5,110 +5,92 @@ comments: false
 
 {{< rawhtml >}}
 <section>
-  <img loading="lazy" src="/img/great_idea.svg" />
-  <div>
-      <h2>Maitrise d'ouvrage</h2>
-      <ul>
-          <li>1 entretien de formalisation des besoins</li>
-          <li>livraison des spécifications en 3 à 8 jours</li>
-          <li>1 entretien de revue et nouvelle livraison</li>
-          <li>itération supplémentaire: 500€ T.T.C.</li>
-          <li>éstimations de complexités en "Story Points"</li>
-      </ul>
-      <a class="action" href="/secops/">2.500€ T.T.C.</a>
-  </div>
+    <img loading="lazy" src="/img/great_idea.svg" />
+    <div>
+        <h2>Maitrise d'ouvrage</h2>
+        <ul>
+            <li>Forfait à partir de 2.500€ T.T.C.</li>
+            <li>1 Project Manager</li>
+            <li>1 entretien de formalisation des besoins</li>
+            <li>Livraison des spécifications en 3 à 8 jours</li>
+            <li>1 entretien de revue et nouvelle livraison</li>
+            <li>Itération supplémentaire: 500€ T.T.C.</li>
+            <li>Éstimations de complexités en "Story Points"</li>
+        </ul>
+        <a class="action" href="/#contact">Prendre RDV</a>
+    </div>
 </section>
-
-<div class="service">
-  <img loading="lazy" src="/img/cybersecurity.svg" />
-  <h2>Création Graphique</h2>
-  <a class="action" href="/secops/">2.500€ T.T.C.</a>
-  <ul>
-      <li>1 entretien de formalisation des besoins</li>
-      <li>livraison des spécifications en 3 à 8 jours</li>
-      <li>1 entretien de revue et nouvelle livraison</li>
-      <li>itération supplémentaire: 500€ T.T.C.</li>
-      <li>éstimations de complexités en "Story Points"</li>
-  </ul>
-</div>
-<div class="service">
-  <img loading="lazy" src="/img/cybersecurity.svg" />
-  <h2>Programmation</h2>
-  <a class="action" href="/secops/">9000€ T.T.C.</a>
-  <ul>
-      <li>1 entretien de priorisation</li>
-      <li>livraison de 18 "Story Points" en 2 mois</li>
-      <li>1 entretien de revue et nouvelle livraison</li>
-      <li>"Story point" supplémentaire: 500€ T.T.C.</li>
-      <li>1 entretien de cloture du sprint</li>
-      <li>2 mois de support correctif</li>
-  </ul>
-</div>
+<hr>
+<section class="right">
+    <div>
+        <h2>Création graphique</h2>
+        <ul>
+            <li>
+                Forfait création à partir de 2.500€ T.T.C.
+            </li>
+            <li>1 <a href="https://magineo.fr" title="Agence de communication">Directeur Artistique Magineo</a></li>
+            <li>5 pages incluses</li>
+            <li>1 entretien de formalisation des besoins</li>
+            <li>Livraison des maquettes en 8 à 15 jours</li>
+            <li>1 entretien de revue et nouvelle livraison</li>
+            <li>Option Intégration HTML/CSS: 2.500€ T.T.C.</li>
+        </ul>
+        <a class="action" href="/#contact">Prendre RDV</a>
+    </div>
+    <img loading="lazy" src="/img/landing_page.svg" />
+</section>
+<hr>
+<section>
+    <img loading="lazy" src="/img/code_development.svg" />
+    <div>
+        <h2>Programmation Agile</h2>
+        <ul>
+            <li>Sprint à 10.000€ T.T.C.</li>
+            <li>15 Story Points</li>
+            <li>1 entretien de priorisation</li>
+            <li>Prises d'engagements</li>
+            <li>Livraison en 1 à 2 mois</li>
+            <li>1 entretien de revue et nouvelle livraison</li>
+            <li>2 mois de support et maintenance corrective</li>
+            <li>Story Point supplémentaire: 500€ T.T.C.</li>
+        </ul>
+        <a class="action" href="/#contact">Prendre RDV</a>
+    </div>
+</section>
+<hr>
 {{< /rawhtml >}}
 
-
-## Petit site vitrine, création, infographie, UX design, marketing
-
-En partennariat avec l'agence de communication [Magineo](https://magineo.fr),
-nous proposons le développement d'un petit site vitrine à partir de 4000€ H.T.
-
-Le nom de domaine ainsi que son administration technique et l'hebergement d'un
-site statique fait l'objet d'un forfait à 100€ H.T. / an
-
-## Sprints: développement et développement web etc
+## Sprints de developpement Agile
 
 Les Sprints sont des periodes de développement de nouvelles fonctionnalités ou
 de paiement de "dette technique" (mises à jour de versions, protocoles,
 standards, etc...).
 
 Le Sprint commence par l'enquête sur les besoins de développements, formulation
-et priorisation des demandes par l'équipe produit, estimations et engagements
+et priorisation des demandes par votre équipe produit, estimations et engagements
 de livraison par l'équipe technique au terme du Sprint.
 
-Un "Backlog grooming" est une réunion en milieu de sprint pour determiner
-quelles Histoires Utilisateurs sont déjà livrées et effectivement livrables sur
-le Sprint en cours.
-
-Le Sprint se cloture avec une Sprint Review et une Retrospective.
-
-Les Sprints YBS commencent à partir de 20 "Jour-Hommes" sur une période de 1 à
-3 mois selon le rythme de votre choix et incluent la disponnibilité de
-consultants experts sur tous les métiers de la chaine de production, notamment
-: scrum master (requis), ux designer, marketing, dév front & back, dévops infra
-& réseau, etc, qui seront ravis de travailler avec vos équipes en place.
-
-10 JH par ans sont necessaires au maintien en condition opérationnelle de votre
-projet pour être sous la responsabilité de YBS. Si YBS n'en est pas confiée la
-prestation alors un autre prestataire doit être choisi pour que YBS puisse
-intervenir en développement.
+Nous récoltons vos retours dans le cadre d'une démonstration en fin de Sprint
+afin de vous livrer une version exploitable à la cloture du Sprint.
 
 {{< rawhtml >}}
-<style type="text/css">
-  table { width: 100%; }
-</style>
+<hr>
+<blockquote>
+  <img src="/img/icon-quote.svg" height="36">
+  <br>
+  <br>
+  "La beauté est l'ultime défense contre la complexité"
+  <br>
+  <br>
+  <img alt="The Glider" src="/img/glider.jpg" height="36">
+  <footer>
+    <i>- David Gelernter</i>
+  </footer>
+</blockquote>
+<hr>
 {{< /rawhtml >}}
 
-|  | Jours | TJM |
-| :---------: | :----: | ---: |
-| Junior        | 1  | 300  € H.T |
-| Intermediaire | 1  | 750  € H.T |
-| Senior        | 1  | 1000 € H.T |
-| Junior        | 5  | 275  € H.T |
-| Intermediaire | 5  | 700  € H.T |
-| Senior        | 5  | 950  € H.T |
-| Junior        | 10 | 250  € H.T |
-| Intermediaire | 10 | 650  € H.T |
-| Senior        | 10 | 900  € H.T |
-| Junior        | 15 | 225  € H.T |
-| Intermediaire | 15 | 600  € H.T |
-| Senior        | 15 | 850  € H.T |
-| Junior        | 20 | 200  € H.T |
-| Intermediaire | 20 | 600  € H.T |
-| Senior        | 20 | 800  € H.T |
-
-Profils selon disponnibilté.
-
-## Bugfix
+## Bugfix, Formation, CI/CD, XP ...
 
 Pratiquant du bug squashing depuis les années 90, notre expertise en
 Integration Continue rayonnera de bonnes pratiques sur vos équipes de
@@ -116,11 +98,44 @@ développement en partageant l’état d’esprit de l’eXtreme Programing & de
 l’Agile Manifesto au niveau internationnal dans le cadre d’une ambiance
 conviviale et ludique dans une esthétique "hacker local".
 
+{{< rawhtml >}}
+<hr>
+<blockquote>
+  <img src="/img/icon-quote.svg" height="36">
+  <br>
+  <br>
+  "La simplicité est un pré-requis pour la fiabilité"
+  <br>
+  <br>
+  <img alt="The Glider" src="/img/glider.jpg" height="36">
+  <footer>
+    <i>- Edsger W. Dijkstra</i>
+  </footer>
+</blockquote>
+<hr>
+{{< /rawhtml >}}
+
 #### "L'état de l'art pour un développement sur mesure de haute couture"
 
 Python, Django, PHP, Bash, Ansible
 PostgreSQL, MySQL
 HTML, CSS, JavaScript
 Docker, Git, CI/CD, XP,
-Windows 3.11
+Linux, BSD, DOS, Windows 3.11
 ...
+
+{{< rawhtml >}}
+<hr>
+<blockquote>
+  <img src="/img/icon-quote.svg" height="36">
+  <br>
+  <br>
+  "Un programme qui produit des résultats incorrects deux fois plus rapidement est infiniement plus lent"
+  <br>
+  <br>
+  <img alt="The Glider" src="/img/glider.jpg" height="36">
+  <footer>
+    <i>- John Osterhout</i>
+  </footer>
+</blockquote>
+{{< /rawhtml >}}
