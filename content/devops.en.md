@@ -4,6 +4,19 @@ subtitle: Maintenance en condition opérationnelle, déploiement automatique con
 comments: false
 ---
 
+{{< rawhtml >}}
+<div class="hero" style="background-image: url(/img/backgrounds/pexel-1312.jpg)">
+  <div class="hero-inner">
+    <h1>YourLabs Business Service</h1>
+    <span class="subtitle">
+      Marque de logiciels libres depuis 2012
+      <br />
+      La pratique d'une ingénierie tel un sport, un art, au service d'êtres humains.
+    </span>
+  </div>
+</div>
+{{< / rawhtml >}}
+
 Our relentless DevOps offer personalized training and development for
 streamline the deployment of the patches of his protégés, of a report optional
 on-site management, and free to host a

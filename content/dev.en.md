@@ -3,6 +3,50 @@ title: Developpement & Developpement Web
 comments: false
 ---
 
+{{< rawhtml >}}
+<section>
+  <img loading="lazy" src="/img/great_idea.svg" />
+  <div>
+      <h2>Maitrise d'ouvrage</h2>
+      <ul>
+          <li>1 entretien de formalisation des besoins</li>
+          <li>livraison des spécifications en 3 à 8 jours</li>
+          <li>1 entretien de revue et nouvelle livraison</li>
+          <li>itération supplémentaire: 500€ T.T.C.</li>
+          <li>éstimations de complexités en "Story Points"</li>
+      </ul>
+      <a class="action" href="/secops/">2.500€ T.T.C.</a>
+  </div>
+</section>
+
+<div class="service">
+  <img loading="lazy" src="/img/cybersecurity.svg" />
+  <h2>Création Graphique</h2>
+  <a class="action" href="/secops/">2.500€ T.T.C.</a>
+  <ul>
+      <li>1 entretien de formalisation des besoins</li>
+      <li>livraison des spécifications en 3 à 8 jours</li>
+      <li>1 entretien de revue et nouvelle livraison</li>
+      <li>itération supplémentaire: 500€ T.T.C.</li>
+      <li>éstimations de complexités en "Story Points"</li>
+  </ul>
+</div>
+<div class="service">
+  <img loading="lazy" src="/img/cybersecurity.svg" />
+  <h2>Programmation</h2>
+  <a class="action" href="/secops/">9000€ T.T.C.</a>
+  <ul>
+      <li>1 entretien de priorisation</li>
+      <li>livraison de 18 "Story Points" en 2 mois</li>
+      <li>1 entretien de revue et nouvelle livraison</li>
+      <li>"Story point" supplémentaire: 500€ T.T.C.</li>
+      <li>1 entretien de cloture du sprint</li>
+      <li>2 mois de support correctif</li>
+  </ul>
+</div>
+{{< /rawhtml >}}
+
+
 ## Petit site vitrine, création, infographie, UX design, marketing
 
 En partennariat avec l'agence de communication [Magineo](https://magineo.fr),

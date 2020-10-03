@@ -41,7 +41,6 @@ a h3 {
       <div class="service">
         <img loading="lazy" src="/img/cybersecurity.svg" />
         <h2>Cyber-Sécurité</h2>
-        <a class="action" href="/secops/">Offres</a>
         <ul>
             <li>Audits personnalisés</li>
             <li>Contre audits</li>
@@ -50,11 +49,11 @@ a h3 {
             <li>Standards: OWASP, NIST...</li>
             <li>Red Team: Protection active</li>
         </ul>
+        <a class="action" href="/secops/">Offres SecOps</a>
       </div>
       <div class="service">
         <img loading="lazy" src="/img/web_development.svg" />
         <h2>Développement</h2>
-        <a class="action" href="/dev/">Offres</a>
         <ul>
             <li>
                 Web: frontend, backend
@@ -81,11 +80,11 @@ a h3 {
                 eXtreme Programing (XP)
             </li>
         </ul>
+        <a class="action" href="/dev/">Offres WebDev</a>
       </div>
       <div class="service">
         <img loading="lazy" src="/img/online_storage.svg" />
         <h2>DevOps</h2>
-        <a class="action" href="/devops/">Offres</a>
         <ul>
             <li>
                 Continuous Delivery (CD)
@@ -99,6 +98,7 @@ a h3 {
             <li>Métriques, Statistiques, KPI...</li>
             <li>eXtreme DevOps (XD)</li>
         </ul>
+        <a class="action" href="/devops/">Offres DevOps</a>
       </div>
     </div>
   </div>

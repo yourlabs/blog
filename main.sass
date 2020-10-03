@@ -57,13 +57,6 @@ h1, h2, h3, h4, h5, h6
     &:hover
       color: $color6
 
-ul, ol
-  margin-left: 1.6rem
-  margin-bottom: 1em
-
-ul li
-  list-style-type: disc
-
 ol li
   list-style-type: decimal
 
@@ -73,6 +66,104 @@ p
 time
   color: #525252
   line-height: 2.8em
+
+ul, ol
+  margin-left: 1.6rem
+  margin-bottom: 1em
+
+ul li
+  list-style: none
+
+@mixin bullet
+  content: "\2022"
+  color: $color3
+  font-weight: bolder
+  display: inline-block
+  width: 1em
+  margin-left: -1em
+
+ul li::before
+  @include bullet
+
+section.right
+  text-align: right
+
+  ul li::before
+    content: ""
+
+  ul li::after
+    @include bullet
+    margin-right: -1em
+    margin-left: 0
+
+  ul li
+    margin-left: 0
+    margin-right: 1.6rem
+
+section
+  display: flex
+  justify-content: center
+
+  @media screen and (max-width: 500px)
+    flex-direction: column
+    align-items: center
+    text-align: center
+
+  h2
+    font-weight: bold
+
+  div
+    margin-left: 1rem
+    padding-left: 1rem
+
+  h2
+    margin-bottom: 1.6rem
+
+  ul
+    margin-bottom: 3rem
+
+  img
+    margin-left: 2rem
+
+  flex-wrap: wrap
+  p
+    margin: .4rem 0
+
+  img
+    width: 80%
+    @media screen and (min-width: 500px)
+      width: 33%
+
+hr
+  margin: 4rem 0
+  height: 1px
+  border: none
+  background-color: $color6
+
+img
+  max-width: 100%
+  height: auto
+
+.container
+  max-width: 80em
+  margin: 2rem auto
+
+blockquote
+  display: block
+  font-size: x-large
+  line-height: 1.5rem
+  margin: 1rem auto
+  max-width: 560px
+  padding: 1.5rem 1rem
+  text-align: center
+
+  img
+    height: 80px
+
+  footer
+    color: $color4
+    font-size: 80%
+    padding: 1.5rem 0
 
 a.read-more, a.read-more:link, a.read-more:active, a.read-more:visited
   display: block
@@ -112,14 +203,6 @@ code
 pre
   padding: 1em
 
-img
-  max-width: 100%
-  height: auto
-
-.container
-  max-width: 80em
-  margin: 2rem auto
-
 @media screen and (max-width: 500px)
   .container
     margin: 2rem 0.5em
@@ -132,7 +215,6 @@ img
 body a.action, body a.action:visited
   border-radius: 7px
   padding: .9rem 1.4rem
-  margin: 1rem
   text-align: center
   border: 3px solid $color2
   color: $color2
@@ -261,6 +343,7 @@ div.hero::first
     ul
       margin: .9rem .1rem
       padding: 0
+      height: 100%
 
       li
         list-style-type: none

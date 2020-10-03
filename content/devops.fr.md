@@ -1,6 +1,7 @@
 ---
 title: Service DevOps Infrastructure & Réseau
 subtitle: Maintenance en condition opérationnelle, déploiement automatique continu réseau, processeurs, stockage
+hero: /img/backgrounds/servers-hero.jpg
 comments: false
 ---
 
