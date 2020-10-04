@@ -1,6 +1,6 @@
 <header class="main-header {{ if .Params.hero }}hero-header transparent{{ end }}">
   <a href="{{ .Site.BaseURL }}" title="{{ .Site.Title }}" class="logo">
-    <img src="/img/yourlabs-transparent.png" width="170" height="95" alt="{{ .Site.Title }}">
+      <img src="/img/yourlabs-transparent{{ if .Params.hero }}-whitetext{{ end }}.png" width="170" height="95" alt="{{ .Site.Title }}">
   </a>
   {{ $ctx := . }}
   {{ with .Site.Menus.main }}
