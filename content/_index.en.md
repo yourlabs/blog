@@ -4,6 +4,9 @@ subtitle: Free Software brand since 2012.
 subtitle2: A practice of engineering as a sport, an art, for humans.
 comments: false
 headerclass: hero
+hero: /img/backgrounds/pexel-1312.jpg
+hero_action_label: Our Services
+hero_action_url: '#services'
 ---
 
 {{< rawhtml >}}
@@ -21,20 +24,6 @@ a h3 {
   color: #444fff;
 }
 </style>
-
-<div class="hero" style="background-image: url(/img/backgrounds/pexel-1312.jpg)">
-  <div class="hero-inner">
-    <h1>YourLabs Business Service</h1>
-    <span class="subtitle">
-      Free Software brand since 2012.
-      <br />
-      A practice of engineering as a sport, an art, for humans.
-      <br />
-      <a href="/#services" class="action">Our Services</a>
-    </span>
-  </div>
-</div>
-
 
 <div class="product-container" style="">
   <div class="homepage-content">

@@ -1,11 +1,33 @@
-<header class="main-header">
-    <a href="{{ .Site.BaseURL }}" title="{{ .Site.Title }}" class="logo">
-        <img src="/img/yourlabs-transparent.png" width="170" height="95" alt="{{ .Site.Title }}">
-    </a>
-    {{ $ctx := . }}
-    {{ with .Site.Menus.main }}
-        {{ range . }}
-        <a href="{{ .URL | relURL }}">{{ .Name }}</a>
-        {{ end }}
+<header class="main-header {{ if .Params.hero }}hero-header transparent{{ end }}">
+  <a href="{{ .Site.BaseURL }}" title="{{ .Site.Title }}" class="logo">
+    <img src="/img/yourlabs-transparent.png" width="170" height="95" alt="{{ .Site.Title }}">
+  </a>
+  {{ $ctx := . }}
+  {{ with .Site.Menus.main }}
+    {{ range . }}
+    <a href="{{ .URL | relURL }}">{{ .Name }}</a>
     {{ end }}
+  {{ end }}
 </header>
+
+{{ if .Params.hero }}
+<div class="hero" style="background-image: url({{ .Params.hero }})">
+  <div class="hero-inner" style="{{ if .Params.hero_overlay }}background-color: rgba({{ .Params.hero_overlay }}){{ end }}">
+  <h1>{{ .Title }}</h1>
+  {{ if .Params.subtitle }}
+    <span class="subtitle">
+      {{ .Params.subtitle }}
+      <br />
+      {{ if .Params.subtitle2 }}
+        {{ .Params.subtitle2 }}
+        <br />
+      {{ end }}
+      {{ if .Params.hero_action_label }}
+      <a href="{{ if .Params.hero_action_url }}{{ .Params.hero_action_url }}{{ else }}#content{{ end }}" class="action">{{ .Params.hero_action_label }}</a>
+      {{ end }}
+    </span>
+    {{ end }}
+  </div>
+</div>
+<span class="anchor" id="content"></span>
+{{ end }}

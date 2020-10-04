@@ -1,34 +1,44 @@
 {{ define "main" }}
-    <main>
-        <article class="container">
-            <h1>{{ .Title }}</h1>
-                {{ if ne .Date.Year 1 }}
-                    <time datetime="{{ replace  ( .Date.Format "2006.07.07" ) "." "-" }}">
-                    {{ .Date.Format "02.01.2006 15:04" }}
-                    </time>
-                {{ end }}
-            {{ if  (isset .Params "author") | and (not (eq .Params.author "")) }}
-            <span> |
-                {{ if eq .Lang "fr" }}par{{ else }}by {{ end }}
-                <a href="{{ "/authors/" | relLangURL }}{{ .Params.author | urlize }}">{{ .Params.author }}</a>
-            </span>
-            {{ end }}
-            {{ if (isset .Params "tags") | and (not (eq .Params.tags ""))}}
-                {{ with .Params.tags }}
-                  |
-                    {{ range . }}
-                    <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
-                    {{ end }}
-                {{ end }}
-            {{ end }}
-            <div>
-                {{ .Content }}
-            </div>
-            {{ with .Site.DisqusShortname }}
-            <div>
-                {{ template "_internal/disqus.html" . }}
-            </div>
-            {{ end }}
-        </article>
+
+<main>
+  <article class="container">
+    <a name="content"></a>
+    {{ if not .Params.hero }}
+    <h1>{{ .Title }}</h1>
+    {{ end }}
+
+    {{ if ne .Date.Year 1 }}
+      <time datetime="{{ replace  ( .Date.Format "2006.07.07" ) "." "-" }}">
+      {{ .Date.Format "02.01.2006 15:04" }}
+      </time>
+    {{ end }}
+
+    {{ if  (isset .Params "author") | and (not (eq .Params.author "")) }}
+    <span> |
+      {{ if eq .Lang "fr" }}par{{ else }}by {{ end }}
+      <a href="{{ "/authors/" | relLangURL }}{{ .Params.author | urlize }}">{{ .Params.author }}</a>
+    </span>
+    {{ end }}
+
+    {{ if (isset .Params "tags") | and (not (eq .Params.tags ""))}}
+      {{ with .Params.tags }}
+        |
+        {{ range . }}
+        <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+        {{ end }}
+      {{ end }}
+    {{ end }}
+
+    <div>
+      {{ .Content }}
+    </div>
+
+    {{ with .Site.DisqusShortname }}
+    <div>
+      {{ template "_internal/disqus.html" . }}
+    </div>
+    {{ end }}
+
+  </article>
 </main>
 {{ end }}

@@ -1,6 +1,10 @@
 ---
-title: Developpement & Developpement Web
+title: Développement & Développement Web
+subtitle: Une méthode de développement itérative à votre rythme
 comments: false
+hero: /img/1312-code-development.jpg
+hero_overlay: 7, 0, 123, .5
+hero_action_label: Our Services
 ---
 
 {{< rawhtml >}}
