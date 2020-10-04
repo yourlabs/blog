@@ -121,14 +121,24 @@ conviviale et ludique dans une esthétique "hacker local".
 
 #### "L'état de l'art pour un développement sur mesure de haute couture"
 
-Python, Django, PHP, Bash, Ansible
-PostgreSQL, MySQL
-HTML, CSS, JavaScript
-Docker, Git, CI/CD, XP,
-Linux, BSD, DOS, Windows 3.11
-...
-
 {{< rawhtml >}}
+<div class="techno">
+<img src="/img/techno/python.svg" alt="python">
+<img src="/img/techno/django.svg" alt="django">
+<img src="/img/techno/php.svg" alt="php">
+<img src="/img/techno/bash.svg" alt="bash">
+<img src="/img/techno/ansible.svg" alt="ansible">
+<img src="/img/techno/pgsql.svg" alt="pgsql">
+<img src="/img/techno/mysql.svg" alt="mysql">
+<img src="/img/techno/html.svg" alt="html">
+<img src="/img/techno/css.svg" alt="css">
+<img src="/img/techno/js.svg" alt="js">
+<img src="/img/techno/git.svg" alt="git">
+<img src="/img/techno/docker.svg" alt="docker">
+<img src="/img/techno/linux.svg" alt="linux">
+<img src="/img/techno/freebsd.svg" alt="bsd">
+</div>
+
 <hr>
 <blockquote>
   <img src="/img/icon-quote.svg" height="36">
