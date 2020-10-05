@@ -1,7 +1,7 @@
 ---
 title: YourLabs Business Service
 subtitle: Free Software brand since 2012.
-subtitle2: A practice of engineering as a sport, an art, for humans.
+subtitle2: Practicing engineering as a sport, an art, for humans.
 comments: false
 headerclass: hero
 hero: /img/backgrounds/pexel-1312.jpg
@@ -31,32 +31,32 @@ a h3 {
     <div class="services">
       <div class="service">
         <img loading="lazy" src="/img/cybersecurity.svg" />
-        <h2>Cyber-Sécurité</h2>
+        <h2>Cyber-Security</h2>
         <ul>
-            <li>Audits personnalisés</li>
-            <li>Contre audits</li>
-            <li>Formations</li>
+            <li>Personalised audits</li>
+            <li>Counter audits</li>
+            <li>Training</li>
             <li>Blackbox, Whitebox</li>
             <li>Standards: OWASP, NIST...</li>
-            <li>Red Team: Protection active</li>
+            <li>Red Team: Active protection</li>
         </ul>
-        <a class="action" href="/secops/">SecOps offers</a>
+        <a class="action" href="/secops/">SecOps Offers</a>
       </div>
       <div class="service">
         <img loading="lazy" src="/img/web_development.svg" />
-        <h2>Développement</h2>
+        <h2>Development</h2>
         <ul>
             <li>
                 Web: frontend, backend
             </li>
             <li>
-                IOT, IA, Blockchain
+                IoT, IA, Blockchain
             </li>
             <li>
-                Création: Directeur Artistique
+                Design: Artistic Director
             </li>
             <li>
-                Maitrise: Lean Sensei
+                Master: Lean Sensei
             </li>
             <li>
                 Scrum, Lean, Kanban, Scrumban
@@ -65,10 +65,10 @@ a h3 {
                 Continuous Integration (CI)
             </li>
             <li>
-                Test Driven Development (TDD)
+                Test-Driven Development (TDD)
             </li>
             <li>
-                eXtreme Programing (XP)
+                eXtreme Programming (XP)
             </li>
         </ul>
         <a class="action" href="/dev/">WebDev Offers</a>
@@ -81,12 +81,12 @@ a h3 {
                 Continuous Delivery (CD)
             </li>
             <li>
-                Réseaux Linux, BSD...
+                Linux, BSD...
             </li>
             <li>ARP, TCP, IP, DNS...</li>
             <li>Containers, Virtualisation...</li>
             <li>GitHub, GitLab, Jenkins...</li>
-            <li>Métriques, Statistiques, KPI...</li>
+            <li>Metrics, Statistics, KPI...</li>
             <li>eXtreme DevOps (XD)</li>
         </ul>
         <a class="action" href="/devops/">DevOps Offers</a>
@@ -100,7 +100,7 @@ a h3 {
     <h2>IT Consulting</h2>
     <div class="container">
       <span class="subtitle">
-        YourLabs Business Service is a consulting company offering various services primarly in IT and registered as a business in France.
+        YourLabs Business Service is a consulting company offering services primarily in IT and registered as a business in France.
       </span>
     </div>
   </div>

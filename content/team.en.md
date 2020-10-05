@@ -8,10 +8,12 @@ comments : false
 <div class="team">
   <div class="team-item">
       <img src="/img/authors/jamesp.png">
+      <p>
       <a href="/authors/jpic/">
         James Pic
       </a>
     : CEO
+      </p>
   </div>
   <div class="team-item">
       <img src="/img/authors/m.png"></img>
@@ -23,7 +25,7 @@ comments : false
   <div class="team-item">
       <img src="/img/authors/magineo.png"></img>
       <p>
-        Eric Grivet
+        <a href="https://magineo.fr">Eric Grivet</a> :
         Marketing & Project Management
       </p>
   </div>
@@ -81,10 +83,10 @@ comments : false
 
 <div class="hero" style="background-image : url(/img/backgrounds/earth.jpg); background-position: center; height: auto; padding: 5rem 0">
   <div class="hero-inner">
-    <h2>Contactez nous</h2>
+    <h2>Contact us</h2>
     <div class="container">
       <span class="subtitle">
-        Ventes : <a href="tel:+33.605.757.226">+33.769.836.100</a>
+        Sales : <a href="tel:+33.605.757.226">+33.769.836.100</a>
         </br>
         Tech (24/7) : <a href="tel:+33.605.757.226">+33.605.757.226</a>
         </br>

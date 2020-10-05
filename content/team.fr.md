@@ -24,7 +24,7 @@ comments  : false
   <div class="team-item">
       <img src="/img/authors/magineo.png"></img>
       <p>
-        <a href="https://manigeo.fr">Eric Grivet</a> :
+        <a href="https://magineo.fr">Eric Grivet</a> :
         Marketing & Project Management
       </p>
   </div>
