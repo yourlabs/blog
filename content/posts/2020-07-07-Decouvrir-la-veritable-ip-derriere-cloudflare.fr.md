@@ -30,7 +30,7 @@ Il y a plusieur technique pour decouvrir l'ip du serveur.
 Un [article](https://www.secjuice.com/finding-real-ips-of-origin-servers-behind-cloudflare-or-tor/) explique ici les methodes (dns history, ssl certs etc).
 
 
-Mais on peut également, sous certaines conditions (voir comment se protger), scanner l'integralité du net (le fameux 0.0.0.0/0) et en comparant le contenu de la page.
+Mais on peut également, sous certaines conditions (voir comment se protger), scanner l'integralité du net  et en comparant le contenu de la page.
 
 exemple avec **curl**:
 
