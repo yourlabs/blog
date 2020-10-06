@@ -97,9 +97,9 @@ conviviale et ludique dans une esthétique "hacker local".
 
 {{< rawhtml >}}
 <blockquote>
-  La beauté est l'ultime défense contre la complexité
+  Le code ne ment jamais, mais les commentaires parfois le font.
   <footer>
-    <i>David Gelernter</i>
+    <i>Ron Jeffries</i>
   </footer>
 </blockquote>
 <hr>
