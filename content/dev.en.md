@@ -1,9 +1,15 @@
 ---
 title: Developpement & Developpement Web
 comments: false
+subtitle: An effective iterative methodolgy
+hero: /img/1312-code-development.jpg
+hero_overlay: 7, 0, 123, .5
+hero_action_label: Our development services
 ---
 
 {{< rawhtml >}}
+</div>
+</article>
 <section>
     <img loading="lazy" src="/img/great_idea.svg" />
     <div>
@@ -58,6 +64,8 @@ comments: false
     </div>
 </section>
 <hr>
+<article class="container">
+<div>
 {{< /rawhtml >}}
 
 ## Sprints de developpement Agile

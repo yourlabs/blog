@@ -1,7 +1,11 @@
 ---
 title: DevOps Business Service
-subtitle: Maintenance en condition opérationnelle, déploiement automatique continu réseau, processeurs, stockage
 comments: false
+subtitle: Maintenance, continuous delivery, computing, storage, networks ...
+hero: /img/1312-devops-background.jpg
+comments: false
+hero_overlay: 216, 0, 235, 0.15
+hero_action_label: Our DevOps Services
 ---
 
 {{< rawhtml >}}

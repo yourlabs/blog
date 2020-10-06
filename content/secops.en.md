@@ -1,7 +1,9 @@
 ---
 title: Cyber Security
-subtitle: Pentest over network
+subtitle: Audit, simulation, prevention, detection, response ...
 comments: false
+hero: /img/1312-cybersecurity.jpg
+hero_action_label: Our security services
 ---
 
 Nothing is safe from hacking: from password hacking to shellcode injection written for a specific occasion, social engineering adding the famous "Chair to keyboard interface" , all means are good for escalating from privilege 0 to vital resources for the company.

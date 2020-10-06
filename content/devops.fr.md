@@ -59,6 +59,8 @@ hero_action_label: Nos Services DevOps
             <li>Plus de frais de licenses !</li>
             <li>1 Chef de Projet</li>
             <li>1 Equipe d'ingénieurs réseaux</li>
+            <li>Plan de continuité d'activité</li>
+            <li>Maintenance en condition opérationnelle</li>
             <li>BigData, Bases de données, Routeurs, VPNs ...</li>
             <li>Backups 3-2-1</li>
             <li>100% sur mesure</li>
