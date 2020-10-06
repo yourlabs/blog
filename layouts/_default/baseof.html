@@ -12,7 +12,7 @@
     {{ with .OutputFormats.Get "RSS" -}}
         {{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
     {{- end }}
-<link href="/main.1a971e99fdb27d901e91.css" rel="stylesheet"><link href="/fonts.css" rel="stylesheet"></head>
+<link href="/main.fe94ec6ff0a8b4efae3f.css" rel="stylesheet"><link href="/fonts.css" rel="stylesheet"></head>
 <body>
     {{ partial "header" . }}
     {{ block "main" . }}{{ end }}
@@ -20,5 +20,5 @@
 
     <link rel="stylesheet" href="{{ "prism.css" | relURL }}">
     <script src="{{ "prism.js" | relURL }}" async="true"></script>
-<script type="text/javascript" src="/main.1a971e99fdb27d901e91.js"></script></body>
+<script type="text/javascript" src="/main.fe94ec6ff0a8b4efae3f.js"></script></body>
 </html>
