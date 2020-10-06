@@ -78,17 +78,10 @@ Nous récoltons vos retours dans le cadre d'une démonstration en fin de Sprint
 afin de vous livrer une version exploitable à la cloture du Sprint.
 
 {{< rawhtml >}}
-<hr>
 <blockquote>
-  <img src="/img/icon-quote.svg" height="36">
-  <br>
-  <br>
-  "La beauté est l'ultime défense contre la complexité"
-  <br>
-  <br>
-  <img alt="The Glider" src="/img/glider.jpg" height="36">
+  La simplicité est un pré-requis pour la fiabilité
   <footer>
-    <i>- David Gelernter</i>
+    <i>Edsger W. Dijkstra</i>
   </footer>
 </blockquote>
 <hr>
@@ -103,25 +96,15 @@ l’Agile Manifesto au niveau internationnal dans le cadre d’une ambiance
 conviviale et ludique dans une esthétique "hacker local".
 
 {{< rawhtml >}}
-<hr>
 <blockquote>
-  <img src="/img/icon-quote.svg" height="36">
-  <br>
-  <br>
-  "La simplicité est un pré-requis pour la fiabilité"
-  <br>
-  <br>
-  <img alt="The Glider" src="/img/glider.jpg" height="36">
+  La beauté est l'ultime défense contre la complexité
   <footer>
-    <i>- Edsger W. Dijkstra</i>
+    <i>David Gelernter</i>
   </footer>
 </blockquote>
 <hr>
-{{< /rawhtml >}}
+<h2>Formations</h2>
 
-#### "L'état de l'art pour un développement sur mesure de haute couture"
-
-{{< rawhtml >}}
 <div class="techno">
 <img src="/img/techno/python.svg" alt="python">
 <img src="/img/techno/django.svg" alt="django">
@@ -141,15 +124,9 @@ conviviale et ludique dans une esthétique "hacker local".
 
 <hr>
 <blockquote>
-  <img src="/img/icon-quote.svg" height="36">
-  <br>
-  <br>
-  "Un programme qui produit des résultats incorrects deux fois plus rapidement est infiniement plus lent"
-  <br>
-  <br>
-  <img alt="The Glider" src="/img/glider.jpg" height="36">
+  Un programme qui produit des résultats incorrects deux fois plus rapidement est infiniement plus lent
   <footer>
-    <i>- John Osterhout</i>
+    <i>John Osterhout</i>
   </footer>
 </blockquote>
 {{< /rawhtml >}}
