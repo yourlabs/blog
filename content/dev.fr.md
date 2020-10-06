@@ -4,7 +4,7 @@ subtitle: Une méthode de développement itérative à votre rythme
 comments: false
 hero: /img/1312-code-development.jpg
 hero_overlay: 7, 0, 123, .5
-hero_action_label: Our Services
+hero_action_label: Nos Services autours du développement
 ---
 
 {{< rawhtml >}}
@@ -21,7 +21,7 @@ hero_action_label: Our Services
             <li>Itération supplémentaire: 500€ T.T.C.</li>
             <li>Éstimations de complexités en "Story Points"</li>
         </ul>
-        <a class="action" href="/#contact">Prendre RDV</a>
+        <a class="action" href="#contact">Prendre RDV</a>
     </div>
 </section>
 <hr>
@@ -39,7 +39,7 @@ hero_action_label: Our Services
             <li>1 entretien de revue et nouvelle livraison</li>
             <li>Option Intégration HTML/CSS: 2.500€ T.T.C.</li>
         </ul>
-        <a class="action" href="/#contact">Prendre RDV</a>
+        <a class="action" href="#contact">Prendre RDV</a>
     </div>
     <img loading="lazy" src="/img/landing_page.svg" />
 </section>
@@ -58,7 +58,7 @@ hero_action_label: Our Services
             <li>2 mois de support et maintenance corrective</li>
             <li>Story Point supplémentaire: 500€ T.T.C.</li>
         </ul>
-        <a class="action" href="/#contact">Prendre RDV</a>
+        <a class="action" href="#contact">Prendre RDV</a>
     </div>
 </section>
 <hr>

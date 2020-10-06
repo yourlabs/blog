@@ -105,33 +105,4 @@ a h3 {
     </div>
   </div>
 </div>
-
-<div class="container" style="padding-bottom: 3.5rem">
-  <h2>They trust YourLabs</h2>
-
-  <div class="homepage-content">
-    <div class="logos">
-      <img src="/img/logo/france-500.jpg" />
-      <img src="/img/logo/accenture.png" />
-      <img src="/img/logo/betagouv.jpg" />
-      <img src="/img/logo/octo-500.png" />
-      <img src="/img/logo/secu.png" />
-    </div>
-  </div>
-</div>
-
-<div class="hero" style="background-image: url(/img/backgrounds/earth-1312.jpg); background-position: center; height: auto; padding: 5rem 0">
-  <div class="hero-inner">
-    <h2>Contact us</h2>
-    <div class="container">
-      <span class="subtitle">
-        Sales: <a href="tel:+33.605.757.226">+33.769.836.100</a>
-        </br>
-        Tech: <a href="tel:+33.605.757.226">+33.605.757.226</a>
-        </br>
-        Email: <a href="mailto:contact@yourlabs.org">contact@yourlabs.org</a>
-      </span>
-    </div>
-  </div>
-</div>
 {{< /rawhtml >}}
