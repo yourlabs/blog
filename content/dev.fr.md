@@ -4,10 +4,12 @@ subtitle: Une méthode de développement itérative à votre rythme
 comments: false
 hero: /img/1312-code-development.jpg
 hero_overlay: 7, 0, 123, .5
-hero_action_label: Nos Services autours du développement
+hero_action_label: Nos Services Développement
 ---
 
 {{< rawhtml >}}
+</div>
+</article>
 <section>
     <img loading="lazy" src="/img/great_idea.svg" />
     <div>
@@ -62,6 +64,8 @@ hero_action_label: Nos Services autours du développement
     </div>
 </section>
 <hr>
+<article class="container">
+<div>
 {{< /rawhtml >}}
 
 ## Sprints de developpement Agile

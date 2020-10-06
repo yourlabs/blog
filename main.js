@@ -13,8 +13,10 @@ for (var i = 0, linksLength = links.length; i < linksLength; i++) {
   }
 }
 
-import InstantClick from 'instantclick'
-InstantClick.init()
+// this breaks some anchor links
+// import InstantClick from 'instantclick'
+// InstantClick.init()
+
 var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
 var doNotTrack = (dnt == "1" || dnt == "yes");
 if (!doNotTrack) {

@@ -1,12 +1,81 @@
 ---
-title: Cyber Sécurité
-subtitle: Pénétration par internet
+title: Cyber Sécurité Offensive
+subtitle: Prévenir, détecter et réagir en cas d'intrusion
 comments: false
+hero: /img/1312-cybersecurity.jpg
+hero_action_label: Nos Services Sécurité
 ---
+
+## Pourquoi la cyber securité ?
 
 Rien n’est impiratable : du piratage de mot de passe à l’injection de shellcode écrit pour une occasion qui se présente, comme des portes qu’ouvrent l’ingénierie sociale ajoutant le fameux facteur humain …
 
 Pour un cyber-criminel : tous les moyens sont bons pour escalader d’un “privilège 0” à des ressources vitales pour l’entreprise. La cyber-défense est un sujet incontournable pour toutes les entreprises et services qui traitent de l’information privée.
+
+{{< rawhtml >}}
+</div>
+</article>
+<hr>
+<section>
+    <img loading="lazy" src="/img/blackbox-audit.svg" />
+    <div>
+        <h2>Audit Blackbox</h2>
+        <ul>
+            <li>1 entretien de formalisation des besoins</li>
+            <li>1 Project Manager</li>
+            <li>1 SecOps</li>
+            <li>Découverte de vulnérabilités</li>
+            <li>Découverte de mots de passes</li>
+            <li>Découverte de problèmes de configuration</li>
+            <li>1 Rapport d'Audit personnalisé</li>
+            <li>Documentation des risques</li>
+            <li>Documentation des mesures préventives</li>
+            <li>1 Contre-Audit</li>
+            <li>Forfait à partir de 2.500€ T.T.C.</li>
+            <li>Livraison 8 à 15 jours</li>
+        </ul>
+        <a class="action" href="#contact">Prendre RDV</a>
+    </div>
+</section>
+<hr>
+<section class="right">
+    <div>
+        <h2>Audit Whitebox</h2>
+        <ul>
+            <li>1 entretien de formalisation des besoins</li>
+            <li>1 Project Manager</li>
+            <li>1 SecOps</li>
+            <li>1 Developpeur</li>
+            <li>Découverte de vulnérabilités</li>
+            <li>Découverte de problèmes de configuration</li>
+            <li>1 Documentation des risques</li>
+            <li>1 Contre-Audit</li>
+            <li>Forfait à partir de 2.500€ T.T.C.</li>
+            <li>Livraison 8 à 15 jours</li>
+        </ul>
+        <a class="action" href="#contact">Prendre RDV</a>
+    </div>
+    <img loading="lazy" src="/img/whitebox-audit.svg" />
+</section>
+<hr>
+<section>
+    <img loading="lazy" src="/img/continuous-protection.svg" />
+    <div>
+        <h2>Protection Continue</h2>
+        <ul>
+            <li>1 entretien de formalisation des besoins</li>
+            <li>Veille, audits reguliers</li>
+            <li>Backups et restauration</li>
+            <li>Réponse en cas d'incident</li>
+            <li>Forfait à partir de 1.000€ T.T.C. / mois</li>
+        </ul>
+        <a class="action" href="#contact">Prendre RDV</a>
+    </div>
+</section>
+<hr>
+<article class="container">
+<div>
+{{< /rawhtml >}}
 
 ## Audits de sécurité ponctuels et continus
 

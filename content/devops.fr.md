@@ -4,9 +4,12 @@ subtitle: Maintenance en condition opérationnelle, déploiement automatique con
 hero: /img/1312-devops-background.jpg
 comments: false
 hero_overlay: 216, 0, 235, 0.15
+hero_action_label: Nos Services DevOps
 ---
 
 {{< rawhtml >}}
+</div>
+</article>
 <section>
     <img loading="lazy" src="/img/it_support.svg" />
     <div>
@@ -64,6 +67,8 @@ hero_overlay: 216, 0, 235, 0.15
     </div>
 </section>
 <hr>
+<article class="container">
+<div>
 {{< /rawhtml >}}
 
 ## Théorie DevOps
