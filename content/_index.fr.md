@@ -1,6 +1,6 @@
 ---
 title: YourLabs Business Service
-subtitle: Marque de logiciels libres depuis 2012
+subtitle: Services numériques depuis 1998
 subtitle2: La pratique d'une ingénierie tel un sport, un art, au service d'êtres humains.
 comments: false
 hero: /img/backgrounds/pexel-1312.jpg
