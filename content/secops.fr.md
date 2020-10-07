@@ -12,7 +12,7 @@ hero_action_label: Nos Services Sécurité
    de risque (note sur 10) de chaque vecteur de pénétration, ainsi que des
    propositions pour les corriger.
 
-2. Corriger les failles à votre rythme et à votre façon, et contactez nous pour
+2. Corrigez les failles à votre rythme et à votre façon, et contactez nous pour
    constater ou si vous avez besoin d'aide.
 
 3. Le **rapport de contre-audit** vous sert de justificatif certifiant de la
