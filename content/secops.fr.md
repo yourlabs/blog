@@ -44,7 +44,7 @@ hero_action_label: Nos Services Sécurité
             <li>1 Contre-Audit</li>
             <li>1 Rapport pour décideur</li>
             <li>Forfait à partir de 5.000€ T.T.C.</li>
-            <li>Livraison 20 à 40 jours</li>
+            <li>Livraison finale 20 à 40 jours</li>
         </ul>
         <a class="action" href="#contact">Prendre RDV</a>
     </div>
@@ -78,7 +78,7 @@ Intégration Continue seront également proposées.
             <li>1 Documentation des risques</li>
             <li>1 Contre-Audit</li>
             <li>Forfait à partir de 5000€ T.T.C.</li>
-            <li>Livraison 8 à 15 jours</li>
+            <li>Livraison finale 20 à 40 jours</li>
         </ul>
         <a class="action" href="#contact">Prendre RDV</a>
     </div>
@@ -114,12 +114,14 @@ de YourLabs Business Service vous offre une protection constante.
     <div>
         <h2>Protection Continue</h2>
         <ul>
-            <li>1 entretien de formalisation des besoins</li>
-            <li>Veille, audits reguliers</li>
-            <li>Backups et restauration</li>
+            <li>Entretien de formalisation des besoins trimestrielle</li>
+            <li>Simulations vastes sur plans bienveillants</li>
+            <li>Formation par collaborateur ludique et sur mesure !</li>
+            <li>Veille, audits et rapports reguliers</li>
+            <li>Aide sur les backups et la restauration</li>
             <li>Réponse en cas d'incident</li>
-            <li>1 présentation sur site par trimestre</li>
-            <li>1 formation sur site par trimestre</li>
+            <li>1 présentation sur site trimestrielle</li>
+            <li>1 formation sur site trimestrelle</li>
             <li>Audit Blackbox mit à jour en continu</li>
             <li>Audit Whitebox mit à jour en continu</li>
             <li>1 Audit des locaux incluse par an</li>
@@ -133,6 +135,37 @@ de YourLabs Business Service vous offre une protection constante.
 <div>
 {{< /rawhtml >}}
 
-**Formation en interne** pour cultiver l'état d'esprit de la sécurité dans un
-cadre convivial et une ambiance ludique, dans une esthétique [hacker
-local](https://www.meetup.com/Angouleme-Hack-Dev-Barcamp-1337/).
+## Formations gratuites !
+
+Cultivons l'état d'esprit de la sécurité dans un cadre convivial et une
+ambiance ludique, dans une esthétique hacker "White Hat".
+
+{{< rawhtml >}}
+</div>
+</article>
+<section>
+    <img loading="lazy" src="/img/continuous-protection.svg" />
+    <div>
+        <h2>Formations Gratuites</h2>
+        <ul>
+            <li>Assembleur et shellcode</li>
+            <li>Attaques réseau</li>
+            <li>Attaques web</li>
+            <li>Crochetage</li>
+            <li>Mise en échec d'alarmes en tout genre</li>
+            <li>Soudure micro, dump, exploit, hardware hacking</li>
+            <li>Caméras, lecteurs DVD, frigidaires intelligents ...</li>
+            <li>Authentiques "White Hat" hackers passionnés</li>
+            <li>Open Source</li>
+            <li>Open Bar</li>
+            <li>Musique live et scène ouverte !</li>
+            <li>Un project YourLabs, association loi 1901 "Club de Sport"</li>
+            <li>"Pratique et partage du hack en tant que sport"</li>
+        </ul>
+        <a class="action" href="https://www.meetup.com/Angouleme-Hack-Dev-Barcamp-1337/">Reserver</a>
+    </div>
+</section>
+<hr>
+<article class="container">
+<div>
+{{< /rawhtml >}}
