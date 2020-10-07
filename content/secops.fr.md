@@ -63,7 +63,8 @@ Des suggestions pour **automatiser la detection de failles de sécurité** en
 Intégration Continue seront également proposées.
 
 {{< rawhtml >}}
-<hr>
+</div>
+</article>
 <section class="right">
     <div>
         <h2>Audit Whitebox</h2>
@@ -106,6 +107,8 @@ avait eu un regard exterieur régulièrement. C'est pourquoi la Red Team interne
 de YourLabs Business Service vous offre une protection constante.
 
 {{< rawhtml >}}
+</div>
+</article>
 <section>
     <img loading="lazy" src="/img/continuous-protection.svg" />
     <div>
