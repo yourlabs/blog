@@ -76,7 +76,7 @@ Intégration Continue seront également proposées.
             <li>Découverte de problèmes de configuration</li>
             <li>1 Documentation des risques</li>
             <li>1 Contre-Audit</li>
-            <li>Forfait à partir de 2.500€ T.T.C.</li>
+            <li>Forfait à partir de 5000€ T.T.C.</li>
             <li>Livraison 8 à 15 jours</li>
         </ul>
         <a class="action" href="#contact">Prendre RDV</a>
@@ -115,6 +115,11 @@ de YourLabs Business Service vous offre une protection constante.
             <li>Veille, audits reguliers</li>
             <li>Backups et restauration</li>
             <li>Réponse en cas d'incident</li>
+            <li>1 présentation sur site par trimestre</li>
+            <li>1 formation sur site par trimestre</li>
+            <li>Audit Blackbox mit à jour en continu</li>
+            <li>Audit Whitebox mit à jour en continu</li>
+            <li>1 Audit des locaux incluse par an</li>
             <li>Forfait à partir de 1.000€ T.T.C. / mois</li>
         </ul>
         <a class="action" href="#contact">Prendre RDV</a>
