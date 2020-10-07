@@ -7,72 +7,6 @@ hero_overlay: 216, 0, 235, 0.15
 hero_action_label: Nos Services DevOps
 ---
 
-{{< rawhtml >}}
-</div>
-</article>
-<section>
-    <img loading="lazy" src="/img/it_support.svg" />
-    <div>
-        <h2>Hébergement</h2>
-        <ul>
-            <li>Formalisation des besoins</li>
-            <li>Linux, BSD, Cloud ...</li>
-            <li>Monitoring système & réseau</li>
-            <li>Mises à jours système & réseau</li>
-            <li>Monitoring applicatif</li>
-            <li>Mises à jours applicatives</li>
-            <li>Backups externes chiffrées</li>
-            <li>Restauration de backups</li>
-            <li>Support 24/7</li>
-            <li>Forfait à partir de 2.000€ T.T.C. / an par serveur</li>
-        </ul>
-        <a class="action" href="#contact">Prendre RDV</a>
-    </div>
-</section>
-<hr>
-<section class="right">
-    <div>
-        <h2>Pipeline CI/CD</h2>
-        <ul>
-            <li>GitHub, GitLab, Jenkins ...</li>
-            <li>1 Dir. Tech. Sensei Lean</li>
-            <li>Formalisation des besoins</li>
-            <li>3 déploiements inclus: preprod, prod, demo</li>
-            <li>20+ ans d'experience</li>
-            <li>Création de pipeline: 2.000€ T.T.C</li>
-            <li>Livraison en 8 jours</li>
-            <li>Formation de votre équipe</li>
-            <li>Maintenance de pipeline: 1.000€ T.T.C / mois</li>
-            <li>Support heures ouvrées</li>
-        </ul>
-        <a class="action" href="#contact">Prendre RDV</a>
-    </div>
-    <img loading="lazy" src="/img/pipeline.svg" />
-</section>
-<hr>
-<section>
-    <img loading="lazy" src="/img/online_storage.svg" />
-    <div>
-        <h2>Infrastructure & Réseau</h2>
-        <ul>
-            <li>Passez sur du logiciel libre !</li>
-            <li>Plus de frais de licenses !</li>
-            <li>1 Chef de Projet</li>
-            <li>1 Equipe d'ingénieurs réseaux</li>
-            <li>Plan de continuité d'activité</li>
-            <li>Maintenance en condition opérationnelle</li>
-            <li>BigData, Bases de données, Routeurs, VPNs ...</li>
-            <li>Backups 3-2-1</li>
-            <li>100% sur mesure</li>
-        </ul>
-        <a class="action" href="#contact">Prendre RDV</a>
-    </div>
-</section>
-<hr>
-<article class="container">
-<div>
-{{< /rawhtml >}}
-
 ## Théorie DevOps
 
 La philosophie DevOps promeut le renforcement du travail d'équipe par le
@@ -97,24 +31,41 @@ Notre service DevOps Infrastructure & Réseau est bati sur les
     <i>Keith Braithwaite</i>
   </footer>
 </blockquote>
+
+</div>
+</article>
+
+<section>
+    <img loading="lazy" src="/img/it_support.svg" />
+    <div>
+        <h2>Petit Hébergement</h2>
+        <ul>
+            <li>Formalisation des besoins</li>
+            <li>Linux, BSD, Cloud ...</li>
+            <li>Monitoring / Alerting système & réseau</li>
+            <li>Mises à jours système & réseau</li>
+            <li>Maintien en Condition Opérationnelle</li>
+            <li>Monitoring applicatif</li>
+            <li>Mises à jours applicatives</li>
+            <li>Backups externes chiffrées</li>
+            <li>Restauration de backups</li>
+            <li>Support heures ouvrées</li>
+            <li>Forfait à partir de 1.000€ T.T.C. / an par serveur</li>
+        </ul>
+        <a class="action" href="#contact">Prendre RDV</a>
+    </div>
+</section>
+<article class="container">
+<div>
 <hr>
 {{< /rawhtml >}}
+
 
 ## Déploiement Continu
 
 L'équipe infrastructure & réseau configure une pipeline de Déploiement Continu
 pour activer le "push to deploy" sur le code de votre logiciel: c'est aussi
 connu sous le nom de Sprint 0.
-
-{{< rawhtml >}}
-<blockquote>
-  La simplicité est un pré-requis pour la fiabilité
-  <footer>
-    <i>Edsger W. Dijkstra</i>
-  </footer>
-</blockquote>
-<hr>
-{{< /rawhtml >}}
 
 ## Pipeline CI/CD
 
@@ -123,20 +74,53 @@ et automatise le controle qualité ainsi que la sauvegarde pendant la phase de
 pré-deploiement de vos nouvelles versions.
 
 {{< rawhtml >}}
+</div>
+</article>
+<section class="right">
+    <div>
+        <h2>Pipeline CI/CD</h2>
+        <ul>
+            <li>GitHub, GitLab, Jenkins ...</li>
+            <li>Formalisation des besoins</li>
+            <li>3 serveurs inclus: preprod, prod, demo</li>
+            <li>20+ ans d'experience</li>
+            <li>Création de pipeline: 2.000€ T.T.C</li>
+            <li>Livraison en 8 jours</li>
+            <li>Formation de votre équipe</li>
+            <li>Maintenance de pipeline: 1.000€ T.T.C / mois</li>
+            <li>Support heures ouvrées</li>
+        </ul>
+        <a class="action" href="#contact">Prendre RDV</a>
+    </div>
+    <img loading="lazy" src="/img/pipeline.svg" />
+</section>
+<article class="container">
+<div>
+<hr>
+{{< /rawhtml >}}
+
+## Infrastructure et Réseau
+
+Nous proposons une altérnative au cout des licenses infrastructurelles grace à
+une expertise Open Source et systèmes UNIX.
+
+{{< rawhtml >}}
 <blockquote>
   Unix est simple. Mais il faut du génie pour en comprendre la simplicité.
   <footer>
     <i>Dennis Ritchie</i>
   </footer>
 </blockquote>
-<hr>
 {{< /rawhtml >}}
 
-## Monitoring, alerting
+### "Infrastructure as Code"
 
 Nous transformons tout déploiement (et appreciant les défis), en déploiement
 reproductible et automatique, persistents ou éphemères, pour vos propres
-applicatifs comme pour vos outils de monitoring, réseau, infrastructure…
+applicatifs comme pour vos outils de monitoring, réseau, infrastructure… C'est
+le "Infrastructure as Code", avec le "push-to-deploy" et ses amis comme le
+"Test Driven Development". Nous proposons aussi une maintenance de niveau
+contributeur sur tout logiciel Open Source.
 
 {{< rawhtml >}}
 <blockquote>
@@ -145,6 +129,30 @@ applicatifs comme pour vos outils de monitoring, réseau, infrastructure…
     <i>Ken Thompson</i>
   </footer>
 </blockquote>
+</div>
+</article>
+<section>
+    <img loading="lazy" src="/img/online_storage.svg" />
+    <div>
+        <h2>Infrastructure & Réseau</h2>
+        <ul>
+            <li>Passez sur du logiciel libre !</li>
+            <li>Fini les frais de licenses !</li>
+            <li>Un réseau d'experts à votre écoute !</li>
+            <li>1 Chef de Projet</li>
+            <li>Entretien de formalisation des besoins</li>
+            <li>1 Equipe d'ingénieurs réseaux, selon les besoins</li>
+            <li>Plan de continuité d'activité</li>
+            <li>Maintenance en condition opérationnelle</li>
+            <li>BigData, Bases de données, Routeurs, VPNs ...</li>
+            <li>Backups 3-2-1</li>
+            <li>100% sur mesure</li>
+        </ul>
+        <a class="action" href="#contact">Prendre RDV</a>
+    </div>
+</section>
+<article class="container">
+<div>
 <hr>
 {{< /rawhtml >}}
 
@@ -181,21 +189,6 @@ fluidifient la communication au sein de vos équipes.
   La vie est trop courte pour utiliser du logiciel proprietaire
   <footer>
     <i>Bdale Garbee</i>
-  </footer>
-</blockquote>
-<hr>
-{{< /rawhtml >}}
-
-## Maintien en Condition Opérationnelle
-
-Un minimum de 10 JH par ans sont necessaires au maintien en condition
-opérationnelle de votre projet pour être sous la responsabilité de YBS.
-
-{{< rawhtml >}}
-<blockquote>
-  Le code ne ment jamais, mais les commentaires parfois le font.
-  <footer>
-    <i>Ron Jeffries</i>
   </footer>
 </blockquote>
 <hr>
