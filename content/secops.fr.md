@@ -144,7 +144,7 @@ ambiance ludique, dans une esthétique hacker "White Hat".
 </div>
 </article>
 <section>
-    <img loading="lazy" src="/img/continuous-protection.svg" />
+    <img loading="lazy" src="/img/camping.svg" />
     <div>
         <h2>Formations Gratuites</h2>
         <ul>

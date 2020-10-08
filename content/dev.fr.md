@@ -11,7 +11,8 @@ hero_action_label: Nos Services Développement
 <blockquote>
   On me demande toujours ce qu'on fait, mais au bout de 20 ans de
   carierre à relever des défis informatiques j'ai envie de demander ce
-  qu'on ne fait PAS tant notre réseau de compétences est vaste !
+  qu'on ne fait PAS tant notre réseau de compétences s'est diversifié au fil du
+  temps !
   <br>
   <footer>
     <i>James Pic, Consultant YBS & Fondateur de YourLabs</i>
@@ -39,6 +40,8 @@ la carte plutôt qu'en Jour-Homme sur des profils particuliers.
 </div>
 <article class="container">
 {{< /rawhtml >}}
+
+## La Méthode à la carte
 
 Vous pouvez composer votre offre à partir de nos divers forfaits qui,
 conjointement, vous proposent un accompagnement complêt de l'idée au
@@ -82,14 +85,13 @@ modèle d'entreprise: il permet de commencer à servir ses premiers clients.
 <br>
 <br>
 <article class="container" id="agile">
-<div>
 {{< /rawhtml >}}
 
 ## La "Maitrise d'ouvrage Agile"
 
 La maitrise d'ouvrage est une mission de communication et d'enquête de besoins
-dans un premier temps. Elle commence par la documentation des spécifications au
-format Agile: "Epics" et "User Stories".
+dans un premier temps. Elle commence par la documentation des besoins au format
+Agile.
 
 Concrêtement, c'est un profil technico-commercial qui dont la responsabilité
 est la qualité de votre développement et qu'il réponde à vos attentes.
@@ -101,6 +103,15 @@ inscrite **que** si elle fait l'unanimité entre les developpeurs !
 
 Ce document vous servira à commencer un "Sprint de developpement Agile" avec
 YourLabs Business Service et demander des devis à d'autres developpeurs.
+
+{{< rawhtml >}}
+<blockquote>
+  Il y a deux façons de construire une architecture logicielle: l'une est de la faire tellement simple qu'il n'y évidemment aucune faille, l'autre est de la faire si compliquée qu'il n'y a aucune faille évidente.
+  <footer>
+    <i>Sir Charles Antony Richard Hoare, Lecture ACM Turing Award 1980</i>
+  </footer>
+</blockquote>
+{{< /rawhtml >}}
 
 ### Les "Epics" et "User Stories"
 
@@ -114,6 +125,23 @@ l'Epic "Authentification" implique les User Stories suivantes:
 - l'usager peut s'authentifier
 - l'usager peut refaire son mot de passe par mail en cas d'oubli,
 - l'administrateur peut gérer les utilisateurs dans l'interface d'administration,
+
+La documentation des besoins au format Agile est composée d'Epics et de User
+Stories (US).
+
+{{< rawhtml >}}
+</article>
+<div class="hero" style="height: auto">
+  <div class="hero-inner">
+    <h2 style="color: #555">Des questions ?</h2>
+    <p>
+      <a class="action" href="#contact">Contactez-nous !</a>
+    </p>
+  </div>
+</div>
+<br>
+<article class="container">
+{{< /rawhtml >}}
 
 ### Les "Story Points"
 
@@ -129,22 +157,13 @@ un sujet vraiment vu et revu et il n'y a vraiment rien à inventer ici en règle
 générale.
 
 {{< rawhtml >}}
-<blockquote>
-  Il y a deux façons de construire une architecture logicielle: l'une est de la faire tellement simple qu'il n'y évidemment aucune faille, l'autre est de la faire si compliquée qu'il n'y a aucune faille évidente.
-  <footer>
-    <i>Sir Charles Antony Richard Hoare, Lecture ACM Turing Award 1980</i>
-  </footer>
-</blockquote>
-{{< /rawhtml >}}
-
-{{< rawhtml >}}
 </div>
 </article>
 
 <section>
     <img loading="lazy" src="/img/great_idea.svg" />
     <div>
-        <h2>Forfait Maitrise d'Ouvrage MVP</h2>
+        <h2>Forfait Maitrise d'Ouvrage</h2>
         <ul>
             <li>Forfait à partir de 2.500€ H.T.</li>
             <li>1 Project Manager</li>
@@ -153,6 +172,8 @@ générale.
             <li>1 entretien de revue et nouvelle livraison incluse</li>
             <li>500€ H.T. par itération supplémentaire</li>
             <li>Estimations de complexités en "Story Points"</li>
+            <li>Assistance pendant le développement</li>
+            <li>Jusqu'à votre validation !</li>
         </ul>
         <a class="action" href="#contact">Prendre RDV</a>
     </div>
@@ -169,9 +190,17 @@ base selon les normes de Material Design, un standard graphique inventé et
 maintenu par Google.
 
 Votre interface sera donc aussi agréable à utiliser qu'un produit Google sans
-frais supplémentaire, mais nous proposons également le design de maquettes.
+frais supplémentaire, cependant nous proposons également le design de
+maquettes.
 
 {{< rawhtml >}}
+
+<blockquote>
+  La simplicité est la sophistication ultime.
+  <footer>
+    <i>Leonardo da Vinci</i>
+  </footer>
+</blockquote>
 </article>
 </div>
 <section class="right">
@@ -184,8 +213,7 @@ frais supplémentaire, mais nous proposons également le design de maquettes.
             <li>1 <a href="https://magineo.fr" title="Agence de communication">Directeur Artistique Magineo</a></li>
             <li>5 pages incluses</li>
             <li>1 entretien de formalisation des besoins</li>
-            <li>Livraison des maquettes en 8 à 15 jours</li>
-            <li>1 entretien de revue et nouvelle livraison</li>
+            <li>Livraison des maquettes en 5 à 10 jours</li>
         </ul>
         <a class="action" href="#contact">Prendre RDV</a>
     </div>
@@ -193,13 +221,6 @@ frais supplémentaire, mais nous proposons également le design de maquettes.
 </section>
 <article class="container" id="sprint">
 <div>
-
-<blockquote>
-  La simplicité est la sophistication ultime.
-  <footer>
-    <i>Leonardo da Vinci</i>
-  </footer>
-</blockquote>
 <hr>
 {{< /rawhtml >}}
 
@@ -213,16 +234,19 @@ Vous pouvez donc commencer un sprint de développement informatique dont
 l'aboutissement sera votre Produit Minimum Viable ou bien une nouvelle version
 majeure de celui-ci.
 
+Informez le maitre d'oeuvre de vos priorités, les developpeurs peuvent
+s'engager ce qui ouvre le sprint et votre développement commence enfin !
+
 {{< rawhtml >}}
 </article>
 </div>
 <section>
     <img loading="lazy" src="/img/code_development.svg" />
     <div>
-        <h2>Programmation Agile</h2>
+        <h2>Sprint Agile</h2>
         <ul>
             <li>Sprint à 10.000€ H.T.</li>
-            <li>15 Story Points</li>
+            <li>15 Story Points inclus</li>
             <li>1 entretien de priorisation</li>
             <li>Prises d'engagements</li>
             <li>Livraison en 1 à 2 mois</li>
@@ -248,9 +272,8 @@ majeure de celui-ci.
 
 ## La "Revue"
 
-Le "Sprint" se cloture par une revue, c'est à dire un entretient dans lequel on
-teste ensemble sous le regard avisé du maitre d'oeuvre qui releve votre retour
-d'experience.
+Le "Sprint" se cloture par une revue, c'est à dire un entretient pour que
+l'équipe vous présente le résultat du développement.
 
 C'est le moment de dire tout ce qui compte vraiment pour vous ! Car nous
 effectuerons les changements dont vous avez besoin dans les jours suivants la
@@ -260,16 +283,38 @@ Ne vous inquiêtez pas si vous oubliez quelque chose car vous avez encore 2 mois
 de garantie après la revue pour rapporter les bugs que vous ou vous usagers
 découvrent sur votre projet.
 
+{{< rawhtml >}}
+</article>
+<div class="hero" style="height: auto">
+  <div class="hero-inner">
+    <h2 style="color: #555; font-size: 1.8rem">Vous êtes paré à commencer</h2>
+    <p>
+      <a class="action" href="#contact">Contactez-nous pour démarrer !</a>
+    </p>
+  </div>
+</div>
+<br>
+<article class="container">
+{{< /rawhtml >}}
+
+Vous souhaitez plus de détails techniques sur notre méthode ?
+
+Vous voulez apprendre le jargon des professionnels ?
+
+Alors c'est parti !
+
 ## Le "Continuous Delivery"
 
 Un "Déploiement" est le fait de mettre du code au service d'utilisateurs, et
 peut necessiter la mise à jour de données ou de structure de base de données:
-ce sont les migrations.
+les "migrations".
 
 La "Livraison Continue" est une pratique qui consiste tout simplement à
 automatiser les déploiements: un developpeur vous livre du code ? Vous n'avez
 plus qu'un bouton à cliquer pour le déployer sur votre site principal dit "de
 production" si vous êtes satisfaits des modifications.
+
+## Le "Test Driven Development" et ses amis
 
 {{< rawhtml >}}
 <blockquote>
@@ -278,10 +323,7 @@ production" si vous êtes satisfaits des modifications.
     <i>John Osterhout</i>
   </footer>
 </blockquote>
-<hr>
 {{< /rawhtml >}}
-
-## Le "Test Driven Development" et ses amis
 
 Lorsqu'un bug qui a été corrigé revient on l'appelle "une regression". Comment
 s'en prémunir ? La première chose à faire n'est pas de juste corriger le bug
@@ -305,15 +347,6 @@ Tout notre code de production est livré avec son équivalent en code de test, c
 qui nous permet de savoir si on casse quelque chose ou pas à chaque fois qu'on
 veut modifier le code du projet !
 
-{{< rawhtml >}}
-<blockquote>
-  Debugger est deux fois plus difficile que d'écrire du code, donc si vous écrivez du code aussi intelligement que vous pouvez, vous n'êtes, par définition, pas assez intelligent pour le debugger.
-  <footer>
-    <i>Brian W. Kernighan et P. J. Plauger dans "The Elements of Programming Style".</i>
-  </footer>
-</blockquote>
-{{< /rawhtml >}}
-
 ## La "Continuous Integration"
 
 L'"Intégration Continue" est une pratique qui consiste à automatiser
@@ -324,6 +357,28 @@ Si une modif casse un test alors le developpeur est bloqué et ne peut pas
 envoyer les modifications en production: c'est une ligne de vie, un garde fou
 auquel on s'accroche pour éviter de chavirer quand on veut mettre votre code à
 jour.
+
+{{< rawhtml >}}
+
+<blockquote>
+  Le code ne ment jamais, mais les commentaires parfois le font.
+  <footer>
+    <i>Ron Jeffries</i>
+  </footer>
+</blockquote>
+</article>
+
+<div class="hero" style="height: auto">
+  <div class="hero-inner">
+    <h2 style="color: #555; font-size: 1.6rem">Vous me semblez fort passionné</h2>
+    <p>
+      <a class="action" href="#barcamp">Rejoignez-nous !</a>
+    </p>
+  </div>
+</div>
+<br>
+<article class="container">
+{{< /rawhtml >}}
 
 ## Nos Technologies de choix
 
@@ -336,6 +391,15 @@ Grace à uWSGI, le projet a déjà un cron, un spooler et un cache memoire natif
 disposition pour permettre d'orchestrer des calculs déclenchés de manière
 fantasiste selon les besoins des porteurs de projets plus créatifs les uns que
 les autres n'est-ce-pas ?
+
+{{< rawhtml >}}
+<blockquote>
+  Debugger est deux fois plus difficile que d'écrire du code, donc si vous écrivez du code aussi intelligement que vous pouvez, vous n'êtes, par définition, pas assez intelligent pour le debugger.
+  <footer>
+    <i>Brian W. Kernighan et P. J. Plauger<br>"The Elements of Programming Style"</i>
+  </footer>
+</blockquote>
+{{< /rawhtml >}}
 
 {{< rawhtml >}}
 <div class="techno">
@@ -354,12 +418,41 @@ les autres n'est-ce-pas ?
 <img src="/img/techno/linux.svg" alt="linux">
 <img src="/img/techno/freebsd.svg" alt="bsd">
 </div>
+<hr id="barcamp">
+{{< /rawhtml >}}
 
-<blockquote>
-  Le code ne ment jamais, mais les commentaires parfois le font.
-  <footer>
-    <i>Ron Jeffries</i>
-  </footer>
-</blockquote>
+## BarCamp
+
+Un "BarCamp" est une rencontre, une non-conférence ouverte, qui prend la forme
+d'ateliers-événements participatifs où le contenu est fourni par des
+participants.
+
+C'est à dire qu'on se rencontre dans un contexte informel et qu'on échanges sur
+nos passions en informatique. Cultivons la connaissance qui se multiplie quand
+on la partage dans un cadre convivial et une ambiance ludique.
+
+{{< rawhtml >}}
+</div>
+</article>
+<section>
+    <img loading="lazy" src="/img/camping.svg" />
+    <div>
+        <h2>BarCamp Dev</h2>
+        <ul>
+            <li>Tout language de programmation accepté</li>
+            <li>Tout framework accepté</li>
+            <li>Tout système & réseaux accepté</li>
+            <li>Soudure micro, dump, exploit, hardware hacking</li>
+            <li>Authentiques "White Hat" hackers passionnés</li>
+            <li>Open Source, Open Bar</li>
+            <li>Musique live et scène ouverte !</li>
+            <li>Un project YourLabs, association loi 1901 "Club de Sport"</li>
+            <li>"Pratique et partage du hack en tant que sport"</li>
+        </ul>
+        <a class="action" href="https://www.meetup.com/Angouleme-Hack-Dev-Barcamp-1337/">Reserver</a>
+    </div>
+</section>
 <hr>
+<article class="container">
+<div>
 {{< /rawhtml >}}
