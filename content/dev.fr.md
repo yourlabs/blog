@@ -44,9 +44,6 @@ Vous pouvez composer votre offre à partir de nos divers forfaits qui,
 conjointement, vous proposent un accompagnement complêt de l'idée au
 developpement d'un "Produit Minimum Viable" à partir de 15.000€ H.T.
 
-C'est notre manière de rendre aux porteurs de projets avec lesquels nous avons
-vécus tant d'aventures plus épanouissantes les unes que les autres.
-
 ## Le "Produit Minimum Viable"
 
 Le produit minimum viable (ou MVP, de l'anglais : minimum viable product) est
@@ -208,14 +205,13 @@ frais supplémentaire, mais nous proposons également le design de maquettes.
 
 ## Le "Sprint" de developpement Agile
 
-Vous avez à ce stade un document de spécifications au format Agile avec les
-estimations pour chacune de vos user stories grace à la maitrise d'ouvrage, et
-optionnelement des maquettes.
+Vous avez à ce stade un document de spécifications au format Agile à jour avec
+les estimations pour chacune de vos user stories grace à la maitrise d'ouvrage,
+et optionnelement des maquettes.
 
-Vous avez un sprint de base sur
-lequel vous pouvez embarquer 15 Story Points sur le forfait de base, cela
-sera assez pour un prototype (["Produit Minimum
-Viable"](https://fr.wikipedia.org/wiki/Produit_minimum_viable)).
+Vous pouvez donc commencer un sprint de développement informatique dont
+l'aboutissement sera votre Produit Minimum Viable ou bien une nouvelle version
+majeure de celui-ci.
 
 {{< rawhtml >}}
 </article>
