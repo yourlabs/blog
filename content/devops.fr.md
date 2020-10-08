@@ -35,7 +35,7 @@ Notre service DevOps Infrastructure & Réseau est bati sur les
 </div>
 </article>
 
-<section>
+<section id="hebergement">
     <img loading="lazy" src="/img/it_support.svg" />
     <div>
         <h2>Petit Hébergement</h2>
