@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{{ .Title }}</title>
-    {{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+    {{ if ne .URL "/posts/" }}
+      {{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+    {{ else }}
+      <meta name='description' content="Yourlabs blog with posts about Continuous integration, Developpement, DevOps, Infra, Security, Automation">
+    {{ end }}
     {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
     <link rel="stylesheet" href="{{ "fonts.css" | relURL }}">
     <link rel="icon" href="/favicon.ico" >
