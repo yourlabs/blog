@@ -1,17 +1,22 @@
 +++
-date = "2019-11-22T13:33:37+00:00"
+date = "2020-10-12T13:33:37+00:00"
 draft = false
 tags = ["django-autocomplete-light", "python", "django"]
 title = "django-autocomplete-light 3.8.0 release"
 author = "jpic"
 +++
 
+**WARNING** 3.8.0 did not contain the proper built JS, please use 3.8.1 that
+was just released.
+
 [Django-autocomplete-light](https://github.com/yourlabs/django-autocomplete-light)
 3.8.0 was released, and features all your contributions of the year, and tested
 with a pre-release for the last 3 months or so.
 
 It promises to fix all your JS loading issues, but comes at the price of a
-small **backward compatibility breaks** affecting users with custom init functions.
+small **backward compatibility breaks** affecting users with custom init
+functions. If unsure: you probably don't have any and the upgrade should just
+work for you.
 
 As you will see, this is a pretty big release, we'll also briefly talk about
 the future of django-autocomplete-light in this post.
@@ -83,14 +88,30 @@ more like what we had in DAL 1 & 2, it's here:
 Demo: https://oss.yourlabs.me/autocomplete-light/
 Source: https://yourlabs.io/oss/autocomplete-light
 
+The input will have your input design by default (because Shadow Root is not
+activated on this component).
+
+Other reasons why shadow root is not enabled yet:
+
+- I didn't know all available features of CSS variables when I started the PoC
+- I kind of remember that Shadow Root prevented plain form POST from working,
+  but I'm not so sure about that and I can still try again ;)
+
+You can test it in the alight branch of the django-autocomplete-light
+repository.
+
 For those who remember, this solves **exactly** the same problems that
 jquery-autocomplete-light did, except it's a lightweight StencilJS
 WebComponent now, as such, we won't have any initialization code for that (it's
 done by the browser).
 
+So, you will be able to use that to get a nice global navigation search in the
+top bar in again, with server side rendering.
+
 ## Thanks
 
 Thank you deeply to all contributors, I mean, I'm still shocked to read that
 some users have just upgraded from 2.x to 3.x, does that mean they've had the
-jquery-autocomplete-light script in production for potentially 8 years ? It's
-mind blowing, you are amazing !
+jquery-autocomplete-light script in production for potentially 8 years ?
+
+It's mind blowing, you are amazing !
