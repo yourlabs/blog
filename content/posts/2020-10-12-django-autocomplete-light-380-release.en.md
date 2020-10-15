@@ -77,10 +77,7 @@ Anyway, it lets me upload on 3.8.0, one of the last 3.x medium releases !
 
 But don't worry, 4.0 will not break anything, it will merely add a new
 autocomplete script for people who want out of select2 or want something
-more like what we had in DAL 1 & 2, it's here:
-
-Demo: https://oss.yourlabs.me/autocomplete-light/
-Source: https://yourlabs.io/oss/autocomplete-light
+more like what we had in DAL 1 & 2 [Demo](http://oss.yourlabs.me/autocomplete-light/) [Source](https://yourlabs.io/oss/autocomplete-light)
 
 The input will have your input design by default (because Shadow Root is not
 activated on this component).
