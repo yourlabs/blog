@@ -30,19 +30,11 @@ functions](https://django-autocomplete-light.readthedocs.io/en/master/tutorial.h
 
 ## Backward compatibility break
 
-If you don't have custom init functions then you have nothing to do.
+If you don't have [custom javascript functions](https://django-autocomplete-light.readthedocs.io/en/master/tutorial.html#overriding-javascript-code)
+then you have nothing to do.
 
-If you have custom init functions you need to add something like:
-
-```js
-document.addEventListener('dal-init-function', function () {
-    yl.registerFunction( 'select2', function ($, element) {
-        // autocomplete function here
-    });
-})
-```
-
-Then, change your custom init with:
+If you have custom javascript functions you need to register your function so
+that it works in 3.8.0, change your init code to something like:
 
 ```js
 document.addEventListener('dal-init-function', function () {
@@ -52,6 +44,8 @@ document.addEventListener('dal-init-function', function () {
     });
 })
 ```
+
+Read more in [documentation](https://django-autocomplete-light.readthedocs.io/en/master/tutorial.html#overriding-javascript-code)
 
 ## Changelog
 
