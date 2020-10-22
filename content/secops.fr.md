@@ -8,7 +8,7 @@ hero_action_label: Nos Services Sécurité
 
 ## Audits de sécurité ponctuels et continus
 
-1. Le **rapport d'audit** présente analyse les résultats et détermine le niveau
+1. Le **rapport d'audit** présente une analyse des résultats et détermine le niveau
    de risque (note sur 10) de chaque vecteur de pénétration, ainsi que des
    propositions pour les corriger.
 
