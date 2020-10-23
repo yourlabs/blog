@@ -2,7 +2,7 @@
 date = "2020-03-23T10:27:00+00:00"
 draft = false
 tags = ['securité']
-title = "Yourlabs security 1/3"
+title = "RubberDucky"
 author = "Claw"
 +++
 
@@ -13,7 +13,7 @@ author = "Claw"
 
 
 Il ressemble à une clef usb d'apparence anodine mais il s'agit en realité d'un clavier scripté capable de tapper plus de 1000mots par minute.
-Il contient une carte memoire qui contient notre script et marche très bien sur tout OS même à jour. 
+Il contient une carte memoire qui contient notre script et marche très bien sur tout OS même à jour.
 
 ![](/img/sec/ducky.png)
 
@@ -30,7 +30,7 @@ Il contient une carte memoire qui contient notre script et marche très bien sur
 Exemple de script RubberDucky:
 
 ```text
-DELAY 700                        // Attendre 700 ms 
+DELAY 700                        // Attendre 700 ms
 ESCAPE                           // Tapper Echap
 DELAY 100                        // Attendre 100ms
 CONTROL ESCAPE                   // Ouvrir le menu Démarer
@@ -89,7 +89,7 @@ Une fois pret on utilise un petit server http pour que la victime puisse telecha
 
 (clické sur les images pour voir les videos)
 
-#### Conclusion: 
+#### Conclusion:
 
 Ne ramassez pas les clefs usb que vous trouvez dans la rue
 
@@ -99,13 +99,13 @@ Ne ramassez pas les clefs usb que vous trouvez dans la rue
 
 ### Usages
 
-- Vol de mots de passe firefox 
-- Keylogger 
-- Screen capture 
-- Downloader et uploader des fichiers 
-- Implementation d'un ransomeware 
-- Reconnaissance et mouvement transversaux dans le reseau 
-- ... 
+- Vol de mots de passe firefox
+- Keylogger
+- Screen capture
+- Downloader et uploader des fichiers
+- Implementation d'un ransomeware
+- Reconnaissance et mouvement transversaux dans le reseau
+- ...
 
 
 ### Vol de mots de passe Firefox

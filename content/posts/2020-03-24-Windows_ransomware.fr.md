@@ -2,7 +2,7 @@
 date = "2020-03-23T10:32:00+00:00"
 draft = false
 tags = ['securité']
-title = "Yourlabs security 2/3"
+title = "Ransomware"
 author = "Claw"
 +++
 
@@ -10,7 +10,7 @@ author = "Claw"
 
 Un rançongiciel de l'anglais ransomware, logiciel de rançon ou logiciel d'extorsion, est un logiciel malveillant qui prend en otage des données personnelles.
 
-- chiffrement symétrique des fichiers avec une clef aleatoire 
+- chiffrement symétrique des fichiers avec une clef aleatoire
 - chiffrement asymétrique de la clef avec un certificat public
 - seul le détenteur du certificat privé dechiffrera la clef
 - tout faire en mémoire pour ne laisser aucune trace sur le disque
@@ -238,12 +238,12 @@ foreach ($i in $(Get-ChildItem /users/$env:USERNAME -recurse -include *.LCK_666 
 
 #### Conclusion
 
-- pas besoin de vulnérabilité logicielle 
+- pas besoin de vulnérabilité logicielle
 - si ce n'est l'accès physique
 - négligence, lockpicking, social engineering ...
 - necessite compétences variées et combinées
 <!--  -->
 
 - [Partie 1: RubberDucky](/posts/2020-03-24-rubberducky/)
-- [Partie 3: SSL mitm](/posts/2020-03-24-ssl_mitm/)            
+- [Partie 3: SSL mitm](/posts/2020-03-24-ssl_mitm/)
 
