@@ -116,4 +116,5 @@ qui construisent l'internet libre que nous connaissons aujourd'hui est celle
 que les professionnels ont standardisé: ce sont les virtuoses de l'informatique
 et du logiciel libre.
 
-Le reste n'est que fiction, fantasme, ou tout simplement: de la cybercriminalité.
+Le reste n'est que folklore, fantasme, ou tout simplement: de la criminalité,
+le terme "cybercriminalité" est également accepté.
