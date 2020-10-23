@@ -47,6 +47,7 @@ languagename = "English"
 title = "Yourlabs Business Service"
 weight = 0
 baseurl = "https://yourlabs.org"
+description = "Free Software brand since 2012. A practice of engineering as a sport, an art, for humans."
 
 [[Languages.en.menu.main]]
     name = "Services"
@@ -68,6 +69,7 @@ languagename = "Français"
 title = "Yourlabs Business Service"
 weight = 1
 baseurl = "https://yourlabs.fr"
+description = "Services numériques depuis 1998. La pratique d'une ingénierie tel un sport, un art, au service d'êtres humains."
 
 [[Languages.fr.menu.main]]
     name = "Services"
