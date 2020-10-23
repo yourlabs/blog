@@ -16,8 +16,8 @@ Explications dans ce billet.
 ## Serrurier != Cambrioleur
 
 Les serruriers ne sont pas systématiquement assimilés aux cambrioleurs que je
-sache, les représentants religieux à des violeurs, les policiers a des ripoux,
-les politiciens a des corrompus, etc, etc ...
+sache, les prédicateurs à des violeurs, les policiers a des ripoux,
+les politiciens a des corrompus, etc ...
 
 ## Historique des condamnations pour hacking
 
@@ -25,7 +25,7 @@ Il n'y a **jamais** eu de condamnation pour hacking parce que hacker n'est
 absolument pas illégal.
 
 Il n'y a eu que des condamnations pour des faits illégaux: vol, usurpation,
-entrave, etc ... L'usage de l'outil informatique, de contourner des sécurité,
+entrave, etc ... L'usage de l'outil informatique, de contourner des sécurités,
 est largement insuffisant pour suffir a qualifier le criminel de "hacker": la
 vraie définition est "cracker". Ce billet explique comment et pourquoi.
 
@@ -55,7 +55,7 @@ purement arbitraire qu'on ne peut attribuer qu'à des groupes en fonction de
 leurs programmes et non à des individus qui ne sont que des nuances de gris
 uniques.
 
-En réalité rien de tel: un cracker n'est pas forcement un hacker, c'est meme
+En réalité rien de tel: un cracker n'est pas forcement un hacker, c'est même
 rarement le cas, les crackers sont plus souvent des "script kiddies" c'est à
 dire qu'ils arrivent à utiliser les outils faits par de vrais hackers a des
 fins illégales.
