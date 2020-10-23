@@ -8,10 +8,12 @@ comments : false
 <div class="team">
   <div class="team-item">
       <img src="/img/authors/jamesp.png">
+      <p>
       <a href="/authors/jpic/">
         James Pic
       </a>
     : CEO
+      </p>
   </div>
   <div class="team-item">
       <img src="/img/authors/m.png"></img>
@@ -23,7 +25,7 @@ comments : false
   <div class="team-item">
       <img src="/img/authors/magineo.png"></img>
       <p>
-        Eric Grivet
+        <a href="https://magineo.fr">Eric Grivet</a> :
         Marketing & Project Management
       </p>
   </div>
