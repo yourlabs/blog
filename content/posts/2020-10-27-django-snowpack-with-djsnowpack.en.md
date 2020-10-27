@@ -1,5 +1,5 @@
 +++
-date = "2020-10-27T13:37:00+00:00"
+date = "2020-10-26T13:37:00+00:00"
 draft = false
 tags = ['django', 'webpack', 'snowpack', 'javascript', 'python', 'html', 'css', 'sass']
 title = "Django + Snowpack How To = djsnowpack"
