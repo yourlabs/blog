@@ -1,5 +1,5 @@
 +++
-date = "2020-10-26T13:37:00+00:00"
+date = "2020-10-27T13:37:00+00:00"
 draft = false
 tags = ['devops', 'docker', 'docker-compose', 'ansible', 'podman', 'buildah']
 title = "Shlax Container Image Builder: Preview"
