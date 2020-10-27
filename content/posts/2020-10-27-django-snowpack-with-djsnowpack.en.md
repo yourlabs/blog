@@ -47,14 +47,17 @@ You should see a minimal example in `djsnowpack_example` directory:
 DANGER: you MUST have the following in your index.html to make Django view
 reload on JS change:
 
+```python
     if (import.meta.hot) {
       import.meta.hot.accept(({ module }) => {
         import.meta.hot.invalidate();
       });
     }
+```
 
 index.html content:
 
+```html
     <!DOCTYPE html>
     <html lang="en">
       <head>
@@ -64,6 +67,7 @@ index.html content:
         <script type="module" src="/index.js"></script>
       </body>
     </html>
+```
 
 Remove index.css if you just don't need it.
 
