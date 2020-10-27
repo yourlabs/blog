@@ -24,6 +24,26 @@ Changing a frontend file will typically not cause a Django view reload because
 Django doesn't want to provide JS by default: djsnowpack provides a solution
 for that.
 
+## Demo
+
+```python
+# go and make a virtualenv in /tmp
+cd /tmp
+virtualenv /tmp/djsnowpack_demo
+source /tmp/djsnowpack_demo/bin/activate
+
+# clone and install the app and example project
+git clone https://yourlabs.io/oss/djsnowpack
+cd djsnowpack
+pip install .
+
+# install example project dependencies and start server
+cd djsnowpack_example
+pip install django
+yarn install
+./manage.py runserver
+```
+
 ### Getting started
 
 1. Install: `pip install djsnowpack`,
