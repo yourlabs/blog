@@ -44,7 +44,8 @@ Du coup, ceci est correct. Concretement, l'impact organnisationnel de cet état
 d'esprit et de restructurer ses équipes par objectif de création de valeur pour
 les clients finaux, et non par métier avec une équipe dev, une équipe design,
 une équipe déploiement, etc, etc ... avec chacun son manager, comme on le
-voyait typiquement partout dans le paysage industriel du début des années 2000.
+voyait typiquement partout dans le paysage industriel jusqu'au début des années
+2000 avant le manifeste Agile.
 
 Voici une équipe DevOps typique, qui réunit donc tous les métiers nécessaires à
 la chaine de production de "l'idée à la mise en production":
