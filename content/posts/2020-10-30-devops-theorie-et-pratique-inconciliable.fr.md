@@ -106,8 +106,8 @@ ventes au marketing en passant même par les ressources humaines.
     Et vous, saviez-vous que DevOps n'était ni un rôle ni un poste ?
 
 Tout a fait d'accord et j'ai moi même longuement réfléchi a la question étant
-donné que je ne trouvais pas que ce terme était utilisé dans la profession
-comme il l'est dans la littérature thématique.
+donné que je ne trouvais pas que ce terme était utilisé dans la profession -
+ayant occuppé ce type de poste - comme il l'est dans la littérature thématique.
 
 Cependant on constate qu'après l'éclatement du silo entre Dev et Ops - et je
 parle de l'époque où on envoyait nos sources par mail tous les 3 mois pour le
