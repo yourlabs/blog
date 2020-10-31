@@ -24,9 +24,9 @@ profession. Je cite:
 
     DevOps est un mouvement (au même titre que l'Agilité, son demi-frère) qui vise à unir deux mondes qui parfois ne se comprennent plus : le développement et les opérations. Dans l'idéal, les deux métiers travaillent quotidiennement ensemble dans un même lieu.
 
-Ce n'est pas complètement faux mais il parle ici de la gêneuse de la pratique et
-non de l'état de l'art: l'objectif DevOps dans l'absolu ne peut d'atteindre en se
-contentant de rapprocher Dev et Ops.
+Ce n'est pas complètement faux mais ça ne représente que la base de la pratique
+et non de l'état de l'art: l'objectif DevOps dans l'absolu ne peut d'atteindre
+en se contentant de rapprocher Dev et Ops.
 
 Le but ultime du DevOps est de fluidifier la chaine de production pour
 optimiser d'abord pour la qualité mais aussi pour le "Time To Market" (TTM) de
