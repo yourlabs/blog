@@ -1,6 +1,5 @@
 const path = require('path');
 const ExtractTextPlugin = require("extract-text-webpack-plugin")
-const GoogleFontsPlugin = require("@beyonk/google-fonts-webpack-plugin")
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const extractSass = new ExtractTextPlugin({
@@ -47,12 +46,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: 'layouts/_default/baseof_template.html',
       filename: '../layouts/_default/baseof.html',
-    }),
-    new GoogleFontsPlugin({
-        fonts: [
-            { family: 'Roboto', variants: [ '400', '700' ] },
-            { family: 'Raleway', variants: [ '300' ] },
-        ]
     }),
   ]
 };

@@ -12,6 +12,8 @@
     {{ with .OutputFormats.Get "RSS" -}}
         {{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
     {{- end }}
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
     {{ partial "header" . }}
