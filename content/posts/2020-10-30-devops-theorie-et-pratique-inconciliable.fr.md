@@ -86,15 +86,10 @@ L'Agiliste continue:
 Je n'ai pas l'impression que le DevOps ait le monopole de ces qualités: j'ose
 espérer qu'on en attend tous autant de nos collaborateurs qu'ils soient DevOps
 ou non, en conséquence cette phrase me semble inexacte dans la forme bien que
-ce soit correct sur le fond, d'abord parce que la culture est au centre de
-l'entreprise:
+ce soit correct sur le fond, d'abord parce que la culture finnalement pilote
+entreprise:
 
 ![DevOps Culture Drives Us](/img/devops-culture-drives-us.png)
-
-Cela dit, je pense que l'Agiliste veut parler de la **culture DevOps** dont les
-piliers sont les suivants:
-
-![DevOps Culture](/img/devops-culture.png)
 
 ## Le "vieux monde"
 
@@ -152,8 +147,16 @@ impliqués.
 
 Les pratiques Agiles telles que la CI/CD nécessitent forcement des compétences
 en systèmes et réseaux dont les ops sont traditionnellement spécialistes (mais
-rien n'empêche un dev systèmes et réseau d'être également expert), mais
-également d'une culture qui doit rayonner au travers du DevOps:
+rien n'empêche un dev systèmes et réseau d'être également expert au contraire),
+mais également d'une **culture DevOps** qui doit rayonner au travers de la
+personne recrutée en DevOps:
+
+![DevOps Culture](/img/devops-culture.png)
+
+Du coup je pense que l'abus de langage est là: quand on cherche quelqu'un avec
+une expérience sur les outils et les pratiques qui ont émergées du DevOps alors
+on recrute sur le poste de "DevOps", poste que j'affectionne tout
+particulièrement.
 
 ## Postuler en tant que DevOps ?
 
@@ -182,9 +185,10 @@ workflow continu:
 En pratique cela n'est jamais demandé mais c'est en ce sens que les
 performances du DevOps sont aussi attendues.
 
-Donc voila, quand ils recrutent un devops c'est qu'ils ont tout simplement
-besoin de compétences systèmes et réseaux ça me parait clair mais surtout
-d'expérience sur les outils et pratiques qui ont émergés du mouvement.
+Donc voila, d'après ce que j'ai vu, quand ils recrutent un devops c'est qu'ils
+ont tout simplement besoin de compétences systèmes et réseaux ça me parait
+clair mais surtout d'expérience sur les outils et pratiques qui ont émergés du
+mouvement: analyse statique, couverture de tests, push-to-deploy, etc, etc...
 
 ## Le KATA de Toyota et le DevOps: irréconciliables ?
 
@@ -211,15 +215,25 @@ pour obtenir des compétences utiles de bout en bout de cette chaine", c'est
 thématique, je pense notamment a "Lean Enterprise" de Jez Humble.
 
 Je pense que ce que le DevOps veut vraiment dire, et ça serait compatible avec
-le KATA dans ce cas, c'est que le DevOps n'OBLIGE PAS chaque employé à arriver
-avec toutes les spécialités, mais je pense que le DevOps ne l'EMPECHE PAS dans
-le même temps que le TPS l'ENCOURAGE.
+le KATA dans ce cas, c'est que le DevOps n'**oblige pas** chaque employé à
+acquérir avec toutes les spécialités, mais je pense que le DevOps ne
+l'**empêche pas**, mais c'est **encouragé** par le TPS alors il n'y a qu'ainsi
+que toutes ces théories sont compatibles.
 
 C'est là un point de vue qui me mettra sans aucun doutes en portafaux avec un
-certain nombre de confrêres mais il faut bien que quelqu'un ose le dire: un bon
-dev s'y connait *aussi* en systèmes et réseaux, un bon ops s'y connaitra
+certain nombre de confrêres mais il faut bien que quelqu'un ose le dire: un dev
+a *aussi* besoin de compétences en systèmes et réseaux car c'est tout de même
+la ou physiquement va s'exécuter son programme, un bon ops s'y connaitra
 *aussi* en developpement bien que ce soit plutôt limité aux systèmes et
-réseaux: il ne sera normalement pas amené à toucher à du code présentationnel.
+réseaux: il ne sera typiquement pas amené à développer la moindre compétence
+sur le code présentationnel.
+
+Ensemble, ils seront amenés à automatiser par exemple de l'analyse statique de
+code et du push-to-deloy en menant une collaboration étroite ce qui causera
+inévitablement une montée en compétences.
+
+Maintenant une entreprise peut très bien vouloir recruter une personne avec une
+précédente expérience en la matière: d'où ce récent intitulé de poste "DevOps".
 
 ## Conclusion
 
