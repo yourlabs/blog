@@ -24,9 +24,13 @@ profession. Je cite:
 
     DevOps est un mouvement (au même titre que l'Agilité, son demi-frère) qui vise à unir deux mondes qui parfois ne se comprennent plus : le développement et les opérations. Dans l'idéal, les deux métiers travaillent quotidiennement ensemble dans un même lieu.
 
-Ce n'est pas complêtement faux mais il parle ici de la génese de la pratique et
-non de l'état de l'art: l'objectif DevOps dans l'absolu ne peut s'atteindre en se
+Ce n'est pas complètement faux mais il parle ici de la gêneuse de la pratique et
+non de l'état de l'art: l'objectif DevOps dans l'absolu ne peut d'atteindre en se
 contentant de rapprocher Dev et Ops.
+
+Le but ultime du DevOps est de fluidifier la chaine de production pour
+optimiser d'abord pour la qualité mais aussi pour le "Time To Market" (TTM) de
+bout en bout.
 
 ## DevOps: impacts organisationnels
 
@@ -40,7 +44,7 @@ que la première phase d'un agenda qui finnalement concerne toute l'entreprise:
 
     Retenez que DevOps est un état d'esprit.
 
-Du coup, ceci est correct. Concretement, l'impact organnisationnel de cet état
+Du coup, ceci est correct. Concrètement, l'impact organisationnel de cet état
 d'esprit et de restructurer ses équipes par objectif de création de valeur pour
 les clients finaux, et non par métier avec une équipe dev, une équipe design,
 une équipe déploiement, etc, etc ... avec chacun son manager, comme on le
@@ -48,14 +52,15 @@ voyait typiquement partout dans le paysage industriel jusqu'au début des année
 2000 avant le manifeste Agile.
 
 Voici une équipe DevOps typique, qui réunit donc tous les métiers nécessaires à
-la chaine de production de "l'idée à la mise en production":
+la chaine de production, en l'occurrence d'une système informatique:
 
 ![DevOps Team](/img/devops-team.png)
 
 C'est une équipe qui va partager un objectif commun de déployer ou maintenir le
 service X auprès des clients finaux. C'est une pratique qui provient du Toyota
 Production System (TPS) et qui considère l'entreprise avant tout comme un
-système Humain.
+système Humain, dans lequel on est collectivement responsable de la qualité du
+produit final livré à l'usager, comme on dit: de "l'idée à la production"
 
 ## La Culture DevOps
 
@@ -149,10 +154,18 @@ Les connaissances en développement système et réseau pour bien utiliser /
 développer / maintenir les outils de déploiements automatique sont bien entendu
 indispensables.
 
-Mais également des compétences plus spécifiques car le but ultime du DevOps est
-de fluidifier la chaine de production pour optimiser le TTM de bout en bout,
-être capable de réaliser un Value Stream Mapping par exemple pour identifier
-les goulots d'étranglement organisationnels, ainsi que d'assurer un workflow
+Mais également des compétences plus spécifiques dans le but ultime: de
+fluidifier la chaine de production pour améliorer la qualité en continu, le
+[Kaizen](https://en.wikipedia.org/wiki/Kaizen), pour optimiser le TTM de bout
+en bout.
+
+Il faudra par exemple être capable de réaliser un Value Stream Mapping par
+exemple pour identifier les goulots d'étranglement organisationnels, ainsi que
+d'assurer un workflow continu.
+
+Cela ["Value Stream
+Mapping"](https://fr.wikipedia.org/wiki/Value_stream_mapping) par exemple pour
+identifier les goulots d'étranglement organisationnels, et assurer un workflow
 continu.
 
 Donc voila, quand ils recrutent un devops c'est qu'ils ont tout simplement
