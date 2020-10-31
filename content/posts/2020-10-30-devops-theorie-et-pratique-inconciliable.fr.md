@@ -30,8 +30,9 @@ contentant de rapprocher Dev et Ops.
 
 ## DevOps: impacts organisationnels
 
-En effet, le DevOps ne peut s'accomplir qu'avec la collaboration entre tous les
-services:
+En effet, le DevOps ne peut s'accomplir pleinement qu'avec la collaboration
+entre tous les services, la réconciliation entre les metiers Dev et Ops n'étant
+que la première phase d'un agenda qui finnalement concerne toute l'entreprise:
 
 ![DevOps Business Change](/img/devops-business-change.png)
 
