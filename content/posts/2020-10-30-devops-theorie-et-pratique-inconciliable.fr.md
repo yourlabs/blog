@@ -156,17 +156,15 @@ indispensables.
 
 Mais également des compétences plus spécifiques dans le but ultime: de
 fluidifier la chaine de production pour améliorer la qualité en continu, le
-[Kaizen](https://en.wikipedia.org/wiki/Kaizen), pour optimiser le TTM de bout
-en bout.
+[Kaizen](https://en.wikipedia.org/wiki/Kaizen), pour optimiser la chaine de
+production de bout en bout en impliquant tous les employés du CEO au
+travailleur de la ligne de montage dans le cas d'une chaine de production
+industrielle.
 
 Il faudra par exemple être capable de réaliser un Value Stream Mapping par
 exemple pour identifier les goulots d'étranglement organisationnels, ainsi que
-d'assurer un workflow continu.
-
-Cela ["Value Stream
-Mapping"](https://fr.wikipedia.org/wiki/Value_stream_mapping) par exemple pour
-identifier les goulots d'étranglement organisationnels, et assurer un workflow
-continu.
+d'assurer un workflow continu. En pratique cela n'est jamais demandé mais c'est
+en ce sens que les performances du DevOps sont aussi attendues.
 
 Donc voila, quand ils recrutent un devops c'est qu'ils ont tout simplement
 besoin de compétences systèmes et réseaux ça me parait clair mais surtout
