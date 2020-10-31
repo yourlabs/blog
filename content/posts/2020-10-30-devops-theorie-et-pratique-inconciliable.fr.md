@@ -140,16 +140,18 @@ rien n'empêche un dev systèmes et réseau d'être également expert), mais
 ## Postuler en tant que DevOps ?
 
 Quand ils recrutent un devops, c'est évidemment sur un besoin d'ops qu'ils
-recrutent mais avec une expérience de dev et donc les évolutions suivantes:
+recrutent mais avec une expérience de dev et donc certaines évolutions qui sont
+devenues des standards de l'industrie avec le mouvement DevOps.
 
-- connaissances en développement système et réseau pour bien utiliser /
-  développer / maintenir les outils de déploiements automatique: le devops
-  n'est pas censé répéter des opérations de routine manuellement
+Les connaissances en développement système et réseau pour bien utiliser /
+développer / maintenir les outils de déploiements automatique sont bien entendu
+indispensables.
 
-- mais bien automatiser pour fluidifier la chaine de production et optimiser le
-  TTM de bout en bout, être capable de réaliser un Value Stream Mapping par
-  exemple pour identifier les goulots d'étranglement organisationnels, ainsi
-  que d'assurer un workflow continu.
+Mais également des compétences plus spécifiques car le but ultime du DevOps est
+de fluidifier la chaine de production pour optimiser le TTM de bout en bout,
+être capable de réaliser un Value Stream Mapping par exemple pour identifier
+les goulots d'étranglement organisationnels, ainsi que d'assurer un workflow
+continu.
 
 Donc voila, quand ils recrutent un devops c'est qu'ils ont tout simplement
 besoin de compétences systèmes et réseaux ça me parait clair mais surtout
