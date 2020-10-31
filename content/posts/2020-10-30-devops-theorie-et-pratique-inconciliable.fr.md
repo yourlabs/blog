@@ -32,6 +32,13 @@ Le but ultime du DevOps est de fluidifier la chaine de production pour
 optimiser d'abord pour la qualité mais aussi pour le "Time To Market" (TTM) de
 bout en bout.
 
+## La "Chaine de production"
+
+C'est ce qui représente dans notre domaine les étapes "de l'idée à la
+production", par exemple:
+
+![DevOps Feature Delivery Flow](/img/devops-feature-delivery-flow.png)
+
 ## DevOps: impacts organisationnels
 
 En effet, le DevOps ne peut s'accomplir pleinement qu'avec la collaboration
@@ -78,7 +85,11 @@ L'Agiliste continue:
 
 Je n'ai pas l'impression que le DevOps ait le monopole de ces qualités: j'ose
 espérer qu'on en attend tous autant de nos collaborateurs qu'ils soient DevOps
-ou non, en conséquence cette phrase me semble complètement équivoque.
+ou non, en conséquence cette phrase me semble inexacte dans la forme bien que
+ce soit correct sur le fond, d'abord parce que la culture est au centre de
+l'entreprise:
+
+![DevOps Culture Drives Us](/img/devops-culture-drives-us.png)
 
 Cela dit, je pense que l'Agiliste veut parler de la **culture DevOps** dont les
 piliers sont les suivants:
@@ -161,39 +172,70 @@ production de bout en bout en impliquant tous les employés du CEO au
 travailleur de la ligne de montage dans le cas d'une chaine de production
 industrielle.
 
-Il faudra par exemple être capable de réaliser un Value Stream Mapping par
-exemple pour identifier les goulots d'étranglement organisationnels, ainsi que
-d'assurer un workflow continu. En pratique cela n'est jamais demandé mais c'est
-en ce sens que les performances du DevOps sont aussi attendues.
+Il faudra par exemple être capable de réaliser un [Value Stream
+Mapping](https://fr.wikipedia.org/wiki/Value_stream_mapping) par exemple pour
+identifier les goulots d'étranglement organisationnels, ainsi que d'assurer un
+workflow continu:
+
+![DevOps Business Change](/img/devops-value-stream-mapping.png)
+
+En pratique cela n'est jamais demandé mais c'est en ce sens que les
+performances du DevOps sont aussi attendues.
 
 Donc voila, quand ils recrutent un devops c'est qu'ils ont tout simplement
 besoin de compétences systèmes et réseaux ça me parait clair mais surtout
 d'expérience sur les outils et pratiques qui ont émergés du mouvement.
 
-## Le KATA de Toyota
+## Le KATA de Toyota et le DevOps: irréconciliables ?
 
-Par contre, il reste un bout de la citation avec laquelle je ne suis pas du
-tout d'accord et que je cite ici:
+Par contre, il reste un bout de la citation avec laquelle je ne suis pas
+entièrement d'accord et que je cite ici:
 
     Ça ne veut SURTOUT PAS dire que le développeur a des compétences d'Ops (automatisation, monitoring de la production, etc.).
 
     Ça ne veut SURTOUT PAS dire que l'ops doit savoir développer ou débugger en production si nécessaire.
 
-Cela va completement à l'encontre du KATA de Toyota, base même du DevOps, dans
-lequel "chaque ouvrier doit tourner régulièrement entre tous les postes de la
-chaine de production pour obtenir des compétences utiles de bout en bout de
-cette chaine", c'est également excellent pour le moral ce que précise
-généralement la littérature thématique, je pense notamment a "Lean Enterprise"
-de Jez Humble.
+En effet, le DevOps est un
+moyen de travaille qui encourage les devs et les ops a travailler étroietement
+ensemble en partageant un objectif, et n'est PAS un moyen de demander à des
+devs de faire du travail d'ops et vice versa.
 
-Quel est l'intérêt de travail ensemble si c'est pour SURTOUT PAS apprendre quoi
-que ce soit du métier de l'autre ? Aucun intérêt. Le but n'est pas de remplacer
-mais de chercher à se comprendre pour collaborer plus efficacement ensemble.
+C'est en effet ce qui se dit tout le temps mais de là à dire qu'il ne faut pas
+qu'une personne ait les deux compétences...
+
+Je trouve que cela va un peu trop loin voire va à l'encontre du [KATA de
+Toyota](https://en.wikipedia.org/wiki/Toyota_Kata), dans lequel "chaque ouvrier
+doit tourner régulièrement entre tous les postes de la chaine de production
+pour obtenir des compétences utiles de bout en bout de cette chaine", c'est
+également excellent pour le moral ce que précise généralement la littérature
+thématique, je pense notamment a "Lean Enterprise" de Jez Humble.
+
+Je pense que ce que le DevOps veut vraiment dire, et ça serait compatible avec
+le KATA dans ce cas, c'est que le DevOps n'OBLIGE PAS chaque employé à arriver
+avec toutes les spécialités, mais je pense que le DevOps ne l'EMPECHE PAS dans
+le même temps que le TPS l'ENCOURAGE.
+
+C'est là un point de vue qui me mettra sans aucun doutes en portafaux avec un
+certain nombre de confrêres mais il faut bien que quelqu'un ose le dire: un bon
+dev s'y connait *aussi* en systèmes et réseaux, un bon ops s'y connaitra
+*aussi* en developpement bien que ce soit plutôt limité aux systèmes et
+réseaux: il ne sera normalement pas amené à toucher à du code présentationnel.
+
+## Conclusion
+
+Le DevOps tire ses origines du terreau informatique "devs et ops" certes, mais
+il le dépasse néanmoins et il faudra établir une communication fluide entre le
+marketing, le support, les devs, les ops, les commerciaux, le CEO, etc, etc ...
+pour atteindre les promesses du DevOps: on ne peut pas faire du DevOps si toute
+la boite n'est pas DevOps.
 
 L'essence du DevOps est que les différentes spécialités nécessaires pour amener
-une idée en production de bout en bout partagent cet objectif commun, et non
-"l'un est responsable du code, l'autre du déploiement" qui sont justement les
-fameux "silos" que le DevOps entend briser.
+une idée en production de bout en bout partagent un objectif commun de qualité,
+et non "l'un est responsable du code, l'autre du déploiement, l'autre du
+design" qui sont justement les fameux "silos" hérités du Management
+Scientifique (Taylorisme) que le DevOps entend briser.
+
+## Pour aller plus loin
 
 Je vous invite à consulter ma présentation "From Taylorism to Lean" en savoir
 plus sur le [Toyota Production System (TPS)](https://slides.com/jamespic/deck/)
