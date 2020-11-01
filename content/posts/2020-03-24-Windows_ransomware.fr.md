@@ -3,35 +3,35 @@ date = "2020-03-23T10:32:00+00:00"
 draft = false
 tags = ['securité']
 title = "Ransomware"
-author = "Claw"
+author = "claw"
 +++
 
 ## Ransomware {#ransomware}
 
 Un rançongiciel de l'anglais ransomware, logiciel de rançon ou logiciel d'extorsion, est un logiciel malveillant qui prend en otage des données personnelles.
 
-- chiffrement symétrique des fichiers avec une clef aleatoire
+- chiffrement symétrique des fichiers avec une clef aléatoire
 - chiffrement asymétrique de la clef avec un certificat public
-- seul le détenteur du certificat privé dechiffrera la clef
+- seul le détenteur du certificat privé déchiffrera la clef
 - tout faire en mémoire pour ne laisser aucune trace sur le disque
 
 Un ransomware peut aussi bloquer l'accès de tout utilisateur à une machine
-jusqu'à ce qu'une clé ou un outil de débridage soit envoyé à la victime en
+jusqu'à ce qu'une clé ou un outil de déchiffrement soit envoyé à la victime en
 échange d'une somme d'argent. Les modèles modernes de rançongiciels sont
 apparus en Russie initialement, mais on constate que le nombre d'attaques de ce
 type a grandement augmenté dans d'autres pays, entre autres l'Australie,
 l'Allemagne, les États-Unis.
 
-- On va chiffrer le fichier avec du chiffrement symmetrique et utiliser de l'encryption asymmetrique pour encrypter la clée de cryptage...
-- Seul ceui qui a le certificat privé poura decrypter la clé utilisée..
-- Une encryption assymetrique pour tt encrypter prendrai trop de temps..
+- On va chiffrer le fichier avec du chiffrement symétrique et utiliser du chiffrement asymétrique pour chiffrer la clé de cryptage...
+- Seul celui qui a le certificat privé pourra déchiffrer la clé utilisée..
+- Un chiffrement asymétrique pour tout chiffrer prendrai trop de temps..
 
 ### Certificat
 
 Note:
-Un certificat électronique (aussi appelé certificat numérique ou certificat de clé publique) peut être vu comme une carte d'identité numérique. Il est utilisé principalement pour identifier et authentifier une personne physique ou morale, mais aussi pour chiffrer des échanges1.
+Un certificat électronique (aussi appelé certificat numérique ou certificat de clé publique) peut être vu comme une carte d'identité numérique. Il est utilisé principalement pour identifier et authentifier une personne physique ou morale, mais aussi pour chiffrer des échanges.
 
-Il s’agit également d’un concept très important pour tous ceux qui sont de véritables autorités en termes de sécurité informatique2.
+Il s’agit également d’un concept très important pour tous ceux qui sont de véritables autorités en termes de sécurité informatique.
 
 Le standard le plus utilisé pour la création des certificats numériques est le X.509.
 
@@ -81,7 +81,7 @@ meterpreter > shell
 ```
 
 - [1-2] Lancer powershell depuis notre session meterpreter
-- [3-4] Creer un mot de passe random
+- [3-4] Créer un mot de passe aléatoire
 - [5] Notre certificat public en base64
 - [6] Décodage du certificat dans un fichier
 - [7] Sauvegarde du mot de passe chiffré avec le certificat public
@@ -122,7 +122,7 @@ Function Encr{param([string]$i,[string]$p)
   }
 }
 ```
-Boucle pour encrypter tout les fichiers:
+Boucle pour chiffrer tout les fichiers:
 
 ```powershell
 foreach ($i in
@@ -154,7 +154,7 @@ $email" > /users/$env:USERNAME/desktop/README.txt
 ```
 
 - [1] Email de l'attaquant pour envoyer la clef chiffrée
-- [2] Addresse BitCoin pour recevoir le paiement
+- [2] Adresse BitCoin pour recevoir le paiement
 - [3] Message sur le bureau
 
 
@@ -168,7 +168,7 @@ $email" > /users/$env:USERNAME/desktop/README.txt
 ```
 
 - [1] Définir l'URL de l'image du fond d'écran
-- [2] Télecharger l'image
+- [2] Télécharger l'image
 - [3] Définir le chemin de l'image à utiliser en fond d'écran
 - [4] Appliquer le nouveau fond d'écran
 
@@ -182,7 +182,7 @@ Redémarrer:
 
 ### Déchiffrement du mot de passe
 
-La victime va envoyer la clée encrypter avec le certificat public, pour la decrypter.
+La victime va envoyer la clé chiffrée avec le certificat public, pour la déchiffrer.
 Sur la machine de l'attaquant, avec le certificat privé
 
 ```psh
@@ -241,7 +241,7 @@ foreach ($i in $(Get-ChildItem /users/$env:USERNAME -recurse -include *.LCK_666 
 - pas besoin de vulnérabilité logicielle
 - si ce n'est l'accès physique
 - négligence, lockpicking, social engineering ...
-- necessite compétences variées et combinées
+- nécessite des compétences variées et combinées
 <!--  -->
 
 - [Partie 1: RubberDucky](/posts/2020-03-24-rubberducky/)

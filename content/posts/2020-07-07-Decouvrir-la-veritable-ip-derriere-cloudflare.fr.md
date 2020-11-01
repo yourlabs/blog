@@ -9,7 +9,7 @@ author = "claw"
 
 ## Qu'est ce que Cloudflare
 
-Cloudflare est un reverse proxy, quad un utilisateurs veut aller sur xxxx.xx, la resolution dns va pointer sur un serveur Cloudflare qui lui, de son coté va renvoyé la reponse du serveur.
+Cloudflare est un reverse proxy, quand un utilisateurs veut aller sur xxxx.xx, la résolution dns va pointer sur un serveur Cloudflare qui lui, de son coté va renvoyé la réponse du serveur.
 De ce fait un utilisateur ne va pas directement communiquer avec le serveur xxxx.xx .
 
 ![cloudflare](/img/cloudflare.png)
@@ -25,12 +25,12 @@ Principalement pour le dos ou ddosser tout simplement.
 
 ##### Comment trouver la vertiable ip
 
-Il y a plusieur technique pour decouvrir l'ip du serveur.
+Il y a plusieurs technique pour découvrir l'ip du serveur.
 
-Un [article](https://www.secjuice.com/finding-real-ips-of-origin-servers-behind-cloudflare-or-tor/) explique ici les methodes (dns history, ssl certs etc).
+Un [article](https://www.secjuice.com/finding-real-ips-of-origin-servers-behind-cloudflare-or-tor/) explique ici les méthodes (dns history, ssl certs etc).
 
 
-Mais on peut également, sous certaines conditions (voir comment se protger), scanner l'integralité du net  et en comparant le contenu de la page.
+Mais on peut également, sous certaines conditions (voir comment se protéger), scanner l'intégralité du net  et en comparant le contenu de la page.
 
 exemple avec **curl**:
 
@@ -42,10 +42,10 @@ curl https://target-website.com --resolve target-website.com:443:127.0.0.5
 curl https://127.0.0.5 -H "host: target-website.com"
 ```
 
-j'ai donc ecrit [discloudflR](https://yourlabs.io/drClaw/discloudflr) (Discovery cloudflaire) un programme en "go" pour executer cette tache.
-L'avantage du go est d'etre tres rapide (goroutine), il faut 1 seconde pour scanner un range en /24 
+J'ai donc écrit [discloudflR](https://yourlabs.io/drClaw/discloudflr) (Discovery cloudflaire) un programme en "go" pour exécuter cette tache.
+L'avantage du go est d'être très rapide (goroutine), il faut 1 seconde pour scanner un range en /24 
 
-Pour evité d'avoir a forcement scanner l'integralité du web, j'y ai rajouté quelques filtres:
+Pour évité d'avoir à forcement scanner l'intégralité du web, j'y ai rajouté quelques filtres:
 
 ```
 

