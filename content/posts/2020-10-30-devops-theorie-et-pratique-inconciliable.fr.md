@@ -269,7 +269,7 @@ n'est-ce-pas ...
 ## Le recrutement "DevOps"
 
 Normalement, quand ils recrutent un devops, c'est évidemment sur un besoin
-d'ops mais avec une expérience des outils et pratiquent DevOps qui sont devenus
+d'ops mais avec une expérience des outils et pratiques DevOps qui sont devenus
 des standards de l'industrie. Finit le déploiement tous les 3 mois à base de
 zip de code par mail ! Tout est maintenant dans le "push to deploy" git.
 
