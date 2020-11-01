@@ -349,13 +349,14 @@ Scientifique (Taylorisme) que le DevOps entend briser.
 Concernant la méthode DevOps & ses amis, je vous invite à consulter mes
 présentations "[From Taylorism to Lean](https://slides.com/jamespic/deck/)" et
 [DevOps & CD: QuickStart](http://slides.com/jamespic/cd-devops) sur le livre
-éponyme.
+éponyme. Pour la postérité, des traces d'[outils DevOps et de containerisation
+que je faisais](https://github.com/jpic/bashworks) ... en 2009 !
 
-YourLabs a également quelques logiciels DevOps qui peuvent vous inspirer aussi:
+YourLabs a également quelques logiciels DevOps futuristes qui peuvent vous inspirer aussi:
 
 - [BigSudo: eXtreme DevOps Hacking Operations](https://blog.yourlabs.org/posts/2020-02-08-bigsudo-extreme-devops-hacking-operations/)
 - [Container Build Rootless Networkless avec Shlax et Buildah](https://yourlabs.org/posts/2020-10-27-shlax-preview/)
-- [Distribution de roles Ansible](https://galaxy.ansible.com/yourlabs/)
+- une [Distribution de roles Ansible](https://galaxy.ansible.com/yourlabs/) tout ce qu'il y a de plus contemoraine ... à l'exception d'un [alien](https://yourlabs.io/oss/yourlabs.remember).
 
 Vous voulez voir des présentations en live ? C'est au [Hack'n'Dev
 Meetup](https://www.meetup.com/Angouleme-Hack-Dev-Barcamp-1337/) au hackerspace
