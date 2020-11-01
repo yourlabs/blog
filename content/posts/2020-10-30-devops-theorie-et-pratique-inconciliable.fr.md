@@ -6,23 +6,6 @@ title = "DevOps: la définition définitive ?"
 author = "jpic"
 +++
 
-Comme vous le savez je suis en plein [coup de gueule contre l'emploie abusif du
-terme "hacker"](https://yourlabs.fr/posts/2020-10-23-hackers-le-coup-de-gueule/).
-
-C'est au tour de l'un de mes confrères, [Alec Roy, coach
-agile](https://cv.aroy.fr/) de pousser un coup de gueule sur LinkedIn, sur le
-terme **DevOps**:
-
-    Ça ne veut SURTOUT PAS dire que le développeur a des compétences d'Ops (automatisation, monitoring de la production, etc.).
-
-    Ça ne veut SURTOUT PAS dire que l'ops doit savoir développer ou débugger en production si nécessaire.
-
-Il a parfaitement raison, une personne qui cumule ces compétences est un
-**hacker**, [selon la
-RFC1392](https://yourlabs.fr/posts/2020-10-23-hackers-le-coup-de-gueule/).
-C'est un peu logique, vu qu'un dev dépend d'un ops et vice versa alors qu'un
-hacker ne dépend de personne.
-
 Le terme "DevOps" pâti de plusieurs significations étant donné qu'aucun
 académicien n'a, à l'heure où j'écris ces lignes, pu développer une [définition
 unique au terme "DevOps"](https://en.wikipedia.org/wiki/DevOps#Definition),
@@ -43,6 +26,67 @@ politique au-delà du bon sens commun, compréhensible par tous.
 Explications.
 
 <!--more-->
+
+## DevOps: abus de langage
+
+Commençons donc par une brève élimination du principal abus de langage fait
+avec le mot "DevOps". L'infame "fausse définition" qui sert de subsitut à un
+mot qu'on laisse amalgamer, qu'on délaisse et qu'on laisse salir, mais qui me
+tient tant **à coeur**.
+
+Jusqu'au jour où, [Alec Roy](https://cv.aroy.fr/) décide de lèver le voile sur
+LinkedIn, sur les abus fais du terme **DevOps**:
+
+    Ça ne veut SURTOUT PAS dire que le développeur a des compétences d'Ops (automatisation, monitoring de la production, etc.).
+
+    Ça ne veut SURTOUT PAS dire que l'ops doit savoir développer ou débugger en production si nécessaire.
+
+Il a parfaitement raison, une personne qui cumule les compétences de dev et
+d'ops est un **hacker** [selon la
+RFC1392](https://yourlabs.fr/posts/2020-10-23-hackers-le-coup-de-gueule/).
+
+Vu qu'un dev dépend d'un ops, et qu'un ops dépend d'un dev, alors qu'un hacker
+ne dépend de personne, si vous cherchez quelqu'un qui ne dépend de personne
+dans le domaine alors vous cherchez un hacker.
+
+## Hacker ?!
+
+J'imagine que vous pouvez aussi appeler ça "génie informatique" ou autre truc
+pompeux. Si vous cherchez "un virtuose de l'informatique qui se régale d'une
+compréhension intime des systèmes", d'excellent sur le terrain des devs comme
+sur celui des ops alors vous vous dites "c'est un dev et aussi un ops donc ça
+doit être devops auto+mobile ça fait automobile" ...
+
+FAKE NEWS !!!
+
+SURTOUT PAS comme dirait Alec.
+
+Il va falloir se faire à l'idée qu'il n'y a pas vraiment de titre officiel en
+dehors du milieu !
+
+Certes, des virtuoses sortent de nos écoles mais ni toujours ni seulement:
+l'Open Source *est* aussi une école, entre la documentation contributive, le
+support communautaire, les livres dont de nombreux faciles à obtennir sur
+internet ...
+
+L'Open Source est "la scène" des hackers comme on dit dans le jargon, dont les
+logiciels dominent désormais le monde comme avec Linux qui est dans l'écrasante
+majorité des sites internets que vous visitez, des tablettes et des
+smartphones.
+
+Windows par exemple, n'a maintenant n'a plus que le marché des ordinnateurs
+personnels, et Microsoft a du s'associer avec Red Hat et dépenser des milliards
+en Open Source pour devenir pertinent en dehors du marché des ordinnateurs
+personnels.
+
+Ils existent, et se lève tous avec la même vision d'un monde rempli de
+problèmes fascinants qui n'attendent que d'être résolus ! Ils défendent vos
+droits, à la vie privée sur internet, à la neutralité du net, et vous,
+honteusement, n'osez prononcer le grand vilain mot qui est pourtant dans le
+milieu symbole d'excellence.
+
+Voila, ça, c'est fait. Passons aux maintenant aux différentes *bonnes*
+définitions.
 
 ## Toyota Production System (TPS)
 
@@ -267,6 +311,19 @@ soit rentable tout simplement.
 Des produits finis basés sur Kubernetes et Open Source existent d'ailleurs, mes
 favoris étant [Kelproject](http://www.kelproject.com/) et
 [OpenShift](https://www.openshift.com/).
+
+## Récapitulatif des définitions
+
+Vous avez besoin d'une chaine de production pour votre affaire de developpement
+informatique: recrutez un "DevOps".
+
+Vous avez besoin de conseils et de suivi sur l'implémentation de la philosophie
+DevOps à haute échelle de votre entreprise: recrutez un "coach agile".
+
+Vous avez besoin de quelqu'un pour vérifier la sécurité de votre parc
+informatique quel qu'il soit: recrutez un "chercheur en sécurité".
+
+Enfin, vous avez besoin d'un virtuose informatique: recrutez un hacker.
 
 ## Conclusion
 
