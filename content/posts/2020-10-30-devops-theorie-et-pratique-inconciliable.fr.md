@@ -50,7 +50,7 @@ Il s'agit là de deux organisations fondamentalement différentes, en TPS:
 
 Il en découle notamment:
 
-- la corde *andon* qui donne **chaque ouvrier a le pouvoir d'arrêter la chaine de production** si il identifie le moindre défaut ou problème qui puisse affecter le reste de la chaine ou le produit final
+- la corde *andon* qui donne à **chaque ouvrier le pouvoir d'arrêter la chaine de production** si il identifie le moindre défaut ou problème qui puisse affecter le reste de la chaine ou le produit final
 
 - d'**envoyer les employés en observation sur tous les postes de la chaine de production** pour comprendre comment son travail affecte les autres,
 
@@ -67,9 +67,9 @@ spécifiques à leurs chronologies respectives.
 Mais il me semble que c'est la base pour comprendre comment de cette culture
 qui a piloté Toyota au travers des ages quand General Motors se vautrait, faute
 d'adopter le TPS qu'ils avaient déjà en place à l'usine de Freemont (devenue
-NUMMI puis Tesla) depuis 25 ans, laissant les anciens dirigeants avec d'autres
-paroles que "on ne pensait pas que tout allait s'arrêter si on ne le faisait
-pas", parlant de l'adoption du TPS dans le reste de leurs usines.
+NUMMI puis Tesla) depuis 25 ans, laissant les anciens dirigeants témoigner que
+"on ne pensait pas que tout allait s'arrêter si on ne le faisait pas", parlant
+de l'adoption du TPS dans le reste de leurs usines.
 
 ![DevOps Culture Drives Us](/img/devops-culture-drives-us.png)
 
