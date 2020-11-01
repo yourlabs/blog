@@ -106,7 +106,7 @@ Il s'agit là de deux organisations fondamentalement différentes, en TPS:
 
 Il en découle notamment:
 
-- la corde *andon* qui donne à **chaque ouvrier le pouvoir d'arrêter la chaine de production** si il identifie le moindre défaut ou problème qui puisse affecter le reste de la chaine ou le produit final
+- la corde **andon** qui donne à **chaque ouvrier le pouvoir d'arrêter la chaine de production** si il identifie le moindre défaut ou problème qui puisse affecter le reste de la chaine ou le produit final
 - d'**envoyer les employés en observation sur tous les postes de la chaine de production** pour comprendre comment son travail affecte les autres postes de la chaine de production,
 
 Je sais, ça se répète mais c'est que justement la boucle s'est bouclée depuis
