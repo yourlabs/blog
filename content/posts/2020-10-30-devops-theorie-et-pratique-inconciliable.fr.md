@@ -6,11 +6,28 @@ title = "DevOps: la définition définitive ?"
 author = "jpic"
 +++
 
+Comme vous le savez je suis en plein [coup de gueule contre l'emploie abusif du
+terme "hacker"](https://yourlabs.fr/posts/2020-10-23-hackers-le-coup-de-gueule/).
+
+C'est au tour de l'un de mes confrères, [Alec Roy, coach
+agile](https://cv.aroy.fr/) de pousser un coup de gueule sur LinkedIn:
+
+    Ça ne veut SURTOUT PAS dire que le développeur a des compétences d'Ops (automatisation, monitoring de la production, etc.).
+
+    Ça ne veut SURTOUT PAS dire que l'ops doit savoir développer ou débugger en production si nécessaire.
+
+Il a parfaitement raison, une personne qui cumule ces compétences est un
+**hacker**, [selon la
+RFC1392](https://yourlabs.fr/posts/2020-10-23-hackers-le-coup-de-gueule/).
+
 Le terme "DevOps" pâti de plusieurs significations étant donné qu'aucun
 académicien n'a, à l'heure où j'écris ces lignes, pu développer une [définition
 unique au terme "DevOps"](https://en.wikipedia.org/wiki/DevOps#Definition),
 mais nous pouvons toujours explorer l'histoire, l'éthymologie, et les
 différentes sources possibles de confusion.
+
+Et si vous me dites que la plupart des DevOps sont des hackers ... je pense que
+vous avez raison.
 
 Méthode ou outil ? Les dissonances entre la littérature thématique et la
 pratique en organisation sont courantes, il est vrai que "peu importe l'outil,
@@ -222,25 +239,6 @@ Si vous voulez faire de la "méthode DevOps" en tant qu'agiliste alors placez
 vous plutôt sur des offres de coach agile, scrum master voire product owner ou
 product manager qui sont également des contextes dans lesquels on grandement
 besoin d'agilistes aussi.
-
-## Et les hackers dans tout ça ?
-
-Comme vous le savez je suis en plein [coup de gueule contre l'emploie abusif du
-terme "hacker"](https://yourlabs.fr/posts/2020-10-23-hackers-le-coup-de-gueule/).
-
-C'est au tour de l'un de mes confrères, [Alec Roy, coach
-agile](https://cv.aroy.fr/) de pousser un coup de gueule sur LinkedIn:
-
-    Ça ne veut SURTOUT PAS dire que le développeur a des compétences d'Ops (automatisation, monitoring de la production, etc.).
-
-    Ça ne veut SURTOUT PAS dire que l'ops doit savoir développer ou débugger en production si nécessaire.
-
-Il a parfaitement raison, une personne qui cumule ces compétences est un
-**hacker**, [selon la
-RFC1392](https://yourlabs.fr/posts/2020-10-23-hackers-le-coup-de-gueule/).
-
-Et si vous me dites que la plupart des DevOps sont des hackers ... je pense que
-vous avez raison.
 
 ## Outils DevOps
 
