@@ -234,13 +234,7 @@ l'état actuel.
 ## Équipe "DevOps": la désillusion
 
 Voici une équipe DevOps typique, qui réunit donc tous les métiers nécessaires à
-la chaine de production, en l'occurrence d'une système informatique:
-
-Concrètement, l'impact organisationnel de cet état d'esprit et de restructurer
-ses équipes par objectif de création de valeur pour les clients finaux, et non
-par métier avec une équipe dev, une équipe design, une équipe déploiement, une
-équipe test, etc, etc ... presque partout dans le paysage industriel jusqu'à la
-fin des années 2000 lors de la sortie du manifeste Agile.
+la chaine de production, en l'occurrence d'une logiciel.
 
 ![DevOps Team](/img/devops-team.png)
 
@@ -249,9 +243,18 @@ gens qui partagent les spécialités autours des "outils DevOps" comme j'ai pu l
 voir dans le passé, car cela va justement créer un "silo" ce que le véritable
 DevOps vise à défaire en répartissant les compétences dans toutes les équipes.
 
-Mais encore une fois, rien n'empêche une organisation classique de bénéficier
-de la valeur ajoutée des outils DevOps et cela sera toujours un progrès
-**mesurable**.
+Concrètement, l'impact organisationnel de cet **état d'esprit** et de restructurer
+ses équipes par objectif de création de valeur pour les clients finaux, une
+équipe pour l'écran et une équipe pour la télécommande avec toutes les compétences
+nécessaires au sein de l'équipe, plutôt que par métier avec une équipe dev, une
+équipe design, une équipe déploiement, une équipe test, etc, etc ... comme
+presque partout dans le paysage industriel jusqu'à la fin des années 2000 avant
+de la sortie du manifeste Agile.
+
+Mais encore une fois, **rien n'empêche une organisation classique** de
+bénéficier de la valeur ajoutée des outils DevOps et cela sera toujours un
+progrès **mesurable**, **à condition qu'ils soient utilisés à bon escient**
+contrairement au cas d'usage exposé plus bas.
 
 Le DevOps c'est donc la collaboration, elle même optimisée, et factorisée au
 sein d'une culture qui fait sens et est compréhensible par tous. On peut
@@ -259,6 +262,9 @@ adopter cette culture même si c'est la première chose qu'on fait, vous verrez
 qu'elle partage un certain nombre de valeurs humaines avec le manifeste Agile:
 
 ![DevOps Culture](/img/devops-culture.png)
+
+On peut adopter une culture, une méthode, mais on ne peut pas la "recruter"
+n'est-ce-pas ...
 
 ## Le recrutement "DevOps"
 
