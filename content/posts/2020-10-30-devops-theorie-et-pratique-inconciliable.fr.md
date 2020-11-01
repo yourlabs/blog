@@ -289,27 +289,34 @@ besoin d'agilistes aussi.
 Vous pouvez améliorer vos performances avec des outils DevOps ... mais à
 condition de les utiliser à bon escient !
 
-J'en ai entendu parler des gros projets Kubernetes dans de grosses orgas faire
-du gros flop tout simplement parce que personne n'avait lu "Mastering
-Kubernetes" qui, outre le fait d'être l'un des livres DevOps les plus
-passionnants que j'ai eu la chance de lire, commencent dès le premier chapitre
-par clarifier ce qu'est et surtout n'est **pas** Kubernetes !
-
 Kubernetes est devenu l'exemple même du "DevOps theater", dans lequel on se
 raconte qu'on fait du DevOps parce que c'est un gros outil DevOps mais en fait
 derrière on pilote tout manuellement.
 
-Non ! Kubernetes est un framework à **integrer proprement** dans sa chaine de
-production, et non juste installer et demander aux développeurs de faire des
-centaines de lignes de configurations répétitives à la main.
+Bien qu'étant l'un des plus beaux logiciels de DevOps, à plus forte valeur
+ajoutée **dans certains cas**, peut se reveler être une perte de temps complête
+par exemple parce que la méthode d'utilisation n'était pas comprise, sans
+parler de gros projets Kubernetes qui ont fais de gros flops car je ne serais
+pas habilité à en parler n'est-ce-pas !
+
+Pourtant, il suffisait de lire le splendide ouvrage "Mastering Kubernetes" qui,
+outre le fait d'être l'un des livres DevOps les plus attendus et passionnants
+que j'ai eu la chance de lire, commence dès le premier chapitre par clarifier
+ce qu'est et surtout n'est **pas** Kubernetes !
+
+Kubernetes n'est **pas** une solution finie ! C'est un framework c'est à dire
+une boite à outils suffisamment flexible **integrer proprement** dans sa chaine
+de production en construisant sa solution sur mesure par dessus ! et non à
+juste configurer au minimum et demander aux développeurs de faire des centaines
+de lignes de configurations répétitives à la main.
 
 Il va falloir faire sa propre interface pour gérer les identités, le stockage,
-le réseau, etc... De manière unifiée et transparente en vue d'intégrer
-Kubernetes correctement dans sa chaine de production: de manière à ce que ça
-soit rentable tout simplement.
+le réseau, etc... De manière unifiée et transparente pour obtenir le retour sur
+investissement promit par Kubernetes en tant qu'outil DevOps de manière à ce
+que ça soit une opération rentable tout simplement.
 
-Des produits finis basés sur Kubernetes et Open Source existent d'ailleurs, mes
-favoris étant [Kelproject](http://www.kelproject.com/) et
+Des produits finis basés sur Kubernetes et Open Source existent par ailleurs,
+mes favoris étant [Kelproject](http://www.kelproject.com/) et
 [OpenShift](https://www.openshift.com/).
 
 ## Récapitulatif des définitions
@@ -339,8 +346,6 @@ Scientifique (Taylorisme) que le DevOps entend briser.
 
 ## Pour aller plus loin
 
-Bien entendu,
-
 Concernant la méthode DevOps & ses amis, je vous invite à consulter mes
 présentations "[From Taylorism to Lean](https://slides.com/jamespic/deck/)" et
 [DevOps & CD: QuickStart](http://slides.com/jamespic/cd-devops) sur le livre
@@ -348,8 +353,8 @@ présentations "[From Taylorism to Lean](https://slides.com/jamespic/deck/)" et
 
 YourLabs a également quelques logiciels DevOps qui peuvent vous inspirer aussi:
 
-- [Container Build Rootless Networkless avec Shlax et Buildah](https://yourlabs.org/posts/2020-10-27-shlax-preview/)
 - [BigSudo: eXtreme DevOps Hacking Operations](https://blog.yourlabs.org/posts/2020-02-08-bigsudo-extreme-devops-hacking-operations/)
+- [Container Build Rootless Networkless avec Shlax et Buildah](https://yourlabs.org/posts/2020-10-27-shlax-preview/)
 - [Distribution de roles Ansible](https://galaxy.ansible.com/yourlabs/)
 
 Vous voulez voir des présentations en live ? C'est au [Hack'n'Dev
