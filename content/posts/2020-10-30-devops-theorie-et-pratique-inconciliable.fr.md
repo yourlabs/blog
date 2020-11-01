@@ -69,6 +69,12 @@ l'Open Source *est* aussi une école, entre la documentation contributive, le
 support communautaire, les livres dont de nombreux faciles à obtennir sur
 internet ...
 
+Et surtout, être hacker implique, entre autres, des [critères d'excellence
+technique](https://thomasgil.com/hacker.html), d'être capable de développer son
+propre système comme ses propres sites internet, avec du logiciel libre, et
+donc demande typiquement le cumul de spécialités: il faudrait suivre plusieurs
+cursus d'ingénieur différents pour atteindre ce niveau uniquement par l'école.
+
 L'Open Source est "la scène" des hackers comme on dit dans le jargon, dont les
 logiciels dominent désormais le monde comme avec Linux qui est dans l'écrasante
 majorité des sites internets que vous visitez, des tablettes et des
