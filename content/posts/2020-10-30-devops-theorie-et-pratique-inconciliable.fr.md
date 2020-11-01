@@ -324,11 +324,11 @@ mes favoris étant [Kelproject](http://www.kelproject.com/) et
 Vous avez besoin d'une chaine de production pour votre affaire de developpement
 informatique: recrutez un "DevOps".
 
-Vous avez besoin de conseils et de suivi sur l'implémentation de la philosophie
+Vous avez besoin de conseils et de suivi sur l'implémentation de la méthode
 DevOps à haute échelle de votre entreprise: recrutez un "coach agile".
 
 Vous avez besoin de quelqu'un pour vérifier la sécurité de votre parc
-informatique quel qu'il soit: recrutez un "chercheur en sécurité".
+informatique quel qu'il soit: recrutez un "chercheur en cyber-sécurité".
 
 Enfin, vous avez besoin d'un virtuose informatique: recrutez un hacker.
 
@@ -339,10 +339,7 @@ une idée en production de bout en bout partagent un objectif commun de qualité
 au lieu de responsabilités individuelles.
 
 Les outils qui en sont sortis sont vraiment très efficaces à condition d'être
-utilisés à bon escient...
-et non "l'un est responsable du code, l'autre du déploiement, l'autre du
-design" qui sont justement les fameux "silos" hérités du Management
-Scientifique (Taylorisme) que le DevOps entend briser.
+utilisés à bon escient.
 
 ## Pour aller plus loin
 
