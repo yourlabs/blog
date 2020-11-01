@@ -87,9 +87,6 @@ Passons aux maintenant aux différentes *bonnes* définitions et leurs histoires
 
 ## Toyota Production System (TPS)
 
-Bien que l'histoire du TPS soit l'une de mes grandes passions, on va (essayer
-de) se contenter du minimum dans le contexte de cet article.
-
 Le *Management Scientifique* de Fred Taylor fait de l'employé un rouage dans
 une machine, payé simplement pour exécuter des actions pré planifiées le plus
 rapidement possible.
