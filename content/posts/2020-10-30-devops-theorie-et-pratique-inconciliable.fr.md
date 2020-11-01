@@ -79,14 +79,11 @@ personnels, et Microsoft a du s'associer avec Red Hat et dépenser des milliards
 en Open Source pour devenir pertinent en dehors du marché des ordinnateurs
 personnels.
 
-Ils existent, et se lève tous avec la même vision d'un monde rempli de
-problèmes fascinants qui n'attendent que d'être résolus ! Ils défendent vos
-droits, à la vie privée sur internet, à la neutralité du net, et vous,
-honteusement, n'osez prononcer le grand vilain mot qui est pourtant dans le
-milieu symbole d'excellence.
+Ils existent, et se lèvent avec la même vision d'un monde rempli de problèmes
+fascinants qui n'attendent que d'être résolus ! On en a besoin mais personne
+n'ose les nommer. (Voila ... ça ... c'est fait ...)
 
-Voila, ça, c'est fait. Passons aux maintenant aux différentes *bonnes*
-définitions.
+Passons aux maintenant aux différentes *bonnes* définitions et leurs histoires.
 
 ## Toyota Production System (TPS)
 
