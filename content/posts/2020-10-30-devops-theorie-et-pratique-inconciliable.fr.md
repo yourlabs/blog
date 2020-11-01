@@ -12,13 +12,13 @@ unique au terme "DevOps"](https://en.wikipedia.org/wiki/DevOps#Definition), et
 donc, ça n'est pas le but de cet article.
 
 Méthode ou outil ? Les dissonances entre la littérature thématique et la
-pratique en entreprise sont courantes, il est vrai que "peu importe l'outil,
+pratique en organisation sont courantes, il est vrai que "peu importe l'outil,
 c'est la pratique qui compte" mais il n'y a pas de pratique à l'échelle
 industrielle sans outil non plus.
 
 Cet article tente de réconcilier les deux: si la boite à outils DevOps est un
 fruit de l'application d'une **méthode** qui s'appelle le *TPS* dans le domaine
-de l'informatique, cela n'empêche pas les entreprise traditionnelles de
+de l'informatique, cela n'empêche pas les organisation traditionnelles de
 bénéficier de la valeur ajouté de ces outils sans pour autant complètement de
 politique au celas du bon sens commun, compréhensible par tous.
 
@@ -72,7 +72,7 @@ de l'adoption du TPS dans le reste de leurs usines.
 
 ![DevOps Culture Drives Us](/img/devops-culture-drives-us.png)
 
-Et combien d'entreprises se sont plantées en ne priorisant pas la qualité de
+Et combien d'organisations se sont plantées en ne priorisant pas la qualité de
 leur produit, de leur service client, ou l'optimisation de leur chaine de
 production ? Il y en meurt tous les jours, d'où l'importance de s'intéresser à
 leur histoire et de commencer à changer dès aujourd'hui.
@@ -83,9 +83,9 @@ de Jez Humble.
 
 ## Dev + Ops = DevOps
 
-Dev est le diminutif de "développeur logiciel" qui, contextualisé à
-l'informatique, consiste en une activité de programmation informatique "codage"
-de logiciels.  Vous avez une idée: votre dev la code.
+Dev est le diminutif de "développeur logiciel" qui consiste en une activité de
+programmation informatique "codage" de logiciels. Vous avez une idée: votre
+dev la code.
 
 Ops est le diminutif de "opérateur logiciel", consiste en une activité de
 gestion de machine/système/réseau/stockage physiques et/ou virtuel (cloud).
@@ -112,7 +112,7 @@ plus de versions, 200x plus rapidement, avec 60x moins d'échecs et récupèrent
 en cas d'incident 168x plus vite.
 ([source](https://services.google.com/fh/files/misc/state-of-devops-2015.pdf)).
 
-Les entreprises traditionnelles peuvent toutefois bénéficier dans une moindre
+Les organisations traditionnelles peuvent toutefois bénéficier dans une moindre
 mais pertinente mesure des outils DevOps sans pour autant avoir à vraiment
 changer leur politique, pas de manière notable hormis les détails nécessaires
 pour établir une communication entre les devs et les ops.
@@ -128,7 +128,7 @@ optimiser d'abord pour la qualité des livraisons de bout en bout.
 
 Et si l'idée qu'il y ait une chaine de production aboutissant à mise en ligne
 d'un code a commencé dans votre bureau de devs et d'ops, elle a fait son chemin
-dans votre tête et c'est maintenant toute votre entreprise que vous voyez comme
+dans votre tête et c'est maintenant toute votre organisation que vous voyez comme
 une chaine de production et vous voulez optimisez les processus de bout en
 bout: le DevOps gagne du terrain.
 
