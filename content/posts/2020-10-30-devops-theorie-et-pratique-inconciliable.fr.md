@@ -8,8 +8,9 @@ author = "jpic"
 
 Le terme "DevOps" pâti de plusieurs significations étant donné qu'aucun
 académicien n'a, à l'heure où j'écris ces lignes, pu développer une [définition
-unique au terme "DevOps"](https://en.wikipedia.org/wiki/DevOps#Definition), et
-donc, ça n'est pas le but de cet article.
+unique au terme "DevOps"](https://en.wikipedia.org/wiki/DevOps#Definition),
+mais nous pouvons toujours explorer l'histoire, l'éthymologie, et les
+différentes sources possibles de confusion.
 
 Méthode ou outil ? Les dissonances entre la littérature thématique et la
 pratique en organisation sont courantes, il est vrai que "peu importe l'outil,
