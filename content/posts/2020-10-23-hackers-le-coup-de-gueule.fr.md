@@ -13,6 +13,17 @@ Explications dans ce billet.
 
 <!--more-->
 
+## Ethymologie
+
+Etymologiquement, le terme “Hacker” vient de “Axing” en Anglais soit “Mettre
+des coups de haches”, dans le jargon cela revient à persévérer pour résoudre un
+problème ou particulièrement plier une machine à sa volonté - ce qui demande un
+ego particulièrement solide.
+
+C'est ainsi que la philosophie Hacker en elle même est accessible à toutes:
+elle commence par une passion pour la resolution de problemes. Pour un hacker,
+le monde est rempli de problèmes fascinants qui ne demandent qu'à être résolus.
+
 ## Serrurier != Cambrioleur
 
 Les serruriers ne sont pas systématiquement assimilés aux cambrioleurs que je
