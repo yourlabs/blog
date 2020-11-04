@@ -11,6 +11,11 @@ $color4: #938dff
 $color5: #81eafd  // lightblue
 $color6: #ef64ee
 
+/* colors with opacity 0.1 */
+$color1-light-opacity: rgba(176, 151, 253, 0.1)
+
+$medium-border-radius: 1rem
+
 $outside-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1)
 $inside-shadow: inset $outside-shadow
 $large-outside-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2)
@@ -193,7 +198,7 @@ blockquote
   background-size: 32px
   background-repeat: no-repeat
   background-color: rgba(0, 0, 0, 0.03)
-  border-radius: 1rem
+  border-radius: $medium-border-radius
   border-left: 15px $color1 solid
   text-align: center
   margin: 2rem 0
@@ -226,10 +231,9 @@ a.read-more, a.read-more:link, a.read-more:active, a.read-more:visited
     background-color: $color3
     border: 1px solid white
 
-code, pre
-  background: #f6fff2
-
 pre
+  background: $color1-light-opacity
+  border-radius: $medium-border-radius
   margin: 0 0 1em 0
   overflow-x: auto;
   white-space: pre-wrap;
