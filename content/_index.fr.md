@@ -3,7 +3,7 @@ title: YourLabs Business Service
 subtitle: Services numériques depuis 1998
 subtitle2: La pratique d'une ingénierie tel un sport, un art, au service d'êtres humains.
 comments: false
-hero: /img/backgrounds/pexel-1312.jpg
+hero: /img/backgrounds/abstract.jpg
 hero_action_label: Nos services sur mesure
 hero_action_url: '#services'
 ---
@@ -23,6 +23,9 @@ a h3 {
   color: #444fff;
 }
 </style>
+
+<div id="index-background">
+</div>
 
 <div class="product-container" style="">
   <div class="homepage-content">
@@ -98,7 +101,7 @@ a h3 {
   </div>
 </div>
 
-<div class="hero" style="background-image: url(/img/backgrounds/glass-1312.jpg); background-position: center; height: auto; padding: 3rem 0">
+<div class="hero" style="background-image: url(/img/backgrounds/abstract.jpg); background-position: center; height: auto; padding: 3rem 0">
   <div class="hero-inner">
     <h2>Entreprise de services du numérique</h2>
     <div class="container">
@@ -112,4 +115,17 @@ a h3 {
     </div>
   </div>
 </div>
+
+
+
+<script>
+document.querySelector("body").onscroll = function myFunction() {  
+    var scrolltotop = document.scrollingElement.scrollTop;
+    var target = document.getElementById("index-background");
+    var xvalue = "center";
+    var factor = -0.4;
+    var yvalue = scrolltotop * factor;
+    target.style.backgroundPosition = xvalue + " " + yvalue + "px";
+  }
+</script>
 {{< /rawhtml >}}
