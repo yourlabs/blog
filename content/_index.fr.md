@@ -26,9 +26,14 @@ a h3 {
 
 <div class="product-container" style="">
   <div class="homepage-content">
+    <h2>Nos Offres</h2>
+    <p>
+    Découvrer nos offres, que vous soyez une PME ou une agence gouvernementale, nous avons ce qu'il vous faut.
+    </p>
     <a name="services"></a>
     <div class="services">
       <div class="service">
+        <a href="/secops/" class="overlay"></a>
         <img loading="lazy" src="/img/cybersecurity.svg" />
         <h2>Cyber-Sécurité</h2>
         <ul>
@@ -39,9 +44,9 @@ a h3 {
             <li>Standards: OWASP, NIST...</li>
             <li>Red Team: Protection active</li>
         </ul>
-        <a class="action" href="/secops/">Offres SecOps</a>
       </div>
       <div class="service">
+        <a href="/dev/" class="overlay"></a>
         <img loading="lazy" src="/img/web_development.svg" />
         <h2>Développement</h2>
         <ul>
@@ -70,9 +75,9 @@ a h3 {
                 eXtreme Programing (XP)
             </li>
         </ul>
-        <a class="action" href="/dev/">Offres WebDev</a>
       </div>
       <div class="service">
+        <a href="/devops/" class="overlay"></a>
         <img loading="lazy" src="/img/online_storage.svg" />
         <h2>DevOps</h2>
         <ul>
@@ -88,7 +93,6 @@ a h3 {
             <li>Métriques, Statistiques, KPI...</li>
             <li>eXtreme DevOps (XD)</li>
         </ul>
-        <a class="action" href="/devops/">Offres DevOps</a>
       </div>
     </div>
   </div>
