@@ -11,5 +11,5 @@ FROM nginx:alpine
 COPY --from=0 /app/public /usr/share/nginx/html
 RUN sed -i '/^.*#error*/s/^.*#/    /' /etc/nginx/conf.d/default.conf
 COPY nginx.conf /etc/nginx/conf.d/blog.conf
-RUN sed -i "s@EN_SERVER_NAME@en.${HUGO_URL:7}@g" /etc/nginx/conf.d/blog.conf
-RUN sed -i "s@FR_SERVER_NAME@en.${HUGO_URL:7}@g" /etc/nginx/conf.d/blog.conf
+RUN sh -c "sed -i \"s@EN_SERVER_NAME@en.${HUGO_URL:7}@g\" /etc/nginx/conf.d/blog.conf"
+RUN sh -c "sed -i \"s@FR_SERVER_NAME@en.${HUGO_URL:7}@g\" /etc/nginx/conf.d/blog.conf"
