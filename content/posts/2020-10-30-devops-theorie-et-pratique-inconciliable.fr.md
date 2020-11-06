@@ -20,8 +20,8 @@ industrielle sans outil non plus.
 Cet article tente de réconcilier les deux: si la boite à outils DevOps est un
 fruit de l'application d'une **méthode** qui s'appelle le *TPS* dans le domaine
 de l'informatique, cela n'empêche pas les organisation traditionnelles de
-bénéficier de la valeur ajouté de ces outils sans pour autant complètement de
-politique au-delà du bon sens commun, compréhensible par tous.
+bénéficier de la valeur ajouté de ces outils sans pour autant changer
+complètement de politique, au-delà du bon sens commun, compréhensible par tous.
 
 Explications.
 
