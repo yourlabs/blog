@@ -1,5 +1,5 @@
 +++
-date = "2020-10-26T13:37:00+00:00"
+date = "2020-11-05T13:37:00+00:00"
 draft = false
 tags = ['oss', 'philanthropy']
 title = "New Sponsorship Round"
